@@ -4,3 +4,8 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
+.app {
+  max-width: 1420px;
+  margin: 0 auto;
+}
