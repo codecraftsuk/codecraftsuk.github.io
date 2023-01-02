@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import './styles.css';
+import courseOne from '../../assets/images/courses/web-dev-course.jpg';
+import courseTwo from '../../assets/images/courses/devops.png';
+import courseThree from '../../assets/images/courses/freelance.jpg';
 
 const Courses = () => {
   const courses = [
     {
       name: 'Web Development',
       description: 'Learn how to build modern web applications',
+      image: courseOne,
       weeks: [
         'Week 1: Introduction to HTML and CSS',
         'Week 2: JavaScript Basics',
@@ -24,6 +28,7 @@ const Courses = () => {
     {
       name: 'DevOps',
       description: 'Become proficient in DevOps practices and tools',
+      image: courseTwo,
       weeks: [
         'Week 1: Introduction to DevOps',
         'Week 2: Continuous Integration and Delivery',
@@ -42,6 +47,7 @@ const Courses = () => {
     {
       name: 'Freelance',
       description: 'Master the skills needed to succeed as a freelance developer',
+      image: courseThree,
       weeks: [
         'Week 1: Introduction to Freelancing',
         'Week 2: Marketing and Networking',
@@ -67,7 +73,13 @@ const Courses = () => {
       <ul>
         {courses.map(course => (
           <li>
-            <h2 onClick={() => setSelectedCourse(course.name)}>{course.name}</h2>
+            <div>
+              <img className="course-img" src={course.image} alt={course.name} />
+              <p>{course.description}</p>
+            </div>
+            <h2 onClick={() => setSelectedCourse(course.name)}>
+              {course.name}
+            </h2>
             {selectedCourse === course.name && (
               <ul>
                 {course.weeks.map(week => (
