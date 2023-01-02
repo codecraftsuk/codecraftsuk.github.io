@@ -2,8 +2,11 @@
   "name": "client-app",
   "private": true,
   "version": "0.0.0",
+  "homepage": "codecrafts.co.uk",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
