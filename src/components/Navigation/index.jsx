@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { StyledNavWrapper, StyledLinkItem } from './styled';
-import logo from '../../assets/images/logo/codecrafts-logo.svg';
+import logo from '../../assets/images/logo/codecrafts.png';
 
 const Navigation = () => {
   const location = useLocation();
@@ -9,7 +9,7 @@ const Navigation = () => {
   return (
     <StyledNavWrapper>
       <div>
-        <img src={logo} alt="" />
+        <img src={logo} alt="" style={{ width: '10%' }}/>
         <StyledLinkItem active={location?.pathname === '/'} to="/">
           Home
         </StyledLinkItem>
