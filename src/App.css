@@ -9,3 +9,11 @@
   max-width: 1420px;
   margin: 0 auto;
 }
+
+.heading-text {
+  font-size: 40px;
+}
+
+.white-text {
+  color: rgb(172, 173, 174);
+}

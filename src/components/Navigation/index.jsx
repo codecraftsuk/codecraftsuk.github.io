@@ -1,14 +1,30 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { StyledNavWrapper, StyledLinkItem } from "./styled";
+import logo from "../../assets/images/logo/codecrafts-logo.svg";
 
 const Navigation = () => {
+  const location = useLocation();
+
+  console.log(location);
   return (
     <StyledNavWrapper>
-      <StyledLinkItem to="/">Home</StyledLinkItem>
-      <StyledLinkItem to="courses">Courses</StyledLinkItem>
-      <StyledLinkItem to="about">About Us</StyledLinkItem>
-      <StyledLinkItem to="jobs">Jobs</StyledLinkItem>
-      <StyledLinkItem to="contact">Contact</StyledLinkItem>
+      <img src={logo} alt="" />
+      <StyledLinkItem active={location?.pathname === "/"} to="/">
+        Home
+      </StyledLinkItem>
+      <StyledLinkItem active={location?.pathname === "/courses"} to="courses">
+        Courses
+      </StyledLinkItem>
+      <StyledLinkItem active={location?.pathname === "/about"} to="about">
+        About Us
+      </StyledLinkItem>
+      <StyledLinkItem active={location?.pathname === "/jobs"} to="jobs">
+        Jobs
+      </StyledLinkItem>
+      <StyledLinkItem active={location?.pathname === "/contact"} to="contact">
+        Contact
+      </StyledLinkItem>
     </StyledNavWrapper>
   );
 };
