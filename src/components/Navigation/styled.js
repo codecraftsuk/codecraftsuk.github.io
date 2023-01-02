@@ -4,8 +4,7 @@ import styled from 'styled-components';
 export const StyledNavWrapper = styled.div`
   display: flex;
   justify-content: space-around;
-  /* margin-top: 20px; */
-  background-color: #060b0b;
+  background-color: #030506;
   padding: 20px 0;
 
   img {
