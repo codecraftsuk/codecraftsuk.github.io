@@ -69,17 +69,15 @@ const Courses = () => {
 
   return (
     <div>
-      <h1>Courses</h1>
+      <h1 className="courses-title">Courses</h1>
       <ul>
         {courses.map(course => (
           <li>
             <div>
               <img className="course-img" src={course.image} alt={course.name} />
-              <p>{course.description}</p>
             </div>
-            <h2 onClick={() => setSelectedCourse(course.name)}>
-              {course.name}
-            </h2>
+            <h2 onClick={() => setSelectedCourse(course.name)}>{course.name}</h2>
+            <p>{course.description}</p>
             {selectedCourse === course.name && (
               <ul>
                 {course.weeks.map(week => (

@@ -1,3 +1,8 @@
+.courses-title {
+  text-align: center;
+  margin: 20px 0;
+}
+
 li {
   display: flex;
   flex-direction: column;
@@ -6,15 +11,21 @@ li {
   border: 1px solid lightgray;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px 0;
+  margin: 0 auto;
+  width: 50%;
 }
 
+ul {
+  display: flex;
+  flex-wrap: wrap; /* Add this */
+}
+
+
 .course-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 600px;
+  height: 400px;
+  border-radius: 10px;
   object-fit: cover;
-  margin-bottom: 10px;
 }
 
 p {
