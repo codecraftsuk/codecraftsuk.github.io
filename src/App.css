@@ -2,11 +2,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .app {
-  max-width: 1420px;
+  /* max-width: 1420px; */
   margin: 0 auto;
 }
 

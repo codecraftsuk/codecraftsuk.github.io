@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 export const StyledNavWrapper = styled.div`
   display: flex;
@@ -11,12 +11,17 @@ export const StyledNavWrapper = styled.div`
   img {
     height: 34px;
   }
+
+  div {
+    width: min(100%, 1520px);
+    display: flex;
+    justify-content: space-around;
+  }
 `;
 export const StyledLinkItem = styled(Link)`
   list-style: none;
   text-decoration: none;
-  border-bottom: 2px solid
-    ${({ active, theme }) => (active ? theme.tertiary : "transparent")};
+  border-bottom: 2px solid ${({ active, theme }) => (active ? theme.tertiary : 'transparent')};
   color: white;
 
   &:hover {
