@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from '../../components/Slider';
+import { StyledContentWrapper, StyledInfoWrapper } from './styled';
 
 const sliderContent = [
   {
@@ -16,6 +17,16 @@ function Home() {
   return (
     <div>
       <Slider sliderContent={sliderContent} />
+
+      <StyledContentWrapper>
+        <StyledInfoWrapper>
+          <h1>Creative Services</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab architecto, ex accusamus error, amet veniam
+            quis, quidem ullam impedit obcaecati fuga! Ipsa esse eaque iure doloribus nulla distinctio dicta blanditiis?
+          </p>
+        </StyledInfoWrapper>
+      </StyledContentWrapper>
     </div>
   );
 }
