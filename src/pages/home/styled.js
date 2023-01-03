@@ -31,3 +31,29 @@ export const StyleHome = styled.div`
     /* width: 100vw; */
   }
 `;
+
+export const StyledDeliveryInfo = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 0;
+
+  text-align: left;
+
+  img {
+    width: 50%;
+  }
+
+  & > * {
+    flex: 1;
+    padding: 20px;
+
+    & > * {
+      margin-bottom: 30px;
+    }
+
+    p {
+      text-align: left;
+    }
+  }
+`;

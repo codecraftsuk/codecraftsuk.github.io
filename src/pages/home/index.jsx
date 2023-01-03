@@ -1,9 +1,11 @@
 import React from 'react';
 import { StyledFlexWrap } from '../../common/styles';
 import IconInfo from '../../components/IconInfo';
+import RoundedButton from '../../components/RoundedButton';
 import Slider from '../../components/Slider';
 import { infoIconData, sliderContent, statsData } from './messages';
-import { StyledContentWrapper, StyledInfoWrapper, StyleHome } from './styled';
+import { StyledContentWrapper, StyledInfoWrapper, StyleHome, StyledDeliveryInfo } from './styled';
+import deliveryImg from '../../assets/images/delivery.jpg';
 
 function Home() {
   return (
@@ -30,6 +32,20 @@ function Home() {
           <IconInfo {...iconData} />
         ))}
       </StyledFlexWrap>
+
+      <StyledContentWrapper>
+        <StyledDeliveryInfo>
+          <span>
+            <h1>We Helping Business Delivered.</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravi,
+              nulla nunc varius lectus, nec rutrum justo nibh eu lectus metus ultrices.
+            </p>
+            <RoundedButton bgColor="#00c874">Read More</RoundedButton>
+          </span>
+          <img src={deliveryImg} alt="" />
+        </StyledDeliveryInfo>
+      </StyledContentWrapper>
     </StyleHome>
   );
 }
