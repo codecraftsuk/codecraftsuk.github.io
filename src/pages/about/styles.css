@@ -11,6 +11,10 @@
     font-size: 30px;
 }
 
+.banner__wrapper h3 {
+    margin-top: 20px;
+}
+
 
 .description p {
     text-align: left;

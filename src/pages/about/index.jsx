@@ -8,6 +8,9 @@ const About = () => {
         <h1>
           About CodeCrafts
         </h1>
+        <h3>
+          Some slogan...
+        </h3>
       </div>
       <div className="description">
         <p>
