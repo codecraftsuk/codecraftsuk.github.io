@@ -1,7 +1,7 @@
-
+/* 
 .body {
     
-}
+} */
 
 
 #banner__wrapper {
@@ -26,9 +26,9 @@
     margin-top: 20px;
 }
 
-#description__wrapper {
+/* #description__wrapper {
 
-}
+} */
 
 .description p {
     padding: 50px;
@@ -37,3 +37,5 @@
     text-align: left;
     margin: 0px 375px;
 }
+
+/* test */
