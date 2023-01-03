@@ -8,7 +8,7 @@ const sliderContent = [
   },
   {
     title: 'Title 2',
-    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quia sequi excepturi nesciunt dolores possimus nisi. Culpa quam sint modi.kjd kldjf ',
+    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quia sequi excepturi nesciunt dolores possimus nisi.',
   },
 ];
 
@@ -19,5 +19,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;

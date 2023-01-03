@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { StyledNavWrapper, StyledLinkItem } from './styled';
-import logo from '../../assets/images/logo/codecrafts-logo.svg';
+import logo from '../../assets/images/logo/codecrafts.png';
 import useWindowDimensions from '../../hooks/useWindowDimenions';
 
 const Navigation = () => {
