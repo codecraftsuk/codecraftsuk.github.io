@@ -7,6 +7,21 @@ export const StyledContentWrapper = styled.div`
   padding: 0 10px;
   display: flex;
   flex-direction: column;
+
+  .members {
+    ion-icon {
+      font-size: 8rem;
+    }
+    gap: 30px;
+
+    span {
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 `;
 
 export const StyledInfoWrapper = styled.div`

@@ -43,8 +43,30 @@ function Home() {
             </p>
             <RoundedButton bgColor="#00c874">Read More</RoundedButton>
           </span>
-          <img src={deliveryImg} alt="" />
+          <img src={deliveryImg} alt="man-on-computer-coding" />
         </StyledDeliveryInfo>
+
+        <StyledInfoWrapper>
+          <h1>Team Members</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab architecto, ex accusamus error, amet veniam
+            quis, quidem ullam impedit obcaecati.
+          </p>
+          <StyledFlexWrap className="members">
+            <span>
+              <ion-icon name="person-circle-outline" />
+              <h3>kush</h3>
+            </span>
+            <span>
+              <ion-icon name="person-circle-outline" />
+              <h3>abdul</h3>
+            </span>
+            <span>
+              <ion-icon name="person-circle-outline" />
+              <h3>zai</h3>
+            </span>
+          </StyledFlexWrap>
+        </StyledInfoWrapper>
       </StyledContentWrapper>
     </StyleHome>
   );
