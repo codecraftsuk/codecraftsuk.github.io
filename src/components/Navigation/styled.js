@@ -9,9 +9,13 @@ export const StyledNavWrapper = styled.div`
   position: sticky;
   top: 0;
   z-index: 1000;
+<<<<<<< HEAD
   background: rgb(22, 22, 22);
+=======
+  background: rgb(32, 34, 37);
+>>>>>>> ace2a619ee218f0a4dfa976dc097a857a74b1844
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.1px);
+  backdrop-filter: blur(10.1px);
   -webkit-backdrop-filter: blur(11.1px);
 
   img {
