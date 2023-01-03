@@ -72,3 +72,100 @@ export const StyledDeliveryInfo = styled.div`
     }
   }
 `;
+
+export const StyledMakeTogether = styled.div`
+  background-color: ${({ theme }) => theme.tertiary};
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 30px;
+  h2 {
+    margin-bottom: 20px;
+  }
+`;
+
+export const StyledSlideShow = styled.div`
+  font-size: 6rem;
+  padding: 40px 0px;
+  overflow: hidden;
+
+  span {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    display: flex;
+
+    -moz-animation: my-animation 10s linear infinite;
+    -webkit-animation: my-animation 10s linear infinite;
+    animation: my-animation 10s linear infinite;
+
+    & > ion-icon {
+      margin-right: 80px;
+
+      ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
+        margin-right: 25px;
+      }
+    }
+  }
+
+  @-moz-keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+    }
+  }
+
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from {
+      -webkit-transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(-100%);
+    }
+  }
+
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+`;
+
+export const StyledSocials = styled.div`
+  background-color: ${({ theme }) => theme.tertiary};
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  ion-icon {
+    font-size: 2rem;
+    background-color: white;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: ${({ theme }) => theme.tertiary};
+
+    &:hover {
+      background-color: black;
+      color: white;
+      transition: 500ms;
+    }
+  }
+`;
