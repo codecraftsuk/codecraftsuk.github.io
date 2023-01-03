@@ -4,6 +4,9 @@ import styled from 'styled-components';
 export const StyledContentWrapper = styled.div`
   width: min(100%, 1500px);
   margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const StyledInfoWrapper = styled.div`

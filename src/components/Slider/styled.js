@@ -41,7 +41,7 @@ export const StyledSliderWrapper = styled.div`
     transform: translateX(-50%);
     font-size: 2rem;
     text-align: center;
-    animation: ${comeIn} 900ms linear;
+    animation: ${comeIn} 1000ms linear;
 
     p {
       font-size: 1.3rem;

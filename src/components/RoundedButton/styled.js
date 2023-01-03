@@ -15,5 +15,6 @@ export const StyledButton = styled.button`
   &:hover {
     color: ${({ theme }) => theme.tertiary};
     background-color: white;
+    transition: all 1000ms;
   }
 `;

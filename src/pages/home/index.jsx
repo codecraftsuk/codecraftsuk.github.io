@@ -1,17 +1,9 @@
 import React from 'react';
+import { StyledFlexWrap } from '../../common/styles';
+import IconInfo from '../../components/IconInfo';
 import Slider from '../../components/Slider';
+import { infoIconData, sliderContent } from './messages';
 import { StyledContentWrapper, StyledInfoWrapper } from './styled';
-
-const sliderContent = [
-  {
-    title: 'Title 1',
-    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quia sequi excepturi nesciunt dolores possimus nisi. Culpa quam sint modi.',
-  },
-  {
-    title: 'Title 2',
-    text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quia sequi excepturi nesciunt dolores possimus nisi.',
-  },
-];
 
 function Home() {
   return (
@@ -26,6 +18,12 @@ function Home() {
             quis, quidem ullam impedit obcaecati fuga! Ipsa esse eaque iure doloribus nulla distinctio dicta blanditiis?
           </p>
         </StyledInfoWrapper>
+
+        <StyledFlexWrap>
+          {infoIconData.map((iconData) => (
+            <IconInfo {...iconData} />
+          ))}
+        </StyledFlexWrap>
       </StyledContentWrapper>
     </div>
   );

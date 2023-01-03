@@ -14,5 +14,6 @@ module.exports = {
     'linebreak-style': 0,
     'react/function-component-definition': 0,
     'max-len': [1, 160],
+    'react/jsx-props-no-spreading': 0,
   },
 };
