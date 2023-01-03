@@ -9,7 +9,7 @@ export const StyledNavWrapper = styled.div`
   align-items: center;
 
   img {
-    height: 40px;
+    height: 50px;
     margin-left: 40px;
   }
 
