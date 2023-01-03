@@ -60,7 +60,7 @@ export const StyledDeliveryInfo = styled.div`
   }
 
   & > * {
-    flex: 1;
+    flex: 1 0 300px;
     padding: 20px;
 
     & > * {
