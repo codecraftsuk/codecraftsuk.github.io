@@ -1,5 +1,16 @@
 /* eslint-disable import/prefer-default-export */
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const comeIn = keyframes`
+  from {
+    top: 700px;
+    opacity: 0;
+  }
+  to {
+    opacity: 50px;
+    opacity: 1;
+  }
+`;
 
 export const StyledSliderWrapper = styled.div`
   position: relative;
@@ -21,7 +32,7 @@ export const StyledSliderWrapper = styled.div`
     opacity: 0.6;
   }
 
-  h2 {
+  .abs-div {
     position: absolute;
     top: 50px;
     color: white;
@@ -30,10 +41,28 @@ export const StyledSliderWrapper = styled.div`
     transform: translateX(-50%);
     font-size: 2rem;
     text-align: center;
+    animation: ${comeIn} 500ms linear;
 
     p {
       font-size: 1.3rem;
       font-weight: 300;
+    }
+
+    div {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
     }
   }
 `;

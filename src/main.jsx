@@ -1,17 +1,26 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-import { Provider } from "./store";
-import { BrowserRouter as Router } from "react-router-dom";
-import { ThemeProvider } from "styled-components";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { ThemeProvider } from 'styled-components';
+import App from './App';
+import { Provider } from './store';
 
-const theme = {
-  primary: "",
-  secondary: "",
-  tertiary: "#00c874",
+const breakPoints = {
+  sm: '576px',
+  md: '768px',
+  lg: '1140px',
+  down: (size) => `@media only screen and (max-width: ${breakPoints[size]})`,
+  up: (size) => `@media only screen and (min-width: ${breakPoints[size]})`,
 };
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+const theme = {
+  primary: '',
+  secondary: '',
+  tertiary: '#00c874',
+  breakPoints,
+};
+
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
       <Provider>

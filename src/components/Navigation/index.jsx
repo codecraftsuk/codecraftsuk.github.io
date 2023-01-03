@@ -1,15 +1,23 @@
-import React from 'react';
+/* eslint-disable no-nested-ternary */
+import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { StyledNavWrapper, StyledLinkItem } from './styled';
 import logo from '../../assets/images/logo/codecrafts-logo.svg';
+import useWindowDimensions from '../../hooks/useWindowDimenions';
 
 const Navigation = () => {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
+  const { width } = useWindowDimensions();
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location?.pathname]);
 
   return (
     <StyledNavWrapper>
-      <div>
-        <img src={logo} alt="" />
+      <img src={logo} alt="logo-img" />
+      <div style={{ transform: width > 768 ? 'translateX(0px)' : isOpen ? 'translateX(0px)' : 'translateX(-110%)' }}>
         <StyledLinkItem active={location?.pathname === '/'} to="/">
           Home
         </StyledLinkItem>
@@ -26,6 +34,11 @@ const Navigation = () => {
           Contact
         </StyledLinkItem>
       </div>
+      {isOpen ? (
+        <ion-icon onClick={() => setIsOpen((prev) => !prev)} name="close-outline" />
+      ) : (
+        <ion-icon onClick={() => setIsOpen((prev) => !prev)} name="menu-outline" />
+      )}
     </StyledNavWrapper>
   );
 };
