@@ -4,18 +4,18 @@ import styled from 'styled-components';
 export const StyledNavWrapper = styled.div`
   display: flex;
   justify-content: space-around;
-  padding: 3px 0;
+  padding: 10px 0;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(49, 49, 50, 0.86);
+  background: rgb(22, 22, 22);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.1px);
   -webkit-backdrop-filter: blur(11.1px);
 
   img {
-    height: 50px;
+    height: 60px;
     margin-left: 40px;
   }
 
@@ -66,7 +66,7 @@ export const StyledLinkItem = styled(Link)`
   text-decoration: none;
   border-bottom: 2px solid ${({ active, theme }) => (active ? theme.tertiary : 'transparent')};
   color: white;
-  font-size: 14px;
+  font-size: 18px;
 
   &:hover {
     border-bottom: 2px solid ${({ theme }) => theme.tertiary};
