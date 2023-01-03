@@ -78,7 +78,7 @@ export const StyledDot = styled.div`
 
 export const StyledDotWrapper = styled.div`
   position: absolute;
-  bottom: 100px;
+  bottom: ${({ bottom }) => bottom || '100px'};
   left: 50%;
   transform: translateX(-50%);
   display: flex;

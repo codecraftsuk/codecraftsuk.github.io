@@ -10,7 +10,7 @@ export const StyledContentWrapper = styled.div`
 
   .members {
     ion-icon {
-      font-size: 8rem;
+      font-size: 12rem;
     }
     gap: 30px;
 

@@ -6,6 +6,7 @@ import Slider from '../../components/Slider';
 import { infoIconData, sliderContent, statsData } from './messages';
 import { StyledContentWrapper, StyledInfoWrapper, StyleHome, StyledDeliveryInfo } from './styled';
 import deliveryImg from '../../assets/images/delivery.jpg';
+import Testimonials from '../../components/Testimonials';
 
 function Home() {
   return (
@@ -56,18 +57,23 @@ function Home() {
             <span>
               <ion-icon name="person-circle-outline" />
               <h3>kush</h3>
+              <p>Tutor / DevOps</p>
             </span>
             <span>
               <ion-icon name="person-circle-outline" />
               <h3>abdul</h3>
+              <p>Tutor / DevOps</p>
             </span>
             <span>
               <ion-icon name="person-circle-outline" />
               <h3>zai</h3>
+              <p>Tutor / FullStack</p>
             </span>
           </StyledFlexWrap>
         </StyledInfoWrapper>
       </StyledContentWrapper>
+
+      <Testimonials />
     </StyleHome>
   );
 }
