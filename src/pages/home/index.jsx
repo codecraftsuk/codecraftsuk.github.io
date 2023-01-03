@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledFlexWrap } from '../../common/styles';
+import { StyledFlexWrap, StyledFullWidth } from '../../common/styles';
 import IconInfo from '../../components/IconInfo';
 import RoundedButton from '../../components/RoundedButton';
 import Slider from '../../components/Slider';
@@ -36,11 +36,14 @@ function Home() {
           ))}
         </StyledFlexWrap>
       </StyledContentWrapper>
-      <StyledFlexWrap className="green-content" bgColor="#00c874">
-        {statsData.map((iconData) => (
-          <IconInfo {...iconData} />
-        ))}
-      </StyledFlexWrap>
+
+      <StyledFullWidth bgColor="#00c874">
+        <StyledFlexWrap className="green-content">
+          {statsData.map((iconData) => (
+            <IconInfo {...iconData} />
+          ))}
+        </StyledFlexWrap>
+      </StyledFullWidth>
 
       <StyledContentWrapper>
         <StyledDeliveryInfo>
@@ -81,14 +84,18 @@ function Home() {
         </StyledInfoWrapper>
       </StyledContentWrapper>
 
-      <Testimonials />
+      <StyledFullWidth bgColor="#161616">
+        <Testimonials />
+      </StyledFullWidth>
 
-      <StyledMakeTogether>
-        <h2>Let&apos;s Make Something Great Together.</h2>
-        <RoundedButton bgColor="rgb(236, 236, 236)" textColor="black">
-          Start a Course
-        </RoundedButton>
-      </StyledMakeTogether>
+      <StyledFullWidth bgColor="#00c874">
+        <StyledMakeTogether>
+          <h2>Let&apos;s Make Something Great Together.</h2>
+          <RoundedButton bgColor="rgb(236, 236, 236)" textColor="black">
+            Start a Course
+          </RoundedButton>
+        </StyledMakeTogether>
+      </StyledFullWidth>
 
       <StyledSlideShow>
         <span>
@@ -100,16 +107,18 @@ function Home() {
         </span>
       </StyledSlideShow>
 
-      <StyledSocials>
-        <h2>Follow Us On Socials</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, possimus?</p>
+      <StyledFullWidth bgColor="#00c874">
+        <StyledSocials>
+          <h2>Follow Us On Socials</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, possimus?</p>
 
-        <span>
-          <ion-icon name="logo-twitter"></ion-icon>
-          <ion-icon name="logo-discord"></ion-icon>
-          <ion-icon name="logo-instagram"></ion-icon>
-        </span>
-      </StyledSocials>
+          <span>
+            <ion-icon name="logo-twitter" />
+            <ion-icon name="logo-discord" />
+            <ion-icon name="logo-instagram" />
+          </span>
+        </StyledSocials>
+      </StyledFullWidth>
     </StyleHome>
   );
 }

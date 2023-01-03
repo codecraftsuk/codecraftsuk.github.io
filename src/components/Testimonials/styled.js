@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledWrapper = styled.div`
-  width: 100%;
+  width: min(100%, 1500px);
   background-color: #161616;
   color: white;
   padding: 90px 0;
@@ -11,6 +11,7 @@ export const StyledWrapper = styled.div`
   flex-direction: column;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
   span {
     font-family: 'Passion One', cursive;
     font-size: 6rem;

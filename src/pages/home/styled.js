@@ -28,9 +28,11 @@ export const StyledInfoWrapper = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: min(100%, 700px);
+  /* width: min(100%, 700px); */
   margin: 0 auto;
   padding: 70px 20px;
+  width: min(100%, 1500px);
+  margin: 0 auto;
 
   h1 {
     margin-bottom: 20px;
@@ -76,7 +78,8 @@ export const StyledDeliveryInfo = styled.div`
 export const StyledMakeTogether = styled.div`
   background-color: ${({ theme }) => theme.tertiary};
   color: white;
-
+  width: min(100%, 1500px);
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -106,6 +109,10 @@ export const StyledSlideShow = styled.div`
 
       ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
         margin-right: 25px;
+      }
+
+      ${({ theme: { breakPoints } }) => breakPoints.up('lg')} {
+        margin-right: 200px;
       }
     }
   }
@@ -148,6 +155,9 @@ export const StyledSocials = styled.div`
   padding: 100px 20px;
   text-align: center;
   color: white;
+
+  width: min(100%, 1500px);
+  margin: 0 auto;
 
   p {
     margin-bottom: 20px;
