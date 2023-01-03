@@ -3,14 +3,15 @@ import styled from 'styled-components';
 
 export const StyledNavWrapper = styled.div`
   background: rgb(32, 34, 37);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   span {
     display: flex;
     justify-content: space-around;
     padding: 3px 0;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+
     max-width: 1500px;
     margin: 0 auto;
   }
