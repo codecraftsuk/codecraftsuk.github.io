@@ -5,4 +5,5 @@ export const StyledFlexWrap = styled.div`
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  background-color: ${({ bgColor }) => bgColor || 'transparent'};
 `;

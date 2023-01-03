@@ -1,5 +1,5 @@
 /* eslint-disable import/prefer-default-export */
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const StyledWrapper = styled.div`
   display: flex;
@@ -9,17 +9,24 @@ export const StyledWrapper = styled.div`
   width: min(100%, 280px);
 
   ion-icon {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     background-color: ${({ theme }) => theme.tertiary};
-    padding: 25px;
     color: white;
-    border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
-    &:hover {
-      background-color: black;
-      transition: all 1000ms;
-    }
+    ${({ bigTitle }) =>
+      !bigTitle &&
+      css`
+        border-radius: 50%;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        padding: 25px;
+
+        &:hover {
+          background-color: black;
+          transition: all 1000ms;
+        }
+      `}
   }
 
   h3 {

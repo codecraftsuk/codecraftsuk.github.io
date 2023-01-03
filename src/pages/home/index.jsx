@@ -2,12 +2,12 @@ import React from 'react';
 import { StyledFlexWrap } from '../../common/styles';
 import IconInfo from '../../components/IconInfo';
 import Slider from '../../components/Slider';
-import { infoIconData, sliderContent } from './messages';
-import { StyledContentWrapper, StyledInfoWrapper } from './styled';
+import { infoIconData, sliderContent, statsData } from './messages';
+import { StyledContentWrapper, StyledInfoWrapper, StyleHome } from './styled';
 
 function Home() {
   return (
-    <div>
+    <StyleHome>
       <Slider sliderContent={sliderContent} />
 
       <StyledContentWrapper>
@@ -25,7 +25,12 @@ function Home() {
           ))}
         </StyledFlexWrap>
       </StyledContentWrapper>
-    </div>
+      <StyledFlexWrap className="green-content" bgColor="#00c874">
+        {statsData.map((iconData) => (
+          <IconInfo {...iconData} />
+        ))}
+      </StyledFlexWrap>
+    </StyleHome>
   );
 }
 export default Home;

@@ -26,3 +26,21 @@ export const sliderContent = [
     text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quia sequi excepturi nesciunt dolores possimus nisi.',
   },
 ];
+
+export const statsData = [
+  {
+    icon: 'people-outline',
+    bigTitle: '25',
+    title: 'Satisfied Clients',
+  },
+  {
+    icon: 'card-outline',
+    bigTitle: '£39',
+    title: 'Average Price',
+  },
+  {
+    icon: 'chatbox-ellipses-outline',
+    bigTitle: '100%',
+    title: 'Response Rate',
+  },
+];

@@ -21,3 +21,13 @@ export const StyledInfoWrapper = styled.div`
     margin-bottom: 20px;
   }
 `;
+
+export const StyleHome = styled.div`
+  .green-content {
+    /* margin: 0 -10px; */
+    margin-top: 30px;
+    color: white;
+    padding: 80px 0;
+    /* width: 100vw; */
+  }
+`;
