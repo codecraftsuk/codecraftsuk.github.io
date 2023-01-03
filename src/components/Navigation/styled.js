@@ -11,7 +11,7 @@ export const StyledNavWrapper = styled.div`
     position: sticky;
     top: 0;
     z-index: 1000;
-    max-width: 1800px;
+    max-width: 1500px;
     margin: 0 auto;
   }
 
