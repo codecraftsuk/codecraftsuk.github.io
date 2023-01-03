@@ -17,3 +17,13 @@
 .white-text {
   color: rgb(172, 173, 174);
 }
+
+::-moz-selection {
+  color: white;
+  background: #00c874;
+}
+
+::selection {
+  color: white;
+  background: #00c874;
+}
