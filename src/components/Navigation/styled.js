@@ -16,7 +16,7 @@ export const StyledNavWrapper = styled.div`
   }
 
   img {
-    height: 50px;
+    height: 60px;
     margin-left: 40px;
   }
 
@@ -67,7 +67,7 @@ export const StyledLinkItem = styled(Link)`
   text-decoration: none;
   border-bottom: 2px solid ${({ active, theme }) => (active ? theme.tertiary : 'transparent')};
   color: white;
-  font-size: 14px;
+  font-size: 18px;
 
   &:hover {
     border-bottom: 2px solid ${({ theme }) => theme.tertiary};

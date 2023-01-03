@@ -1,0 +1,23 @@
+.span {
+    margin: 0px 375px;
+}
+
+.banner__wrapper {
+    position: relative;
+    padding: 80px 0;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.banner__wrapper h3 {
+    margin-top: 20px;
+}
+
+
+.description p {
+    text-align: left;
+    font-weight: 300;
+    text-align: left;
+}
