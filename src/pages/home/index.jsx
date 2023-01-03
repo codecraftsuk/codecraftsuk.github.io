@@ -12,6 +12,7 @@ import {
   StyledMakeTogether,
   StyledSlideShow,
   StyledSocials,
+  StyledContact,
 } from './styled';
 import deliveryImg from '../../assets/images/delivery.jpg';
 import Testimonials from '../../components/Testimonials';
@@ -119,6 +120,10 @@ function Home() {
           </span>
         </StyledSocials>
       </StyledFullWidth>
+
+      <StyledContact onClick={() => console.log('hi')}>
+        <ion-icon name="paper-plane-outline" />
+      </StyledContact>
     </StyleHome>
   );
 }
