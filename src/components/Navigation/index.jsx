@@ -16,31 +16,29 @@ const Navigation = () => {
 
   return (
     <StyledNavWrapper>
-      <span>
-        <img src={logo} alt="logo-img" />
-        <div style={{ transform: width > 768 ? 'translateX(0px)' : isOpen ? 'translateX(0px)' : 'translateX(-110%)' }}>
-          <StyledLinkItem active={location?.pathname === '/'} to="/">
-            Home
-          </StyledLinkItem>
-          <StyledLinkItem active={location?.pathname === '/courses'} to="courses">
-            Courses
-          </StyledLinkItem>
-          <StyledLinkItem active={location?.pathname === '/about'} to="about">
-            About Us
-          </StyledLinkItem>
-          <StyledLinkItem active={location?.pathname === '/jobs'} to="jobs">
-            Jobs
-          </StyledLinkItem>
-          <StyledLinkItem active={location?.pathname === '/contact'} to="contact">
-            Contact
-          </StyledLinkItem>
-        </div>
-        {isOpen ? (
-          <ion-icon onClick={() => setIsOpen((prev) => !prev)} name="close-outline" />
-        ) : (
-          <ion-icon onClick={() => setIsOpen((prev) => !prev)} name="menu-outline" />
-        )}
-      </span>
+      <img src={logo} alt="logo-img" />
+      <div style={{ transform: width > 768 ? 'translateX(0px)' : isOpen ? 'translateX(0px)' : 'translateX(-110%)' }}>
+        <StyledLinkItem active={location?.pathname === '/'} to="/">
+          Home
+        </StyledLinkItem>
+        <StyledLinkItem active={location?.pathname === '/courses'} to="courses">
+          Courses
+        </StyledLinkItem>
+        <StyledLinkItem active={location?.pathname === '/about'} to="about">
+          About Us
+        </StyledLinkItem>
+        <StyledLinkItem active={location?.pathname === '/jobs'} to="jobs">
+          Jobs
+        </StyledLinkItem>
+        <StyledLinkItem active={location?.pathname === '/contact'} to="contact">
+          Contact
+        </StyledLinkItem>
+      </div>
+      {isOpen ? (
+        <ion-icon onClick={() => setIsOpen((prev) => !prev)} name="close-outline" />
+      ) : (
+        <ion-icon onClick={() => setIsOpen((prev) => !prev)} name="menu-outline" />
+      )}
     </StyledNavWrapper>
   );
 };

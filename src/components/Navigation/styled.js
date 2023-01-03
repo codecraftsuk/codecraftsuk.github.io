@@ -2,22 +2,20 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const StyledNavWrapper = styled.div`
-  background: rgb(32, 34, 37);
+  display: flex;
+  justify-content: space-around;
+  padding: 3px 0;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 1000;
-  span {
-    display: flex;
-    justify-content: space-around;
-    padding: 3px 0;
-    align-items: center;
-
-    max-width: 1500px;
-    margin: 0 auto;
-  }
+  background: rgb(32, 34, 37);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.1px);
+  -webkit-backdrop-filter: blur(11.1px);
 
   img {
-    height: 60px;
+    height: 50px;
     margin-left: 40px;
   }
 
@@ -68,7 +66,7 @@ export const StyledLinkItem = styled(Link)`
   text-decoration: none;
   border-bottom: 2px solid ${({ active, theme }) => (active ? theme.tertiary : 'transparent')};
   color: white;
-  font-size: 18px;
+  font-size: 14px;
 
   &:hover {
     border-bottom: 2px solid ${({ theme }) => theme.tertiary};
