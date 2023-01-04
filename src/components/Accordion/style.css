@@ -1,0 +1,27 @@
+.accordion {
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+
+ion-icon[name='add-circle-outline'],
+ion-icon[name='remove-circle-outline'] {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.accordion-text {
+  background-color: white;
+  max-height: 0px;
+  overflow: hidden;
+  padding: 0px 20px;
+
+  transition: all 700ms;
+}

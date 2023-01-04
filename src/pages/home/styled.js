@@ -179,31 +179,3 @@ export const StyledSocials = styled.div`
     }
   }
 `;
-
-const bounce = keyframes`
-0% {
-      bottom: 40px;
-    }
-    50% {
-      bottom: 45px;
-    }
-    100% {
-      bottom: 40px;
-    }
-`;
-
-export const StyledContact = styled.div`
-  position: fixed;
-  bottom: 40px;
-  right: 60px;
-  color: white;
-  background-color: red;
-  padding: 5px;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  text-align: center;
-  font-size: 22px;
-  cursor: pointer;
-  animation: ${bounce} 1200ms infinite;
-`;
