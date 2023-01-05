@@ -30,6 +30,11 @@ To start the app in development mode, run the following command:
 ```
 npm run dev
 ```
+or 
+
+```
+npm run preview
+```
 
 This will start the app in development mode, and it will be available at http://localhost:3000.
 
