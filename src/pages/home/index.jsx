@@ -34,6 +34,7 @@ function Home() {
         </div>
         <img src={womanWave} alt="" />
       </StyledHomeHead>
+      <hr />
 
       <StyledContentWrapper>
         <StyledInfoWrapper>

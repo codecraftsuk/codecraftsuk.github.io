@@ -8,9 +8,9 @@ export const StyledNavWrapper = styled.div`
   /* position: sticky; */
   /* top: 0; */
   /* z-index: 1000; */
-  background-color: #d2d2d4;
+  background-color: #e1e1e2;
 
-  padding: 10px 0;
+  padding: 40px 0 0 0;
 
   img {
     height: 50px;

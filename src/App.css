@@ -29,9 +29,10 @@
 }
 
 body {
-  background-color: #d2d2d4;
+  background-color: #e1e1e2;
 }
 
-#first {
-  fill: red;
+hr {
+  width: 70%;
+  margin: 0 auto;
 }
