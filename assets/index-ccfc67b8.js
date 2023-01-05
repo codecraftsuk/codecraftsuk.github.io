@@ -86,11 +86,7 @@ Error generating stack: `+rt.message+`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* position: sticky; */
-  /* top: 0; */
-  /* z-index: 1000; */
   background-color: #e1e1e2;
-
   padding: 40px 0 0 0;
 
   img {
@@ -109,33 +105,18 @@ Error generating stack: `+rt.message+`
   }
 
   .text {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 
-  /* div {
-    width: min(100%, 1420px);
-    display: flex;
-    justify-content: space-around;
-    transform: translateX(0px);
-    transition: transform 400ms ease-out;
-
-    ${({theme:{breakPoints:a}})=>a.down("md")} {
-      height: 100vh;
-      background-color: white;
-      color: black;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      padding: 5px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 10;
-      padding-top: 80px;
-      width: min(100%, 500px);
-      box-shadow: 5px 0px 40px gray;
-    } */
-  /* } */
+  .logo {
+    position: react-transition;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+  }
 
   ion-icon {
     color: white;
@@ -184,10 +165,10 @@ Error generating stack: `+rt.message+`
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 3s steps(155, end) 3s infinite, erase 3s steps(155, end) 3s infinite, blink 0.3s step-end infinite;
   animation-direction: alternate;
-  max-width: 225px;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   color: ${({theme:a})=>a.secondary};
+  padding-left: 10px;
 
   @keyframes typing {
   0% {
@@ -285,7 +266,7 @@ Error generating stack: `+rt.message+`
     background-color: white;
     transition: all 1000ms;
   }
-`,RoundedButton=({children:a,bgColor:s,onClick:o,textColor:et})=>jsx(StyledButton,{onClick:o,bgColor:s,textColor:et,children:a});RoundedButton.propTypes={children:propTypesExports.oneOfType([propTypesExports.arrayOf(propTypesExports.node),propTypesExports.node]).isRequired,bgColor:propTypesExports.string,textColor:propTypesExports.string,onClick:propTypesExports.func.isRequired};RoundedButton.defaultProps={bgColor:"",textColor:"white"};const Navigation=()=>{const a=useLocation(),[s,o]=reactExports.useState(!1);return useWindowDimensions(),reactExports.useEffect(()=>{o(!1)},[a==null?void 0:a.pathname]),jsxs(StyledNavWrapper,{children:[jsx("span",{className:"text",children:jsx(TypingAnimation,{})}),jsxs("span",{children:[jsx(RoundedButton,{bgColor:"#2F2E41",children:"Courses"}),jsx(RoundedButton,{bgColor:"#FB6169",children:"Cart"})]})]})},styles$1="",About=()=>jsxs("div",{className:"body",children:[jsx("div",{id:"banner__wrapper",children:jsxs("div",{className:"banner__content",children:[jsx("h1",{children:"About CodeCrafts"}),jsx("h4",{children:"Build your own future."})]})}),jsx("img",{src:"src/assets/images/about/aboutimage.png",alt:"about us image",className:"main__image"}),jsxs("div",{id:"description__wrapper",children:[jsx("div",{className:"description",children:jsx("p",{children:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."})}),jsx("div",{id:"team__wrapper",children:jsx("div",{className:"team__description",children:jsx("h2",{children:"Meet the Team"})})})]})]}),Contact=()=>jsx("div",{children:"Contact"}),StyledCardWrapper=styled.div`
+`,RoundedButton=({children:a,bgColor:s,onClick:o,textColor:et})=>jsx(StyledButton,{onClick:o,bgColor:s,textColor:et,children:a});RoundedButton.propTypes={children:propTypesExports.oneOfType([propTypesExports.arrayOf(propTypesExports.node),propTypesExports.node]).isRequired,bgColor:propTypesExports.string,textColor:propTypesExports.string,onClick:propTypesExports.func.isRequired};RoundedButton.defaultProps={bgColor:"",textColor:"white"};const Logo="/assets/favicon-91bb3c53.png",Navigation=()=>{const a=useLocation(),[s,o]=reactExports.useState(!1);return useWindowDimensions(),reactExports.useEffect(()=>{o(!1)},[a==null?void 0:a.pathname]),jsxs(StyledNavWrapper,{children:[jsxs("span",{className:"text",children:[jsx("img",{className:"logo",src:Logo,alt:""}),jsx(TypingAnimation,{})]}),jsxs("span",{children:[jsx(RoundedButton,{bgColor:"#2F2E41",children:"Courses"}),jsx(RoundedButton,{bgColor:"#FB6169",children:"Cart"})]})]})},styles$1="",About=()=>jsxs("div",{className:"body",children:[jsx("div",{id:"banner__wrapper",children:jsxs("div",{className:"banner__content",children:[jsx("h1",{children:"About CodeCrafts"}),jsx("h4",{children:"Build your own future."})]})}),jsx("img",{src:"src/assets/images/about/aboutimage.png",alt:"about us image",className:"main__image"}),jsxs("div",{id:"description__wrapper",children:[jsx("div",{className:"description",children:jsx("p",{children:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."})}),jsx("div",{id:"team__wrapper",children:jsx("div",{className:"team__description",children:jsx("h2",{children:"Meet the Team"})})})]})]}),Contact=()=>jsx("div",{children:"Contact"}),StyledCardWrapper=styled.div`
   width: 100%;
   display: flex;
   box-shadow: 0px 5px 20px gray;
