@@ -20,12 +20,12 @@
 
 ::-moz-selection {
   color: white;
-  background: #b3b3d6;
+  background: #fb6169;
 }
 
 ::selection {
   color: white;
-  background: #b3b3d6;
+  background: #fb6169;
 }
 
 body {

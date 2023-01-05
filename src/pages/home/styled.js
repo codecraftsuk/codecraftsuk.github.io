@@ -151,7 +151,7 @@ export const StyledSlideShow = styled.div`
 `;
 
 export const StyledSocials = styled.div`
-  background-color: ${({ theme }) => theme.tertiary};
+  background-color: ${({ theme }) => theme.secondary};
   padding: 100px 20px;
   text-align: center;
   color: white;
@@ -173,7 +173,7 @@ export const StyledSocials = styled.div`
     color: ${({ theme }) => theme.tertiary};
 
     &:hover {
-      background-color: black;
+      background-color: ${({ theme }) => theme.tertiary};;
       color: white;
       transition: 500ms;
     }

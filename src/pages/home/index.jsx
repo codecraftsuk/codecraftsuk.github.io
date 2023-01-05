@@ -29,7 +29,7 @@ function Home() {
           <p>{sliderContent[0]?.text}</p>
 
           <div>
-            <RoundedButton bgColor="#F63B77">Read More...</RoundedButton>
+            <RoundedButton bgColor="#fb6169">Read More...</RoundedButton>
           </div>
         </div>
         <img src={womanWave} alt="" />
@@ -52,7 +52,7 @@ function Home() {
         </StyledFlexWrap>
       </StyledContentWrapper>
 
-      <StyledFullWidth bgColor="#b3b3d6">
+      <StyledFullWidth bgColor="#fb6169">
         <StyledFlexWrap className="green-content">
           {statsData.map((iconData) => (
             <IconInfo {...iconData} />
@@ -68,7 +68,7 @@ function Home() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravi,
               nulla nunc varius lectus, nec rutrum justo nibh eu lectus metus ultrices.
             </p>
-            <RoundedButton bgColor="#b3b3d6">Read More</RoundedButton>
+            <RoundedButton bgColor="#fb6169">Read More</RoundedButton>
           </span>
           <img src={deliveryImg} alt="man-on-computer-coding" />
         </StyledDeliveryInfo>
@@ -99,14 +99,14 @@ function Home() {
         </StyledInfoWrapper>
       </StyledContentWrapper>
 
-      <StyledFullWidth bgColor="#161616">
+      <StyledFullWidth bgColor="#2f2e41">
         <Testimonials />
       </StyledFullWidth>
 
-      <StyledFullWidth bgColor="#b3b3d6">
+      <StyledFullWidth bgColor="#fb6169">
         <StyledMakeTogether>
           <h2>Let&apos;s Make Something Great Together.</h2>
-          <RoundedButton bgColor="rgb(236, 236, 236)" textColor="black">
+          <RoundedButton bgColor="rgb(236,2f2e41236, 236)" textColor="black">
             Start a Course
           </RoundedButton>
         </StyledMakeTogether>
@@ -122,7 +122,7 @@ function Home() {
         </span>
       </StyledSlideShow>
 
-      <StyledFullWidth bgColor="#b3b3d6">
+      <StyledFullWidth bgColor="#2f2e41">
         <StyledSocials>
           <h2>Follow Us On Socials</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, possimus?</p>

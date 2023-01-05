@@ -8,7 +8,7 @@ export const StyledModalWrapper = styled.div`
   height: 100vh;
   width: 100vw;
   top: -120%;
-  background-color: rgb(0, 0, 0, 0.6);
+  background-color: #2F2E41;
   z-index: 100000;
   transition: top 500ms;
 

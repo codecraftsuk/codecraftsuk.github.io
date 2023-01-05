@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledWrapper = styled.div`
   width: min(100%, 1500px);
-  background-color: #161616;
+  background-color: #2F2E41;
   color: white;
   padding: 90px 0;
   display: flex;
