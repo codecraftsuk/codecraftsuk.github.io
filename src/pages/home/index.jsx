@@ -1,8 +1,9 @@
+/* eslint-disable import/order */
 import React from 'react';
 import { StyledFlexWrap, StyledFullWidth } from '../../common/styles';
 import IconInfo from '../../components/IconInfo';
 import RoundedButton from '../../components/RoundedButton';
-import Slider from '../../components/Slider';
+import Testimonials from '../../components/Testimonials';
 import { infoIconData, sliderContent, statsData } from './messages';
 import {
   StyledContentWrapper,
@@ -14,14 +15,10 @@ import {
   StyledSocials,
   StyledHomeHead,
 } from './styled';
-import deliveryImg from '../../assets/images/delivery.jpg';
-import Testimonials from '../../components/Testimonials';
 import LaptopScreen from '../../components/LaptopScreen';
-import womanWave from '../../assets/images/man-wave.svg';
 import Lottie from 'react-lottie';
 import animationData from '../../assets/lottie/meeting.json';
 import animationDataWelcome from '../../assets/lottie/laptop.json';
-import carbon from '../../assets/images/portfolio/carbon.png';
 
 const defaultOptions = {
   loop: true,
@@ -44,8 +41,6 @@ const animationDataWelcomeOp = {
 function Home() {
   return (
     <StyleHome>
-      {/* <Slider sliderContent={sliderContent} /> */}
-
       <StyledHomeHead>
         <div className="hero-text">
           <h1>{sliderContent[0]?.title}</h1>
@@ -81,8 +76,7 @@ function Home() {
 
       <StyledContentWrapper>
         <StyledInfoWrapper>
-          <h1>Our Stats</h1>
-          {/* <img className="carbon-img" src={carbon} alt="man-on-computer-coding" /> */}
+          <h1>Begin your coding journey today!</h1>
           <LaptopScreen />
         </StyledInfoWrapper>
       </StyledContentWrapper>
@@ -105,7 +99,6 @@ function Home() {
             </p>
             <RoundedButton bgColor="#fb6169">Read More</RoundedButton>
           </span>
-          {/* <img src={deliveryImg} alt="man-on-computer-coding" /> */}
           <Lottie options={defaultOptions} height={500} />
         </StyledDeliveryInfo>
       </StyledContentWrapper>

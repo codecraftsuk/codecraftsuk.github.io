@@ -17,6 +17,8 @@ const theme = {
   primary: '#e1e1e2',
   secondary: '#2F2E41',
   tertiary: '#fb6169',
+  quaternary: '#c9b6d9',
+  quinary: '#e5c3c4',
   breakPoints,
 };
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { StyledWrapper } from './styled';
-import carbon from '../../assets/images/portfolio/carbon.gif';
+import carbon from '../../assets/images/portfolio/carbon3.gif';
 
 const LaptopScreen = () => {
   const [width, setWidth] = useState(0);

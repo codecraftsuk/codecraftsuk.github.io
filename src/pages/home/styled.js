@@ -83,14 +83,18 @@ export const StyledDeliveryInfo = styled.div`
 `;
 
 export const StyledMakeTogether = styled.div`
-  background-color: ${({ theme }) => theme.tertiary};
+  background-color: ${({ theme }) => theme.quaternary};
   color: white;
-  width: min(100%, 1500px);
-  margin: 0 auto;
-  display: flex;
+  width: 50%; 
+  margin: 0 auto 0 auto;
+  right: 0;
+  display: flex; 
+  align-items: center; 
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 60px 30px;
+  height: 400px;
+  
   h2 {
     margin-bottom: 20px;
   }

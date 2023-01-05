@@ -1,17 +1,20 @@
 import styled from 'styled-components';
 
 export const StyledWrapper = styled.div`
-  width: min(100%, 1500px);
-  background-color: #2F2E41;
+  width: 50%; /* Set the width to 50% of the total width of the screen */
+  background-color: ${({ theme }) => theme.quinary};
   color: white;
   padding: 90px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  float: left;
   position: relative;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0 0 0 auto;
+  height: 400px;
+
   span {
     font-family: 'Passion One', cursive;
     font-size: 6rem;
