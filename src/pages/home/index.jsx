@@ -12,14 +12,28 @@ import {
   StyledMakeTogether,
   StyledSlideShow,
   StyledSocials,
+  StyledHomeHead,
 } from './styled';
 import deliveryImg from '../../assets/images/delivery.jpg';
 import Testimonials from '../../components/Testimonials';
+import womanWave from '../../assets/images/man-wave.svg';
 
 function Home() {
   return (
     <StyleHome>
-      <Slider sliderContent={sliderContent} />
+      {/* <Slider sliderContent={sliderContent} /> */}
+
+      <StyledHomeHead>
+        <div className="hero-text">
+          <h1>{sliderContent[0]?.title}</h1>
+          <p>{sliderContent[0]?.text}</p>
+
+          <div>
+            <RoundedButton bgColor="#F63B77">Read More...</RoundedButton>
+          </div>
+        </div>
+        <img src={womanWave} alt="" />
+      </StyledHomeHead>
 
       <StyledContentWrapper>
         <StyledInfoWrapper>
@@ -37,7 +51,7 @@ function Home() {
         </StyledFlexWrap>
       </StyledContentWrapper>
 
-      <StyledFullWidth bgColor="#00c874">
+      <StyledFullWidth bgColor="#b3b3d6">
         <StyledFlexWrap className="green-content">
           {statsData.map((iconData) => (
             <IconInfo {...iconData} />
@@ -53,7 +67,7 @@ function Home() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravi,
               nulla nunc varius lectus, nec rutrum justo nibh eu lectus metus ultrices.
             </p>
-            <RoundedButton bgColor="#00c874">Read More</RoundedButton>
+            <RoundedButton bgColor="#b3b3d6">Read More</RoundedButton>
           </span>
           <img src={deliveryImg} alt="man-on-computer-coding" />
         </StyledDeliveryInfo>
@@ -88,7 +102,7 @@ function Home() {
         <Testimonials />
       </StyledFullWidth>
 
-      <StyledFullWidth bgColor="#00c874">
+      <StyledFullWidth bgColor="#b3b3d6">
         <StyledMakeTogether>
           <h2>Let&apos;s Make Something Great Together.</h2>
           <RoundedButton bgColor="rgb(236, 236, 236)" textColor="black">
@@ -107,7 +121,7 @@ function Home() {
         </span>
       </StyledSlideShow>
 
-      <StyledFullWidth bgColor="#00c874">
+      <StyledFullWidth bgColor="#b3b3d6">
         <StyledSocials>
           <h2>Follow Us On Socials</h2>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, possimus?</p>

@@ -16,7 +16,7 @@ const breakPoints = {
 const theme = {
   primary: '',
   secondary: '',
-  tertiary: '#00c874',
+  tertiary: '#b3b3d6',
   breakPoints,
 };
 

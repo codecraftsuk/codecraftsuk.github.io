@@ -22,7 +22,7 @@ const Courses = () => {
 
       <h1 className="main-title">FAQ's</h1>
 
-      <StyledFullWidth bgColor="#00c874">
+      <StyledFullWidth bgColor="#b3b3d6">
         <div className="faq-wrapper">
           {faqData.map((qa) => (
             <Accordion {...qa} />

@@ -20,10 +20,18 @@
 
 ::-moz-selection {
   color: white;
-  background: #00c874;
+  background: #b3b3d6;
 }
 
 ::selection {
   color: white;
-  background: #00c874;
+  background: #b3b3d6;
+}
+
+body {
+  background-color: #d2d2d4;
+}
+
+#first {
+  fill: red;
 }

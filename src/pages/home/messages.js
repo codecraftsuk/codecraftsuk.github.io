@@ -18,7 +18,7 @@ export const infoIconData = [
 
 export const sliderContent = [
   {
-    title: 'Title 1',
+    title: 'Build your future!',
     text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quia sequi excepturi nesciunt dolores possimus nisi. Culpa quam sint modi.',
   },
   {

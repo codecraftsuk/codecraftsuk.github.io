@@ -179,3 +179,49 @@ export const StyledSocials = styled.div`
     }
   }
 `;
+
+const comeIn = keyframes`
+  from {
+    transform: translateY(700px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+`;
+
+export const StyledHomeHead = styled.div`
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 0px 200px;
+  flex-wrap: wrap;
+
+  animation: ${comeIn} 1000ms ease-in-out;
+
+  img {
+    height: 300px;
+    /* margin-right: 140px; */
+  }
+
+  .hero-text {
+    padding: 0 150px;
+
+    & > * {
+      margin-bottom: 20px;
+    }
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  & > * {
+    flex: 1 0;
+  }
+
+  p {
+    font-size: 20px;
+  }
+`;

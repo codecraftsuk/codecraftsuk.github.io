@@ -4,22 +4,24 @@ import styled from 'styled-components';
 export const StyledNavWrapper = styled.div`
   display: flex;
   justify-content: space-around;
-  padding: 3px 0;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgb(32, 34, 37);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.1px);
-  -webkit-backdrop-filter: blur(11.1px);
+  /* position: sticky; */
+  /* top: 0; */
+  /* z-index: 1000; */
+  background-color: #d2d2d4;
+
+  padding: 10px 0;
 
   img {
     height: 50px;
-    margin-left: 40px;
+    margin-left: 20px;
   }
 
-  div {
+  button {
+    margin-right: 10px;
+  }
+
+  /* div {
     width: min(100%, 1420px);
     display: flex;
     justify-content: space-around;
@@ -41,8 +43,8 @@ export const StyledNavWrapper = styled.div`
       padding-top: 80px;
       width: min(100%, 500px);
       box-shadow: 5px 0px 40px gray;
-    }
-  }
+    } */
+  /* } */
 
   ion-icon {
     color: white;
