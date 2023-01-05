@@ -43,7 +43,7 @@ export const StyledWrapper = styled.div`
       margin-left: -7%;
       height: .7rem;
       background: #e9eff5;
-      background-image: linear-gradient(to right, #d2dde9 0%, #f9fcff 15%, #e5ebf2 40%, #e5ebf2 60%, #f9fcff 85%, #d2dde9 100%);
+      background-image: linear-gradient(to bottom, #333, #111);
       
       &::before {
         display: block;
@@ -52,7 +52,8 @@ export const StyledWrapper = styled.div`
         height: .7rem;
         border-radius: 0 0 .2rem .2rem;
         background: #f6f9fc;
-        background-image: linear-gradient(to right, #c3cfdb 0%, #f6f9fc 10%, #f6f9fc 90%, #c3cfdb 100%);
+        background-image: linear-gradient(to right, #555 0%, #333 10%, #333 90%, #555 100%);
+
         content: " ";
       }
     }
@@ -65,7 +66,7 @@ export const StyledWrapper = styled.div`
       width: 50%;
       height: 1.5rem;
       background: #e2e8f0;
-      background-image: linear-gradient(to bottom, #e2e8f0, #bec7d1);
+      background-image: linear-gradient(to bottom, #333, #111);
 
       &::after, &::before {
         position: absolute;

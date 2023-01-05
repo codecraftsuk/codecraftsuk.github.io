@@ -76,7 +76,7 @@ function Home() {
 
       <StyledContentWrapper>
         <StyledInfoWrapper>
-          <h1>Begin your coding journey today!</h1>
+          <h1>Begin Your Coding Journey Today!</h1>
           <LaptopScreen />
         </StyledInfoWrapper>
       </StyledContentWrapper>

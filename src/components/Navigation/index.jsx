@@ -1,6 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { StyledNavWrapper, StyledLinkItem } from './styled';
 import useWindowDimensions from '../../hooks/useWindowDimenions';
 import TypingAnimation from '../TypingAnimation';
@@ -19,12 +20,18 @@ const Navigation = () => {
   return (
     <StyledNavWrapper>
       <span className="text">
-        <img className="logo" src={Logo} alt="" />
+        <Link to="/">
+          <img className="logo" src={Logo} alt="" />
+        </Link>
         <TypingAnimation />
       </span>
       <span>
-        <RoundedButton bgColor="#2F2E41">Courses</RoundedButton>
-        <RoundedButton bgColor="#FB6169">Cart</RoundedButton>
+        <Link to="/courses">
+          <RoundedButton active={location?.pathname === '/courses'} bgColor="#2F2E41">Courses</RoundedButton>
+        </Link>
+        <Link to="/cart">
+          <RoundedButton active={location?.pathname === '/cart'} bgColor="#FB6169">Cart</RoundedButton>
+        </Link>
       </span>
     </StyledNavWrapper>
   );
