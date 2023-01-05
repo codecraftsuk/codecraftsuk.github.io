@@ -16,6 +16,9 @@ const About = () => {
           </div>
       </div>
 
+      <img src="src/assets/images/about/aboutimage.png" alt='about us image' className="main__image"/>
+
+
       <div id='description__wrapper'>
         <div className="description">
           <p>
@@ -26,6 +29,14 @@ const About = () => {
             and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have 
             evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
           </p>
+        </div>
+
+        <div id="team__wrapper">
+          <div className="team__description">
+            <h2>
+              Meet the Team
+            </h2>
+          </div>
         </div>
       </div>
       
