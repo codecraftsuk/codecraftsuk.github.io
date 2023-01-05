@@ -28,7 +28,7 @@ export const StyledInfoWrapper = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* width: min(100%, 700px); */
+  max-width: min(100%, 1000px);
   margin: 0 auto;
   padding: 70px 20px;
   width: min(100%, 1500px);
@@ -57,6 +57,8 @@ export const StyledDeliveryInfo = styled.div`
   align-items: center;
 
   text-align: left;
+  width: min(100%, 1500px);
+  margin: 0 auto;
 
   img {
     width: 50%;
@@ -200,6 +202,8 @@ export const StyledHomeHead = styled.div`
   /* flex-wrap: wrap; */
   justify-content: space-evenly;
   padding: 0 20px;
+  width: min(100%, 1500px);
+  margin: 0 auto;
 
   /* animation: ${comeIn} 1000ms ease-in-out; */
 
@@ -224,7 +228,7 @@ export const StyledHomeHead = styled.div`
 
   .hero-text {
     /* padding: 0 150px; */
-    max-width: min(100%, 500px);
+    max-width: min(100%, 600px);
 
     & > * {
       margin-bottom: 20px;
