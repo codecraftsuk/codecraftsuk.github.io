@@ -37,6 +37,10 @@ export const StyledInfoWrapper = styled.div`
   h1 {
     margin-bottom: 20px;
   }
+
+  .carbon-img {
+    width: 80%;
+  }
 `;
 
 export const StyleHome = styled.div`

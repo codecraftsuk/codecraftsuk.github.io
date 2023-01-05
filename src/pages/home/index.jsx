@@ -16,10 +16,12 @@ import {
 } from './styled';
 import deliveryImg from '../../assets/images/delivery.jpg';
 import Testimonials from '../../components/Testimonials';
+import LaptopScreen from '../../components/LaptopScreen';
 import womanWave from '../../assets/images/man-wave.svg';
 import Lottie from 'react-lottie';
 import animationData from '../../assets/lottie/meeting.json';
 import animationDataWelcome from '../../assets/lottie/laptop.json';
+import carbon from '../../assets/images/portfolio/carbon.png';
 
 const defaultOptions = {
   loop: true,
@@ -75,6 +77,15 @@ function Home() {
           ))}
         </StyledFlexWrap>
       </StyledContentWrapper>
+      <hr />
+
+      <StyledContentWrapper>
+        <StyledInfoWrapper>
+          <h1>Our Stats</h1>
+          {/* <img className="carbon-img" src={carbon} alt="man-on-computer-coding" /> */}
+          <LaptopScreen />
+        </StyledInfoWrapper>
+      </StyledContentWrapper>
 
       <StyledFullWidth bgColor="#fb6169">
         <StyledFlexWrap className="green-content">
@@ -97,33 +108,6 @@ function Home() {
           {/* <img src={deliveryImg} alt="man-on-computer-coding" /> */}
           <Lottie options={defaultOptions} height={500} />
         </StyledDeliveryInfo>
-        
-        <hr></hr>
-
-        <StyledInfoWrapper>
-          <h1>Team Members</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab architecto, ex accusamus error, amet veniam
-            quis, quidem ullam impedit obcaecati.
-          </p>
-          <StyledFlexWrap className="members">
-            <span>
-              <ion-icon name="person-circle-outline" />
-              <h3>Kush</h3>
-              <p>Tutor / DevOps</p>
-            </span>
-            <span>
-              <ion-icon name="person-circle-outline" />
-              <h3>Abdul</h3>
-              <p>Tutor / DevOps</p>
-            </span>
-            <span>
-              <ion-icon name="person-circle-outline" />
-              <h3>Zai</h3>
-              <p>Tutor / FullStack</p>
-            </span>
-          </StyledFlexWrap>
-        </StyledInfoWrapper>
       </StyledContentWrapper>
 
       <StyledFullWidth bgColor="#2f2e41">
