@@ -54,6 +54,7 @@ export const StyledDeliveryInfo = styled.div`
   flex-wrap: wrap;
   gap: 30px;
   padding: 50px 0;
+  align-items: center;
 
   text-align: left;
 
@@ -173,7 +174,7 @@ export const StyledSocials = styled.div`
     color: ${({ theme }) => theme.tertiary};
 
     &:hover {
-      background-color: ${({ theme }) => theme.tertiary};;
+      background-color: ${({ theme }) => theme.tertiary};
       color: white;
       transition: 500ms;
     }
@@ -195,21 +196,39 @@ export const StyledHomeHead = styled.div`
   min-height: 70vh;
   display: flex;
   align-items: center;
-  padding: 0px 200px;
-  flex-wrap: wrap;
+  /* padding: 0px 200px; */
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
+  padding: 0 20px;
 
-  animation: ${comeIn} 1000ms ease-in-out;
+  /* animation: ${comeIn} 1000ms ease-in-out; */
+
+  svg {
+    max-width: 400px;
+  }
+
+  ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-top: 50px;
+
+    img {
+      margin-bottom: 20px;
+    }
+  }
 
   img {
-    height: 300px;
+    max-width: min(100%, 500px);
     /* margin-right: 140px; */
   }
 
   .hero-text {
-    padding: 0 150px;
+    /* padding: 0 150px; */
+    max-width: min(100%, 500px);
 
     & > * {
       margin-bottom: 20px;
+      flex: 1 0;
     }
   }
 
@@ -217,9 +236,9 @@ export const StyledHomeHead = styled.div`
     font-size: 3rem;
   }
 
-  & > * {
+  /* & > * {
     flex: 1 0;
-  }
+  } */
 
   p {
     font-size: 20px;

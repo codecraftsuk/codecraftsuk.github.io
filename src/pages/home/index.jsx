@@ -17,6 +17,27 @@ import {
 import deliveryImg from '../../assets/images/delivery.jpg';
 import Testimonials from '../../components/Testimonials';
 import womanWave from '../../assets/images/man-wave.svg';
+import Lottie from 'react-lottie';
+import animationData from '../../assets/lottie/meeting.json';
+import animationDataWelcome from '../../assets/lottie/welcome.json';
+
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData,
+  rendererSettings: {
+    preserveAspectRatio: 'xMinYMi slice',
+  },
+};
+
+const animationDataWelcomeOp = {
+  loop: true,
+  autoplay: true,
+  animationData: animationDataWelcome,
+  rendererSettings: {
+    preserveAspectRatio: 'xMinYMi slice',
+  },
+};
 
 function Home() {
   return (
@@ -32,7 +53,10 @@ function Home() {
             <RoundedButton bgColor="#fb6169">Read More...</RoundedButton>
           </div>
         </div>
-        <img src={womanWave} alt="" />
+        {/* <img src={womanWave} alt="" /> */}
+        <span>
+          <Lottie options={animationDataWelcomeOp} height={300} />
+        </span>
       </StyledHomeHead>
       <hr />
 
@@ -70,7 +94,8 @@ function Home() {
             </p>
             <RoundedButton bgColor="#fb6169">Read More</RoundedButton>
           </span>
-          <img src={deliveryImg} alt="man-on-computer-coding" />
+          {/* <img src={deliveryImg} alt="man-on-computer-coding" /> */}
+          <Lottie options={defaultOptions} height={500} />
         </StyledDeliveryInfo>
 
         <StyledInfoWrapper>

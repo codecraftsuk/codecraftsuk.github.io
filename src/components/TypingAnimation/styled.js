@@ -6,16 +6,17 @@ export const StyledText = styled.div`
   border-right: 0.15em solid red; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 35.5s steps(155, end), blink 0.75s step-end infinite;
-  max-width: 110px;
+  animation: typing 7.5s steps(9, end) infinite, blink 0.65s step-end infinite;
+  max-width: 115px;
   font-weight: 700;
+  letter-spacing: 1.5px;
 
   color: black;
   @keyframes typing {
-    from {
+    0% {
       width: 0;
     }
-    to {
+    60% {
       width: 100%;
     }
   }

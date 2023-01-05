@@ -18,7 +18,9 @@ const Navigation = () => {
 
   return (
     <StyledNavWrapper>
-      <TypingAnimation />
+      <span className="text">
+        <TypingAnimation />
+      </span>
       <span>
         <RoundedButton bgColor="#2F2E41">Courses</RoundedButton>
         <RoundedButton bgColor="#FB6169">Cart</RoundedButton>
