@@ -5,11 +5,7 @@ export const StyledNavWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* position: sticky; */
-  /* top: 0; */
-  /* z-index: 1000; */
   background-color: #e1e1e2;
-
   padding: 40px 0 0 0;
 
   img {
@@ -28,33 +24,18 @@ export const StyledNavWrapper = styled.div`
   }
 
   .text {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 
-  /* div {
-    width: min(100%, 1420px);
-    display: flex;
-    justify-content: space-around;
-    transform: translateX(0px);
-    transition: transform 400ms ease-out;
-
-    ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
-      height: 100vh;
-      background-color: white;
-      color: black;
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      padding: 5px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 10;
-      padding-top: 80px;
-      width: min(100%, 500px);
-      box-shadow: 5px 0px 40px gray;
-    } */
-  /* } */
+  .logo {
+    position: react-transition;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+  }
 
   ion-icon {
     color: white;

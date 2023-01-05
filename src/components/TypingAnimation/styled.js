@@ -8,10 +8,10 @@ export const StyledText = styled.div`
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 3s steps(155, end) 3s infinite, erase 3s steps(155, end) 3s infinite, blink 0.3s step-end infinite;
   animation-direction: alternate;
-  max-width: 225px;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   color: ${({ theme }) => theme.secondary};
+  padding-left: 10px;
 
   @keyframes typing {
   0% {

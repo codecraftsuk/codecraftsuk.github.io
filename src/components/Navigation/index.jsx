@@ -2,10 +2,10 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { StyledNavWrapper, StyledLinkItem } from './styled';
-import logo from '../../assets/images/logo/codecrafts.png';
 import useWindowDimensions from '../../hooks/useWindowDimenions';
 import TypingAnimation from '../TypingAnimation';
 import RoundedButton from '../RoundedButton';
+import Logo from '../../assets/images/logo/favicon.png';
 
 const Navigation = () => {
   const location = useLocation();
@@ -19,6 +19,7 @@ const Navigation = () => {
   return (
     <StyledNavWrapper>
       <span className="text">
+        <img className="logo" src={Logo} alt="" />
         <TypingAnimation />
       </span>
       <span>
