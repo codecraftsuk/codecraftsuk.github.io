@@ -19,7 +19,7 @@ import Testimonials from '../../components/Testimonials';
 import womanWave from '../../assets/images/man-wave.svg';
 import Lottie from 'react-lottie';
 import animationData from '../../assets/lottie/meeting.json';
-import animationDataWelcome from '../../assets/lottie/welcome.json';
+import animationDataWelcome from '../../assets/lottie/man-sitting.json';
 
 const defaultOptions = {
   loop: true,
@@ -55,7 +55,7 @@ function Home() {
         </div>
         {/* <img src={womanWave} alt="" /> */}
         <span>
-          <Lottie options={animationDataWelcomeOp} height={300} />
+          <Lottie options={animationDataWelcomeOp} height={800} />
         </span>
       </StyledHomeHead>
       <hr />
