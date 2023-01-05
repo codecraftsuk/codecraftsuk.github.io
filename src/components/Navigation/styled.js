@@ -21,6 +21,16 @@ export const StyledNavWrapper = styled.div`
     margin-right: 10px;
   }
 
+  button:first-child {
+    ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
+      display: none;
+    }
+  }
+
+  .text {
+    display: inline-block;
+  }
+
   /* div {
     width: min(100%, 1420px);
     display: flex;
