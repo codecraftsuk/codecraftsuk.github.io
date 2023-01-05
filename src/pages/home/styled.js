@@ -195,7 +195,7 @@ const comeIn = keyframes`
 `;
 
 export const StyledHomeHead = styled.div`
-  min-height: 70vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   /* padding: 0px 200px; */

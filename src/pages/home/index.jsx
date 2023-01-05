@@ -19,7 +19,7 @@ import Testimonials from '../../components/Testimonials';
 import womanWave from '../../assets/images/man-wave.svg';
 import Lottie from 'react-lottie';
 import animationData from '../../assets/lottie/meeting.json';
-import animationDataWelcome from '../../assets/lottie/coding-desk.json';
+import animationDataWelcome from '../../assets/lottie/laptop.json';
 
 const defaultOptions = {
   loop: true,
@@ -97,6 +97,8 @@ function Home() {
           {/* <img src={deliveryImg} alt="man-on-computer-coding" /> */}
           <Lottie options={defaultOptions} height={500} />
         </StyledDeliveryInfo>
+        
+        <hr></hr>
 
         <StyledInfoWrapper>
           <h1>Team Members</h1>
@@ -107,17 +109,17 @@ function Home() {
           <StyledFlexWrap className="members">
             <span>
               <ion-icon name="person-circle-outline" />
-              <h3>kush</h3>
+              <h3>Kush</h3>
               <p>Tutor / DevOps</p>
             </span>
             <span>
               <ion-icon name="person-circle-outline" />
-              <h3>abdul</h3>
+              <h3>Abdul</h3>
               <p>Tutor / DevOps</p>
             </span>
             <span>
               <ion-icon name="person-circle-outline" />
-              <h3>zai</h3>
+              <h3>Zai</h3>
               <p>Tutor / FullStack</p>
             </span>
           </StyledFlexWrap>
@@ -136,16 +138,6 @@ function Home() {
           </RoundedButton>
         </StyledMakeTogether>
       </StyledFullWidth>
-
-      <StyledSlideShow>
-        <span>
-          <ion-icon name="logo-nodejs" />
-          <ion-icon name="logo-html5" />
-          <ion-icon name="logo-css3" />
-          <ion-icon name="logo-python" />
-          <ion-icon name="cloudy-outline" />
-        </span>
-      </StyledSlideShow>
 
       <StyledFullWidth bgColor="#2f2e41">
         <StyledSocials>
