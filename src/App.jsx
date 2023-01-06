@@ -12,6 +12,7 @@ const AppWrapper = styled.div`
   color: ${({ theme }) => theme.primaryText};
   transition: all 1000ms ease;
   min-height: 100vh;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 `;
 
 function App() {
