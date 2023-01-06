@@ -18,7 +18,7 @@ export const StyledFooterWrapper = styled.div`
 export const StyledLinkWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  padding: 0 20px;
   margin: 20px 0;
 `;
 
