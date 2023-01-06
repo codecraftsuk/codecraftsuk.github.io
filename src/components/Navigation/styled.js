@@ -5,7 +5,8 @@ export const StyledNavWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #e1e1e2;
+  /* background-color: ${({ theme }) => theme.primary}; */
+  color: ${({ theme }) => theme.primaryPrimary};
   padding: 40px 0 0 0;
 
   img {
@@ -36,6 +37,26 @@ export const StyledNavWrapper = styled.div`
     top: 0;
     width: 60px;
     height: 60px;
+  }
+
+  button:nth-child(3) {
+    height: 37px;
+    width: 37px;
+    background-color: transparent;
+    border: none;
+  }
+
+  ion-icon {
+    font-size: 28px;
+    color: ${({ theme }) => theme.primaryText};
+    &:hover {
+      color: red;
+    }
+  }
+
+  .btns {
+    display: flex;
+    align-items: center;
   }
 
   /* 

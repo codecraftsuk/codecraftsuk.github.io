@@ -1,15 +1,17 @@
 /* eslint-disable no-nested-ternary */
-import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { StyledNavWrapper, StyledLinkItem } from './styled';
+import PropTypes from 'prop-types';
+import { StyledNavWrapper } from './styled';
 import TypingAnimation from '../TypingAnimation';
 import RoundedButton from '../RoundedButton';
 import Logo from '../../assets/images/logo/favicon.png';
+import { useSet } from '../../store';
 
-const Navigation = () => {
-  const isDark = false;
+const Navigation = ({ isDarkTheme }) => {
+  const set = useSet();
 
+  const toggleTheme = () => set(({ isDarkTheme: stateTheme }) => ({ isDarkTheme: !stateTheme }));
   return (
     <StyledNavWrapper>
       <span className="text">
@@ -18,11 +20,11 @@ const Navigation = () => {
         </Link>
         <TypingAnimation />
       </span>
-      <span>
+      <span className="btns">
         <RoundedButton bgColor="#2F2E41">Courses</RoundedButton>
         <RoundedButton bgColor="#FB6169">Cart</RoundedButton>
-        <RoundedButton circle bgColor={isDark ? '#e1e1e2' : '#312f2f'}>
-          {isDark ? <ion-icon name="sunny-outline" /> : <ion-icon name="moon-outline" />}
+        <RoundedButton onClick={toggleTheme} textColor={isDarkTheme ? '#fff' : '#000'} circle>
+          {isDarkTheme ? <ion-icon name="sunny-outline" /> : <ion-icon name="moon-outline" />}
         </RoundedButton>
       </span>
     </StyledNavWrapper>
@@ -30,3 +32,7 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
+Navigation.propTypes = {
+  isDarkTheme: PropTypes.bool.isRequired,
+};
