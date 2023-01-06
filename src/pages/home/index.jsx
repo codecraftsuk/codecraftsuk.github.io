@@ -55,7 +55,6 @@ function Home() {
             </RoundedButton>
           </div>
         </div>
-        {/* <img src={womanWave} alt="" /> */}
         <span>
           <Lottie options={animationDataWelcomeOp} height={350} />
         </span>
