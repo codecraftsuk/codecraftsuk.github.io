@@ -1,6 +1,8 @@
-import { createGlobalContext } from "create-global-context";
+import { createGlobalContext } from 'create-global-context';
 
-const initialState = {};
+const initialState = {
+  isDarkTheme: false,
+};
 
 const { Provider, useStore } = createGlobalContext(initialState);
 

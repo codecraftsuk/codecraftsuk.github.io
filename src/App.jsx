@@ -1,12 +1,20 @@
-import "./App.css";
-import Navigation from "./components/Navigation";
-import Router from "./routing";
+import styled from 'styled-components';
+import './App.css';
+import Navigation from './components/Navigation';
+import Router from './routing';
+
+const AppWrapper = styled.div`
+  background-color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.primaryText};
+`;
 
 function App() {
   return (
     <div className="app">
-      <Navigation />
-      <Router />
+      <AppWrapper>
+        <Navigation />
+        <Router />
+      </AppWrapper>
     </div>
   );
 }

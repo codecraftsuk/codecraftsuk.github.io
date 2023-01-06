@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledButton } from './styled';
 
-const RoundedButton = ({ children, bgColor, onClick, textColor }) => (
-  <StyledButton onClick={onClick} bgColor={bgColor} textColor={textColor}>
+const RoundedButton = ({ children, bgColor, onClick, textColor, circle }) => (
+  <StyledButton onClick={onClick} bgColor={bgColor} textColor={textColor} isCircle={circle}>
     {children}
   </StyledButton>
 );
@@ -15,9 +15,11 @@ RoundedButton.propTypes = {
   bgColor: PropTypes.string,
   textColor: PropTypes.string,
   onClick: PropTypes.func.isRequired,
+  circle: PropTypes.bool,
 };
 
 RoundedButton.defaultProps = {
   bgColor: '',
   textColor: 'white',
+  circle: false,
 };

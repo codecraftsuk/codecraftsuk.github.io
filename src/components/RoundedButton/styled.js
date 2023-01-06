@@ -1,9 +1,9 @@
 /* eslint-disable import/prefer-default-export */
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const StyledButton = styled.button`
-  padding: 7px 50px;
-  border-radius: 20px;
+  padding: ${({ isCircle }) => (!isCircle ? '7px 50px' : '5px 10px')};
+  border-radius: ${({ isCircle }) => (isCircle ? '50%' : '20px')};
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
@@ -12,9 +12,15 @@ export const StyledButton = styled.button`
   color: ${({ textColor }) => textColor || 'white'};
   border: 1.5px solid ${({ bgColor }) => bgColor || ''};
 
+  ${({ isCircle }) =>
+    isCircle &&
+    css`
+      font-size: 18px;
+    `}
+
   &:hover {
     color: ${({ theme }) => theme.tertiary};
     background-color: white;
-    transition: all 1000ms;
+    transition: all 800ms;
   }
 `;

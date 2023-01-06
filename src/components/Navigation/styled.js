@@ -17,7 +17,8 @@ export const StyledNavWrapper = styled.div`
     margin-right: 10px;
   }
 
-  button:first-child {
+  button:first-child,
+  button:nth-child(3) {
     ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
       display: none;
     }
@@ -37,22 +38,12 @@ export const StyledNavWrapper = styled.div`
     height: 60px;
   }
 
-  ion-icon {
-    color: white;
-    font-size: 2.4rem;
-    cursor: pointer;
-  }
-
+  /* 
   ion-icon[name='close-outline'] {
     color: red;
     z-index: 15;
   }
-
-  ${({ theme: { breakPoints } }) => breakPoints.up('md')} {
-    ion-icon {
-      display: none;
-    }
-  }
+  */
 `;
 export const StyledLinkItem = styled(Link)`
   list-style: none;

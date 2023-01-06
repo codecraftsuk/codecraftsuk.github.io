@@ -14,9 +14,20 @@ const breakPoints = {
 };
 
 const theme = {
+  mode: 'light',
   primary: '#e1e1e2',
   secondary: '#2F2E41',
   tertiary: '#fb6169',
+  primaryText: '#000',
+  breakPoints,
+};
+
+const darkTheme = {
+  mode: 'dark',
+  primary: '#131313',
+  secondary: '#2F2E41',
+  tertiary: '#fb6169',
+  primaryText: '#fff',
   breakPoints,
 };
 
@@ -24,7 +35,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Router>
       <Provider>
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={darkTheme}>
           <App />
         </ThemeProvider>
       </Provider>
