@@ -10,6 +10,7 @@ const AppWrapper = styled.div`
   background-color: ${({ theme }) => theme.primary};
   color: ${({ theme }) => theme.primaryText};
   transition: all 1000ms ease;
+  min-height: 100vh;
 `;
 
 function App() {

@@ -19,12 +19,7 @@ const LaptopScreen = () => {
       <div className="container">
         <div className="laptop">
           <div className="laptop__screen">
-            <img
-              src={carbon}
-              width={width}
-              height={height}
-              alt="Screen"
-            />
+            <img src={carbon} alt="Screen" />
           </div>
           <div className="laptop__bottom">
             <div className="laptop__under" />

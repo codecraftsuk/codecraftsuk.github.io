@@ -35,7 +35,7 @@ export const StyledInfoWrapper = styled.div`
   margin: 0 auto;
 
   h1 {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .carbon-img {
@@ -60,7 +60,7 @@ export const StyledDeliveryInfo = styled.div`
   padding: 50px 0;
   align-items: center;
 
-  text-align: left;
+  text-align: center;
   width: min(100%, 1500px);
   margin: 0 auto;
 
@@ -84,17 +84,18 @@ export const StyledDeliveryInfo = styled.div`
 
 export const StyledMakeTogether = styled.div`
   background-color: ${({ theme }) => theme.quaternary};
-  color: white;
-  width: 50%; 
+  color: ${({ theme }) => theme.primaryText};
+  width: 100%;
   margin: 0 auto 0 auto;
   right: 0;
-  display: flex; 
-  align-items: center; 
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
   padding: 60px 30px;
   height: 400px;
-  
+  flex-direction: column;
+
   h2 {
     margin-bottom: 20px;
   }
@@ -255,4 +256,14 @@ export const StyledHomeHead = styled.div`
   p {
     font-size: 20px;
   }
+`;
+
+export const StyledTestTestimonialsWrapper = styled.div`
+  display: flex;
+
+  & > * {
+    flex: 1 0 min(100%, 500px);
+  }
+
+  flex-wrap: wrap;
 `;

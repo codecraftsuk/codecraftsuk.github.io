@@ -11,14 +11,15 @@ import {
   StyleHome,
   StyledDeliveryInfo,
   StyledMakeTogether,
-  StyledSlideShow,
   StyledSocials,
   StyledHomeHead,
+  StyledTestTestimonialsWrapper,
 } from './styled';
 import LaptopScreen from '../../components/LaptopScreen';
 import Lottie from 'react-lottie';
 import animationData from '../../assets/lottie/meeting.json';
 import animationDataWelcome from '../../assets/lottie/laptop.json';
+import { useNavigate } from 'react-router-dom';
 
 const defaultOptions = {
   loop: true,
@@ -39,6 +40,8 @@ const animationDataWelcomeOp = {
 };
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <StyleHome>
       <StyledHomeHead>
@@ -47,7 +50,9 @@ function Home() {
           <p>{sliderContent[0]?.text}</p>
 
           <div>
-            <RoundedButton bgColor="#fb6169">Read More...</RoundedButton>
+            <RoundedButton onClick={() => navigate('/about')} bgColor="#fb6169">
+              Read More...
+            </RoundedButton>
           </div>
         </div>
         {/* <img src={womanWave} alt="" /> */}
@@ -103,18 +108,20 @@ function Home() {
         </StyledDeliveryInfo>
       </StyledContentWrapper>
 
-      <StyledFullWidth bgColor="#2f2e41">
-        <Testimonials />
-      </StyledFullWidth>
+      <StyledTestTestimonialsWrapper>
+        <StyledFullWidth bgColor="red">
+          <Testimonials />
+        </StyledFullWidth>
 
-      <StyledFullWidth bgColor="#fb6169">
-        <StyledMakeTogether>
-          <h2>Let&apos;s Make Something Great Together.</h2>
-          <RoundedButton bgColor="rgb(236,2f2e41236, 236)" textColor="black">
-            Start a Course
-          </RoundedButton>
-        </StyledMakeTogether>
-      </StyledFullWidth>
+        <StyledFullWidth>
+          <StyledMakeTogether>
+            <h2>Let&apos;s Make Something Great Together.</h2>
+            <RoundedButton bgColor="#FB6169" textColor="black">
+              Start a Course
+            </RoundedButton>
+          </StyledMakeTogether>
+        </StyledFullWidth>
+      </StyledTestTestimonialsWrapper>
 
       <StyledFullWidth bgColor="#2f2e41">
         <StyledSocials>

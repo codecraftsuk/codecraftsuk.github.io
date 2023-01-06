@@ -1,7 +1,7 @@
 import { createGlobalContext } from 'create-global-context';
 
 const initialState = {
-  isDarkTheme: true,
+  isDarkTheme: false,
 };
 
 const { Provider, useStore, useSet } = createGlobalContext(initialState);

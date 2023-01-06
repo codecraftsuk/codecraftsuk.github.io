@@ -26,7 +26,7 @@ export const StyledSliderWrapper = styled.div`
     content: '';
     width: 100%;
     height: 100%;
-    background-color: ${({ theme }) => theme.tertiary};;
+    background-color: ${({ theme }) => theme.tertiary};
     top: 0;
     left: 0;
     opacity: 0.6;
@@ -68,7 +68,7 @@ export const StyledSliderWrapper = styled.div`
 `;
 
 export const StyledDot = styled.div`
-  background-color: ${({ active }) => (active ? '#fb6169' : '#fff')};
+  background-color: ${({ active }) => (active ? 'white' : 'lightgrey')};
   width: 20px;
   height: 20px;
   margin-right: 10px;

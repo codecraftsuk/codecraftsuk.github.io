@@ -6,6 +6,8 @@ const breakPoints = {
   up: (size) => `@media only screen and (min-width: ${breakPoints[size]})`,
 };
 
+const commonColors = {};
+
 export const lightTheme = {
   mode: 'light',
   primary: '#e1e1e2',
@@ -13,6 +15,9 @@ export const lightTheme = {
   tertiary: '#fb6169',
   primaryText: '#000',
   secondaryText: '#fff',
+  quaternary: '#c9b6d9',
+  quinary: '#e5c3c4',
+  ...commonColors,
   breakPoints,
 };
 
@@ -23,6 +28,8 @@ export const darkTheme = {
   tertiary: '#fb6169',
   primaryText: '#fff',
   secondaryText: '#000',
-
+  quaternary: '#474350',
+  quinary: '#4C4B63',
+  ...commonColors,
   breakPoints,
 };

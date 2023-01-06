@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const StyledWrapper = styled.div`
-  width: 50%; /* Set the width to 50% of the total width of the screen */
+  width: 100%; /* Set the width to 50% of the total width of the screen */
   background-color: ${({ theme }) => theme.quinary};
-  color: white;
+  color: ${({ theme }) => theme.primaryText};
   padding: 90px 0;
   display: flex;
   align-items: center;
@@ -18,7 +18,7 @@ export const StyledWrapper = styled.div`
   span {
     font-family: 'Passion One', cursive;
     font-size: 6rem;
-    color: ${({ theme }) => theme.tertiary};
+    color: ${({ theme }) => theme.primaryText};
   }
 
   .slide {

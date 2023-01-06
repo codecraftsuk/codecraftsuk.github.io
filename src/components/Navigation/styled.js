@@ -44,6 +44,7 @@ export const StyledNavWrapper = styled.div`
     width: 37px;
     background-color: transparent;
     border: none;
+    outline: none;
   }
 
   ion-icon {

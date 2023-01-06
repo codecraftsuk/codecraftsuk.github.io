@@ -23,4 +23,8 @@ export const StyledButton = styled.button`
     background-color: white;
     transition: all 800ms;
   }
+
+  ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+    padding: ${({ isCircle }) => (!isCircle ? '7px 25px' : '5px 10px')};
+  }
 `;
