@@ -93,7 +93,7 @@ export const StyledMakeTogether = styled.div`
   justify-content: center;
   /* flex-wrap: wrap; */
   padding: 60px 30px;
-  height: 400px;
+  height: 420px;
   flex-direction: column;
 
   h2 {

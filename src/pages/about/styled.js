@@ -3,9 +3,10 @@ import styled from 'styled-components';
 export const StyledAboutWrapper = styled.div`
   width: min(100%, 1500px);
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 50px;
 
   text-align: center;
+  padding-bottom: 100px;
 
   svg {
     max-height: 300px;
@@ -18,6 +19,34 @@ export const StyledAboutWrapper = styled.div`
 
   p {
     font-size: 24px;
+    text-align: left;
+
+    ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
+      font-size: 20px;
+    }
+  }
+
+  .back {
+    text-align: left;
+    margin-left: 20px;
+    font-size: 2.8rem;
+
+    display: flex;
+    align-items: center;
+
+    ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+      justify-content: center;
+    }
+
+    ion-icon {
+      cursor: pointer;
+      margin-right: 30px;
+
+      &:hover {
+        color: red;
+        transition: color 500ms;
+      }
+    }
   }
 `;
 

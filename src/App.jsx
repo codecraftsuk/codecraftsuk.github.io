@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import './App.css';
+import Footer from './components/footer';
 import Navigation from './components/Navigation';
 import Router from './routing';
 import { useStore } from './store';
@@ -23,6 +24,7 @@ function App() {
           <Navigation isDarkTheme={theme} />
           <Router />
         </AppWrapper>
+        <Footer />
       </ThemeProvider>
     </div>
   );

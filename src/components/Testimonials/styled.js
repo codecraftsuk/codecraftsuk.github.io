@@ -13,7 +13,7 @@ export const StyledWrapper = styled.div`
   position: relative;
   overflow: hidden;
   margin: 0 0 0 auto;
-  height: 400px;
+  height: 420px;
 
   span {
     font-family: 'Passion One', cursive;

@@ -1,11 +1,11 @@
 /* eslint-disable arrow-body-style */
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import About from "../pages/about";
-import Contact from "../pages/contact";
-import Courses from "../pages/courses";
-import Home from "../pages/home";
-import Jobs from "../pages/jobs";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import About from '../pages/about';
+import Contact from '../pages/contact';
+import Courses from '../pages/courses';
+import Home from '../pages/home';
+import Jobs from '../pages/jobs';
 
 const Router = () => {
   return (
