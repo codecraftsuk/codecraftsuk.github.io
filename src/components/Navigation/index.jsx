@@ -1,6 +1,7 @@
 /* eslint-disable no-nested-ternary */
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { StyledNavWrapper, StyledLinkItem } from './styled';
 import TypingAnimation from '../TypingAnimation';
 import RoundedButton from '../RoundedButton';
@@ -12,7 +13,9 @@ const Navigation = () => {
   return (
     <StyledNavWrapper>
       <span className="text">
-        <img className="logo" src={Logo} alt="" />
+        <Link to="/">
+          <img className="logo" src={Logo} alt="" />
+        </Link>
         <TypingAnimation />
       </span>
       <span>

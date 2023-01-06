@@ -1,8 +1,9 @@
+/* eslint-disable import/order */
 import React from 'react';
 import { StyledFlexWrap, StyledFullWidth } from '../../common/styles';
 import IconInfo from '../../components/IconInfo';
 import RoundedButton from '../../components/RoundedButton';
-import Slider from '../../components/Slider';
+import Testimonials from '../../components/Testimonials';
 import { infoIconData, sliderContent, statsData } from './messages';
 import {
   StyledContentWrapper,
@@ -14,9 +15,7 @@ import {
   StyledSocials,
   StyledHomeHead,
 } from './styled';
-import deliveryImg from '../../assets/images/delivery.jpg';
-import Testimonials from '../../components/Testimonials';
-import womanWave from '../../assets/images/man-wave.svg';
+import LaptopScreen from '../../components/LaptopScreen';
 import Lottie from 'react-lottie';
 import animationData from '../../assets/lottie/meeting.json';
 import animationDataWelcome from '../../assets/lottie/laptop.json';
@@ -42,8 +41,6 @@ const animationDataWelcomeOp = {
 function Home() {
   return (
     <StyleHome>
-      {/* <Slider sliderContent={sliderContent} /> */}
-
       <StyledHomeHead>
         <div className="hero-text">
           <h1>{sliderContent[0]?.title}</h1>
@@ -75,6 +72,14 @@ function Home() {
           ))}
         </StyledFlexWrap>
       </StyledContentWrapper>
+      <hr />
+
+      <StyledContentWrapper>
+        <StyledInfoWrapper>
+          <h1>Begin Your Coding Journey Today!</h1>
+          <LaptopScreen />
+        </StyledInfoWrapper>
+      </StyledContentWrapper>
 
       <StyledFullWidth bgColor="#fb6169">
         <StyledFlexWrap className="green-content">
@@ -94,36 +99,8 @@ function Home() {
             </p>
             <RoundedButton bgColor="#fb6169">Read More</RoundedButton>
           </span>
-          {/* <img src={deliveryImg} alt="man-on-computer-coding" /> */}
           <Lottie options={defaultOptions} height={500} />
         </StyledDeliveryInfo>
-        
-        <hr></hr>
-
-        <StyledInfoWrapper>
-          <h1>Team Members</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab architecto, ex accusamus error, amet veniam
-            quis, quidem ullam impedit obcaecati.
-          </p>
-          <StyledFlexWrap className="members">
-            <span>
-              <ion-icon name="person-circle-outline" />
-              <h3>Kush</h3>
-              <p>Tutor / DevOps</p>
-            </span>
-            <span>
-              <ion-icon name="person-circle-outline" />
-              <h3>Abdul</h3>
-              <p>Tutor / DevOps</p>
-            </span>
-            <span>
-              <ion-icon name="person-circle-outline" />
-              <h3>Zai</h3>
-              <p>Tutor / FullStack</p>
-            </span>
-          </StyledFlexWrap>
-        </StyledInfoWrapper>
       </StyledContentWrapper>
 
       <StyledFullWidth bgColor="#2f2e41">
