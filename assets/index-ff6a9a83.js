@@ -1029,4 +1029,5 @@ $bm_rt = loopOut();`},sk:{a:0,k:0,ix:4},sa:{a:0,k:0,ix:5},nm:"Transform"}],nm:"b
   color: ${({theme:a})=>a.primaryText};
   transition: all 1000ms ease;
   min-height: 100vh;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 `;function App(){const[a]=useStore(s=>s.isDarkTheme);return jsx("div",{className:"app",children:jsxs(Fe,{theme:a?darkTheme:lightTheme,children:[jsxs(AppWrapper,{children:[jsx(Navigation,{isDarkTheme:a}),jsx(Router,{})]}),jsx(Footer,{})]})})}client.createRoot(document.getElementById("root")).render(jsx(React.StrictMode,{children:jsx(BrowserRouter,{children:jsx(Provider,{children:jsx(App,{})})})}));
