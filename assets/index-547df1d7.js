@@ -809,7 +809,7 @@ object-assign
 
   .hero-text {
     /* padding: 0 150px; */
-    max-width: min(100%, 600px);
+    max-width: min(100%, 450px);
 
     & > * {
       margin-bottom: 20px;
