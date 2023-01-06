@@ -41,11 +41,7 @@ export const StyledAboutWrapper = styled.div`
     ion-icon {
       cursor: pointer;
       margin-right: 30px;
-
-      &:hover {
-        color: red;
-        transition: color 500ms;
-      }
+      color: red;
     }
   }
 `;

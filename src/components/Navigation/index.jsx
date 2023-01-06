@@ -22,7 +22,7 @@ const Navigation = ({ isDarkTheme }) => {
       </span>
       <span className="btns">
         <RoundedButton bgColor="#2F2E41">Courses</RoundedButton>
-        <RoundedButton bgColor="#FB6169">Cart</RoundedButton>
+        <RoundedButton bgColor="#FB6169">Pricing</RoundedButton>
         <RoundedButton onClick={toggleTheme} textColor={isDarkTheme ? '#fff' : '#000'} circle>
           {isDarkTheme ? <ion-icon name="sunny-outline" /> : <ion-icon name="moon-outline" />}
         </RoundedButton>

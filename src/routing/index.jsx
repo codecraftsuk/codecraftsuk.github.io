@@ -6,6 +6,7 @@ import Contact from '../pages/contact';
 import Courses from '../pages/courses';
 import Home from '../pages/home';
 import Jobs from '../pages/jobs';
+import NotFound from '../pages/notFound';
 
 const Router = () => {
   return (
@@ -15,6 +16,8 @@ const Router = () => {
       <Route path="/courses" element={<Courses />} />
       <Route path="/jobs" element={<Jobs />} />
       <Route path="/contact" element={<Contact />} />
+
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };
