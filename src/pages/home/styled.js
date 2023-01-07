@@ -57,16 +57,12 @@ export const StyledDeliveryInfo = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 50px 0;
+  padding: 50px 240px;
   align-items: center;
 
   text-align: center;
   width: min(100%, 1500px);
   margin: 0 auto;
-
-  img {
-    width: 50%;
-  }
 
   & > * {
     flex: 1 0 300px;

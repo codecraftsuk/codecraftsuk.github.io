@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { useEffect, useState } from 'react';
 import { StyledDot, StyledDotWrapper } from '../Slider/styled';
 import { StyledContent, StyledWrapper } from './styled';
@@ -23,24 +24,21 @@ const Testimonials = () => {
       <div className="slide" style={{ transform: `translate(-${slideIndex}00%)` }}>
         <StyledContent>
           <h3>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam magnam hic incidunt cumque maiores qui quis
-            enim obcaecati minima tempore.
+            CodeCrafts helped me build the skills I needed to succeed in tech. The team, curriculum, and training were top-notch. Highly recommend!
           </h3>
-          <p>Zai</p>
+          <p>Andrew</p>
         </StyledContent>
         <StyledContent>
           <h3>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam magnam hic incidunt cumque maiores qui quis
-            enim obcaecati minima tempore.
+            CodeCrafts bootcamp program was the perfect solution for finding and training top candidates for our tech team. We'll definitely be partnering with them again in the future.
           </h3>
-          <p>kush</p>
+          <p>tajara+</p>
         </StyledContent>
         <StyledContent>
           <h3>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam magnam hic incidunt cumque maiores qui quis
-            enim obcaecati minima tempore.
+            CodeCrafts is the best tech bootcamp I've been through. The instructors are knowledgeable and the curriculum is practical. I highly recommend it.
           </h3>
-          <p>abdul</p>
+          <p>Adeel</p>
         </StyledContent>
       </div>
       <StyledDotWrapper bottom="30px">

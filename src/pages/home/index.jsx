@@ -96,10 +96,9 @@ function Home() {
       <StyledContentWrapper>
         <StyledDeliveryInfo>
           <span>
-            <h1>We Helping Business Delivered.</h1>
+            <h1>Building the Future of Tech: Our Bootcamp Helps Companies Find and Train Top Candidates</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravi,
-              nulla nunc varius lectus, nec rutrum justo nibh eu lectus metus ultrices.
+              CodeCrafts is committed to helping companies build the strong, talented teams they need to succeed in the tech industry. Our Web Development and DevOps bootcamp offers a unique solution for finding and training top candidates. Through a combination of hands-on training, practical experience, and comprehensive curriculum, we help individuals develop the skills and knowledge they need to thrive in the tech industry. If you're a tech company looking to build a strong team and secure a bright future, consider partnering with CodeCrafts and our bootcamp program.
             </p>
             <RoundedButton bgColor="#fb6169">Read More</RoundedButton>
           </span>
