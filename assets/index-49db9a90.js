@@ -1064,11 +1064,13 @@ $bm_rt = loopOut();`},sk:{a:0,k:0,ix:4},sa:{a:0,k:0,ix:5},nm:"Transform"}],nm:"b
   text-align: center;
   padding-bottom: 20px;
   height: fit-content;
-  box-shadow: 20px 20px 30000px grey;
+  /* box-shadow: 20px 20px 30000px grey; */
+  position: relative;
+  background-color: ${({theme:a})=>a.quinary};
 
   border-radius: 7px;
-  margin: 0px 10px;
-  width: min(100%, 400px);
+  margin: 20px 10px;
+  width: min(100%, 900px);
 
   .head {
     color: black;
@@ -1089,7 +1091,15 @@ $bm_rt = loopOut();`},sk:{a:0,k:0,ix:4},sa:{a:0,k:0,ix:5},nm:"Transform"}],nm:"b
   h4 {
     margin: 10px 0;
   }
-`,PriceCard=({title:a,description:s,price:o})=>jsxs(StyledPriceCard,{children:[jsxs("div",{className:"head",children:[jsx("h3",{children:a}),jsx("p",{children:s})]}),jsxs("h2",{children:["£",o]}),jsx("h4",{children:"10 users included"}),jsx("h4",{children:"10 users included"}),jsx("h4",{children:"10 users included"}),jsx("h4",{children:"10 users included"}),jsx(RoundedButton,{bgColor:"#fb6169",children:"Buy"})]}),StyledPricingWrapper=styled.div`
+
+  ion-icon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: red;
+  }
+`,PriceCard=({title:a,description:s,price:o,showStar:et})=>jsxs(StyledPriceCard,{children:[jsxs("div",{className:"head",children:[jsx("h3",{children:a}),jsx("p",{children:s})]}),jsxs("h2",{children:["£",o]}),jsx("h4",{children:"10 users included"}),jsx("h4",{children:"10 users included"}),jsx("h4",{children:"10 users included"}),jsx("h4",{children:"10 users included"}),jsx(RoundedButton,{bgColor:"#fb6169",children:"Buy"}),et&&jsx("ion-icon",{name:"star-outline"})]}),StyledPricingWrapper=styled.div`
   width: min(100%, 1500px);
   margin: 0 auto;
   display: flex;
@@ -1129,12 +1139,17 @@ $bm_rt = loopOut();`},sk:{a:0,k:0,ix:4},sa:{a:0,k:0,ix:5},nm:"Transform"}],nm:"b
 
   .price-cards {
     display: flex;
+    /* flex-wrap: wrap; */
     width: min(100%, 1000px);
 
     margin: 0 auto;
     align-items: flex-end;
+
+    ${({theme:{breakPoints:a}})=>a.down("md")} {
+      flex-wrap: wrap;
+    }
   }
-`,Pricing=()=>{const a=useNavigate();return jsxs(StyledPricingWrapper,{children:[jsxs("div",{className:"back",children:[jsx("ion-icon",{onClick:()=>a("/"),name:"chevron-back-outline"}),jsx("h1",{children:"Pricing"})]}),jsx("p",{children:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. At facere autem obcaecati nostrum! Minus ex nihil excepturi magnam minima quod repellendus atque eveniet eligendi? Doloribus voluptas blanditiis sapiente totam. Facilis unde iste vel fugit reprehenderit dolores perferendis excepturi maiores nobis!"}),jsxs("div",{className:"price-cards",children:[jsx(PriceCard,{title:"Basic",price:"49"}),jsx(PriceCard,{title:"Pro",price:"149",description:"Most Popular"}),jsx(PriceCard,{title:"Enterprise",price:"299"})]})]})},Router=()=>jsxs(Routes,{children:[jsx(Route,{path:"/",element:jsx(Home,{})}),jsx(Route,{path:"/about",element:jsx(About,{})}),jsx(Route,{path:"/courses",element:jsx(Courses,{})}),jsx(Route,{path:"/jobs",element:jsx(Jobs,{})}),jsx(Route,{path:"/contact",element:jsx(Contact,{})}),jsx(Route,{path:"/pricing",element:jsx(Pricing,{})}),jsx(Route,{path:"*",element:jsx(NotFound,{})})]}),breakPoints={sm:"576px",md:"768px",lg:"1140px",down:a=>`@media only screen and (max-width: ${breakPoints[a]})`,up:a=>`@media only screen and (min-width: ${breakPoints[a]})`},commonColors={},lightTheme={mode:"light",primary:"#e1e1e2",secondary:"#2F2E41",tertiary:"#fb6169",primaryText:"#000",secondaryText:"#fff",quaternary:"#c9b6d9",quinary:"#e5c3c4",...commonColors,breakPoints},darkTheme={mode:"dark",primary:"#131313",secondary:"#2F2E41",tertiary:"#fb6169",primaryText:"#fff",secondaryText:"#000",quaternary:"#474350",quinary:"#4C4B63",...commonColors,breakPoints},AppWrapper=styled.div`
+`,Pricing=()=>{const a=useNavigate();return jsxs(StyledPricingWrapper,{children:[jsxs("div",{className:"back",children:[jsx("ion-icon",{onClick:()=>a("/"),name:"chevron-back-outline"}),jsx("h1",{children:"Pricing"})]}),jsx("p",{children:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. At facere autem obcaecati nostrum! Minus ex nihil excepturi magnam minima quod repellendus atque eveniet eligendi? Doloribus voluptas blanditiis sapiente totam. Facilis unde iste vel fugit reprehenderit dolores perferendis excepturi maiores nobis!"}),jsxs("div",{className:"price-cards",children:[jsx(PriceCard,{title:"Basic",price:"49"}),jsx(PriceCard,{showStar:!0,title:"Pro",price:"149",description:"Most Popular"}),jsx(PriceCard,{title:"Enterprise",price:"299"})]})]})},Router=()=>jsxs(Routes,{children:[jsx(Route,{path:"/",element:jsx(Home,{})}),jsx(Route,{path:"/about",element:jsx(About,{})}),jsx(Route,{path:"/courses",element:jsx(Courses,{})}),jsx(Route,{path:"/jobs",element:jsx(Jobs,{})}),jsx(Route,{path:"/contact",element:jsx(Contact,{})}),jsx(Route,{path:"/pricing",element:jsx(Pricing,{})}),jsx(Route,{path:"*",element:jsx(NotFound,{})})]}),breakPoints={sm:"576px",md:"768px",lg:"1140px",down:a=>`@media only screen and (max-width: ${breakPoints[a]})`,up:a=>`@media only screen and (min-width: ${breakPoints[a]})`},commonColors={},lightTheme={mode:"light",primary:"#e1e1e2",secondary:"#2F2E41",tertiary:"#fb6169",primaryText:"#000",secondaryText:"#fff",quaternary:"#c9b6d9",quinary:"#e5c3c4",...commonColors,breakPoints},darkTheme={mode:"dark",primary:"#131313",secondary:"#2F2E41",tertiary:"#fb6169",primaryText:"#fff",secondaryText:"#000",quaternary:"#474350",quinary:"#4C4B63",...commonColors,breakPoints},AppWrapper=styled.div`
   background-color: ${({theme:a})=>a.primary};
   color: ${({theme:a})=>a.primaryText};
   transition: all 1000ms ease;
