@@ -22,10 +22,10 @@ export const StyledWrapper = styled.div`
       z-index: 1;
       padding: 3%;
       border-radius: 2rem;
-      background: #ecf1f7;
+      background: #333;
       background-image: linear-gradient(to bottom, #333, #111);
       box-shadow: 0 0.1rem 0 #cfcfcf;
-      border: 2px solid #ccc;
+      border: 2px solid #333;
       width: 90%;
       height: 100%;
 
@@ -39,6 +39,7 @@ export const StyledWrapper = styled.div`
         background: #000;
         width: 100%;
         height: 100%;
+        border-radius: 0.5%;
       }
     }
 
@@ -50,6 +51,7 @@ export const StyledWrapper = styled.div`
       height: 0.8rem;
       background: #e9eff5;
       background-image: linear-gradient(to bottom, #000, #111);
+      border-radius: 0.2rem 0.2rem 0 0;
       margin: 0 auto;
 
       width: 92%;
@@ -73,7 +75,7 @@ export const StyledWrapper = styled.div`
       left: 25%;
       display: block;
       width: 50%;
-      height: 1.5rem;
+      height: 0.8rem;
       background: #e2e8f0;
       background-image: linear-gradient(to bottom, #333, #111);
 
@@ -101,7 +103,7 @@ export const StyledWrapper = styled.div`
     .laptop__shadow {
       position: absolute;
       right: -10%;
-      bottom: -2.5rem;
+      bottom: -1.8rem;
       left: -10%;
       z-index: 0;
       height: 2rem;
