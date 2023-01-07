@@ -1,5 +1,8 @@
-/* eslint-disable import/order */
+/* eslint-disable max-len */
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
+import Lottie from 'react-lottie';
+import { useNavigate } from 'react-router-dom';
 import { StyledFlexWrap, StyledFullWidth } from '../../common/styles';
 import IconInfo from '../../components/IconInfo';
 import RoundedButton from '../../components/RoundedButton';
@@ -16,10 +19,8 @@ import {
   StyledTestTestimonialsWrapper,
 } from './styled';
 import LaptopScreen from '../../components/LaptopScreen';
-import Lottie from 'react-lottie';
 import animationData from '../../assets/lottie/meeting.json';
 import animationDataWelcome from '../../assets/lottie/laptop.json';
-import { useNavigate } from 'react-router-dom';
 
 const defaultOptions = {
   loop: true,
@@ -65,8 +66,7 @@ function Home() {
         <StyledInfoWrapper>
           <h1>Creative Services</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab architecto, ex accusamus error, amet veniam
-            quis, quidem ullam impedit obcaecati fuga! Ipsa esse eaque iure doloribus nulla distinctio dicta blanditiis?
+            At CodeCrafts, we believe that anyone can learn to code and build a successful career in the tech industry. That's why we offer a comprehensive Web Development and DevOps bootcamp, designed to turn code newbies into skilled professionals. Our program is backed by a team of experienced instructors and a range of creative services to support you on your journey. Whether you're just starting out or looking to advance in your career, CodeCrafts has something for you. Keep reading to learn more about the services we offer.
           </p>
         </StyledInfoWrapper>
 
