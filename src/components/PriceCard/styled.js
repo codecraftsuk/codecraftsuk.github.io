@@ -7,11 +7,13 @@ export const StyledPriceCard = styled.div`
   text-align: center;
   padding-bottom: 20px;
   height: fit-content;
-  box-shadow: 20px 20px 30000px grey;
+  /* box-shadow: 20px 20px 30000px grey; */
+  position: relative;
+  background-color: ${({ theme }) => theme.quinary};
 
   border-radius: 7px;
-  margin: 0px 10px;
-  width: min(100%, 400px);
+  margin: 20px 10px;
+  width: min(100%, 900px);
 
   .head {
     color: black;
@@ -31,5 +33,13 @@ export const StyledPriceCard = styled.div`
 
   h4 {
     margin: 10px 0;
+  }
+
+  ion-icon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: red;
   }
 `;

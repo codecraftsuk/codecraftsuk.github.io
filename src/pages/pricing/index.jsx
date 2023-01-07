@@ -20,7 +20,7 @@ const Pricing = () => {
 
       <div className="price-cards">
         <PriceCard title="Basic" price="49" />
-        <PriceCard title="Pro" price="149" description="Most Popular" />
+        <PriceCard showStar title="Pro" price="149" description="Most Popular" />
         <PriceCard title="Enterprise" price="299" />
       </div>
     </StyledPricingWrapper>

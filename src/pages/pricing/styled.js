@@ -41,9 +41,14 @@ export const StyledPricingWrapper = styled.div`
 
   .price-cards {
     display: flex;
+    /* flex-wrap: wrap; */
     width: min(100%, 1000px);
 
     margin: 0 auto;
     align-items: flex-end;
+
+    ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+      flex-wrap: wrap;
+    }
   }
 `;
