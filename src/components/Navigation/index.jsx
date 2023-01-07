@@ -1,6 +1,6 @@
 /* eslint-disable no-nested-ternary */
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { StyledNavWrapper } from './styled';
 import TypingAnimation from '../TypingAnimation';
@@ -10,6 +10,7 @@ import { useSet } from '../../store';
 
 const Navigation = ({ isDarkTheme }) => {
   const set = useSet();
+  const navigate = useNavigate();
 
   const toggleTheme = () => set(({ isDarkTheme: stateTheme }) => ({ isDarkTheme: !stateTheme }));
   return (
@@ -21,8 +22,12 @@ const Navigation = ({ isDarkTheme }) => {
         <TypingAnimation />
       </span>
       <span className="btns">
-        <RoundedButton bgColor="#2F2E41">Courses</RoundedButton>
-        <RoundedButton bgColor="#FB6169">Pricing</RoundedButton>
+        <RoundedButton onClick={() => navigate('/courses')} bgColor="#2F2E41">
+          Courses
+        </RoundedButton>
+        <RoundedButton onClick={() => navigate('/pricing')} bgColor="#FB6169">
+          Buy
+        </RoundedButton>
         <RoundedButton onClick={toggleTheme} textColor={isDarkTheme ? '#fff' : '#000'} circle>
           {isDarkTheme ? <ion-icon name="sunny-outline" /> : <ion-icon name="moon-outline" />}
         </RoundedButton>

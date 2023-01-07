@@ -2,11 +2,16 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const StyledFooterWrapper = styled.div`
+export const StyledFooter = styled.div`
   background-color: #212121;
+`;
+
+export const StyledFooterWrapper = styled.div`
   color: white;
   display: flex;
   padding: 30px 10px;
+  width: min(100%, 1500px);
+  margin: 0 auto;
 
   flex-wrap: wrap;
 
@@ -34,12 +39,12 @@ export const StyledLink = styled(Link)`
   background-repeat: no-repeat;
   background-position: 0% 100%;
   background-size: 100% 2px;
-  transition: background-size 0.3s, background-position 0.3s ease-in 0.5s;
+  transition: background-size 0.2s, background-position 0.2s ease-in 0.2s;
 
   &:hover {
     background-size: 100% 100%;
     background-position: 0% 0%;
-    transition: background-position 0.3s, background-size 0.3s ease-in 0.5s;
+    transition: background-position 0.2s, background-size 0.2s ease-in 0.2s;
   }
 `;
 
