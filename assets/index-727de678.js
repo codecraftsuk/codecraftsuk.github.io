@@ -1058,7 +1058,38 @@ $bm_rt = loopOut();`},sk:{a:0,k:0,ix:4},sa:{a:0,k:0,ix:5},nm:"Transform"}],nm:"b
       left: 20px;
     }
   }
-`,NotFound=()=>{const a=useNavigate();return jsxs(StyledNotFoundWrapper,{children:[jsx("span",{children:jsx("ion-icon",{name:"chevron-back-outline",onClick:()=>a("/")})}),jsx("img",{src:notfound,alt:""}),jsx("h3",{children:"page not found :("})]})},StyledPricingWrapper=styled.div`
+`,NotFound=()=>{const a=useNavigate();return jsxs(StyledNotFoundWrapper,{children:[jsx("span",{children:jsx("ion-icon",{name:"chevron-back-outline",onClick:()=>a("/")})}),jsx("img",{src:notfound,alt:""}),jsx("h3",{children:"page not found :("})]})},StyledPriceCard=styled.div`
+  /* padding: 10px; */
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  height: fit-content;
+  box-shadow: 20px 20px 30000px grey;
+
+  border-radius: 7px;
+  margin: 0px 10px;
+  width: min(100%, 400px);
+
+  .head {
+    color: black;
+    background-color: white;
+    font-size: 1.7rem;
+    padding: 20px 0;
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  h2 {
+    margin: 10px 0;
+  }
+
+  h4 {
+    margin: 10px 0;
+  }
+`,PriceCard=({title:a,description:s,price:o})=>jsxs(StyledPriceCard,{children:[jsxs("div",{className:"head",children:[jsx("h3",{children:a}),jsx("p",{children:s})]}),jsxs("h2",{children:["£",o]}),jsx("h4",{children:"10 users included"}),jsx("h4",{children:"10 users included"}),jsx("h4",{children:"10 users included"}),jsx("h4",{children:"10 users included"}),jsx(RoundedButton,{bgColor:"#fb6169",children:"Buy"})]}),StyledPricingWrapper=styled.div`
   width: min(100%, 1500px);
   margin: 0 auto;
   display: flex;
@@ -1072,9 +1103,8 @@ $bm_rt = loopOut();`},sk:{a:0,k:0,ix:4},sa:{a:0,k:0,ix:5},nm:"Transform"}],nm:"b
 
   .back {
     text-align: left;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-size: 2.8rem;
-    padding: 10px 30px;
 
     display: flex;
     align-items: center;
@@ -1091,11 +1121,20 @@ $bm_rt = loopOut();`},sk:{a:0,k:0,ix:4},sa:{a:0,k:0,ix:5},nm:"Transform"}],nm:"b
   }
 
   p {
-    width: 50%;
     margin: 0 auto;
     font-size: 18px;
+    width: min(800px, 100%);
+    padding: 25px;
   }
-`,Pricing=()=>{const a=useNavigate();return jsxs(StyledPricingWrapper,{children:[jsxs("div",{className:"back",children:[jsx("ion-icon",{onClick:()=>a("/"),name:"chevron-back-outline"}),jsx("h1",{children:"Pricing"})]}),jsx("p",{children:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. At facere autem obcaecati nostrum! Minus ex nihil excepturi magnam minima quod repellendus atque eveniet eligendi? Doloribus voluptas blanditiis sapiente totam. Facilis unde iste vel fugit reprehenderit dolores perferendis excepturi maiores nobis!"})]})},Router=()=>jsxs(Routes,{children:[jsx(Route,{path:"/",element:jsx(Home,{})}),jsx(Route,{path:"/about",element:jsx(About,{})}),jsx(Route,{path:"/courses",element:jsx(Courses,{})}),jsx(Route,{path:"/jobs",element:jsx(Jobs,{})}),jsx(Route,{path:"/contact",element:jsx(Contact,{})}),jsx(Route,{path:"/pricing",element:jsx(Pricing,{})}),jsx(Route,{path:"*",element:jsx(NotFound,{})})]}),breakPoints={sm:"576px",md:"768px",lg:"1140px",down:a=>`@media only screen and (max-width: ${breakPoints[a]})`,up:a=>`@media only screen and (min-width: ${breakPoints[a]})`},commonColors={},lightTheme={mode:"light",primary:"#e1e1e2",secondary:"#2F2E41",tertiary:"#fb6169",primaryText:"#000",secondaryText:"#fff",quaternary:"#c9b6d9",quinary:"#e5c3c4",...commonColors,breakPoints},darkTheme={mode:"dark",primary:"#131313",secondary:"#2F2E41",tertiary:"#fb6169",primaryText:"#fff",secondaryText:"#000",quaternary:"#474350",quinary:"#4C4B63",...commonColors,breakPoints},AppWrapper=styled.div`
+
+  .price-cards {
+    display: flex;
+    width: min(100%, 1000px);
+
+    margin: 0 auto;
+    align-items: flex-end;
+  }
+`,Pricing=()=>{const a=useNavigate();return jsxs(StyledPricingWrapper,{children:[jsxs("div",{className:"back",children:[jsx("ion-icon",{onClick:()=>a("/"),name:"chevron-back-outline"}),jsx("h1",{children:"Pricing"})]}),jsx("p",{children:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. At facere autem obcaecati nostrum! Minus ex nihil excepturi magnam minima quod repellendus atque eveniet eligendi? Doloribus voluptas blanditiis sapiente totam. Facilis unde iste vel fugit reprehenderit dolores perferendis excepturi maiores nobis!"}),jsxs("div",{className:"price-cards",children:[jsx(PriceCard,{title:"Basic",price:"49"}),jsx(PriceCard,{title:"Pro",price:"149",description:"Most Popular"}),jsx(PriceCard,{title:"Enterprise",price:"299"})]})]})},Router=()=>jsxs(Routes,{children:[jsx(Route,{path:"/",element:jsx(Home,{})}),jsx(Route,{path:"/about",element:jsx(About,{})}),jsx(Route,{path:"/courses",element:jsx(Courses,{})}),jsx(Route,{path:"/jobs",element:jsx(Jobs,{})}),jsx(Route,{path:"/contact",element:jsx(Contact,{})}),jsx(Route,{path:"/pricing",element:jsx(Pricing,{})}),jsx(Route,{path:"*",element:jsx(NotFound,{})})]}),breakPoints={sm:"576px",md:"768px",lg:"1140px",down:a=>`@media only screen and (max-width: ${breakPoints[a]})`,up:a=>`@media only screen and (min-width: ${breakPoints[a]})`},commonColors={},lightTheme={mode:"light",primary:"#e1e1e2",secondary:"#2F2E41",tertiary:"#fb6169",primaryText:"#000",secondaryText:"#fff",quaternary:"#c9b6d9",quinary:"#e5c3c4",...commonColors,breakPoints},darkTheme={mode:"dark",primary:"#131313",secondary:"#2F2E41",tertiary:"#fb6169",primaryText:"#fff",secondaryText:"#000",quaternary:"#474350",quinary:"#4C4B63",...commonColors,breakPoints},AppWrapper=styled.div`
   background-color: ${({theme:a})=>a.primary};
   color: ${({theme:a})=>a.primaryText};
   transition: all 1000ms ease;
