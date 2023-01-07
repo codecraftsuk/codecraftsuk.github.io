@@ -31,7 +31,7 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   color: white;
   padding-bottom: 5px;
-  margin: 10px 80px;
+  padding-left: 10px;
 
   background: rgb(47, 46, 65);
   background: linear-gradient(90deg, #fb6169 29%, #2f2e41 60%);
@@ -45,7 +45,6 @@ export const StyledLink = styled(Link)`
     background-size: 100% 100%;
     background-position: 0% 0%;
     transition: background-position 0.05s, background-size 0.05s ease-in 0.05;
-    padding: 0 10px;
   }
 `;
 

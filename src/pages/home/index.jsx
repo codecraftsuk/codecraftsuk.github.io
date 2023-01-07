@@ -17,10 +17,12 @@ import {
   StyledSocials,
   StyledHomeHead,
   StyledTestTestimonialsWrapper,
+  StyledTitleWrapper,
 } from './styled';
 import LaptopScreen from '../../components/LaptopScreen';
 import animationData from '../../assets/lottie/meeting.json';
 import animationDataWelcome from '../../assets/lottie/laptop.json';
+import carbon from '../../assets/images/portfolio/carbon3.gif';
 
 const defaultOptions = {
   loop: true,
@@ -81,7 +83,8 @@ function Home() {
       <StyledContentWrapper>
         <StyledInfoWrapper>
           <h1>Begin Your Coding Journey Today!</h1>
-          <LaptopScreen />
+          <img src={carbon} className="carbon-img" alt="Screen" />
+          {/* <LaptopScreen /> */}
         </StyledInfoWrapper>
       </StyledContentWrapper>
 
@@ -93,10 +96,12 @@ function Home() {
         </StyledFlexWrap>
       </StyledFullWidth>
 
+      <StyledTitleWrapper>
+        <h1 className="company-title">Building the Future of Tech: Our Bootcamp Helps Companies Find and Train Top Candidates</h1>
+      </StyledTitleWrapper>
       <StyledContentWrapper>
         <StyledDeliveryInfo>
           <span>
-            <h1>Building the Future of Tech: Our Bootcamp Helps Companies Find and Train Top Candidates</h1>
             <p>
               CodeCrafts is committed to helping companies build the strong, talented teams they need to succeed in the tech industry. Our Web Development and DevOps bootcamp offers a unique solution for finding and training top candidates. Through a combination of hands-on training, practical experience, and comprehensive curriculum, we help individuals develop the skills and knowledge they need to thrive in the tech industry. If you're a tech company looking to build a strong team and secure a bright future, consider partnering with CodeCrafts and our bootcamp program.
             </p>
@@ -124,12 +129,12 @@ function Home() {
       <StyledFullWidth bgColor="#2f2e41">
         <StyledSocials>
           <h2>Follow Us On Socials</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, possimus?</p>
+          <p>Stay up-to-date with our latest news and updates by following us on social media.</p>
 
           <span>
-            <ion-icon name="logo-twitter" />
-            <ion-icon name="logo-discord" />
-            <ion-icon name="logo-instagram" />
+            <a href="https://twitter.com/codecrafts_"><ion-icon name="logo-twitter" /></a>
+            <a href="https://discord.gg/Ks7UxrqBSF"><ion-icon name="logo-discord" /></a>
+            <a href="https://instagram.com/codecrafts_"><ion-icon name="logo-instagram" /></a>
           </span>
         </StyledSocials>
       </StyledFullWidth>

@@ -24,6 +24,15 @@ export const StyledContentWrapper = styled.div`
   }
 `;
 
+export const StyledTitleWrapper = styled.div`
+  .company-title {
+    width: min(100%, 900px);
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+  }
+`;
+
 export const StyledInfoWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -36,10 +45,13 @@ export const StyledInfoWrapper = styled.div`
 
   h1 {
     margin-bottom: 40px;
+    text-align: center;
   }
 
   .carbon-img {
     width: 80%;
+    border-radius: 10px;
+
   }
 `;
 
@@ -57,11 +69,11 @@ export const StyledDeliveryInfo = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 50px 240px;
+  padding: 50px 0;
   align-items: center;
 
   text-align: center;
-  width: min(100%, 1500px);
+  width: min(100%, 1020px);
   margin: 0 auto;
 
   & > * {
