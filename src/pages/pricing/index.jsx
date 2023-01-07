@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import PriceCard from '../../components/PriceCard';
 import { StyledPricingWrapper } from './styled';
 
 const Pricing = () => {
@@ -16,6 +17,12 @@ const Pricing = () => {
         excepturi magnam minima quod repellendus atque eveniet eligendi? Doloribus voluptas blanditiis sapiente totam.
         Facilis unde iste vel fugit reprehenderit dolores perferendis excepturi maiores nobis!
       </p>
+
+      <div className="price-cards">
+        <PriceCard title="Basic" price="49" />
+        <PriceCard title="Pro" price="149" description="Most Popular" />
+        <PriceCard title="Enterprise" price="299" />
+      </div>
     </StyledPricingWrapper>
   );
 };

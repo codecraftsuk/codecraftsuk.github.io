@@ -15,9 +15,8 @@ export const StyledPricingWrapper = styled.div`
 
   .back {
     text-align: left;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-size: 2.8rem;
-    padding: 10px 30px;
 
     display: flex;
     align-items: center;
@@ -34,8 +33,17 @@ export const StyledPricingWrapper = styled.div`
   }
 
   p {
-    width: 50%;
     margin: 0 auto;
     font-size: 18px;
+    width: min(800px, 100%);
+    padding: 25px;
+  }
+
+  .price-cards {
+    display: flex;
+    width: min(100%, 1000px);
+
+    margin: 0 auto;
+    align-items: flex-end;
   }
 `;
