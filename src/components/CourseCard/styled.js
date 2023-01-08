@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 export const StyledCardWrapper = styled.div`
-  width: min(100%, 300px);
+  /* width: min(100%, 400px); */
   img {
     width: 100%;
   }
@@ -10,6 +10,7 @@ export const StyledCardWrapper = styled.div`
   border-radius: 6px;
   cursor: pointer;
   box-shadow: 0px 00px 20px gray;
+  overflow: hidden;
 
   div {
     margin: 10px;
@@ -17,6 +18,10 @@ export const StyledCardWrapper = styled.div`
 
   &:hover {
     transform: scale(1.05);
+    transition: transform 500ms;
+  }
+
+  &:not(:hover) {
     transition: transform 500ms;
   }
 `;

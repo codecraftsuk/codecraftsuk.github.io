@@ -5,6 +5,7 @@ import courseThree from '../../assets/images/courses/freelance.jpg';
 
 export const coursesData = [
   {
+    id: 343242,
     name: 'Web Development',
     description: 'Learn how to build modern web applications.',
     image: courseOne,
@@ -24,44 +25,7 @@ export const coursesData = [
     ],
   },
   {
-    name: 'Web Development',
-    description: 'Learn how to build modern web applications.',
-    image: courseOne,
-    weeks: [
-      'Week 1: Introduction to HTML and CSS',
-      'Week 2: JavaScript Basics',
-      'Week 3: React Fundamentals',
-      'Week 4: Data Persistence and APIs',
-      'Week 5: Advanced React Techniques',
-      'Week 6: Web Security and Deployment',
-      'Week 7: Advanced HTML and CSS',
-      'Week 8: Server-side Development with Node.js',
-      'Week 9: Data Visualization with D3.js',
-      'Week 10: Mobile Development with React Native',
-      'Week 11: Testing and Debugging',
-      'Week 12: Final Project',
-    ],
-  },
-  {
-    name: 'Web Development',
-    description: 'Learn how to build modern web applications.',
-    image: courseOne,
-    weeks: [
-      'Week 1: Introduction to HTML and CSS',
-      'Week 2: JavaScript Basics',
-      'Week 3: React Fundamentals',
-      'Week 4: Data Persistence and APIs',
-      'Week 5: Advanced React Techniques',
-      'Week 6: Web Security and Deployment',
-      'Week 7: Advanced HTML and CSS',
-      'Week 8: Server-side Development with Node.js',
-      'Week 9: Data Visualization with D3.js',
-      'Week 10: Mobile Development with React Native',
-      'Week 11: Testing and Debugging',
-      'Week 12: Final Project',
-    ],
-  },
-  {
+    id: 763892,
     name: 'DevOps',
     description: 'Become proficient in DevOps practices and tools.',
     image: courseTwo,
@@ -81,6 +45,7 @@ export const coursesData = [
     ],
   },
   {
+    id: 7893873,
     name: 'Freelance',
     description: 'Master the skills needed to succeed as a freelance developer.',
     image: courseThree,

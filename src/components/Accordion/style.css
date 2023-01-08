@@ -13,7 +13,7 @@
 
 ion-icon[name='add-circle-outline'],
 ion-icon[name='remove-circle-outline'] {
-  font-size: 2rem;
+  font-size: 32px !important;
   cursor: pointer;
 }
 

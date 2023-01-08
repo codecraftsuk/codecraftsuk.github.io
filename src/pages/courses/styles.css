@@ -1,12 +1,16 @@
 /* ========================================================= */
 
 .course-cards {
-  width: min(100%, 1500px);
+  width: min(100%, 1200px);
   padding: 20px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.course-cards > * {
+  flex: 1 0 350px;
 }
 
 .week {
