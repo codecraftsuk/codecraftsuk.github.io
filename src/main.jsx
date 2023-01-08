@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, useLocation } from 'react-router-dom';
+import { HashRouter, useLocation } from 'react-router-dom';
 import App from './App';
 import { Provider } from './store';
 
@@ -20,11 +20,11 @@ export default function ScrollToTop() {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Router>
+    <HashRouter>
       <Provider>
         <ScrollToTop />
         <App />
       </Provider>
-    </Router>
+    </HashRouter>
   </React.StrictMode>
 );

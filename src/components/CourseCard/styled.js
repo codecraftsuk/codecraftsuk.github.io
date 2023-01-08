@@ -2,56 +2,21 @@
 import styled from 'styled-components';
 
 export const StyledCardWrapper = styled.div`
-  width: 100%;
-  display: flex;
-  box-shadow: 0px 5px 20px gray;
-  border-radius: 6px;
-  padding: 10px;
-  margin: 30px 0;
-
-  ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
+  width: min(100%, 300px);
   img {
-    width: 150px;
-    border-radius: 50%;
-    height: 150px;
-    object-fit: cover;
-    margin-right: 20px;
-  }
-
-  span {
-    width: 80%;
-  }
-
-  span > * {
-    text-align: left;
-  }
-
-  p {
-    margin-bottom: 10px;
-    overflow: hidden;
-    white-space: wrap;
     width: 100%;
-    height: 3rem;
+  }
+  margin: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0px 00px 20px gray;
+
+  div {
+    margin: 10px;
   }
 
-  button {
-    margin-right: 10px;
-  }
-
-  .btns {
-    display: flex;
-    justify-content: flex-end;
-
-    ion-icon {
-      font-size: 30px;
-    }
-
-    button {
-      padding: 5px 20px;
-    }
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 500ms;
   }
 `;
