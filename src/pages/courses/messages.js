@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
-import courseOne from '../../assets/images/courses/web-dev-course.jpg';
-import courseTwo from '../../assets/images/courses/devops.png';
-import courseThree from '../../assets/images/courses/freelance.jpg';
+import courseOne from '../../assets/images/courses/webdev.jpeg';
+import courseTwo from '../../assets/images/courses/devops.jpeg';
+import courseThree from '../../assets/images/courses/freelance.jpeg';
 
 export const coursesData = [
   {
