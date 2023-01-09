@@ -86,13 +86,15 @@ function Home() {
       </StyledContentWrapper>
       <hr />
 
-      <StyledContentWrapper>
-        <StyledInfoWrapper>
+
+      <StyledInfoWrapper>
+        <div className='gif-container'>
           <h1>Begin Your Coding Journey Today!</h1>
           <img src={carbon} className="carbon-img" alt="Screen" />
           {/* <LaptopScreen /> */}
-        </StyledInfoWrapper>
-      </StyledContentWrapper>
+        </div>
+      </StyledInfoWrapper>
+
 
       <StyledFullWidth bgColor="#fb6169">
         <StyledFlexWrap className="green-content">

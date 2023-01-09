@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components';
 export const StyledContentWrapper = styled.div`
   width: min(100%, 1500px);
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 70px 10px 60px 10px;
   display: flex;
   flex-direction: column;
 
@@ -29,7 +29,7 @@ export const StyledTitleWrapper = styled.div`
     width: min(100%, 900px);
     margin: 0 auto;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 70px;
   }
 `;
 
@@ -39,7 +39,7 @@ export const StyledInfoWrapper = styled.div`
   flex-direction: column;
   max-width: min(100%, 1000px);
   margin: 0 auto;
-  padding: 70px 20px;
+
   width: min(100%, 1500px);
   margin: 0 auto;
 
@@ -48,8 +48,12 @@ export const StyledInfoWrapper = styled.div`
     text-align: center;
   }
 
+  .gif-container {
+    padding: 70px 0;
+  }
+
   .carbon-img {
-    width: 80%;
+    width: 100%;
     border-radius: 10px;
   }
 `;
@@ -68,7 +72,6 @@ export const StyledDeliveryInfo = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 50px 0;
   align-items: center;
 
   text-align: center;
