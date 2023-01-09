@@ -51,7 +51,6 @@ export const StyledInfoWrapper = styled.div`
   .carbon-img {
     width: 80%;
     border-radius: 10px;
-
   }
 `;
 
@@ -223,6 +222,10 @@ export const StyledHomeHead = styled.div`
   margin: 0 auto;
 
   /* animation: ${comeIn} 1000ms ease-in-out; */
+
+  button {
+    margin-right: 10px;
+  }
 
   svg {
     max-width: 400px;

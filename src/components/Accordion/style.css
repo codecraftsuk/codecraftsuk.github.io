@@ -6,22 +6,23 @@
   text-align: left;
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 10px 0px;
   align-items: center;
-  color: rgb(0, 0, 0);
+  color: inherit;
 }
 
 ion-icon[name='add-circle-outline'],
 ion-icon[name='remove-circle-outline'] {
   font-size: 32px !important;
   cursor: pointer;
+  flex: 0 0 50px;
 }
 
 .accordion-text {
-  background-color: white;
+  /* background-color: white; */
   max-height: 0px;
   overflow: hidden;
-  padding: 0px 20px;
+  padding: 0px 10px;
 
   transition: all 700ms;
 }

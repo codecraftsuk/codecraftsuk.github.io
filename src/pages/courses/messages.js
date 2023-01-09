@@ -23,6 +23,16 @@ export const coursesData = [
       'Week 11: Testing and Debugging',
       'Week 12: Final Project',
     ],
+    learn: [
+      'Build dynamic web applications using the latest in technology',
+      'Practice your knowledge with projects, exercises, and quizzes',
+      'Understand the internet',
+      'lorem  lorem lorem lorem lorem loremloremlorem loremlorem',
+      'lorem  lorem lorem lorem lorem loremloremlorem loremlorem',
+      'lorem  lorem lorem lorem lorem loremloremlorem loremlorem',
+      'lorem  lorem lorem lorem lorem loremloremlorem loremlorem',
+      'lorem  lorem lorem lorem lorem loremloremlorem loremlorem',
+    ],
   },
   {
     id: 763892,

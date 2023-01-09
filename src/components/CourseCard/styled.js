@@ -3,8 +3,11 @@ import styled from 'styled-components';
 
 export const StyledCardWrapper = styled.div`
   /* width: min(100%, 400px); */
+  display: flex;
+  flex-direction: column;
   img {
     width: 100%;
+    flex: 1 0;
   }
   margin: 10px;
   border-radius: 6px;

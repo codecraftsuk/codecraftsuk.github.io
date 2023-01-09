@@ -14,7 +14,11 @@ const Pricing = () => {
       </div>
 
       <p>
-        At CodeCrafts, we believe that high-quality education should be accessible to everyone. That's why we offer flexible pricing options to meet the needs of our students. Whether you're paying out of pocket or using financing, we have a solution that will work for you. Our team is dedicated to helping you afford the education you need to succeed, so don't hesitate to reach out and ask about our pricing options. We can't wait to see you succeed at CodeCrafts!
+        At CodeCrafts, we believe that high-quality education should be accessible to everyone. That's why we offer
+        flexible pricing options to meet the needs of our students. Whether you're paying out of pocket or using
+        financing, we have a solution that will work for you. Our team is dedicated to helping you afford the education
+        you need to succeed, so don't hesitate to reach out and ask about our pricing options. We can't wait to see you
+        succeed at CodeCrafts!
       </p>
 
       <div className="price-cards">

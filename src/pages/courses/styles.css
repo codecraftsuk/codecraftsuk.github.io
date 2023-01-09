@@ -29,8 +29,10 @@ section {
 }
 
 .faq-wrapper {
-  width: min(100%, 1500px);
+  width: min(100%, 1300px);
   margin: 0 auto;
+  padding: 0 10px;
+  color: rgb(248, 246, 246);
 }
 
 .main-title {

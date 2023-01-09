@@ -17,10 +17,10 @@ const Courses = () => (
 
     <h1 className="main-title">FAQ's</h1>
 
-    <StyledFullWidth bgColor="#b3b3d6">
+    <StyledFullWidth bgColor="#474350">
       <div className="faq-wrapper">
         {faqData.map((qa) => (
-          <Accordion {...qa} />
+          <Accordion title={qa.question} text={qa.answer} />
         ))}
       </div>
     </StyledFullWidth>

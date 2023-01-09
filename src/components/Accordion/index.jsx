@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
 
-const Accordion = ({ question, answer }) => {
+const Accordion = ({ title, text }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleIconClick = () => setIsOpen((prev) => !prev);
@@ -9,7 +9,7 @@ const Accordion = ({ question, answer }) => {
   return (
     <div className="accordion-wrapper">
       <button type="button" onClick={() => {}} className="accordion">
-        <h3>{question}</h3>
+        <h3>{title}</h3>
         {!isOpen ? (
           <ion-icon onClick={handleIconClick} name="add-circle-outline" />
         ) : (
@@ -17,7 +17,7 @@ const Accordion = ({ question, answer }) => {
         )}
       </button>
       <p className="accordion-text" style={{ maxHeight: isOpen ? '150px' : '0px' }}>
-        {answer}
+        {text}
       </p>
     </div>
   );
