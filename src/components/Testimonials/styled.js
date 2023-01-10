@@ -34,5 +34,6 @@ export const StyledContent = styled.div`
 
   h3 {
     margin-bottom: 10px;
+    font-weight: normal;
   }
 `;
