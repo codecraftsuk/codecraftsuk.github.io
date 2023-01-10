@@ -57,6 +57,10 @@ export const StyledInfoWrapper = styled.div`
     width: 100%;
     border-radius: 10px;
   }
+
+  p.creative {
+    text-align: justify;
+  }
 `;
 
 export const StyleHome = styled.div`
@@ -88,7 +92,7 @@ export const StyledDeliveryInfo = styled.div`
     }
 
     p {
-      text-align: left;
+      text-align: justify;
     }
   }
 `;

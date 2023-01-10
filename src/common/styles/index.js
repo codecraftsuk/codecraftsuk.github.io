@@ -9,6 +9,7 @@ export const StyledFlexWrap = styled.div`
   width: min(100%, 1500px);
   margin: 0 auto;
   padding: 50px 0;
+  text-align: justify;
 `;
 
 export const StyledFullWidth = styled.div`

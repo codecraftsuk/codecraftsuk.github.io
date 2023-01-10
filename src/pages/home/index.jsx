@@ -69,7 +69,7 @@ function Home() {
       <StyledContentWrapper>
         <StyledInfoWrapper>
           <h1>Creative Services</h1>
-          <p>
+          <p className="creative" >
             At CodeCrafts, we believe that anyone can learn to code and build a successful career in the tech industry.
             That's why we offer a comprehensive Web Development and DevOps bootcamp, designed to turn code newbies into
             skilled professionals. Our program is backed by a team of experienced instructors and a range of creative
