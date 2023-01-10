@@ -728,7 +728,7 @@ object-assign
 `,Testimonials=()=>{const[a,s]=reactExports.useState(0),o=()=>{if(a===2)return s(0);s(et=>et+1)};return reactExports.useEffect(()=>{const et=setTimeout(o,7e3);return()=>clearTimeout(et)}),jsxs(StyledWrapper,{children:[jsx("h1",{children:"Testimonials"}),jsx("span",{children:"”"}),jsxs("div",{className:"slide",style:{transform:`translate(-${a}00%)`},children:[jsxs(StyledContent,{children:[jsx("h3",{children:"CodeCrafts helped me build the skills I needed to succeed in tech. The team, curriculum, and training were top-notch. Highly recommend!"}),jsx("p",{children:"Andrew"})]}),jsxs(StyledContent,{children:[jsx("h3",{children:"CodeCrafts bootcamp program was the perfect solution for finding and training top candidates for our tech team. We'll definitely be partnering with them again in the future."}),jsx("p",{children:"tajara+"})]}),jsxs(StyledContent,{children:[jsx("h3",{children:"CodeCrafts is the best tech bootcamp I've been through. The instructors are knowledgeable and the curriculum is practical. I highly recommend it."}),jsx("p",{children:"Adeel"})]})]}),jsxs(StyledDotWrapper,{bottom:"30px",children:[jsx(StyledDot,{onClick:()=>s(0),active:a===0}),jsx(StyledDot,{onClick:()=>s(1),active:a===1}),jsx(StyledDot,{onClick:()=>s(2),active:a===2})]})]})},infoIconData=[{icon:"calendar-number-outline",title:"24/7 Access",text:"Our bootcamp offers 24/7 access to course materials and resources, so you can learn at your own pace and on your own schedule. This means that no matter what your schedule looks like, you'll have the flexibility to fit your studies in and get the support you need to succeed."},{icon:"trending-up-outline",title:"Upscale your Knowledge",text:"We are committed to providing the highest quality education, taught by experienced professionals in the field. Our comprehensive curriculum covers everything from the fundamentals to advanced concepts, ensuring that you have a solid foundation in Web Development and DevOps."},{icon:"bulb-outline",title:"Bright prospects",text:"With a skill set in high demand, you'll be well-equipped to take on exciting new challenges and opportunities in the tech industry. Our career support services will help you transition into a new role or advance in your current career, setting you up for success in the future."}],sliderContent=[{title:"Build Your Own Future!",text:"Become a skilled tech professional in just a few weeks with our Web Development and DevOps bootcamp. Sign up now to learn more and start building your path to success."}],statsData=[{icon:"people-outline",bigTitle:"25",title:"Satisfied Clients"},{icon:"card-outline",bigTitle:"£39",title:"Average Price"},{icon:"chatbox-ellipses-outline",bigTitle:"100%",title:"Response Rate"}],StyledContentWrapper=styled.div`
   width: min(100%, 1500px);
   margin: 0 auto;
-  padding: 70px 10px 60px 10px;
+  padding: 10px 10px 50px 10px;
   display: flex;
   flex-direction: column;
 
@@ -764,12 +764,13 @@ object-assign
   margin: 0 auto;
 
   h1 {
+    padding-top: 70px;
     margin-bottom: 40px;
     text-align: center;
   }
 
   .gif-container {
-    padding: 70px 0;
+    padding: 0 0 70px 0;
   }
 
   .carbon-img {
