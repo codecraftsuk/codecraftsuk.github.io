@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components';
 export const StyledContentWrapper = styled.div`
   width: min(100%, 1500px);
   margin: 0 auto;
-  padding: 10px 10px 50px 10px;
+  padding: 10px 10px 10px 10px;
   display: flex;
   flex-direction: column;
 
@@ -81,7 +81,7 @@ export const StyledDeliveryInfo = styled.div`
 
   & > * {
     flex: 1 0 300px;
-    padding: 20px;
+    padding: 13px;
 
     & > * {
       margin-bottom: 30px;

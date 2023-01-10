@@ -4,7 +4,7 @@ export const StyledWrapper = styled.div`
   width: 100%; /* Set the width to 50% of the total width of the screen */
   background-color: ${({ theme }) => theme.quinary};
   color: ${({ theme }) => theme.primaryText};
-  padding: 90px 0;
+  padding: 70px 70px 90px 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,7 @@ export const StyledWrapper = styled.div`
 
   span {
     font-family: 'Passion One', cursive;
-    font-size: 6rem;
+    font-size: 4rem;
     color: ${({ theme }) => theme.primaryText};
   }
 
@@ -34,5 +34,6 @@ export const StyledContent = styled.div`
 
   h3 {
     margin-bottom: 10px;
+    font-weight: normal;
   }
 `;
