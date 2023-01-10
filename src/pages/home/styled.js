@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components';
 export const StyledContentWrapper = styled.div`
   width: min(100%, 1500px);
   margin: 0 auto;
-  padding: 70px 10px 60px 10px;
+  padding: 10px 10px 50px 10px;
   display: flex;
   flex-direction: column;
 
@@ -44,12 +44,13 @@ export const StyledInfoWrapper = styled.div`
   margin: 0 auto;
 
   h1 {
+    padding-top: 70px;
     margin-bottom: 40px;
     text-align: center;
   }
 
   .gif-container {
-    padding: 70px 0;
+    padding: 0 0 70px 0;
   }
 
   .carbon-img {
