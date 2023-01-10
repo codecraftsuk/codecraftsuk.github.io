@@ -14,6 +14,7 @@ export const StyledCardWrapper = styled.div`
   cursor: pointer;
   box-shadow: 0px 00px 20px gray;
   overflow: hidden;
+  position: relative;
 
   div {
     margin: 10px;
@@ -26,5 +27,23 @@ export const StyledCardWrapper = styled.div`
 
   &:not(:hover) {
     transition: transform 500ms;
+  }
+
+  .coming-soon {
+    position: absolute;
+    background: red;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5rem;
+    /* transform: rotate(35deg); */
+    /* translate: 95px 60px; */
+    outline: 3px solid white;
+    border: 3px solid black;
+    margin: 0;
+    top: 30%;
+    transform: translateY(-10%);
+    padding: 10px 0;
+    color: black;
   }
 `;

@@ -23,6 +23,7 @@ ion-icon[name='remove-circle-outline'] {
   max-height: 0px;
   overflow: hidden;
   padding: 0px 10px;
+  border-radius: 16px;
 
-  transition: all 700ms;
+  transition: all 500ms;
 }

@@ -16,7 +16,10 @@ const Accordion = ({ title, text }) => {
           <ion-icon onClick={handleIconClick} name="remove-circle-outline" />
         )}
       </button>
-      <p className="accordion-text" style={{ maxHeight: isOpen ? '150px' : '0px' }}>
+      <p
+        className="accordion-text"
+        style={{ backgroundColor: '#ceced161', ...(isOpen && { maxHeight: '150px', padding: '20px 10px' }) }}
+      >
         {text}
       </p>
     </div>

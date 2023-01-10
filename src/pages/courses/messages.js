@@ -6,6 +6,7 @@ import courseThree from '../../assets/images/courses/freelance.jpg';
 export const coursesData = [
   {
     id: 343242,
+    isComingSoon: false,
     name: 'Web Development',
     description: 'Learn how to build modern web applications.',
     image: courseOne,
@@ -37,6 +38,8 @@ export const coursesData = [
   {
     id: 763892,
     name: 'DevOps',
+    isComingSoon: true,
+
     description: 'Become proficient in DevOps practices and tools.',
     image: courseTwo,
     weeks: [
@@ -57,6 +60,8 @@ export const coursesData = [
   {
     id: 7893873,
     name: 'Freelance',
+    isComingSoon: true,
+
     description: 'Master the skills needed to succeed as a freelance developer.',
     image: courseThree,
     weeks: [

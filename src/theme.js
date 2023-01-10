@@ -1,6 +1,7 @@
 const breakPoints = {
   sm: '576px',
   md: '768px',
+  ml: '950px',
   lg: '1140px',
   down: (size) => `@media only screen and (max-width: ${breakPoints[size]})`,
   up: (size) => `@media only screen and (min-width: ${breakPoints[size]})`,
