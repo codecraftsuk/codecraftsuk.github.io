@@ -14,7 +14,6 @@ import {
   StyleHome,
   StyledDeliveryInfo,
   StyledMakeTogether,
-  StyledSocials,
   StyledHomeHead,
   StyledTestTestimonialsWrapper,
   StyledTitleWrapper,
@@ -22,6 +21,7 @@ import {
 import animationData from '../../assets/lottie/meeting.json';
 import animationDataWelcome from '../../assets/lottie/laptop.json';
 import carbon from '../../assets/images/portfolio/carbon3.gif';
+import FadeInWhenVisible from '../../components/FadeInWhenVisible';
 
 const defaultOptions = {
   loop: true,
@@ -78,65 +78,75 @@ function Home() {
           </p>
         </StyledInfoWrapper>
 
-        <StyledFlexWrap>
-          {infoIconData.map((iconData) => (
-            <IconInfo {...iconData} />
-          ))}
-        </StyledFlexWrap>
+        <FadeInWhenVisible>
+          <StyledFlexWrap>
+            {infoIconData.map((iconData) => (
+              <IconInfo {...iconData} />
+            ))}
+          </StyledFlexWrap>
+        </FadeInWhenVisible>
       </StyledContentWrapper>
       <hr />
 
-      <StyledInfoWrapper>
-        <div className="gif-container">
-          <h1>Begin Your Coding Journey Today!</h1>
-          <img src={carbon} className="carbon-img" alt="Screen" />
-          {/* <LaptopScreen /> */}
-        </div>
-      </StyledInfoWrapper>
+      <FadeInWhenVisible>
+        <StyledInfoWrapper>
+          <div className="gif-container">
+            <h1>Begin Your Coding Journey Today!</h1>
+            <img src={carbon} className="carbon-img" alt="Screen" />
+            {/* <LaptopScreen /> */}
+          </div>
+        </StyledInfoWrapper>
+      </FadeInWhenVisible>
 
-      <StyledFullWidth bgColor="#fb6169">
-        <StyledFlexWrap className="green-content">
-          {statsData.map((iconData) => (
-            <IconInfo {...iconData} />
-          ))}
-        </StyledFlexWrap>
-      </StyledFullWidth>
-
-      <StyledTitleWrapper>
-        <h1 className="company-title">Building the Future of Tech!</h1>
-      </StyledTitleWrapper>
-      <StyledContentWrapper>
-        <StyledDeliveryInfo>
-          <span>
-            <p>
-              <b> Our Bootcamp Helps Companies Find and Train Top Candidates. </b>
-              CodeCrafts is committed to helping companies build the strong, talented teams they need to succeed in the
-              tech industry. Our Web Development and DevOps bootcamp offers a unique solution for finding and training
-              top candidates. Through a combination of hands-on training, practical experience, and comprehensive
-              curriculum, we help individuals develop the skills and knowledge they need to thrive in the tech industry.
-              If you're a tech company looking to build a strong team and secure a bright future, consider partnering
-              with CodeCrafts and our bootcamp program.
-            </p>
-            <RoundedButton bgColor="#fb6169">Read More</RoundedButton>
-          </span>
-          <Lottie options={defaultOptions} height={400} />
-        </StyledDeliveryInfo>
-      </StyledContentWrapper>
-
-      <StyledTestTestimonialsWrapper>
-        <StyledFullWidth bgColor="red">
-          <Testimonials />
+      <FadeInWhenVisible>
+        <StyledFullWidth bgColor="#fb6169">
+          <StyledFlexWrap className="green-content">
+            {statsData.map((iconData) => (
+              <IconInfo {...iconData} />
+            ))}
+          </StyledFlexWrap>
         </StyledFullWidth>
+      </FadeInWhenVisible>
 
-        <StyledFullWidth>
-          <StyledMakeTogether>
-            <h2>Let&apos;s Make Something Great Together.</h2>
-            <RoundedButton bgColor="#FB6169" textColor="black">
-              Start a Course
-            </RoundedButton>
-          </StyledMakeTogether>
-        </StyledFullWidth>
-      </StyledTestTestimonialsWrapper>
+      <FadeInWhenVisible>
+        <StyledTitleWrapper>
+          <h1 className="company-title">Building the Future of Tech!</h1>
+        </StyledTitleWrapper>
+        <StyledContentWrapper>
+          <StyledDeliveryInfo>
+            <span>
+              <p>
+                <b> Our Bootcamp Helps Companies Find and Train Top Candidates. </b>
+                CodeCrafts is committed to helping companies build the strong, talented teams they need to succeed in
+                the tech industry. Our Web Development and DevOps bootcamp offers a unique solution for finding and
+                training top candidates. Through a combination of hands-on training, practical experience, and
+                comprehensive curriculum, we help individuals develop the skills and knowledge they need to thrive in
+                the tech industry. If you're a tech company looking to build a strong team and secure a bright future,
+                consider partnering with CodeCrafts and our bootcamp program.
+              </p>
+              <RoundedButton bgColor="#fb6169">Read More</RoundedButton>
+            </span>
+            <Lottie options={defaultOptions} height={400} />
+          </StyledDeliveryInfo>
+        </StyledContentWrapper>
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible>
+        <StyledTestTestimonialsWrapper>
+          <StyledFullWidth bgColor="red">
+            <Testimonials />
+          </StyledFullWidth>
+
+          <StyledFullWidth>
+            <StyledMakeTogether>
+              <h2>Let&apos;s Make Something Great Together.</h2>
+              <RoundedButton bgColor="#FB6169" textColor="black">
+                Start a Course
+              </RoundedButton>
+            </StyledMakeTogether>
+          </StyledFullWidth>
+        </StyledTestTestimonialsWrapper>
+      </FadeInWhenVisible>
     </StyleHome>
   );
 }

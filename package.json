@@ -13,11 +13,13 @@
   },
   "dependencies": {
     "create-global-context": "^0.4.1",
+    "framer-motion": "^8.4.0",
     "laravel": "^0.0.1",
     "laravel-vite-plugin": "^0.7.3",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.4.1",
     "react-lottie": "^1.2.3",
     "react-router-dom": "^6.6.1",
     "styled-components": "^5.3.6",

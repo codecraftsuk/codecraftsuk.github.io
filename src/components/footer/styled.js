@@ -62,7 +62,7 @@ export const StyledSocials = styled.div`
   color: white;
   /* border: 1px solid; */
 
-  width: min(100%, 1500px);
+  /* width: min(100%, 1500px); */
   margin: 0 auto;
   padding-bottom: 20px;
 
