@@ -858,6 +858,14 @@ object-assign
   ${({theme:{breakPoints:a}})=>a.down("md")} {
 
       h1 {
+<<<<<<< HEAD
+        padding-left: 62px;
+        padding-right: 62px;
+      }
+
+      .creative {
+        padding: 0 60px;
+=======
         padding-top: 30px;
         padding-left: 30px;
         padding-right: 30px;
@@ -867,6 +875,7 @@ object-assign
 
       .creative {
         padding: 0 30px;
+>>>>>>> 5dc7d7f0cf34a039947f3406fbb10bd397eda099
       }
 
       .gif-container {
@@ -1033,7 +1042,10 @@ object-assign
   ${({theme:{breakPoints:a}})=>a.down("md")} {
     flex-direction: column-reverse;
     text-align: center;
+<<<<<<< HEAD
+=======
     padding: 0 30px 30px 30px;
+>>>>>>> 5dc7d7f0cf34a039947f3406fbb10bd397eda099
 
     svg {
       max-width: 300px;
