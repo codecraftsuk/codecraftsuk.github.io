@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledWrapper = styled.div`
-  width: 100%; /* Set the width to 50% of the total width of the screen */
+  width: 100%;
   background-color: ${({ theme }) => theme.quinary};
   color: ${({ theme }) => theme.primaryText};
   padding: 90px 0;
@@ -13,7 +13,7 @@ export const StyledWrapper = styled.div`
   position: relative;
   overflow: hidden;
   margin: 0 0 0 auto;
-  height: 420px;
+  /* height: 420px; */
 
   span {
     font-family: 'Passion One', cursive;
@@ -35,5 +35,7 @@ export const StyledContent = styled.div`
   h3 {
     margin-bottom: 10px;
     font-weight: normal;
+    width: 75%;
+    margin: 0 auto;
   }
 `;

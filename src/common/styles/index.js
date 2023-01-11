@@ -14,4 +14,5 @@ export const StyledFlexWrap = styled.div`
 
 export const StyledFullWidth = styled.div`
   background-color: ${({ bgColor }) => bgColor || 'transparent'};
+  width: 100%;
 `;

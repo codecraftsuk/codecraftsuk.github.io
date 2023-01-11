@@ -1,5 +1,12 @@
 import React from 'react';
-import { StyledCopyRight, StyledFooter, StyledFooterWrapper, StyledLink, StyledLinkWrapper } from './styled';
+import {
+  StyledCopyRight,
+  StyledFooter,
+  StyledFooterWrapper,
+  StyledLink,
+  StyledLinkWrapper,
+  StyledSocials,
+} from './styled';
 
 const Footer = () => (
   <>
@@ -31,6 +38,22 @@ const Footer = () => (
         </StyledLinkWrapper>
       </StyledFooterWrapper>
     </StyledFooter>
+    <StyledSocials>
+      <h3>Follow Us On Socials</h3>
+      {/* <p>Stay up-to-date with our latest news and updates by following us on social media.</p> */}
+
+      <span>
+        <a href="https://twitter.com/codecrafts_">
+          <ion-icon name="logo-twitter" />
+        </a>
+        <a href="https://discord.gg/Ks7UxrqBSF">
+          <ion-icon name="logo-discord" />
+        </a>
+        <a href="https://instagram.com/codecrafts_">
+          <ion-icon name="logo-instagram" />
+        </a>
+      </span>
+    </StyledSocials>
     <StyledCopyRight>CodeCraft &copy; {new Date().getFullYear()}. All Rights Reserved.</StyledCopyRight>
   </>
 );

@@ -39,7 +39,6 @@ export const StyledLink = styled(Link)`
   background-position: 0% 100%;
   background-size: 100% 2px;
   transition: background-position 0.05s, background-size 0.05s ease-in 0.05s;
-  
 
   &:hover {
     background-size: 100% 100%;
@@ -53,4 +52,42 @@ export const StyledCopyRight = styled.div`
   text-align: center;
   color: white;
   padding-bottom: 60px;
+`;
+
+export const StyledSocials = styled.div`
+  /* background-color: inherit; */
+  background-color: #212121;
+  padding: 5px 20px;
+  text-align: center;
+  color: white;
+  /* border: 1px solid; */
+
+  width: min(100%, 1500px);
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+  p {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+  }
+
+  ion-icon {
+    font-size: 1.5rem;
+    background-color: white;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: ${({ theme }) => theme.tertiary};
+
+    &:hover {
+      background-color: ${({ theme }) => theme.tertiary};
+      color: white;
+      transition: 500ms;
+    }
+  }
 `;

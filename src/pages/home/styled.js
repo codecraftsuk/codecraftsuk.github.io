@@ -44,13 +44,13 @@ export const StyledInfoWrapper = styled.div`
   margin: 0 auto;
 
   h1 {
-    padding-top: 70px;
+    padding: 70px 20px 0 20px;
     margin-bottom: 40px;
     text-align: center;
   }
 
   .gif-container {
-    padding: 0 0 70px 0;
+    padding: 0 20px;
   }
 
   .carbon-img {
@@ -60,6 +60,8 @@ export const StyledInfoWrapper = styled.div`
 
   p.creative {
     text-align: justify;
+    padding: 0 10px;
+    font-size: 15px;
   }
 `;
 
@@ -78,14 +80,15 @@ export const StyledDeliveryInfo = styled.div`
   flex-wrap: wrap;
   gap: 30px;
   align-items: center;
+  justify-content: space-between;
 
   text-align: center;
-  width: min(100%, 1020px);
+  width: min(100%, 1120px);
   margin: 0 auto;
 
   & > * {
     flex: 1 0 300px;
-    padding: 13px;
+    /* padding: 13px; */
 
     & > * {
       margin-bottom: 30px;
@@ -93,6 +96,7 @@ export const StyledDeliveryInfo = styled.div`
 
     p {
       text-align: justify;
+      padding: 13px;
     }
   }
 `;
@@ -108,8 +112,9 @@ export const StyledMakeTogether = styled.div`
   justify-content: center;
   /* flex-wrap: wrap; */
   padding: 60px 30px;
-  height: 420px;
+  /* height: 420px; */
   flex-direction: column;
+  height: 100%;
 
   h2 {
     margin-bottom: 20px;
@@ -173,36 +178,6 @@ export const StyledSlideShow = styled.div`
       -moz-transform: translateX(-100%);
       -webkit-transform: translateX(-100%);
       transform: translateX(-100%);
-    }
-  }
-`;
-
-export const StyledSocials = styled.div`
-  background-color: ${({ theme }) => theme.secondary};
-  padding: 100px 20px;
-  text-align: center;
-  color: white;
-
-  width: min(100%, 1500px);
-  margin: 0 auto;
-
-  p {
-    margin-bottom: 20px;
-  }
-
-  ion-icon {
-    font-size: 2rem;
-    background-color: white;
-    margin-right: 20px;
-    padding: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    color: ${({ theme }) => theme.tertiary};
-
-    &:hover {
-      background-color: ${({ theme }) => theme.tertiary};
-      color: white;
-      transition: 500ms;
     }
   }
 `;

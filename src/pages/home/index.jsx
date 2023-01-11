@@ -69,7 +69,7 @@ function Home() {
       <StyledContentWrapper>
         <StyledInfoWrapper>
           <h1>Creative Services</h1>
-          <p className="creative" >
+          <p className="creative">
             At CodeCrafts, we believe that anyone can learn to code and build a successful career in the tech industry.
             That's why we offer a comprehensive Web Development and DevOps bootcamp, designed to turn code newbies into
             skilled professionals. Our program is backed by a team of experienced instructors and a range of creative
@@ -86,15 +86,13 @@ function Home() {
       </StyledContentWrapper>
       <hr />
 
-
       <StyledInfoWrapper>
-        <div className='gif-container'>
+        <div className="gif-container">
           <h1>Begin Your Coding Journey Today!</h1>
           <img src={carbon} className="carbon-img" alt="Screen" />
           {/* <LaptopScreen /> */}
         </div>
       </StyledInfoWrapper>
-
 
       <StyledFullWidth bgColor="#fb6169">
         <StyledFlexWrap className="green-content">
@@ -105,14 +103,13 @@ function Home() {
       </StyledFullWidth>
 
       <StyledTitleWrapper>
-        <h1 className="company-title">
-          Building the Future of Tech: Our Bootcamp Helps Companies Find and Train Top Candidates
-        </h1>
+        <h1 className="company-title">Building the Future of Tech!</h1>
       </StyledTitleWrapper>
       <StyledContentWrapper>
         <StyledDeliveryInfo>
           <span>
             <p>
+              <b> Our Bootcamp Helps Companies Find and Train Top Candidates. </b>
               CodeCrafts is committed to helping companies build the strong, talented teams they need to succeed in the
               tech industry. Our Web Development and DevOps bootcamp offers a unique solution for finding and training
               top candidates. Through a combination of hands-on training, practical experience, and comprehensive
@@ -122,7 +119,7 @@ function Home() {
             </p>
             <RoundedButton bgColor="#fb6169">Read More</RoundedButton>
           </span>
-          <Lottie options={defaultOptions} height={500} />
+          <Lottie options={defaultOptions} height={400} />
         </StyledDeliveryInfo>
       </StyledContentWrapper>
 
@@ -140,25 +137,6 @@ function Home() {
           </StyledMakeTogether>
         </StyledFullWidth>
       </StyledTestTestimonialsWrapper>
-
-      <StyledFullWidth bgColor="#2f2e41">
-        <StyledSocials>
-          <h2>Follow Us On Socials</h2>
-          <p>Stay up-to-date with our latest news and updates by following us on social media.</p>
-
-          <span>
-            <a href="https://twitter.com/codecrafts_">
-              <ion-icon name="logo-twitter" />
-            </a>
-            <a href="https://discord.gg/Ks7UxrqBSF">
-              <ion-icon name="logo-discord" />
-            </a>
-            <a href="https://instagram.com/codecrafts_">
-              <ion-icon name="logo-instagram" />
-            </a>
-          </span>
-        </StyledSocials>
-      </StyledFullWidth>
     </StyleHome>
   );
 }
