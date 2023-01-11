@@ -23,7 +23,7 @@ export const StyledContentWrapper = styled.div`
     }
   }
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
 `;
@@ -80,12 +80,15 @@ export const StyledInfoWrapper = styled.div`
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
 
       h1 {
-        padding-left: 62px;
-        padding-right: 62px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        margin-bottom: 0
       }
 
       .creative {
-        padding: 0 60px;
+        padding: 0 30px;
       }
 
       .gif-container {
@@ -263,9 +266,10 @@ export const StyledHomeHead = styled.div`
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
     flex-direction: column-reverse;
     text-align: center;
+    padding: 0 30px 30px 30px;
 
-    img {
-      margin-bottom: 20px;
+    svg {
+      max-width: 300px;
     }
   }
 
