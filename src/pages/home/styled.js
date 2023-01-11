@@ -24,6 +24,17 @@ export const StyledContentWrapper = styled.div `
       align-items: center;
     }
   }
+
+  ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+    padding-bottom: 0;
+  }
+
+  b.company-subtitle {
+      width: min(100%, 900px);
+      margin: 0 auto;
+      text-align: center;
+      padding: 5px 20px 50px 20px;
+    }
 `;
 
 export const StyledTitleWrapper = styled.div `
@@ -64,6 +75,23 @@ export const StyledInfoWrapper = styled.div `
     text-align: justify;
     padding: 0 10px;
     font-size: 15px;
+  }
+
+  ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+
+      h1 {
+        padding-left: 62px;
+        padding-right: 62px;
+      }
+
+      .creative {
+        padding: 0 60px;
+      }
+
+      .gif-container {
+        padding: 0 40px 40px 40px;
+      }
+    }
   }
 `;
 
@@ -220,10 +248,9 @@ export const StyledHomeHead = styled.div `
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
     flex-direction: column-reverse;
     text-align: center;
-    margin-top: 50px;
 
-    img {
-      margin-bottom: 20px;
+    svg {
+      max-width: 300px;
     }
   }
 
