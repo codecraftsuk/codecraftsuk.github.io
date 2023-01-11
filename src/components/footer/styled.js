@@ -58,6 +58,11 @@ export const StyledCopyRight = styled.div`
   text-align: center;
   color: white;
   padding-bottom: 70px;
+
+  ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 `;
 
 export const StyledSocials = styled.div`

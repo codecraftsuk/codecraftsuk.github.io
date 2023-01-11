@@ -22,6 +22,10 @@ export const StyledContentWrapper = styled.div`
       align-items: center;
     }
   }
+  ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+    padding-bottom: 0px;
+  }
+
 `;
 
 export const StyledTitleWrapper = styled.div`
@@ -152,6 +156,14 @@ export const StyledMakeTogether = styled.div`
 
   h2 {
     margin-bottom: 20px;
+  }
+
+  ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+      padding: 157px 30px 157px 30px;
+      text-align: center;
+      h2 {
+        padding: 0 20px;
+      }
   }
 `;
 
