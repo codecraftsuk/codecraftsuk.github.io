@@ -6,7 +6,7 @@ function FadeInWhenVisible({ children }) {
     <motion.div
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+      viewport={{ once: false }}
       transition={{ duration: 0.3, type: 'easeIn', delay: 0.2 }}
     >
       {children}
