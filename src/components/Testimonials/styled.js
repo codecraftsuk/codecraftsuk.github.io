@@ -4,7 +4,7 @@ export const StyledWrapper = styled.div`
   width: 100%;
   background-color: ${({ theme }) => theme.quinary};
   color: ${({ theme }) => theme.primaryText};
-  padding: 90px 0;
+  padding: 70px 0;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -76,11 +76,11 @@ export const StyledInfoWrapper = styled.div`
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
 
       .creative {
-        padding: 0 80px;
+        padding: 0 60px;
       }
 
       .gif-container {
-        padding: 0 60px 40px 60px;
+        padding: 0 40px 40px 40px;
       }
     }
   }
@@ -119,7 +119,7 @@ export const StyledDeliveryInfo = styled.div`
 
     p {
       text-align: justify;
-      padding: 13px;
+      // padding: 13px;
     }
   }
 `;
@@ -134,7 +134,7 @@ export const StyledMakeTogether = styled.div`
   align-items: center;
   justify-content: center;
   /* flex-wrap: wrap; */
-  padding: 60px 30px;
+  padding: 70px 30px;
   /* height: 420px; */
   flex-direction: column;
   height: 100%;

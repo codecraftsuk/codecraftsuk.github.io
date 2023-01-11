@@ -9,7 +9,7 @@ export const StyledFooter = styled.div`
 export const StyledFooterWrapper = styled.div`
   color: white;
   display: flex;
-  padding: 30px 10px;
+  padding: 70px 200px 40px 200px;
   width: min(100%, 1500px);
   margin: 0 auto;
 
@@ -18,6 +18,12 @@ export const StyledFooterWrapper = styled.div`
   & > * {
     flex: 1 0 300px;
   }
+
+  ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
+    padding: 30px 60px;
+  }
+}
+
 `;
 
 export const StyledLinkWrapper = styled.div`
@@ -51,7 +57,7 @@ export const StyledCopyRight = styled.div`
   background-color: #212121;
   text-align: center;
   color: white;
-  padding-bottom: 60px;
+  padding-bottom: 70px;
 `;
 
 export const StyledSocials = styled.div`
