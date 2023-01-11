@@ -544,7 +544,7 @@ object-assign
   }
 `,StyledLabel=styled.p`
   border-bottom: 1px solid gray;
-`,StyledLearnText=styled.p`
+`;styled.p`
   font-weight: 500;
   margin: 10px 10px;
 
@@ -552,28 +552,34 @@ object-assign
     content: '✓';
     margin-right: 10px;
   }
-`,StyledBuyWrapper=styled.div`
+`;const StyledBuyWrapper=styled.div`
   margin-top: 40px;
   top: 20px;
 
   ${({theme:{breakPoints:a}})=>a.up("md")} {
-    position: sticky;
+    position: flex;
     align-self: flex-start;
     width: 50%;
-    box-shadow: 0px 0px 40px -10px gray;
-    border-radius: 5px;
-    overflow: hidden;
   }
 
   img {
     width: 100%;
+    border-radius: 5px;
   }
 
   h2,
   button {
     margin: 10px;
   }
-`,CourseDetails=()=>{var et,tt;const a=useParams(),s=useNavigate(),o=reactExports.useMemo(()=>coursesData.find(rt=>rt.id===+a.courseId),[a]);return jsxs(StyledCourseDetailsWrapper,{children:[jsxs(StyledCourseDetails,{children:[jsx("ion-icon",{className:"back",name:"chevron-back-outline",onClick:()=>s(-1)}),jsxs("div",{className:"course-section-1",children:[jsxs("div",{className:"content",children:[jsx("h2",{children:o==null?void 0:o.name}),jsx("h2",{children:o==null?void 0:o.description})]}),jsxs("div",{className:"course-info",children:[jsx(IconText,{name:"save-outline",children:"Last Updated 09/01/2022"}),jsx(IconText,{name:"language-outline",children:"English"}),jsx(IconText,{name:"code-slash-outline",children:"Coding Exercises"}),jsx(IconText,{name:"laptop-outline",children:"Access on Mobile, TV, PC"}),jsx(IconText,{name:"git-pull-request-outline",children:"MAC/Windows Machine & IDE"})]})]}),jsxs("div",{className:"course-section-2",children:[jsx(StyledLabel,{children:"Description"}),jsx("p",{className:"long-description",children:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, facilis! Tempore, tenetur officiis quisquam, explicabo iusto nisi accusantium perferendis dolore aspernatur qui voluptatum exercitationem minima aliquid ratione ab aliquam libero obcaecati id. Esse tempore assumenda similique molestias recusandae nemo veniam? At reiciendis nisi fugit quidem iure itaque voluptatibus voluptate, a fugiat, dolorem voluptates architecto repellat? Molestias cumque sed provident iste porro soluta, deleniti non nostrum quisquam consectetur alias ratione, mollitia laudantium nulla placeat. Dolorum in laudantium at fugiat nobis magni odio explicabo ullam, soluta ad eius perferendis esse autem quaerat cupiditate laborum magnam. Reprehenderit reiciendis iste labore illo dicta officia."}),jsxs("div",{className:"weeks",children:[jsx(StyledLabel,{children:"Course Context"}),(et=o==null?void 0:o.weeks)==null?void 0:et.map(rt=>jsxs(Fragment,{children:[jsx(Accordion,{title:rt,text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?"}),jsx("hr",{})]}))]}),jsx(StyledLabel,{children:"What you'll learn"}),jsx("div",{className:"learning-text",children:(tt=o==null?void 0:o.learn)==null?void 0:tt.map(rt=>jsx(StyledLearnText,{children:rt}))})]})]}),jsxs(StyledBuyWrapper,{children:[jsx("img",{src:o==null?void 0:o.image,alt:""}),jsx("h2",{children:"Subscribe to our amazing courses"}),jsx(RoundedButton,{bgColor:"#FB6169",children:"Buy Now"})]})]})},StyledCardWrapper=styled.div`
+
+  .course-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 10px;
+  }
+`,CourseDetails=()=>{var et;const a=useParams(),s=useNavigate(),o=reactExports.useMemo(()=>coursesData.find(tt=>tt.id===+a.courseId),[a]);return jsxs(StyledCourseDetailsWrapper,{children:[jsxs(StyledCourseDetails,{children:[jsx("ion-icon",{className:"back",name:"chevron-back-outline",onClick:()=>s(-1)}),jsxs("div",{className:"course-section-2",children:[jsx(StyledLabel,{children:"Description"}),jsx("p",{className:"long-description",children:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, facilis! Tempore, tenetur officiis quisquam, explicabo iusto nisi accusantium perferendis dolore aspernatur qui voluptatum exercitationem minima aliquid ratione ab aliquam libero obcaecati id. Esse tempore assumenda similique molestias recusandae nemo veniam? At reiciendis nisi fugit quidem iure itaque voluptatibus voluptate, a fugiat, dolorem voluptates architecto repellat? Molestias cumque sed provident iste porro soluta, deleniti non nostrum quisquam consectetur alias ratione, mollitia laudantium nulla placeat. Dolorum in laudantium at fugiat nobis magni odio explicabo ullam, soluta ad eius perferendis esse autem quaerat cupiditate laborum magnam. Reprehenderit reiciendis iste labore illo dicta officia."}),jsxs("div",{className:"weeks",children:[jsx(StyledLabel,{children:"Course Context"}),(et=o==null?void 0:o.weeks)==null?void 0:et.map(tt=>jsxs(Fragment,{children:[jsx(Accordion,{title:tt,text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?"}),jsx("hr",{})]}))]})]})]}),jsxs(StyledBuyWrapper,{children:[jsx("img",{src:o==null?void 0:o.image,alt:""}),jsx("h2",{children:"Web Development"}),jsx(RoundedButton,{bgColor:"#FB6169",children:"Buy Now"}),jsxs("div",{className:"course-info",children:[jsx(IconText,{name:"save-outline",children:"Last Updated 09/01/2022"}),jsx(IconText,{name:"language-outline",children:"English"}),jsx(IconText,{name:"code-slash-outline",children:"Coding Exercises"}),jsx(IconText,{name:"laptop-outline",children:"Access on Mobile, TV, PC"}),jsx(IconText,{name:"git-pull-request-outline",children:"MAC/Windows Machine & IDE"})]})]})]})},StyledCardWrapper=styled.div`
   /* width: min(100%, 400px); */
   display: flex;
   flex-direction: column;
@@ -603,18 +609,17 @@ object-assign
 
   .coming-soon {
     position: absolute;
-    background: red;
+    background: #ffb900;
     width: 100%;
     text-align: center;
     font-weight: 500;
     font-size: 1.5rem;
-    /* transform: rotate(35deg); */
-    /* translate: 95px 60px; */
-    outline: 3px solid white;
-    border: 3px solid black;
+    transform: rotate(45deg);
+    translate: 115px -70px;
+    outline: 3px solid #4b3600;
+    border: 3px solid #ffb900;
     margin: 0;
     top: 30%;
-    transform: translateY(-10%);
     padding: 10px 0;
     color: black;
   }
