@@ -17,7 +17,7 @@ export const StyledWrapper = styled.div`
 
   span {
     font-family: 'Passion One', cursive;
-    font-size: 6rem;
+    font-size: 4rem;
     color: ${({ theme }) => theme.primaryText};
   }
 

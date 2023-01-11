@@ -4,9 +4,9 @@ import styled, { keyframes } from 'styled-components';
 export const StyledContentWrapper = styled.div`
   width: min(100%, 1500px);
   margin: 0 auto;
-  padding: 10px 10px 10px 10px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 50px;
 
   .members {
     ion-icon {
@@ -30,6 +30,14 @@ export const StyledTitleWrapper = styled.div`
     margin: 0 auto;
     text-align: center;
     padding-top: 70px;
+    padding-bottom: 40px;
+  }
+
+  ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+
+    .company-title {
+      padding: 70px 60px 20px 60px;
+    }
   }
 `;
 
@@ -50,18 +58,31 @@ export const StyledInfoWrapper = styled.div`
   }
 
   .gif-container {
-    padding: 0 20px;
+    padding: 0 20px 50px 20px;
   }
 
   .carbon-img {
-    width: 100%;
+    margin: 0;
+    max-width: 100%;
     border-radius: 10px;
   }
 
   p.creative {
     text-align: justify;
-    padding: 0 10px;
+    // padding: 0 10px;
     font-size: 15px;
+  }
+
+  ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+
+      .creative {
+        padding: 0 80px;
+      }
+
+      .gif-container {
+        padding: 0 60px 40px 60px;
+      }
+    }
   }
 `;
 
@@ -81,6 +102,8 @@ export const StyledDeliveryInfo = styled.div`
   gap: 30px;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 10px;
+  padding: 0 60px 10px 60px;
 
   text-align: center;
   width: min(100%, 1120px);
@@ -91,7 +114,7 @@ export const StyledDeliveryInfo = styled.div`
     /* padding: 13px; */
 
     & > * {
-      margin-bottom: 30px;
+      margin-bottom: 34px;
     }
 
     p {
@@ -200,7 +223,7 @@ export const StyledHomeHead = styled.div`
   /* padding: 0px 200px; */
   /* flex-wrap: wrap; */
   justify-content: space-evenly;
-  padding: 0 20px;
+  padding: 70px;
   width: min(100%, 1500px);
   margin: 0 auto;
 
@@ -217,7 +240,6 @@ export const StyledHomeHead = styled.div`
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
     flex-direction: column-reverse;
     text-align: center;
-    margin-top: 50px;
 
     img {
       margin-bottom: 20px;

@@ -80,7 +80,7 @@ function Home() {
 
         <FadeInWhenVisible>
           <StyledFlexWrap>
-            {infoIconData.map((iconData) => (
+              {infoIconData.map((iconData) => (
               <IconInfo {...iconData} />
             ))}
           </StyledFlexWrap>
