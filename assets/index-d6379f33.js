@@ -130,6 +130,11 @@ Error generating stack: `+rt.message+`
   text-align: center;
   color: white;
   padding-bottom: 70px;
+
+  ${({theme:{breakPoints:a}})=>a.down("md")} {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 `,StyledSocials=styled.div`
   /* background-color: inherit; */
   background-color: #212121;
@@ -739,7 +744,7 @@ object-assign
   width: 100%;
   background-color: ${({theme:a})=>a.quinary};
   color: ${({theme:a})=>a.primaryText};
-  padding: 70px 0;
+  padding: 70px 0 90px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -792,6 +797,10 @@ object-assign
       align-items: center;
     }
   }
+  ${({theme:{breakPoints:a}})=>a.down("md")} {
+    padding-bottom: 0px;
+  }
+
 `,StyledTitleWrapper=styled.div`
   .company-title {
     width: min(100%, 900px);
@@ -912,6 +921,14 @@ object-assign
 
   h2 {
     margin-bottom: 20px;
+  }
+
+  ${({theme:{breakPoints:a}})=>a.down("md")} {
+      padding: 157px 30px 157px 30px;
+      text-align: center;
+      h2 {
+        padding: 0 20px;
+      }
   }
 `;styled.div`
   font-size: 6rem;
