@@ -30,13 +30,13 @@ export const StyledTitleWrapper = styled.div`
     margin: 0 auto;
     text-align: center;
     padding-top: 70px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
 
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
 
     .company-title {
-      padding: 70px 60px 20px 60px;
+      padding: 70px 60px 40px 60px;
     }
   }
 `;
@@ -74,6 +74,11 @@ export const StyledInfoWrapper = styled.div`
   }
 
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+
+      h1 {
+        padding-left: 62px;
+        padding-right: 62px;
+      }
 
       .creative {
         padding: 0 60px;
@@ -120,6 +125,12 @@ export const StyledDeliveryInfo = styled.div`
     p {
       text-align: justify;
       // padding: 13px;
+    }
+
+    ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+      p {
+        padding: 0 20px 0 10px;
+      }
     }
   }
 `;
