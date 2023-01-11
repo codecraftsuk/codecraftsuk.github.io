@@ -113,10 +113,10 @@ function Home() {
           <h1 className="company-title">Building the Future of Tech!</h1>
         </StyledTitleWrapper>
         <StyledContentWrapper>
+          <b className="company-subtitle"> Our Bootcamp Helps Companies Find and Train Top Candidates. </b>
           <StyledDeliveryInfo>
             <span>
               <p>
-                <b> Our Bootcamp Helps Companies Find and Train Top Candidates. </b>
                 CodeCrafts is committed to helping companies build the strong, talented teams they need to succeed in
                 the tech industry. Our Web Development and DevOps bootcamp offers a unique solution for finding and
                 training top candidates. Through a combination of hands-on training, practical experience, and
