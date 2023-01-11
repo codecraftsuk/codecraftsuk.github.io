@@ -31,19 +31,18 @@ export const StyledCardWrapper = styled.div`
 
   .coming-soon {
     position: absolute;
-    background: red;
+    background: #ffb900;
     width: 100%;
     text-align: center;
     font-weight: 500;
     font-size: 1.5rem;
-    /* transform: rotate(35deg); */
-    /* translate: 95px 60px; */
-    outline: 3px solid white;
-    border: 3px solid black;
+    transform: rotate(45deg);
+    translate: 115px -70px;
+    outline: 3px solid #4b3600;
+    border: 3px solid #ffb900;
     margin: 0;
     top: 30%;
-    transform: translateY(-10%);
     padding: 10px 0;
     color: black;
   }
-`;
+`

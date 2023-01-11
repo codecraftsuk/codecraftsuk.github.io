@@ -21,23 +21,6 @@ const CourseDetails = () => {
     <StyledCourseDetailsWrapper>
       <StyledCourseDetails>
         <ion-icon className="back" name="chevron-back-outline" onClick={() => navigate(-1)} />
-        <div className="course-section-1">
-          <div className="content">
-            {/* <StyledLabel>Course</StyledLabel> */}
-            <h2>{course?.name}</h2>
-
-            <h2>{course?.description}</h2>
-          </div>
-
-          <div className="course-info">
-            <IconText name="save-outline">Last Updated 09/01/2022</IconText>
-            <IconText name="language-outline">English</IconText>
-            <IconText name="code-slash-outline">Coding Exercises</IconText>
-            <IconText name="laptop-outline">Access on Mobile, TV, PC</IconText>
-            <IconText name="git-pull-request-outline">MAC/Windows Machine & IDE</IconText>
-          </div>
-        </div>
-
         <div className="course-section-2">
           <StyledLabel>Description</StyledLabel>
           <p className="long-description">
@@ -63,20 +46,20 @@ const CourseDetails = () => {
               </>
             ))}
           </div>
-
-          <StyledLabel>What you'll learn</StyledLabel>
-          <div className="learning-text">
-            {course?.learn?.map((l) => (
-              <StyledLearnText>{l}</StyledLearnText>
-            ))}
-          </div>
         </div>
       </StyledCourseDetails>
 
       <StyledBuyWrapper>
         <img src={course?.image} alt="" />
-        <h2>Subscribe to our amazing courses</h2>
+        <h2>Web Development</h2>
         <RoundedButton bgColor="#FB6169">Buy Now</RoundedButton>
+        <div className="course-info">
+            <IconText name="save-outline">Last Updated 09/01/2022</IconText>
+            <IconText name="language-outline">English</IconText>
+            <IconText name="code-slash-outline">Coding Exercises</IconText>
+            <IconText name="laptop-outline">Access on Mobile, TV, PC</IconText>
+            <IconText name="git-pull-request-outline">MAC/Windows Machine & IDE</IconText>
+        </div>
       </StyledBuyWrapper>
     </StyledCourseDetailsWrapper>
   );

@@ -96,20 +96,26 @@ export const StyledBuyWrapper = styled.div`
   top: 20px;
 
   ${({ theme: { breakPoints } }) => breakPoints.up('md')} {
-    position: sticky;
+    position: flex;
     align-self: flex-start;
     width: 50%;
-    box-shadow: 0px 0px 40px -10px gray;
-    border-radius: 5px;
-    overflow: hidden;
   }
 
   img {
     width: 100%;
+    border-radius: 5px;
   }
 
   h2,
   button {
     margin: 10px;
+  }
+
+  .course-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 10px;
   }
 `;
