@@ -4,7 +4,7 @@ export const StyledWrapper = styled.div`
   width: 100%;
   background-color: ${({ theme }) => theme.quinary};
   color: ${({ theme }) => theme.primaryText};
-  padding: 90px 0;
+  padding: 70px 0 90px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +17,7 @@ export const StyledWrapper = styled.div`
 
   span {
     font-family: 'Passion One', cursive;
-    font-size: 6rem;
+    font-size: 4rem;
     color: ${({ theme }) => theme.primaryText};
   }
 

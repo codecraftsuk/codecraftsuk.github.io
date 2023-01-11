@@ -6,9 +6,9 @@ import styled, {
 export const StyledContentWrapper = styled.div `
   width: min(100%, 1500px);
   margin: 0 auto;
-  padding: 10px 10px 10px 10px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 50px;
 
   .members {
     ion-icon {
@@ -43,6 +43,14 @@ export const StyledTitleWrapper = styled.div `
     margin: 0 auto;
     text-align: center;
     padding-top: 70px;
+    padding-bottom: 5px;
+  }
+
+  ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+
+    .company-title {
+      padding: 70px 60px 5px 60px;
+    }
   }
 `;
 
@@ -63,29 +71,42 @@ export const StyledInfoWrapper = styled.div `
   }
 
   .gif-container {
-    padding: 0 20px;
+    padding: 0 20px 50px 20px;
   }
 
   .carbon-img {
-    width: 100%;
+    margin: 0;
+    max-width: 100%;
     border-radius: 10px;
   }
 
   p.creative {
     text-align: justify;
-    padding: 0 10px;
+    // padding: 0 10px;
     font-size: 15px;
   }
 
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
 
       h1 {
+<<<<<<< HEAD
         padding-left: 62px;
         padding-right: 62px;
       }
 
       .creative {
         padding: 0 60px;
+=======
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        margin-bottom: 0
+      }
+
+      .creative {
+        padding: 0 30px;
+>>>>>>> 5dc7d7f0cf34a039947f3406fbb10bd397eda099
       }
 
       .gif-container {
@@ -111,6 +132,8 @@ export const StyledDeliveryInfo = styled.div `
   gap: 30px;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 10px;
+  padding: 0 60px 10px 60px;
 
   text-align: center;
   width: min(100%, 1120px);
@@ -121,12 +144,18 @@ export const StyledDeliveryInfo = styled.div `
     /* padding: 13px; */
 
     & > * {
-      margin-bottom: 30px;
+      margin-bottom: 34px;
     }
 
     p {
       text-align: justify;
-      padding: 13px;
+      // padding: 13px;
+    }
+
+    ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+      p {
+        padding: 0 20px 0 10px;
+      }
     }
   }
 `;
@@ -141,13 +170,21 @@ export const StyledMakeTogether = styled.div `
   align-items: center;
   justify-content: center;
   /* flex-wrap: wrap; */
-  padding: 60px 30px;
+  padding: 70px 30px;
   /* height: 420px; */
   flex-direction: column;
   height: 100%;
 
   h2 {
     margin-bottom: 20px;
+  }
+
+  ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+      padding: 157px 30px 157px 30px;
+      text-align: center;
+      h2 {
+        padding: 0 20px;
+      }
   }
 `;
 
@@ -230,7 +267,7 @@ export const StyledHomeHead = styled.div `
   /* padding: 0px 200px; */
   /* flex-wrap: wrap; */
   justify-content: space-evenly;
-  padding: 0 20px;
+  padding: 70px;
   width: min(100%, 1500px);
   margin: 0 auto;
 
@@ -248,6 +285,10 @@ export const StyledHomeHead = styled.div `
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
     flex-direction: column-reverse;
     text-align: center;
+<<<<<<< HEAD
+=======
+    padding: 0 30px 30px 30px;
+>>>>>>> 5dc7d7f0cf34a039947f3406fbb10bd397eda099
 
     svg {
       max-width: 300px;

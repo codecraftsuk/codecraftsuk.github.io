@@ -80,7 +80,7 @@ function Home() {
 
         <FadeInWhenVisible>
           <StyledFlexWrap>
-            {infoIconData.map((iconData) => (
+              {infoIconData.map((iconData) => (
               <IconInfo {...iconData} />
             ))}
           </StyledFlexWrap>
@@ -91,7 +91,7 @@ function Home() {
       <FadeInWhenVisible>
         <StyledInfoWrapper>
           <div className="gif-container">
-            <h1>Begin Your Coding Journey Today!</h1>
+            <h1>Begin Your Journey!</h1>
             <img src={carbon} className="carbon-img" alt="Screen" />
             {/* <LaptopScreen /> */}
           </div>
