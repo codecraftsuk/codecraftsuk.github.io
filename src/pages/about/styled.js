@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 export const StyledAboutWrapper = styled.div`
-  width: min(100%, 1500px);
+  width: min(95%, 1500px);
   margin: 0 auto;
   margin-top: 50px;
-
   text-align: center;
   padding-bottom: 100px;
 
@@ -14,21 +13,21 @@ export const StyledAboutWrapper = styled.div`
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
 
   p {
-    font-size: 24px;
+    font-size: 22px;
     text-align: left;
 
     ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
-      font-size: 20px;
+      font-size: 16px;
     }
   }
 
   .back {
     text-align: left;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     font-size: 2.8rem;
 
     display: flex;
@@ -44,6 +43,37 @@ export const StyledAboutWrapper = styled.div`
       color: red;
     }
   }
+
+  hr {
+    margin: 35px auto;
+  }
+
+  .building-tech-text {
+    text-align: justify;
+    margin-top: 10px;
+  }
+
+  .meet-team {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+
+    span {
+      width: min(95%, 200px);
+    }
+
+    h3 {
+    }
+    img {
+      width: 90%;
+    }
+  }
+
+  /* .meet-team */
 `;
 
 export const StyledAboutContent = styled.div`
@@ -51,8 +81,12 @@ export const StyledAboutContent = styled.div`
   justify-content: center;
   align-items: center;
 
+  p {
+    text-align: justify;
+  }
+
   & > * {
-    padding: 0 20px;
+    /* padding: 0 20px; */
     flex: 1 0;
   }
 

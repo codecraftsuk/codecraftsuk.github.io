@@ -13,7 +13,7 @@ const Pricing = () => {
         <h1>Pricing</h1>
       </div>
 
-      <p>
+      <p className="text-content">
         At CodeCrafts, we believe that high-quality education should be accessible to everyone. That's why we offer
         flexible pricing options to meet the needs of our students. Whether you're paying out of pocket or using
         financing, we have a solution that will work for you. Our team is dedicated to helping you afford the education
@@ -22,9 +22,9 @@ const Pricing = () => {
       </p>
 
       <div className="price-cards">
-        <PriceCard title="Basic" price="49" />
-        <PriceCard showStar title="Pro" price="149" description="Most Popular" />
-        <PriceCard title="Enterprise" price="299" />
+        <PriceCard btnProps={{ textColor: '#FB6169' }} title="Basic" price="49" />
+        <PriceCard btnProps={{ bgColor: '#FB6169' }} showStar title="Pro" price="149" description="Most Popular" />
+        <PriceCard btnProps={{ textColor: '#FB6169' }} title="Enterprise" price="299" />
       </div>
     </StyledPricingWrapper>
   );

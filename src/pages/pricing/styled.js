@@ -39,6 +39,10 @@ export const StyledPricingWrapper = styled.div`
     padding: 25px;
   }
 
+  .text-content {
+    text-align: justify;
+  }
+
   .price-cards {
     display: flex;
     /* flex-wrap: wrap; */

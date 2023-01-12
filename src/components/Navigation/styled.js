@@ -12,6 +12,11 @@ export const StyledNavWrapper = styled.div`
   img {
     height: 50px;
     margin-left: 20px;
+
+    ${({ theme: { breakPoints } }) => breakPoints.down('xs')} {
+      width: 40px !important;
+      height: 40px !important;
+    }
   }
 
   button {
@@ -22,6 +27,13 @@ export const StyledNavWrapper = styled.div`
   button:nth-child(3) {
     ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
       display: none;
+    }
+  }
+
+  button:nth-child(2) {
+    ${({ theme: { breakPoints } }) => breakPoints.down('xs')} {
+      /* display: none; */
+      padding: 3px 10px;
     }
   }
 

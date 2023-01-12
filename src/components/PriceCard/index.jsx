@@ -3,7 +3,7 @@ import React from 'react';
 import RoundedButton from '../RoundedButton';
 import { StyledPriceCard } from './styled';
 
-const PriceCard = ({ title, description, price, showStar }) => {
+const PriceCard = ({ title, description, price, showStar, btnProps = {} }) => {
   return (
     <StyledPriceCard>
       <div className="head">
@@ -16,7 +16,7 @@ const PriceCard = ({ title, description, price, showStar }) => {
       <h4>10 users included</h4>
       <h4>10 users included</h4>
 
-      <RoundedButton bgColor="#fb6169">Buy</RoundedButton>
+      <RoundedButton {...btnProps}>Buy</RoundedButton>
       {showStar && <ion-icon name="star-outline" />}
     </StyledPriceCard>
   );

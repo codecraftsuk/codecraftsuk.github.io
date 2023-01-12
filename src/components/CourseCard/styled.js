@@ -2,7 +2,6 @@
 import styled from 'styled-components';
 
 export const StyledCardWrapper = styled.div`
-  /* width: min(100%, 400px); */
   display: flex;
   flex-direction: column;
   img {
@@ -15,6 +14,7 @@ export const StyledCardWrapper = styled.div`
   box-shadow: 0px 00px 20px gray;
   overflow: hidden;
   position: relative;
+  max-width: 354px;
 
   div {
     margin: 10px;
@@ -45,4 +45,14 @@ export const StyledCardWrapper = styled.div`
     padding: 10px 0;
     color: black;
   }
-`
+
+  ${({ theme: { breakPoints } }) => breakPoints.down('xs')} {
+    max-width: 95%;
+    .coming-soon {
+      font-size: 14px;
+      width: 120%;
+
+      translate: 55px -70px;
+    }
+  }
+`;

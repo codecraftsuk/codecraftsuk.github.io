@@ -13,8 +13,9 @@ export const StyledText = styled.div`
   padding-left: 10px;
   color: ${({ theme }) => theme.primaryPrimary};
 
-  ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
-    display: none;
+  ${({ theme: { breakPoints } }) => breakPoints.down('xs')} {
+    /* display: none; */
+    font-size: 12px;
   }
 
   @keyframes typing {

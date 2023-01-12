@@ -25,13 +25,14 @@ section {
 }
 
 .courses-wrapper {
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
+  overflow: hidden;
 }
 
 .faq-wrapper {
   width: min(100%, 1300px);
   margin: 0 auto;
-  padding: 0 10px 50px 10px;
+  padding: 10px 10px 50px 10px;
   color: #000;
 }
 
@@ -40,7 +41,8 @@ section {
   padding: 20px;
   width: 100%;
   height: 140px;
-  margin-bottom: -10px;
+  margin-bottom: -8px;
+  scale: 1.1;
 }
 
 .main-title {

@@ -9,7 +9,8 @@ export const StyledPriceCard = styled.div`
   height: fit-content;
   /* box-shadow: 20px 20px 30000px grey; */
   position: relative;
-  background-color: ${({ theme }) => theme.quinary};
+  /* background-color: ${({ theme }) => theme.quinary}; */
+  border: 1px solid lightgray;
 
   border-radius: 7px;
   margin: 20px 10px;

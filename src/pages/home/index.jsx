@@ -123,7 +123,9 @@ function Home() {
                 the tech industry. If you're a tech company looking to build a strong team and secure a bright future,
                 consider partnering with CodeCrafts and our bootcamp program.
               </p>
-              <RoundedButton bgColor="#fb6169">Read More</RoundedButton>
+              <RoundedButton onClick={() => navigate('/about')} bgColor="#fb6169">
+                Read More
+              </RoundedButton>
             </span>
             <Lottie options={defaultOptions} height={400} />
           </StyledDeliveryInfo>
@@ -139,7 +141,7 @@ function Home() {
           <StyledFullWidth>
             <StyledMakeTogether>
               <h2>Let&apos;s Make Something Great Together.</h2>
-              <RoundedButton bgColor="#FB6169" textColor="black">
+              <RoundedButton onClick={() => navigate('/courses')} bgColor="#FB6169" textColor="black">
                 Start a Course
               </RoundedButton>
             </StyledMakeTogether>
