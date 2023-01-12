@@ -9,9 +9,12 @@ export const StyledCardWrapper = styled.div`
     flex: 1 0;
   }
   margin: 10px;
-  border-radius: 6px;
+  border-style: solid;
+  ${'' /* border-bottom: solid transparent; */}
+  border-radius: 6px 6px 6px 6px;
+  border-width: thin;
+  border-color: white;
   cursor: pointer;
-  box-shadow: 0px 00px 20px gray;
   overflow: hidden;
   position: relative;
   max-width: 354px;
@@ -39,7 +42,7 @@ export const StyledCardWrapper = styled.div`
     transform: rotate(45deg);
     translate: 115px -70px;
     outline: 3px solid #4b3600;
-    border: 3px solid #ffb900;
+    border: 3px solid #ffb952;
     margin: 0;
     top: 30%;
     padding: 10px 0;

@@ -21,6 +21,7 @@ import {
 import animationData from '../../assets/lottie/meeting.json';
 import animationDataWelcome from '../../assets/lottie/laptop.json';
 import carbon from '../../assets/images/portfolio/carbon3.gif';
+import laptop from '../../assets/images/background/laptop-screen.png';
 import FadeInWhenVisible from '../../components/FadeInWhenVisible';
 
 const defaultOptions = {
@@ -92,7 +93,11 @@ function Home() {
         <StyledInfoWrapper>
           <div className="gif-container">
             <h1>Begin Your Journey!</h1>
-            <img src={carbon} className="carbon-img" alt="Screen" />
+            <div class="laptop-bg">
+              <div class="laptop-content-bg"> 
+              </div>
+              <img src={laptop} className="laptop" alt="Screen" />
+            </div>
             {/* <LaptopScreen /> */}
           </div>
         </StyledInfoWrapper>

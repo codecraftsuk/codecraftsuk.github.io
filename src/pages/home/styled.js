@@ -1,5 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 import styled, { keyframes } from 'styled-components';
+import carbon from '../../assets/images/portfolio/carbon3.gif';
 
 export const StyledContentWrapper = styled.div`
   width: min(95%, 1500px);
@@ -78,9 +79,30 @@ export const StyledInfoWrapper = styled.div`
     border-radius: 10px;
   }
 
+  img {
+    max-width: 100%;
+  }
+  .laptop-bg {
+    background-size: contain;
+    background-clip: border-box;
+    position:relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .laptop-bg > .laptop-content-bg {
+    background-image: url(${carbon});
+    background-color:blue;
+    background-repeat: no-repeat;
+    position: absolute;
+    left:17.5%;
+    top: 17%;
+    bottom: 22%;
+    right: 18.5%;
+  }
+
   p.creative {
     text-align: justify;
-    // padding: 0 10px;
     font-size: 15px;
   }
 
