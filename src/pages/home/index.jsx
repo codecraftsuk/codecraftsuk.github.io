@@ -80,7 +80,7 @@ function Home() {
 
         <FadeInWhenVisible>
           <StyledFlexWrap>
-              {infoIconData.map((iconData) => (
+            {infoIconData.map((iconData) => (
               <IconInfo {...iconData} />
             ))}
           </StyledFlexWrap>
@@ -113,7 +113,6 @@ function Home() {
           <h1 className="company-title">Building the Future of Tech!</h1>
         </StyledTitleWrapper>
         <StyledContentWrapper>
-          <b className="company-subtitle"> Our Bootcamp Helps Companies Find and Train Top Candidates. </b>
           <StyledDeliveryInfo>
             <span>
               <p>

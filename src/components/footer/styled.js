@@ -9,18 +9,18 @@ export const StyledFooter = styled.div`
 export const StyledFooterWrapper = styled.div`
   color: white;
   display: flex;
-  padding: 70px 200px 40px 200px;
-  width: min(100%, 1500px);
+  /* padding: 70px 200px 40px 200px; */
+  width: min(100%, 1200px);
   margin: 0 auto;
 
   flex-wrap: wrap;
 
   & > * {
-    flex: 1 0 300px;
+    flex: 1 0 min(100px, 300px);
   }
 
   ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
-    padding: 30px 60px;
+    /* padding: 30px 60px; */
   }
 }
 
@@ -34,22 +34,13 @@ export const StyledLinkWrapper = styled.div`
 `;
 
 export const StyledLink = styled(Link)`
-  text-decoration: none;
+  padding: 5px;
   color: white;
-  padding-bottom: 5px;
-  padding-left: 10px;
-
-  background: rgb(47, 46, 65);
-  background: linear-gradient(90deg, #fb6169 29%, #2f2e41 60%);
-  background-repeat: no-repeat;
-  background-position: 0% 100%;
-  background-size: 100% 2px;
-  transition: background-position 0.05s, background-size 0.05s ease-in 0.05s;
+  text-decoration: none;
+  opacity: 1;
 
   &:hover {
-    background-size: 100% 100%;
-    background-position: 0% 0%;
-    transition: background-position 0.05s, background-size 0.05s ease-in 0.05;
+    opacity: 0.5;
   }
 `;
 
@@ -60,8 +51,8 @@ export const StyledCopyRight = styled.div`
   padding-bottom: 70px;
 
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
-    padding-left: 60px;
-    padding-right: 60px;
+    /* padding-left: 60px;
+    padding-right: 60px; */
   }
 `;
 

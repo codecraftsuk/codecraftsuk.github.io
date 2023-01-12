@@ -13,6 +13,10 @@ export const StyledText = styled.div`
   padding-left: 10px;
   color: ${({ theme }) => theme.primaryPrimary};
 
+  ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
+    display: none;
+  }
+
   @keyframes typing {
     0% {
       width: 0;

@@ -1,10 +1,8 @@
 /* eslint-disable import/prefer-default-export */
-import styled, {
-  keyframes
-} from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-export const StyledContentWrapper = styled.div `
-  width: min(100%, 1500px);
+export const StyledContentWrapper = styled.div`
+  width: min(95%, 1500px);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -30,14 +28,14 @@ export const StyledContentWrapper = styled.div `
   }
 
   b.company-subtitle {
-      width: min(100%, 900px);
-      margin: 0 auto;
-      text-align: center;
-      padding: 5px 20px 50px 20px;
-    }
+    width: min(100%, 900px);
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px 20px 50px 20px;
+  }
 `;
 
-export const StyledTitleWrapper = styled.div `
+export const StyledTitleWrapper = styled.div`
   .company-title {
     width: min(100%, 900px);
     margin: 0 auto;
@@ -47,31 +45,31 @@ export const StyledTitleWrapper = styled.div `
   }
 
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
-
     .company-title {
-      padding: 70px 60px 5px 60px;
+      /* padding: 70px 60px 5px 60px; */
     }
   }
 `;
 
-export const StyledInfoWrapper = styled.div `
+export const StyledInfoWrapper = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-width: min(100%, 1000px);
+  max-width: min(95%, 1000px);
   margin: 0 auto;
 
   width: min(100%, 1500px);
   margin: 0 auto;
 
   h1 {
-    padding: 70px 20px 0 20px;
+    /* padding: 70px 20px 0 20px; */
+    padding-top: 70px;
     margin-bottom: 40px;
     text-align: center;
   }
 
   .gif-container {
-    padding: 0 20px 50px 20px;
+    /* padding: 0 20px 50px 20px; */
   }
 
   .carbon-img {
@@ -89,34 +87,25 @@ export const StyledInfoWrapper = styled.div `
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
 
       h1 {
-<<<<<<< HEAD
-        padding-left: 62px;
-        padding-right: 62px;
-      }
-
-      .creative {
-        padding: 0 60px;
-=======
         padding-top: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
+        /* padding-left: 30px; */
+        /* padding-right: 30px; */
         padding-bottom: 20px;
         margin-bottom: 0
       }
 
       .creative {
         padding: 0 30px;
->>>>>>> 5dc7d7f0cf34a039947f3406fbb10bd397eda099
       }
 
       .gif-container {
-        padding: 0 40px 40px 40px;
+        /* padding: 0 40px 40px 40px; */
       }
     }
   }
 `;
 
-export const StyleHome = styled.div `
+export const StyleHome = styled.div`
   .green-content {
     /* margin: 0 -10px; */
     margin-top: 30px;
@@ -126,21 +115,21 @@ export const StyleHome = styled.div `
   }
 `;
 
-export const StyledDeliveryInfo = styled.div `
+export const StyledDeliveryInfo = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 10px;
-  padding: 0 60px 10px 60px;
+  /* padding: 0 60px 10px 60px; */
 
   text-align: center;
-  width: min(100%, 1120px);
+  width: min(100%, 1020px);
   margin: 0 auto;
 
   & > * {
-    flex: 1 0 300px;
+    flex: 1 0 min(100%, 300px);
     /* padding: 13px; */
 
     & > * {
@@ -160,7 +149,7 @@ export const StyledDeliveryInfo = styled.div `
   }
 `;
 
-export const StyledMakeTogether = styled.div `
+export const StyledMakeTogether = styled.div`
   background-color: ${({ theme }) => theme.quaternary};
   color: ${({ theme }) => theme.primaryText};
   width: 100%;
@@ -180,15 +169,15 @@ export const StyledMakeTogether = styled.div `
   }
 
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
-      padding: 157px 30px 157px 30px;
-      text-align: center;
-      h2 {
-        padding: 0 20px;
-      }
+    padding: 157px 30px 157px 30px;
+    text-align: center;
+    h2 {
+      padding: 0 20px;
+    }
   }
 `;
 
-export const StyledSlideShow = styled.div `
+export const StyledSlideShow = styled.div`
   font-size: 6rem;
   padding: 40px 0px;
   overflow: hidden;
@@ -249,7 +238,7 @@ export const StyledSlideShow = styled.div `
   }
 `;
 
-const comeIn = keyframes `
+const comeIn = keyframes`
   from {
     transform: translateY(700px);
     opacity: 0;
@@ -260,14 +249,14 @@ const comeIn = keyframes `
   }
 `;
 
-export const StyledHomeHead = styled.div `
+export const StyledHomeHead = styled.div`
   min-height: 75vh;
   display: flex;
   align-items: center;
   /* padding: 0px 200px; */
   /* flex-wrap: wrap; */
   justify-content: space-evenly;
-  padding: 70px;
+  /* padding: 70px; */
   width: min(100%, 1500px);
   margin: 0 auto;
 
@@ -322,7 +311,7 @@ export const StyledHomeHead = styled.div `
   }
 `;
 
-export const StyledTestTestimonialsWrapper = styled.div `
+export const StyledTestTestimonialsWrapper = styled.div`
   display: flex;
 
   & > * {
