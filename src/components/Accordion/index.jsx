@@ -8,17 +8,13 @@ const Accordion = ({ title, text }) => {
 
   return (
     <div className="accordion-wrapper">
-      <button type="button" onClick={() => {}} className="accordion">
+      <button onClick={handleIconClick} type="button" className="accordion">
         <h3>{title}</h3>
-        {!isOpen ? (
-          <ion-icon onClick={handleIconClick} name="add-circle-outline" />
-        ) : (
-          <ion-icon onClick={handleIconClick} name="remove-circle-outline" />
-        )}
+        {!isOpen ? <ion-icon name="add-circle-outline" /> : <ion-icon name="remove-circle-outline" />}
       </button>
       <p
         className="accordion-text"
-        style={{ backgroundColor: '#ceced161', ...(isOpen && { maxHeight: '150px', padding: '20px 10px' }) }}
+        style={{ backgroundColor: '#aaaaad87', ...(isOpen && { maxHeight: '150px', padding: '20px 10px' }) }}
       >
         {text}
       </p>

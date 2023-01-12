@@ -257,7 +257,7 @@ export const StyledHomeHead = styled.div`
   /* flex-wrap: wrap; */
   justify-content: space-evenly;
   /* padding: 70px; */
-  width: min(100%, 1500px);
+  width: min(93%, 1500px);
   margin: 0 auto;
 
   /* animation: ${comeIn} 1000ms ease-in-out; */
