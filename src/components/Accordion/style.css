@@ -9,20 +9,14 @@
   padding: 10px;
   align-items: center;
   color: inherit;
-  border: 1px solid transparent;
-  transition: border 0.2s;
+
   margin-bottom: 10px;
   cursor: pointer;
-  border-radius: 6px;
 }
 
-.accordion:hover {
-  border: 1px solid gray;
-}
-
-ion-icon[name='add-circle-outline'],
-ion-icon[name='remove-circle-outline'] {
-  font-size: 32px !important;
+ion-icon[name='chevron-down-outline'],
+ion-icon[name='chevron-up-outline'] {
+  font-size: 25px !important;
   cursor: pointer;
   flex: 0 0 50px;
 }
@@ -35,4 +29,16 @@ ion-icon[name='remove-circle-outline'] {
   border-radius: 16px;
 
   transition: all 500ms;
+}
+
+.accordion-wrapper {
+  margin: 10px 0;
+  border: 1px solid transparent;
+  transition: border 0.2s;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.accordion-wrapper:hover {
+  border: 1px solid gray;
 }

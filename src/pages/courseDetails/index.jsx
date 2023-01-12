@@ -42,7 +42,6 @@ const CourseDetails = () => {
                   title={week}
                   text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?"
                 />
-                <hr />
               </>
             ))}
           </div>
@@ -54,11 +53,11 @@ const CourseDetails = () => {
         <h2>Web Development</h2>
         <RoundedButton bgColor="#FB6169">Buy Now</RoundedButton>
         <div className="course-info">
-            <IconText name="save-outline">Last Updated 09/01/2022</IconText>
-            <IconText name="language-outline">English</IconText>
-            <IconText name="code-slash-outline">Coding Exercises</IconText>
-            <IconText name="laptop-outline">Access on Mobile, TV, PC</IconText>
-            <IconText name="git-pull-request-outline">MAC/Windows Machine & IDE</IconText>
+          <IconText name="save-outline">Last Updated 09/01/2022</IconText>
+          <IconText name="language-outline">English</IconText>
+          <IconText name="code-slash-outline">Coding Exercises</IconText>
+          <IconText name="laptop-outline">Access on Mobile, TV, PC</IconText>
+          <IconText name="git-pull-request-outline">MAC/Windows Machine & IDE</IconText>
         </div>
       </StyledBuyWrapper>
     </StyledCourseDetailsWrapper>
