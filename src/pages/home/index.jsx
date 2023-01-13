@@ -65,7 +65,7 @@ function Home() {
           <Lottie options={animationDataWelcomeOp} height={350} />
         </span>
       </StyledHomeHead>
-      <hr />
+      {/* <hr /> */}
 
       <StyledContentWrapper>
         <StyledInfoWrapper>
@@ -87,18 +87,18 @@ function Home() {
           </StyledFlexWrap>
         </FadeInWhenVisible>
       </StyledContentWrapper>
-      <hr />
+      {/* <hr /> */}
 
       <FadeInWhenVisible>
         <StyledInfoWrapper>
           <div className="gif-container">
-            <h1>Begin Your Journey!</h1>
+            {/* <h1>Begin Your Journey!</h1> */}
             <div class="laptop-bg">
               <div class="laptop-content-bg"> 
               </div>
               <img src={laptop} className="laptop" alt="Screen" />
             </div>
-            {/* <LaptopScreen /> */}
+            {/* <LaptopScreen />  */}
           </div>
         </StyledInfoWrapper>
       </FadeInWhenVisible>

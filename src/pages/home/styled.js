@@ -7,7 +7,8 @@ export const StyledContentWrapper = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
   .members {
     ion-icon {
@@ -80,7 +81,7 @@ export const StyledInfoWrapper = styled.div`
   }
 
   img {
-    max-width: 100%;
+    transform: scale(1.7);
   }
   .laptop-bg {
     background-size: contain;
@@ -91,14 +92,14 @@ export const StyledInfoWrapper = styled.div`
   }
 
   .laptop-bg > .laptop-content-bg {
-    background-image: url(${carbon});
+    ${'' /* background-image: url(${carbon}); */}
     background-color:blue;
     background-repeat: no-repeat;
     position: absolute;
-    left:17.5%;
-    top: 17%;
-    bottom: 22%;
-    right: 18.5%;
+    left: -5%;
+    top: -6%;
+    bottom: 2.5%;
+    right: -3.5%;   
   }
 
   p.creative {
@@ -120,11 +121,25 @@ export const StyledInfoWrapper = styled.div`
         padding: 0 30px;
       }
 
-      .gif-container {
-        /* padding: 0 40px 40px 40px; */
+      img {
+        transform: scale(0.5);
+      }
+
+      .laptop-bg {
+        width: 50%;
+      }
+
+      .laptop-bg > .laptop-content-bg {
+        ${'' /* background-image: url(${carbon}); */}
+        background-color:blue;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 67.7%;
+        top: 32.8%;
+        bottom: 36.5%;
+        right: -31.8%;
       }
     }
-  }
 `;
 
 export const StyleHome = styled.div`
