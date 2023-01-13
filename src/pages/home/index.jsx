@@ -66,10 +66,6 @@ function Home() {
           <Lottie options={animationDataWelcomeOp} height={350} />
         </span>
       </StyledHomeHead>
-<<<<<<< HEAD
-      {/* <hr /> */}
-=======
->>>>>>> 5f21d551dc09c39d202b4aae0e8baff6b716fdb5
 
       <StyledContentWrapper>
         <StyledInfoWrapper>
