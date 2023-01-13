@@ -3,7 +3,7 @@
   "name": "CodeCrafts",
   "icons": [
     {
-      "src": "./public/app-icon.png",
+      "src": "./app-icon.png",
       "type": "image/png",
       "sizes": "512X512"
     }
