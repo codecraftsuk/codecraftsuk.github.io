@@ -15,7 +15,7 @@ export const lightTheme = {
   primary: '#fff',
   secondary: '#e1e1e2',
   tertiary: '#fb6169',
-  primaryText: '#000',
+  primaryText: '#0a2540',
   secondaryText: '#fff',
   quaternary: '#c9b6d9',
   quinary: '#e5c3c4',

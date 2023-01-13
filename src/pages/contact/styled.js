@@ -11,8 +11,10 @@ export const StyledContactWrapper = styled.div`
     /* margin-left: 20px; */
     h1 {
       font-size: 2.7rem;
+      text-align: center;
     }
 
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
 
@@ -26,5 +28,30 @@ export const StyledContactWrapper = styled.div`
       color: red;
       font-size: 2.8rem;
     }
+  }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+  }
+
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: #fa6068;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 `;
