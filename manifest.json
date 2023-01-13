@@ -1,0 +1,14 @@
+{
+  "short_name": "CodeCrafts",
+  "name": "CodeCrafts",
+  "icons": [
+    {
+      "src": "./public/app-icon.png",
+      "type": "image/png",
+      "sizes": "512X512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#fb6169"
+}
