@@ -20,9 +20,9 @@ import {
 } from './styled';
 import animationData from '../../assets/lottie/meeting.json';
 import animationDataWelcome from '../../assets/lottie/laptop.json';
-import carbon from '../../assets/images/portfolio/carbon3.gif';
 import laptop from '../../assets/images/background/laptop-screen.png';
 import FadeInWhenVisible from '../../components/FadeInWhenVisible';
+import { useTheme } from 'styled-components';
 
 const defaultOptions = {
   loop: true,
@@ -44,6 +44,7 @@ const animationDataWelcomeOp = {
 
 function Home() {
   const navigate = useNavigate();
+  const theme = useTheme();
 
   return (
     <StyleHome>
@@ -65,7 +66,6 @@ function Home() {
           <Lottie options={animationDataWelcomeOp} height={350} />
         </span>
       </StyledHomeHead>
-      <hr />
 
       <StyledContentWrapper>
         <StyledInfoWrapper>
@@ -87,20 +87,20 @@ function Home() {
           </StyledFlexWrap>
         </FadeInWhenVisible>
       </StyledContentWrapper>
-      <hr />
 
       <FadeInWhenVisible>
-        <StyledInfoWrapper>
-          <div className="gif-container">
-            <h1>Begin Your Journey!</h1>
-            <div class="laptop-bg">
-              <div class="laptop-content-bg"> 
+        <StyledFullWidth bgColor={theme?.secondary}>
+          <StyledInfoWrapper>
+            <div className="gif-container">
+              <h1>Begin Your Journey!</h1>
+              <div class="laptop-bg">
+                <div class="laptop-content-bg"></div>
+                <img src={laptop} className="laptop" alt="Screen" />
               </div>
-              <img src={laptop} className="laptop" alt="Screen" />
+              {/* <LaptopScreen /> */}
             </div>
-            {/* <LaptopScreen /> */}
-          </div>
-        </StyledInfoWrapper>
+          </StyledInfoWrapper>
+        </StyledFullWidth>
       </FadeInWhenVisible>
 
       <FadeInWhenVisible>
