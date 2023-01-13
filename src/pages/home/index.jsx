@@ -92,7 +92,6 @@ function Home() {
         <StyledFullWidth bgColor={theme?.secondary}>
           <StyledInfoWrapper>
             <div className="gif-container">
-              <h1>Begin Your Journey!</h1>
               <div class="laptop-bg">
                 <div class="laptop-content-bg"></div>
                 <img src={laptop} className="laptop" alt="Screen" />
