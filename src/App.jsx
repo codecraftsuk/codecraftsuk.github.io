@@ -12,6 +12,21 @@ const AppWrapper = styled.div`
   color: ${({ theme }) => theme.primaryText};
   transition: all 1000ms ease;
   min-height: 100vh;
+  position: relative;
+  z-index: 100;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: ${({ theme }) => theme.secondary};
+    transition: all 1000ms ease;
+
+    height: 100vh;
+    width: 100%;
+    top: -180px;
+    transform: skewY(-10deg);
+    z-index: -1;
+  }
 `;
 
 function App() {

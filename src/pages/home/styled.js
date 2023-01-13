@@ -61,7 +61,6 @@ export const StyledInfoWrapper = styled.div`
   margin: 0 auto;
 
   width: min(100%, 1500px);
-  margin: 0 auto;
 
   h1 {
     /* padding: 70px 20px 0 20px; */
@@ -145,9 +144,9 @@ export const StyledInfoWrapper = styled.div`
 export const StyleHome = styled.div`
   .green-content {
     /* margin: 0 -10px; */
-    margin-top: 30px;
+    margin-top: 0;
     color: white;
-    padding: 80px 0;
+    padding: 80px;
     /* width: 100vw; */
   }
 `;
@@ -311,10 +310,6 @@ export const StyledHomeHead = styled.div`
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
     flex-direction: column-reverse;
     text-align: center;
-<<<<<<< HEAD
-=======
-    padding: 0 30px 30px 30px;
->>>>>>> 5dc7d7f0cf34a039947f3406fbb10bd397eda099
 
     svg {
       max-width: 300px;
