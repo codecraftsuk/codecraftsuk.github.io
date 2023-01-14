@@ -20,8 +20,8 @@ const Courses = () => {
 
       <h1 className="main-title">FAQ's</h1>
 
-      <div className="curved-top" style={{ backgroundColor: theme?.mode === 'light' ? '#F6F9FC' : '#454545' }} />
-      <StyledFullWidth textColor bgColor={theme?.mode === 'light' ? '#F6F9FC' : '#454545'}>
+      <div className="curved-top" style={{ backgroundColor: theme?.mode === 'light' ? '#edf0f3' : '#454545' }} />
+      <StyledFullWidth textColor bgColor={theme?.mode === 'light' ? '#edf0f3' : '#454545'}>
         <div style={{ color: theme?.primaryText }} className="faq-wrapper">
           {faqData.map((qa) => (
             <Accordion title={qa.question} text={qa.answer} />

@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 export const StyledPricingWrapper = styled.div`
-  width: min(100%, 1500px);
+  width: min(90%, 1050px);
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -20,10 +20,6 @@ export const StyledPricingWrapper = styled.div`
 
     display: flex;
     align-items: center;
-
-    ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
-      justify-content: center;
-    }
 
     ion-icon {
       cursor: pointer;

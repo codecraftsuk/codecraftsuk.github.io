@@ -7,7 +7,8 @@ export const StyledContentWrapper = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
   .members {
     ion-icon {
@@ -42,7 +43,7 @@ export const StyledTitleWrapper = styled.div`
     margin: 0 auto;
     text-align: center;
     padding-top: 70px;
-    padding-bottom: 5px;
+    margin-bottom: -35px;
   }
 
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
@@ -79,49 +80,63 @@ export const StyledInfoWrapper = styled.div`
   }
 
   img {
-    max-width: 100%;
+    transform: scale(1.7);
   }
   .laptop-bg {
     background-size: contain;
     background-clip: border-box;
-    position:relative;
+    position: relative;
     background-position: center center;
     background-repeat: no-repeat;
   }
 
   .laptop-bg > .laptop-content-bg {
-    background-image: url(${carbon});
+    ${'' /* background-image: url(${carbon}); */}
     background-color:blue;
     background-repeat: no-repeat;
     position: absolute;
-    left:17.5%;
-    top: 17%;
-    bottom: 22%;
-    right: 18.5%;
+    left: -5%;
+    top: -6%;
+    bottom: 2.5%;
+    right: -3.5%;
   }
 
   p.creative {
     text-align: justify;
     font-size: 15px;
+    margin-bottom: 10px;
   }
 
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+    h1 {
+      padding-top: 30px;
+      /* padding-left: 30px; */
+      /* padding-right: 30px; */
+      padding-bottom: 20px;
+      margin-bottom: 0;
+    }
 
-      h1 {
-        padding-top: 30px;
-        /* padding-left: 30px; */
-        /* padding-right: 30px; */
-        padding-bottom: 20px;
-        margin-bottom: 0
-      }
+    .creative {
+      padding: 0 30px;
+    }
 
-      .creative {
-        padding: 0 30px;
-      }
+    img {
+      transform: scale(0.5);
+    }
 
-      .gif-container {
-        /* padding: 0 40px 40px 40px; */
-      }
+    .laptop-bg {
+      width: 50%;
+    }
+
+    .laptop-bg > .laptop-content-bg {
+      ${'' /* background-image: url(${carbon}); */}
+      background-color:blue;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 67.7%;
+      top: 32.8%;
+      bottom: 36.5%;
+      right: -31.8%;
     }
   }
 `;
@@ -131,7 +146,7 @@ export const StyleHome = styled.div`
     /* margin: 0 -10px; */
     margin-top: 0;
     color: white;
-    padding: 80px;
+    padding: 80px 0;
     /* width: 100vw; */
   }
 `;
@@ -140,13 +155,13 @@ export const StyledDeliveryInfo = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   padding-bottom: 10px;
   /* padding: 0 60px 10px 60px; */
 
   text-align: center;
-  width: min(100%, 1020px);
+  width: min(100%, 1000px);
   margin: 0 auto;
 
   & > * {

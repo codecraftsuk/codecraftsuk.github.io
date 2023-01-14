@@ -10,7 +10,7 @@ export const StyledFooterWrapper = styled.div`
   color: white;
   display: flex;
   /* padding: 70px 200px 40px 200px; */
-  width: min(100%, 1200px);
+  width: min(95%, 1000px);
   margin: 0 auto;
 
   flex-wrap: wrap;

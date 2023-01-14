@@ -18,7 +18,7 @@ import {
   StyledTestTestimonialsWrapper,
   StyledTitleWrapper,
 } from './styled';
-import animationData from '../../assets/lottie/meeting.json';
+import animationData from '../../assets/lottie/charts.json';
 import animationDataWelcome from '../../assets/lottie/laptop.json';
 import laptop from '../../assets/images/background/laptop-screen.png';
 import FadeInWhenVisible from '../../components/FadeInWhenVisible';
@@ -54,10 +54,10 @@ function Home() {
           <p>{sliderContent[0]?.text}</p>
 
           <div>
-            <RoundedButton onClick={() => navigate('/about')} bgColor="#fb6169">
+            <RoundedButton onClick={() => navigate('/about')} bgColor="#FB6169">
               Read More...
             </RoundedButton>
-            <RoundedButton onClick={() => navigate('/courses')} bgColor="#2F2E41">
+            <RoundedButton onClick={() => navigate('/courses')} bgColor="#494766">
               Courses
             </RoundedButton>
           </div>
@@ -73,9 +73,12 @@ function Home() {
           <p className="creative">
             At CodeCrafts, we believe that anyone can learn to code and build a successful career in the tech industry.
             That's why we offer a comprehensive Web Development and DevOps bootcamp, designed to turn code newbies into
-            skilled professionals. Our program is backed by a team of experienced instructors and a range of creative
-            services to support you on your journey. Whether you're just starting out or looking to advance in your
-            career, CodeCrafts has something for you. Keep reading to learn more about the services we offer.
+            skilled professionals.
+          </p>
+          <p className="creative">
+            Our program is backed by a team of experienced instructors and a range of creative services to support you
+            on your journey. Whether you're just starting out or looking to advance in your career, CodeCrafts has
+            something for you. Keep reading to learn more about the services we offer.
           </p>
         </StyledInfoWrapper>
 
@@ -88,23 +91,21 @@ function Home() {
         </FadeInWhenVisible>
       </StyledContentWrapper>
 
-      <FadeInWhenVisible>
+      {/* <FadeInWhenVisible>
         <StyledFullWidth bgColor={theme?.secondary}>
           <StyledInfoWrapper>
             <div className="gif-container">
-              <h1>Begin Your Journey!</h1>
               <div class="laptop-bg">
                 <div class="laptop-content-bg"></div>
                 <img src={laptop} className="laptop" alt="Screen" />
               </div>
-              {/* <LaptopScreen /> */}
             </div>
           </StyledInfoWrapper>
         </StyledFullWidth>
-      </FadeInWhenVisible>
+      </FadeInWhenVisible> */}
 
       <FadeInWhenVisible>
-        <StyledFullWidth bgColor="#fb6169">
+        <StyledFullWidth bgColor="#FB6169">
           <StyledFlexWrap className="green-content">
             {statsData.map((iconData) => (
               <IconInfo {...iconData} />
@@ -128,7 +129,7 @@ function Home() {
                 the tech industry. If you're a tech company looking to build a strong team and secure a bright future,
                 consider partnering with CodeCrafts and our bootcamp program.
               </p>
-              <RoundedButton onClick={() => navigate('/about')} bgColor="#fb6169">
+              <RoundedButton onClick={() => navigate('/about')} bgColor="#FB6169">
                 Read More
               </RoundedButton>
             </span>
