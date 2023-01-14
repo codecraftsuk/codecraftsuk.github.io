@@ -99,10 +99,11 @@ body {
   }
 
   #hero {
-    background: linear-gradient(-10deg, white 50%, #f6f9fc 50%);
-    height: 100vh;
+    background: linear-gradient(-10deg, white 40%, #f6f9fc 5%);
+    height: 100%;
     position: relative;
     z-index: -1;
+    padding-bottom: 25vh;
 }
 
 
@@ -116,4 +117,11 @@ body {
     justify-self: end;
 }
 
+p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  letter-spacing: .2px;
+  font-weight: 100;
+  color: #425466;
+}
 
