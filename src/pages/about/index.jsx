@@ -38,11 +38,13 @@ const About = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolore possimus necessitatibus et exercitationem,
         blanditiis ab, saepe ullam aut corrupti ex non soluta iusto architecto, excepturi vel expedita molestiae maiores
         optio placeat quasi! Adipisci quo inventore obcaecati quaerat beatae molestiae officia nisi soluta sequi eaque!
-        Minus atque amet, deserunt voluptatem rerum esse asperiores accusantium libero vero dolor tempora sint id nisi
-        incidunt iste quos hic magni perspiciatis et modi placeat eos facere beatae! Sed officiis iste ipsam repudiandae
-        nihil iure sapiente beatae itaque laboriosam, magni aut ut non pariatur, iusto totam vitae delectus magnam
-        velit, aperiam corrupti nostrum. Temporibus, culpa.
       </p>
+      <p className="building-tech-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolore possimus necessitatibus et exercitationem,
+        blanditiis ab, saepe ullam aut corrupti ex non soluta iusto architecto, excepturi vel expedita molestiae maiores
+        optio placeat quasi! Adipisci quo inventore obcaecati quaerat beatae molestiae officia nisi soluta sequi eaque!
+      </p>
+
       <hr />
 
       <h2>Meet our team!</h2>

@@ -2,25 +2,25 @@
 import styled from 'styled-components';
 
 export const StyledContactWrapper = styled.div`
-  width: min(95%, 1200px);
+  width: min(90%, 1050px);
   margin: 0 auto;
   margin-top: 40px;
+
+  h1 {
+    font-size: 3rem;
+  }
 
   .back {
     text-align: left;
     /* margin-left: 20px; */
+    font-size: 2rem;
+
     h1 {
-      font-size: 2.7rem;
-      text-align: center;
+      margin-bottom: -2px;
     }
 
-    padding-bottom: 20px;
     display: flex;
     align-items: center;
-
-    ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
-      justify-content: center;
-    }
 
     ion-icon {
       cursor: pointer;
@@ -30,14 +30,15 @@ export const StyledContactWrapper = styled.div`
     }
   }
 
-.container {
-    width: 80%;
+  .container {
+    /* width: 80%; */
     margin: 0 auto;
     padding: 20px;
     text-align: left;
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     margin-bottom: 20px;
   }
 

@@ -17,7 +17,7 @@ const Slider = ({ sliderContent }) => {
 
         <div>
           <RoundedButton onClick={() => navigate('/courses')}>Courses</RoundedButton>
-          <RoundedButton onClick={() => navigate('/contact')} bgColor="#fb6169">
+          <RoundedButton onClick={() => navigate('/contact')} bgColor="#FB6169">
             Contact
           </RoundedButton>
         </div>

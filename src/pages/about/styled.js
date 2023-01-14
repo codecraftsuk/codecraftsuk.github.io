@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledAboutWrapper = styled.div`
-  width: min(95%, 1500px);
+  width: min(90%, 1050px);
   margin: 0 auto;
   margin-top: 50px;
   text-align: center;
@@ -46,11 +46,12 @@ export const StyledAboutWrapper = styled.div`
 
   hr {
     margin: 35px auto;
+    width: 100px;
   }
 
   .building-tech-text {
     text-align: justify;
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   .meet-team {
@@ -80,6 +81,7 @@ export const StyledAboutContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 
   p {
     text-align: justify;

@@ -13,7 +13,7 @@ const Footer = () => (
     <StyledFooter>
       <StyledFooterWrapper>
         <StyledLinkWrapper>
-          <h3>Internal</h3>
+          <h3>Products</h3>
           <StyledLink to="/">Home</StyledLink>
           <StyledLink to="/courses">Courses</StyledLink>
           <StyledLink to="/about">About</StyledLink>
@@ -22,7 +22,7 @@ const Footer = () => (
         </StyledLinkWrapper>
 
         <StyledLinkWrapper>
-          <h3>Jobs</h3>
+          <h3>Jobs Sites</h3>
           <StyledLink>LinkedIn</StyledLink>
           <StyledLink>TotalJobs</StyledLink>
           <StyledLink>reed</StyledLink>

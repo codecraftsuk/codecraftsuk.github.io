@@ -17,7 +17,7 @@ const AppWrapper = styled.div`
   z-index: 100;
 
   p {
-    line-height: 27px;
+    line-height: 30px;
     letter-spacing: 1.1px;
   }
 

@@ -54,7 +54,7 @@ function Home() {
           <p>{sliderContent[0]?.text}</p>
 
           <div>
-            <RoundedButton onClick={() => navigate('/about')} bgColor="#fb6169">
+            <RoundedButton onClick={() => navigate('/about')} bgColor="#FB6169">
               Read More...
             </RoundedButton>
             <RoundedButton onClick={() => navigate('/courses')} bgColor="#494766">
@@ -91,7 +91,7 @@ function Home() {
         </FadeInWhenVisible>
       </StyledContentWrapper>
 
-      <FadeInWhenVisible>
+      {/* <FadeInWhenVisible>
         <StyledFullWidth bgColor={theme?.secondary}>
           <StyledInfoWrapper>
             <div className="gif-container">
@@ -99,14 +99,13 @@ function Home() {
                 <div class="laptop-content-bg"></div>
                 <img src={laptop} className="laptop" alt="Screen" />
               </div>
-              {/* <LaptopScreen /> */}
             </div>
           </StyledInfoWrapper>
         </StyledFullWidth>
-      </FadeInWhenVisible>
+      </FadeInWhenVisible> */}
 
       <FadeInWhenVisible>
-        <StyledFullWidth bgColor="#fb6169">
+        <StyledFullWidth bgColor="#FB6169">
           <StyledFlexWrap className="green-content">
             {statsData.map((iconData) => (
               <IconInfo {...iconData} />
@@ -130,7 +129,7 @@ function Home() {
                 the tech industry. If you're a tech company looking to build a strong team and secure a bright future,
                 consider partnering with CodeCrafts and our bootcamp program.
               </p>
-              <RoundedButton onClick={() => navigate('/about')} bgColor="#fb6169">
+              <RoundedButton onClick={() => navigate('/about')} bgColor="#FB6169">
                 Read More
               </RoundedButton>
             </span>
