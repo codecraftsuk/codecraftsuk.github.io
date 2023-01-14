@@ -23,7 +23,7 @@ export const StyledWrapper = styled.div`
         padding: 25px;
 
         &:hover {
-          background-color: #2F2E41;
+          background-color: #2f2e41;
           transition: all 1000ms;
         }
       `}

@@ -3,11 +3,14 @@ import styled from 'styled-components';
 
 export const StyledNavWrapper = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   /* background-color: ${({ theme }) => theme.primary}; */
   color: ${({ theme }) => theme.primaryPrimary};
   padding: 40px 0 0 0;
+  width: min(93%, 1500px);
+  margin: 0 auto;
+  justify-content: space-around;
 
   img {
     height: 50px;

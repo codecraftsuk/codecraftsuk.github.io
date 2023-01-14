@@ -16,6 +16,11 @@ const AppWrapper = styled.div`
   position: relative;
   z-index: 100;
 
+  p {
+    line-height: 27px;
+    letter-spacing: 1.1px;
+  }
+
   ${({ isHome }) =>
     isHome &&
     css`

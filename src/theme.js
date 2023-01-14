@@ -13,9 +13,9 @@ const commonColors = {};
 export const lightTheme = {
   mode: 'light',
   primary: '#fff',
-  secondary: '#e1e1e2',
+  secondary: '#F6F9FC',
   tertiary: '#fb6169',
-  primaryText: '#0a2540',
+  primaryText: '#425466',
   secondaryText: '#fff',
   quaternary: '#c9b6d9',
   quinary: '#e5c3c4',

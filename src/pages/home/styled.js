@@ -43,7 +43,7 @@ export const StyledTitleWrapper = styled.div`
     margin: 0 auto;
     text-align: center;
     padding-top: 70px;
-    padding-bottom: 5px;
+    margin-bottom: -35px;
   }
 
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
@@ -104,6 +104,7 @@ export const StyledInfoWrapper = styled.div`
   p.creative {
     text-align: justify;
     font-size: 15px;
+    margin-bottom: 10px;
   }
 
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
@@ -145,7 +146,7 @@ export const StyleHome = styled.div`
     /* margin: 0 -10px; */
     margin-top: 0;
     color: white;
-    padding: 80px;
+    padding: 80px 0;
     /* width: 100vw; */
   }
 `;
@@ -154,13 +155,13 @@ export const StyledDeliveryInfo = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   padding-bottom: 10px;
   /* padding: 0 60px 10px 60px; */
 
   text-align: center;
-  width: min(100%, 1020px);
+  width: min(100%, 1000px);
   margin: 0 auto;
 
   & > * {

@@ -22,7 +22,7 @@ const Navigation = ({ isDarkTheme }) => {
         <TypingAnimation />
       </span>
       <span className="btns">
-        <RoundedButton onClick={() => navigate('/courses')} bgColor="#2F2E41">
+        <RoundedButton onClick={() => navigate('/courses')} bgColor="#494766">
           Courses
         </RoundedButton>
         <RoundedButton onClick={() => navigate('/pricing')} bgColor="#FB6169">
