@@ -3,14 +3,13 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const StyledFooter = styled.div`
-  background-color: #212121;
+  background-color: ${({ theme }) => theme.secondary};
 `;
 
 export const StyledFooterWrapper = styled.div`
-  color: white;
   display: flex;
   /* padding: 70px 200px 40px 200px; */
-  width: min(95%, 1000px);
+  width: min(95%, 1200px);
   margin: 0 auto;
 
   flex-wrap: wrap;
@@ -18,24 +17,24 @@ export const StyledFooterWrapper = styled.div`
   & > * {
     flex: 1 0 min(100px, 300px);
   }
-
-  ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
-    /* padding: 30px 60px; */
-  }
-}
-
 `;
 
 export const StyledLinkWrapper = styled.div`
+  &:not(:last-child) {
+    border-right: 2px dotted lightgray;
+  }
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
-  margin: 20px 0;
+  /* padding: 0 20px; */
+  margin: 20px;
+
+  & > * {
+    color: ${({ theme }) => theme.primaryText};
+  }
 `;
 
 export const StyledLink = styled(Link)`
   padding: 5px;
-  color: white;
   text-decoration: none;
   opacity: 1;
 
@@ -45,23 +44,20 @@ export const StyledLink = styled(Link)`
 `;
 
 export const StyledCopyRight = styled.div`
-  background-color: #212121;
+  background-color: ${({ theme }) => theme.secondary};
   text-align: center;
-  color: white;
-  padding-bottom: 70px;
+  color: ${({ theme }) => theme.primaryText};
 
-  ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
-    /* padding-left: 60px;
-    padding-right: 60px; */
-  }
+  padding-bottom: 70px;
 `;
 
 export const StyledSocials = styled.div`
   /* background-color: inherit; */
-  background-color: #212121;
+  background-color: ${({ theme }) => theme.secondary};
   padding: 5px 20px;
   text-align: center;
-  color: white;
+  color: ${({ theme }) => theme.primaryText};
+
   /* border: 1px solid; */
 
   /* width: min(100%, 1500px); */
@@ -79,8 +75,8 @@ export const StyledSocials = styled.div`
 
   ion-icon {
     font-size: 1.5rem;
-    background-color: white;
     margin-right: 10px;
+    background-color: #494766;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;

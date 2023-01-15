@@ -10,8 +10,9 @@ export const StyledText = styled.div`
   animation-direction: alternate;
   font-size: 20px;
   font-weight: 700;
-  padding-left: 10px;
-  color: ${({ theme }) => theme.primaryPrimary};
+  /* padding-left: 10px; */
+  text-decoration: none;
+  color: ${({ theme }) => theme.primaryPrimary} !important;
 
   ${({ theme: { breakPoints } }) => breakPoints.down('xs')} {
     /* display: none; */

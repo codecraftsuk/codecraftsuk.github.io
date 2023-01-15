@@ -2,12 +2,13 @@
 import styled from 'styled-components';
 
 export const StyledPricingWrapper = styled.div`
-  width: min(90%, 1050px);
+  width: min(95%, 1200px);
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   margin-top: 30px;
+  border: 1px solid;
 
   h1 {
     font-size: 3rem;
@@ -25,14 +26,15 @@ export const StyledPricingWrapper = styled.div`
       cursor: pointer;
       margin-right: 30px;
       color: red;
+      margin-left: -15px;
     }
   }
 
   p {
-    margin: 0 auto;
+    margin: 40px 0;
     font-size: 18px;
-    width: min(800px, 100%);
-    padding: 25px;
+    /* width: min(800px, 100%); */
+    /* padding: 25px; */
   }
 
   .text-content {

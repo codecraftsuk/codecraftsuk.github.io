@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { StyledNavWrapper } from './styled';
+import { StyledLinkItem, StyledNavWrapper } from './styled';
 import TypingAnimation from '../TypingAnimation';
 import RoundedButton from '../RoundedButton';
 import Logo from '../../assets/images/logo/favicon.png';
@@ -16,10 +16,10 @@ const Navigation = ({ isDarkTheme }) => {
   return (
     <StyledNavWrapper>
       <span className="text">
-        <Link to="/">
-          <img className="logo" src={Logo} alt="" />
-        </Link>
-        <TypingAnimation />
+        {/* <Link to="/"><img className="logo" src={Logo} alt="" /></Link> */}
+        <StyledLinkItem to="/">
+          <TypingAnimation />
+        </StyledLinkItem>
       </span>
       <span className="btns">
         <RoundedButton onClick={() => navigate('/courses')} bgColor="#494766">

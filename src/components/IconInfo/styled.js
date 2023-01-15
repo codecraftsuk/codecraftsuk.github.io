@@ -6,7 +6,8 @@ export const StyledWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: min(100%, 280px);
+  /* width: min(100%, 280px); */
+  flex: 1 0 min(100%, 280px);
 
   ion-icon {
     font-size: 3.5rem;
