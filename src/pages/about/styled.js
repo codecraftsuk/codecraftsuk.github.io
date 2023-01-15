@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 export const StyledAboutWrapper = styled.div`
-  width: min(90%, 1050px);
+  width: min(95%, 1200px);
   margin: 0 auto;
   margin-top: 50px;
   text-align: center;
   padding-bottom: 100px;
+  border: 1px solid;
 
   svg {
     max-height: 300px;
@@ -33,14 +34,11 @@ export const StyledAboutWrapper = styled.div`
     display: flex;
     align-items: center;
 
-    ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
-      justify-content: center;
-    }
-
     ion-icon {
       cursor: pointer;
       margin-right: 30px;
       color: red;
+      margin-left: -15px;
     }
   }
 

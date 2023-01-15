@@ -8,9 +8,10 @@ export const StyledNavWrapper = styled.div`
   /* background-color: ${({ theme }) => theme.primary}; */
   color: ${({ theme }) => theme.primaryPrimary};
   padding: 40px 0 0 0;
-  width: min(93%, 1500px);
+  width: min(95%, 1200px);
   margin: 0 auto;
-  justify-content: space-around;
+  justify-content: space-between;
+  border: 1px solid;
 
   img {
     height: 50px;
@@ -26,8 +27,7 @@ export const StyledNavWrapper = styled.div`
     margin-right: 10px;
   }
 
-  button:first-child,
-  button:nth-child(3) {
+  button:first-child {
     ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
       display: none;
     }
@@ -86,24 +86,7 @@ export const StyledLinkItem = styled(Link)`
   list-style: none;
   text-decoration: none;
   border-bottom: 2px solid ${({ active, theme }) => (active ? theme.tertiary : 'transparent')};
-  color: white;
+  /* color: white; */
   font-size: 14px;
-
-  &:hover {
-    border-bottom: 2px solid ${({ theme }) => theme.tertiary};
-    color: lightcyan;
-    transition: 1000ms;
-  }
-
-  ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
-    color: black;
-    margin-bottom: 20px;
-    padding: 5px;
-    border-bottom: none;
-
-    &:hover {
-      border-bottom: none;
-      color: black;
-    }
-  }
+  color: ${({ theme }) => theme.primaryText};
 `;

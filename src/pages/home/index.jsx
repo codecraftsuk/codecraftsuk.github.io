@@ -63,7 +63,7 @@ function Home() {
           </div>
         </div>
         <span>
-          <Lottie options={animationDataWelcomeOp} height={350} />
+          <Lottie options={animationDataWelcomeOp} height={550} />
         </span>
       </StyledHomeHead>
 
@@ -105,7 +105,7 @@ function Home() {
       </FadeInWhenVisible> */}
 
       <FadeInWhenVisible>
-        <StyledFullWidth bgColor="#FB6169">
+        <StyledFullWidth shouldBend bgColor="#FB6169">
           <StyledFlexWrap className="green-content">
             {statsData.map((iconData) => (
               <IconInfo {...iconData} />
@@ -133,7 +133,7 @@ function Home() {
                 Read More
               </RoundedButton>
             </span>
-            <Lottie options={defaultOptions} height={400} />
+            <Lottie options={defaultOptions} height={450} />
           </StyledDeliveryInfo>
         </StyledContentWrapper>
       </FadeInWhenVisible>

@@ -17,8 +17,9 @@ const AppWrapper = styled.div`
   z-index: 100;
 
   p {
-    line-height: 30px;
-    letter-spacing: 1.1px;
+    line-height: 32px;
+    letter-spacing: 2px;
+    font-weight: 500;
   }
 
   ${({ isHome }) =>

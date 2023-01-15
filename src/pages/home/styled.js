@@ -3,12 +3,13 @@ import styled, { keyframes } from 'styled-components';
 import carbon from '../../assets/images/portfolio/carbon3.gif';
 
 export const StyledContentWrapper = styled.div`
-  width: min(95%, 1500px);
+  width: min(95%, 1200px);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding-top: 100px;
   padding-bottom: 100px;
+  border: 1px solid;
 
   .members {
     ion-icon {
@@ -55,22 +56,16 @@ export const StyledTitleWrapper = styled.div`
 
 export const StyledInfoWrapper = styled.div`
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
-  max-width: min(95%, 1000px);
+  /* max-width: ; */
   margin: 0 auto;
-
-  width: min(100%, 1500px);
 
   h1 {
     /* padding: 70px 20px 0 20px; */
     padding-top: 70px;
     margin-bottom: 40px;
     text-align: center;
-  }
-
-  .gif-container {
-    /* padding: 0 20px 50px 20px; */
   }
 
   .carbon-img {
@@ -123,21 +118,6 @@ export const StyledInfoWrapper = styled.div`
     img {
       transform: scale(0.5);
     }
-
-    .laptop-bg {
-      width: 50%;
-    }
-
-    .laptop-bg > .laptop-content-bg {
-      ${'' /* background-image: url(${carbon}); */}
-      background-color:blue;
-      background-repeat: no-repeat;
-      position: absolute;
-      left: 67.7%;
-      top: 32.8%;
-      bottom: 36.5%;
-      right: -31.8%;
-    }
   }
 `;
 
@@ -147,7 +127,7 @@ export const StyleHome = styled.div`
     margin-top: 0;
     color: white;
     padding: 80px 0;
-    /* width: 100vw; */
+    width: min(100%, 1200px);
   }
 `;
 
@@ -161,7 +141,7 @@ export const StyledDeliveryInfo = styled.div`
   /* padding: 0 60px 10px 60px; */
 
   text-align: center;
-  width: min(100%, 1000px);
+  width: 100%;
   margin: 0 auto;
 
   & > * {
@@ -291,10 +271,12 @@ export const StyledHomeHead = styled.div`
   align-items: center;
   /* padding: 0px 200px; */
   /* flex-wrap: wrap; */
-  justify-content: space-evenly;
+  justify-content: space-between;
   /* padding: 70px; */
-  width: min(93%, 1500px);
+  width: min(95%, 1200px);
+
   margin: 0 auto;
+  border: 1px solid;
 
   /* animation: ${comeIn} 1000ms ease-in-out; */
 
