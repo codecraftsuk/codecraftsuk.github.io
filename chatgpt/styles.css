@@ -146,7 +146,7 @@ body {
 
 p {
   font-size: 18px;
-  line-height: 1.7rem;
+  line-height: 1.6rem;
   letter-spacing: .2px;
   font-weight: 300;
   color: #425466;
@@ -175,11 +175,11 @@ img {
   width: 100px;
   height: 100px;
   align-items: center;
-  padding: 1.5rem;
+  padding: .7rem;
 }
 
 .services-grid p {
-  text-align: justify;
+  text-align: left;
   font-size: .9rem;
   padding: 1rem;
 }
@@ -198,7 +198,6 @@ img {
 
 #track-record p {
   color: #adbdcc;
-  text-align: justify;
 }
 
 .purpose-grid {
@@ -209,6 +208,29 @@ img {
 #our-purpose img {
   width: 250px;
   height: 250px;
-  padding: 2rem;
 }
 
+#our-purpose p {
+  margin-top: 0;
+}
+
+.why-codecraft-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.why-codecraft-grid p {
+  margin-top: 0;
+  font-size: .9rem;
+  padding-right: 1rem;
+}
+
+.why-codecraft-grid h3 {
+  font-size: 1rem;
+}
+
+.why-codecraft-grid img {
+  width: 40px;
+  height: 40px;
+  margin-left: 0;
+}
