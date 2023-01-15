@@ -12,10 +12,10 @@ export const StyledFlexWrap = styled.div`
   /* text-align: justify; */
   border: 1px solid green;
 
-  @media only screen and (max-width: 932px) {
+  /* @media only screen and (max-width: 932px) {
     color: red;
     justify-content: center;
-  }
+  } */
 `;
 
 export const StyledFullWidth = styled.div`

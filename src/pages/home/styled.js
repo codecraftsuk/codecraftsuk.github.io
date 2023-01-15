@@ -112,7 +112,7 @@ export const StyledInfoWrapper = styled.div`
     }
 
     .creative {
-      padding: 0 30px;
+      /* padding: 0 30px; */
     }
 
     img {
@@ -155,12 +155,6 @@ export const StyledDeliveryInfo = styled.div`
     p {
       text-align: justify;
       // padding: 13px;
-    }
-
-    ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
-      p {
-        padding: 0 20px 0 10px;
-      }
     }
   }
 `;
