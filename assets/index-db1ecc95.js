@@ -728,10 +728,10 @@ object-assign
   /* text-align: justify; */
   border: 1px solid green;
 
-  @media only screen and (max-width: 932px) {
+  /* @media only screen and (max-width: 932px) {
     color: red;
     justify-content: center;
-  }
+  } */
 `,StyledFullWidth=styled.div`
   background-color: ${({bgColor:a})=>a||"transparent"};
   width: 100%;
@@ -756,7 +756,8 @@ object-assign
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: min(100%, 280px);
+  /* width: min(100%, 280px); */
+  flex: 1 0 min(100%, 280px);
 
   ion-icon {
     font-size: 3.5rem;
@@ -1002,7 +1003,7 @@ object-assign
     }
 
     .creative {
-      padding: 0 30px;
+      /* padding: 0 30px; */
     }
 
     img {
@@ -1041,12 +1042,6 @@ object-assign
     p {
       text-align: justify;
       // padding: 13px;
-    }
-
-    ${({theme:{breakPoints:a}})=>a.down("md")} {
-      p {
-        padding: 0 20px 0 10px;
-      }
     }
   }
 `,StyledMakeTogether=styled.div`
