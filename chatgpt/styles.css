@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
     padding: 0;
     margin: 0;
     color: #0a2540;
+    font-family: 'Roboto', sans-serif;
   }
   
   .content-wrapper {
@@ -29,10 +29,13 @@ body {
     font-size: .9rem;
   }
 
-  .logo {
+  .logo a {
     float: left;
     font-size: 1.3em;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   nav {
@@ -59,19 +62,37 @@ body {
   }
   
   .btn {
-    background-color: #0a2540; /* Green */
+    background-color: #0a2540; 
     border: none;
     color: white;
-    padding: 8px 20px;
+    padding: 7px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: .9rem;
-    margin: 4px 2px;
     cursor: pointer;
-    border-radius: 200px;
+    border-radius: 36.5px;
   }
-  
+
+
+  .left-btn {
+    background-color: #635bff;
+    color: white;
+  }
+
+  .right-btn {
+    background-color: #f6f9fc;
+    color: #635bff;
+  }
+
+ .left-btn:hover {
+    background-color: black;
+  }
+
+  .right-btn:hover {
+    color: black;
+  }
+
   section {
     padding: 2em;
   }
@@ -99,17 +120,16 @@ body {
   }
 
   #hero {
-    background: linear-gradient(-10deg, white 40%, #f6f9fc 5%);
+    background: linear-gradient(-10deg, white 30%, #f6f9fc 5%);
     height: 100%;
-    position: relative;
     z-index: -1;
-    padding-bottom: 25vh;
+    padding-bottom: 27vh;
 }
 
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     align-items: center;
 }
 
@@ -118,10 +138,14 @@ body {
 }
 
 p {
-  font-size: 1.1rem;
-  line-height: 1.5rem;
-  letter-spacing: .2px;
-  font-weight: 100;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: .3px;
+  font-weight: 300;
   color: #425466;
+}
+
+h2 {
+  font-size: 2.5rem;
 }
 
