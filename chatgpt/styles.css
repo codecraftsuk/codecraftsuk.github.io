@@ -136,7 +136,7 @@ body {
 }
 
 .hero-img {
-    justify-self: end;
+  padding: 2rem;
 }
 
 #hero img {
@@ -209,5 +209,6 @@ img {
 #our-purpose img {
   width: 250px;
   height: 250px;
+  padding: 2rem;
 }
 
