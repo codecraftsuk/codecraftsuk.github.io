@@ -146,16 +146,18 @@ function Home() {
         </StyledContentWrapper>
       </FadeInWhenVisible>
 
-      <StyledContentWrapper ref={whyUsRef}>
-        <FadeInWhenVisible>
-          <h1>Why CodeCrafts?</h1>
-          <StyledFlexWrap>
-            {whyCodeCraftInfo.map((iconData) => (
-              <IconInfo alignLeft {...iconData} />
-            ))}
-          </StyledFlexWrap>
-        </FadeInWhenVisible>
-      </StyledContentWrapper>
+      <StyledFullWidth bgColor={theme?.secondary}>
+        <StyledContentWrapper ref={whyUsRef}>
+          <FadeInWhenVisible>
+            <h1>Why CodeCrafts?</h1>
+            <StyledFlexWrap>
+              {whyCodeCraftInfo.map((iconData) => (
+                <IconInfo alignLeft {...iconData} />
+              ))}
+            </StyledFlexWrap>
+          </FadeInWhenVisible>
+        </StyledContentWrapper>
+      </StyledFullWidth>
 
       <FadeInWhenVisible>
         <StyledTestTestimonialsWrapper>
