@@ -191,7 +191,8 @@ img {
 
 #track-record {
   clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
-  padding: 20vh 2rem;
+  padding-top: 11rem;
+  padding-bottom: 11rem;
   background-color: #0a2540;
   color: #fff;
 }
