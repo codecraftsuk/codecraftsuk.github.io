@@ -44,15 +44,14 @@ export const StyledContentWrapper = styled.div`
 export const StyledTitleWrapper = styled.div`
   .company-title {
     width: min(100%, 900px);
-    margin: 0 auto;
-    text-align: center;
+    text-align: left;
     padding-top: 70px;
-    margin-bottom: -35px;
+    margin: 0 auto;
   }
 
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
     .company-title {
-      /* padding: 70px 60px 5px 60px; */
+      text-align: left;
     }
   }
 `;
@@ -309,7 +308,7 @@ export const StyledHomeHead = styled.div`
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   /* & > * {
@@ -317,7 +316,11 @@ export const StyledHomeHead = styled.div`
   } */
 
   p {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.6rem;
+    letter-spacing: .1px;
+    font-weight: 300;
+    color: #425466;
   }
 `;
 

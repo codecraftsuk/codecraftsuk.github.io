@@ -29,9 +29,7 @@ const CourseDetails = () => {
             minima aliquid ratione ab aliquam libero obcaecati id. Esse tempore assumenda similique molestias recusandae
             nemo veniam? At reiciendis nisi fugit quidem iure itaque voluptatibus voluptate, a fugiat, dolorem
             voluptates architecto repellat? Molestias cumque sed provident iste porro soluta, deleniti non nostrum
-            quisquam consectetur alias ratione, mollitia laudantium nulla placeat. Dolorum in laudantium at fugiat nobis
-            magni odio explicabo ullam, soluta ad eius perferendis esse autem quaerat cupiditate laborum magnam.
-            Reprehenderit reiciendis iste labore illo dicta officia.
+            quisquam consectetur alias ratione, mollitia laudantium nulla placeat.
           </p>
 
           <div className="weeks">

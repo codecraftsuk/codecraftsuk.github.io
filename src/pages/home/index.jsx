@@ -55,8 +55,8 @@ function Home() {
           <p>{sliderContent[0]?.text}</p>
 
           <div>
-            <RoundedButton onClick={() => navigate('/about')} bgColor="#FB6169">
-              Read More...
+            <RoundedButton onClick={() => navigate('/about')} bgColor="#5851d0">
+              Read More
             </RoundedButton>
             <RoundedButton onClick={() => navigate('/courses')} bgColor="#494766">
               Courses
@@ -81,13 +81,6 @@ function Home() {
             on your journey. Whether you're just starting out or looking to advance in your career, CodeCrafts has
             something for you. Keep reading to learn more about the services we offer.
           </p>
-          <RoundedButton
-            onClick={() => whyUsRef.current?.scrollIntoView({ behavior: 'smooth' })}
-            bgColor="#494766"
-            className="why-us-btn"
-          >
-            Why us?
-          </RoundedButton>
         </StyledInfoWrapper>
 
         <FadeInWhenVisible>
@@ -124,7 +117,7 @@ function Home() {
 
       <FadeInWhenVisible>
         <StyledTitleWrapper>
-          <h1 className="company-title">Building the Future of Tech!</h1>
+          <h1 className="company-title">Our Purpose.</h1>
         </StyledTitleWrapper>
         <StyledContentWrapper>
           <StyledDeliveryInfo>
@@ -137,8 +130,8 @@ function Home() {
                 the tech industry. If you're a tech company looking to build a strong team and secure a bright future,
                 consider partnering with CodeCrafts and our bootcamp program.
               </p>
-              <RoundedButton onClick={() => navigate('/about')} bgColor="#FB6169">
-                Read More
+              <RoundedButton onClick={() => navigate('/contact')} bgColor="#5851d0">
+                Contact Us
               </RoundedButton>
             </span>
             <Lottie options={defaultOptions} height={450} />

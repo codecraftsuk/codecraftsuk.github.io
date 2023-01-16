@@ -25,7 +25,7 @@ const Navigation = ({ isDarkTheme }) => {
         <RoundedButton onClick={() => navigate('/courses')} bgColor="#494766">
           Courses
         </RoundedButton>
-        <RoundedButton onClick={() => navigate('/pricing')} bgColor="#FB6169">
+        <RoundedButton onClick={() => navigate('/pricing')} bgColor="#5851d0">
           Buy
         </RoundedButton>
         <RoundedButton onClick={toggleTheme} textColor={isDarkTheme ? '#fff' : '#000'} circle>

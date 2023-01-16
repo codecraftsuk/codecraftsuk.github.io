@@ -19,7 +19,7 @@ export const infoIconData = [
 
 export const sliderContent = [
   {
-    title: 'Build Your Own Future!',
+    title: 'Build Your Future.',
     text: 'Become a skilled tech professional in just a few weeks with our Web Development and DevOps bootcamp. Sign up now to learn more and start building your path to success.',
   },
 ];
