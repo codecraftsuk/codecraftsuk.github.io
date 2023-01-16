@@ -96,7 +96,7 @@ body {
   }
 
   section {
-    padding: 3em;
+    padding: 6rem;
   }
   
   section.bg-gray {
@@ -233,4 +233,23 @@ img {
   width: 40px;
   height: 40px;
   margin-left: 0;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+#testimonials {
+  padding: 6rem 0;
+}
+
+.testimonials p {
+  align-items: center;
+  padding: 0 7rem;
+}
+
+.get-started {
+  align-items: center;
 }
