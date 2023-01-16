@@ -8,10 +8,9 @@ export const StyledNavWrapper = styled.div`
   /* background-color: ${({ theme }) => theme.primary}; */
   color: ${({ theme }) => theme.primaryPrimary};
   padding: 40px 0 0 0;
-  width: min(95%, 1200px);
+  width: min(95%, 1000px);
   margin: 0 auto;
   justify-content: space-between;
-  border: 1px solid;
 
   img {
     height: 50px;

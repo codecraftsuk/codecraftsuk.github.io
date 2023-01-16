@@ -2,13 +2,12 @@
 import styled from 'styled-components';
 
 export const StyledPricingWrapper = styled.div`
-  width: min(95%, 1200px);
+  width: min(95%, 1000px);
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   margin-top: 30px;
-  border: 1px solid;
 
   h1 {
     font-size: 3rem;

@@ -3,13 +3,12 @@ import styled, { keyframes } from 'styled-components';
 import carbon from '../../assets/images/portfolio/carbon3.gif';
 
 export const StyledContentWrapper = styled.div`
-  width: min(95%, 1200px);
+  width: min(95%, 1000px);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding-top: 100px;
   padding-bottom: 100px;
-  border: 1px solid;
 
   .members {
     ion-icon {
@@ -127,7 +126,7 @@ export const StyleHome = styled.div`
     margin-top: 0;
     color: white;
     padding: 80px 0;
-    width: min(100%, 1200px);
+    width: min(100%, 1000px);
   }
 `;
 
@@ -267,10 +266,9 @@ export const StyledHomeHead = styled.div`
   /* flex-wrap: wrap; */
   justify-content: space-between;
   /* padding: 70px; */
-  width: min(95%, 1200px);
+  width: min(95%, 1000px);
 
   margin: 0 auto;
-  border: 1px solid;
 
   /* animation: ${comeIn} 1000ms ease-in-out; */
 

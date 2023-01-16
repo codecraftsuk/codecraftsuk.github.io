@@ -9,7 +9,8 @@ import { useStore } from './store';
 import { darkTheme, lightTheme } from './theme';
 
 const AppWrapper = styled.div`
-  background-color: ${({ theme, isHome }) => (isHome ? theme.primary : theme.secondary)};
+  /* background-color: ${({ theme, isHome }) => (isHome ? theme.primary : theme.secondary)}; */
+  background-color: ${({ theme }) => theme.primary};
   color: ${({ theme }) => theme.primaryText};
   transition: all 1000ms ease;
   min-height: 100vh;
@@ -17,15 +18,28 @@ const AppWrapper = styled.div`
   z-index: 100;
 
   p {
-    line-height: 32px;
-    letter-spacing: 2px;
-    font-weight: 500;
+    line-height: 1.7em;
+    letter-spacing: 1.7px;
+    font-size: 18px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-color: ${({ theme }) => theme.secondary};
+    transition: all 1000ms ease;
+
+    height: 100vh;
+    width: 100%;
+    top: -180px;
+    transform: skewY(-10deg);
+    z-index: -1;
   }
 
   ${({ isHome }) =>
-    isHome &&
+    !isHome &&
     css`
-      &::before {
+      &::after {
         content: '';
         position: absolute;
         background-color: ${({ theme }) => theme.secondary};
@@ -34,7 +48,7 @@ const AppWrapper = styled.div`
         height: 100vh;
         width: 100%;
         top: -180px;
-        transform: skewY(-10deg);
+        transform: skewY(10deg);
         z-index: -1;
       }
     `}
@@ -43,8 +57,6 @@ const AppWrapper = styled.div`
 function App() {
   const [theme] = useStore((state) => state.isDarkTheme);
   const { pathname } = useLocation();
-
-  console.log(pathname);
 
   return (
     <div className="app">

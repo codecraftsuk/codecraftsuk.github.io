@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
 export const StyledAboutWrapper = styled.div`
-  width: min(95%, 1200px);
+  width: min(95%, 1000px);
   margin: 0 auto;
   margin-top: 50px;
   text-align: center;
   padding-bottom: 100px;
-  border: 1px solid;
 
   svg {
     max-height: 300px;

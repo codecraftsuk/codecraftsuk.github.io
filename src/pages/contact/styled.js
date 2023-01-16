@@ -2,10 +2,9 @@
 import styled from 'styled-components';
 
 export const StyledContactWrapper = styled.div`
-  width: min(95%, 1200px);
+  width: min(95%, 1000px);
   margin: 0 auto;
   margin-top: 40px;
-  border: 1px solid;
 
   h1 {
     font-size: 3rem;
@@ -34,7 +33,7 @@ export const StyledContactWrapper = styled.div`
 
   .container {
     /* width: 80%; */
-    margin: 0 auto;
+    margin: 40px auto;
     text-align: left;
   }
 
