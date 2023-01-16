@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledWrapper } from './styled';
 
-const IconInfo = ({ icon, title, text, bigTitle }) => (
-  <StyledWrapper bigTitle={!!bigTitle}>
+const IconInfo = ({ icon, title, text, bigTitle, alignLeft }) => (
+  <StyledWrapper alignLeft={alignLeft} bigTitle={!!bigTitle}>
     <ion-icon name={icon} />
     {bigTitle && <h1>{bigTitle}</h1>}
     <h3>{title}</h3>
@@ -18,6 +18,7 @@ IconInfo.propTypes = {
   title: PropTypes.string,
   text: PropTypes.string,
   bigTitle: PropTypes.string,
+  alignLeft: PropTypes.bool,
 };
 
 IconInfo.defaultProps = {
@@ -25,4 +26,5 @@ IconInfo.defaultProps = {
   title: '',
   text: '',
   bigTitle: '',
+  alignLeft: false,
 };

@@ -41,3 +41,26 @@ export const statsData = [
     title: 'Response Rate',
   },
 ];
+
+export const whyCodeCraftInfo = [
+  {
+    icon: 'apps-outline',
+    title: 'Application',
+    text: 'At CodeCrafts, we believe that learning to code is not just about acquiring a new skill, but also about gaining the power to create and shape the technology that is rapidly shaping our world.',
+  },
+  {
+    icon: 'build-outline',
+    title: 'Build Confidence',
+    text: 'Our courses are designed to help individuals of all backgrounds and skill levels build the confidence and knowledge they need to succeed in the tech industry and beyond.',
+  },
+  {
+    icon: 'hand-left-outline',
+    title: 'Hands-on',
+    text: 'Our expert instructors use a hands-on, project-based approach that allows students to apply what they learn in real-world scenarios, and our curriculum is constantly updated to stay current with the latest industry trends and tools.',
+  },
+  // {
+  //   icon: 'globe-outline',
+  //   title: 'Impact',
+  //   text: 'With CodeCrafts, you will not only learn to code, but also gain the ability to turn your ideas into reality and make an impact in the world.',
+  // },
+];

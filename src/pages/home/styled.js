@@ -10,6 +10,10 @@ export const StyledContentWrapper = styled.div`
   padding-top: 100px;
   padding-bottom: 100px;
 
+  .why-us-btn {
+    margin: 0 auto !important;
+  }
+
   .members {
     ion-icon {
       font-size: 12rem;

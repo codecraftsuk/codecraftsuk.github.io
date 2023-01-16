@@ -8,7 +8,7 @@ export const StyledFlexWrap = styled.div`
   background-color: ${({ bgColor }) => bgColor || 'transparent'};
   width: 100%;
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 50px 0px;
   /* text-align: justify; */
 
   /* @media only screen and (max-width: 932px) {
