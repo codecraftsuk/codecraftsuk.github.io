@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components';
 export const StyledWrapper = styled.div`
   display: flex;
   justify-content: center;
+  font-weight: 300;
 
   flex-direction: column;
   /* width: min(100%, 280px); */
@@ -42,6 +43,6 @@ export const StyledWrapper = styled.div`
   }
 
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
 `;

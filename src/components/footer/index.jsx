@@ -27,6 +27,7 @@ const Footer = () => (
         <StyledLink>TotalJobs</StyledLink>
         <StyledLink>reed</StyledLink>
         <StyledLink>indeed</StyledLink>
+        <StyledLink>Job seekers allowance</StyledLink>
       </StyledLinkWrapper>
 
       <StyledLinkWrapper>
@@ -35,10 +36,11 @@ const Footer = () => (
         <StyledLink>Courses</StyledLink>
         <StyledLink>About</StyledLink>
         <StyledLink>Pricing</StyledLink>
+        <StyledLink>Pricing</StyledLink>
       </StyledLinkWrapper>
     </StyledFooterWrapper>
     <StyledSocials>
-      <h3>Follow Us On Socials</h3>
+      <h3>Follow us on socials</h3>
       {/* <p>Stay up-to-date with our latest news and updates by following us on social media.</p> */}
 
       <span>

@@ -44,6 +44,10 @@ export const StyledLinkWrapper = styled.div`
     color: ${({ theme }) => theme.primaryText};
     font-size: 14.4px;
   }
+
+  h3 {
+    margin-bottom: 6px;
+  }
 `;
 
 export const StyledLink = styled(Link)`
