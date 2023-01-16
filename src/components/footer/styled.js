@@ -4,6 +4,22 @@ import styled from 'styled-components';
 
 export const StyledFooter = styled.div`
   background-color: ${({ theme }) => theme.secondary};
+  padding-top: 70px;
+
+  h1 {
+    width: min(95%, 1000px);
+    margin: 0 auto;
+    border-top: 2px dotted lightgrey;
+    font-size: 2.1rem;
+    cursor: pointer;
+    padding: 10px 0 0 0;
+    margin-bottom: 10px;
+
+    color: ${({ theme }) => theme.primaryText};
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 `;
 
 export const StyledFooterWrapper = styled.div`
@@ -20,23 +36,25 @@ export const StyledFooterWrapper = styled.div`
 `;
 
 export const StyledLinkWrapper = styled.div`
-  &:not(:last-child) {
-    border-right: 2px dotted lightgray;
-  }
   display: flex;
   flex-direction: column;
-  /* padding: 0 20px; */
-  margin: 20px;
+  padding-top: 20px;
 
   & > * {
     color: ${({ theme }) => theme.primaryText};
+    font-size: 14.4px;
+  }
+
+  h3 {
+    margin-bottom: 6px;
   }
 `;
 
 export const StyledLink = styled(Link)`
-  padding: 5px;
+  padding: 6px 0;
   text-decoration: none;
   opacity: 1;
+  font-weight: 300;
 
   &:hover {
     opacity: 0.5;
@@ -52,17 +70,13 @@ export const StyledCopyRight = styled.div`
 `;
 
 export const StyledSocials = styled.div`
-  /* background-color: inherit; */
   background-color: ${({ theme }) => theme.secondary};
-  padding: 5px 20px;
-  text-align: center;
+  padding: 5px 0px;
   color: ${({ theme }) => theme.primaryText};
-
-  /* border: 1px solid; */
-
-  /* width: min(100%, 1500px); */
+  width: min(95%, 1000px);
   margin: 0 auto;
   padding-bottom: 20px;
+  margin-top: 30px;
 
   p {
     margin-bottom: 20px;

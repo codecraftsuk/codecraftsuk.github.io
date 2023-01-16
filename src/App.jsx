@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import styled, { css, ThemeProvider } from 'styled-components';
+import styled, { css, ThemeProvider, useTheme } from 'styled-components';
 import './App.css';
 import Footer from './components/footer';
 import Navigation from './components/Navigation';
@@ -59,15 +59,15 @@ function App() {
   const { pathname } = useLocation();
 
   return (
-    <div className="app">
-      <ThemeProvider theme={theme ? darkTheme : lightTheme}>
+    <ThemeProvider theme={theme ? darkTheme : lightTheme}>
+      <div className="app">
         <AppWrapper isHome={pathname === '/'}>
           <Navigation isDarkTheme={theme} />
           <Router />
         </AppWrapper>
         <Footer />
-      </ThemeProvider>
-    </div>
+      </div>
+    </ThemeProvider>
   );
 }
 
