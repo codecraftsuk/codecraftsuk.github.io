@@ -9,35 +9,34 @@ import {
 } from './styled';
 
 const Footer = () => (
-  <>
-    <StyledFooter>
-      <StyledFooterWrapper>
-        <StyledLinkWrapper>
-          <h3>Products</h3>
-          <StyledLink to="/">Home</StyledLink>
-          <StyledLink to="/courses">Courses</StyledLink>
-          <StyledLink to="/about">About</StyledLink>
-          <StyledLink to="/pricing">Pricing</StyledLink>
-          <StyledLink to="/contact">Contact</StyledLink>
-        </StyledLinkWrapper>
+  <StyledFooter>
+    <h1>codecrafts</h1>
+    <StyledFooterWrapper>
+      <StyledLinkWrapper>
+        <h3>Products</h3>
+        <StyledLink to="/">Home</StyledLink>
+        <StyledLink to="/courses">Courses</StyledLink>
+        <StyledLink to="/about">About</StyledLink>
+        <StyledLink to="/pricing">Pricing</StyledLink>
+        <StyledLink to="/contact">Contact</StyledLink>
+      </StyledLinkWrapper>
 
-        <StyledLinkWrapper>
-          <h3>Jobs Sites</h3>
-          <StyledLink>LinkedIn</StyledLink>
-          <StyledLink>TotalJobs</StyledLink>
-          <StyledLink>reed</StyledLink>
-          <StyledLink>indeed</StyledLink>
-        </StyledLinkWrapper>
+      <StyledLinkWrapper>
+        <h3>Jobs Sites</h3>
+        <StyledLink>LinkedIn</StyledLink>
+        <StyledLink>TotalJobs</StyledLink>
+        <StyledLink>reed</StyledLink>
+        <StyledLink>indeed</StyledLink>
+      </StyledLinkWrapper>
 
-        <StyledLinkWrapper>
-          <h3>idk yet</h3>
-          <StyledLink>Home</StyledLink>
-          <StyledLink>Courses</StyledLink>
-          <StyledLink>About</StyledLink>
-          <StyledLink>Pricing</StyledLink>
-        </StyledLinkWrapper>
-      </StyledFooterWrapper>
-    </StyledFooter>
+      <StyledLinkWrapper>
+        <h3>idk yet</h3>
+        <StyledLink>Home</StyledLink>
+        <StyledLink>Courses</StyledLink>
+        <StyledLink>About</StyledLink>
+        <StyledLink>Pricing</StyledLink>
+      </StyledLinkWrapper>
+    </StyledFooterWrapper>
     <StyledSocials>
       <h3>Follow Us On Socials</h3>
       {/* <p>Stay up-to-date with our latest news and updates by following us on social media.</p> */}
@@ -54,8 +53,11 @@ const Footer = () => (
         </a>
       </span>
     </StyledSocials>
-    <StyledCopyRight>CodeCraft &copy; {new Date().getFullYear()}. All Rights Reserved.</StyledCopyRight>
-  </>
+    <StyledCopyRight>
+      CodeCraft &copy;
+      {new Date().getFullYear()}. All Rights Reserved.
+    </StyledCopyRight>
+  </StyledFooter>
 );
 
 export default Footer;
