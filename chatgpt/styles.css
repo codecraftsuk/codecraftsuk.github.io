@@ -27,6 +27,7 @@ body {
     text-decoration: none;
     margin-right: 1em;
     font-size: .9rem;
+    font-weight: 500;
   }
 
   .logo a {
@@ -72,6 +73,7 @@ body {
     font-size: .9rem;
     cursor: pointer;
     border-radius: 36.5px;
+    font-weight: 600;
   }
 
 
