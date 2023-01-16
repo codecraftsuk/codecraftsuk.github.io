@@ -303,9 +303,21 @@ img {
 
 .footer-grid a {
   color: #0a2540;
-  text-decoration: none;
   font-size: .9rem;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #0a2540;
+}
+
+#footer p {
   margin: .5rem 0;
+  font-weight: 400;
+}
+
+#footer h2 a:hover {
+  opacity: 0.7;
 }
 
 .footer-grid a:hover {
@@ -320,22 +332,13 @@ img {
   border-spacing: 8px;
 }
 
-#footer h2 a {
-  text-decoration: none;
-  color: #0a2540;
-}
-
-#footer h2:hover {
-  opacity: 0.7;
-}
-
 #footer h5 {
   font-size: 1rem;
 }
 
 .socials-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .socials-grid img {
