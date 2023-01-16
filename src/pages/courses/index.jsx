@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useTheme } from 'styled-components';
 import CourseCard from '../../components/CourseCard';
 import './styles.css';
@@ -8,10 +9,15 @@ import { StyledFullWidth } from '../../common/styles';
 import Accordion from '../../components/Accordion';
 
 const Courses = () => {
+  const navigate = useNavigate();
   const theme = useTheme();
   return (
     <div className="courses-wrapper">
-      <h1 className="main-title">Courses</h1>
+      {/* <h1 className="main-title">Courses</h1> */}
+      <div className="back">
+        <ion-icon onClick={() => navigate(-1)} name="chevron-back-outline" />
+        <h1>Courses</h1>
+      </div>
       <div className="course-cards">
         {coursesData.map((course) => (
           <CourseCard {...course} />

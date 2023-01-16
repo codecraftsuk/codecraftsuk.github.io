@@ -1,13 +1,13 @@
 /* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+import React, { useRef } from 'react';
 import Lottie from 'react-lottie';
 import { useNavigate } from 'react-router-dom';
 import { StyledFlexWrap, StyledFullWidth } from '../../common/styles';
 import IconInfo from '../../components/IconInfo';
 import RoundedButton from '../../components/RoundedButton';
 import Testimonials from '../../components/Testimonials';
-import { infoIconData, sliderContent, statsData } from './messages';
+import { infoIconData, sliderContent, statsData, whyCodeCraftInfo } from './messages';
 import {
   StyledContentWrapper,
   StyledInfoWrapper,
@@ -45,6 +45,7 @@ const animationDataWelcomeOp = {
 function Home() {
   const navigate = useNavigate();
   const theme = useTheme();
+  const whyUsRef = useRef();
 
   return (
     <StyleHome>
@@ -80,6 +81,13 @@ function Home() {
             on your journey. Whether you're just starting out or looking to advance in your career, CodeCrafts has
             something for you. Keep reading to learn more about the services we offer.
           </p>
+          <RoundedButton
+            onClick={() => whyUsRef.current?.scrollIntoView({ behavior: 'smooth' })}
+            bgColor="#494766"
+            className="why-us-btn"
+          >
+            Why us?
+          </RoundedButton>
         </StyledInfoWrapper>
 
         <FadeInWhenVisible>
@@ -137,6 +145,17 @@ function Home() {
           </StyledDeliveryInfo>
         </StyledContentWrapper>
       </FadeInWhenVisible>
+
+      <StyledContentWrapper ref={whyUsRef}>
+        <FadeInWhenVisible>
+          <h1>Why CodeCrafts?</h1>
+          <StyledFlexWrap>
+            {whyCodeCraftInfo.map((iconData) => (
+              <IconInfo alignLeft {...iconData} />
+            ))}
+          </StyledFlexWrap>
+        </FadeInWhenVisible>
+      </StyledContentWrapper>
 
       <FadeInWhenVisible>
         <StyledTestTestimonialsWrapper>

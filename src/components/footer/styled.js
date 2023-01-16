@@ -9,7 +9,7 @@ export const StyledFooter = styled.div`
 export const StyledFooterWrapper = styled.div`
   display: flex;
   /* padding: 70px 200px 40px 200px; */
-  width: min(95%, 1200px);
+  width: min(95%, 1000px);
   margin: 0 auto;
 
   flex-wrap: wrap;
@@ -76,10 +76,11 @@ export const StyledSocials = styled.div`
   ion-icon {
     font-size: 1.5rem;
     margin-right: 10px;
-    background-color: #494766;
+    /* background-color: #494766; */
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
+    border: 1px solid;
     color: ${({ theme }) => theme.tertiary};
 
     &:hover {
