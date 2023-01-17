@@ -25,10 +25,10 @@ export const StyledFullWidth = styled.div`
     shouldBend &&
     css`
       clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
-      padding-top: 11rem;
       padding-bottom: 11rem;
       /* background-color: #0a2540; */
       color: #fff;
+      padding-top: 13rem;
 
       ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
         clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 10%);

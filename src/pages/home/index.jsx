@@ -105,7 +105,7 @@ function Home() {
       </FadeInWhenVisible> */}
 
       <FadeInWhenVisible>
-        <StyledFullWidth shouldBend bgColor="#FB6169">
+        <StyledFullWidth shouldBend bgColor="#5851D0">
           <div className="track-record">
             <h1>Track Record</h1>
             <p>
@@ -167,7 +167,7 @@ function Home() {
           <StyledFullWidth>
             <StyledMakeTogether>
               <h2>Let&apos;s Make Something Great Together.</h2>
-              <RoundedButton onClick={() => navigate('/courses')} bgColor="#FB6169" textColor="black">
+              <RoundedButton onClick={() => navigate('/courses')} bgColor="#5851D0" textColor="black">
                 Start a Course
               </RoundedButton>
             </StyledMakeTogether>

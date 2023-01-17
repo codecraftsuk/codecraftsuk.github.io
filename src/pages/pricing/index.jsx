@@ -22,9 +22,9 @@ const Pricing = () => {
       </p>
 
       <div className="price-cards">
-        <PriceCard btnProps={{ textColor: '#FB6169' }} title="Basic" price="49" />
-        <PriceCard btnProps={{ bgColor: '#FB6169' }} showStar title="Pro" price="149" description="Most Popular" />
-        <PriceCard btnProps={{ textColor: '#FB6169' }} title="Enterprise" price="299" />
+        <PriceCard btnProps={{ textColor: '#5851D0' }} title="Basic" price="49" />
+        <PriceCard btnProps={{ bgColor: '#5851D0' }} showStar title="Pro" price="149" description="Most Popular" />
+        <PriceCard btnProps={{ textColor: '#5851D0' }} title="Enterprise" price="299" />
       </div>
     </StyledPricingWrapper>
   );

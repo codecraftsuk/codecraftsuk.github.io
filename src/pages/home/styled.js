@@ -166,6 +166,10 @@ export const StyledDeliveryInfo = styled.div`
       font-size: 15px;
     }
   }
+
+  span {
+    flex: 2 0 min(100%, 400px);
+  }
 `;
 
 export const StyledMakeTogether = styled.div`
@@ -283,6 +287,7 @@ export const StyledHomeHead = styled.div`
 
   svg {
     max-width: 400px;
+    flex: 1 0;
   }
 
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
@@ -299,11 +304,12 @@ export const StyledHomeHead = styled.div`
   }
 
   .hero-text {
-    max-width: min(100%, 450px);
+    /* max-width: min(100%, 450px); */
+    flex: 2 0 450px;
 
     & > * {
       margin-bottom: 20px;
-      flex: 1 0;
+      /* flex: 1 0; */
     }
   }
 
