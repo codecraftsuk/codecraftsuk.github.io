@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { StyledLinkItem, StyledNavWrapper } from './styled';
 import TypingAnimation from '../TypingAnimation';
 import RoundedButton from '../RoundedButton';
-import Logo from '../../assets/images/logo/favicon.png';
+import Logo from '../../assets/images/logo/logo.png';
 import { useSet } from '../../store';
 
 const Navigation = ({ isDarkTheme }) => {
@@ -16,7 +16,7 @@ const Navigation = ({ isDarkTheme }) => {
   return (
     <StyledNavWrapper>
       <span className="text">
-        {/* <Link to="/"><img className="logo" src={Logo} alt="" /></Link> */}
+        <Link to="/"><img className="logo" src={Logo} alt="" /></Link>
         <StyledLinkItem to="/">
           <TypingAnimation />
         </StyledLinkItem>
