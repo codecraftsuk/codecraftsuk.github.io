@@ -19,27 +19,14 @@ const AppWrapper = styled.div`
 
   p {
     line-height: 1.7em;
-    letter-spacing: 1.7px;
-    font-size: 18px;
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    background-color: ${({ theme }) => theme.secondary};
-    transition: all 1000ms ease;
-
-    height: 100vh;
-    width: 100%;
-    top: -180px;
-    transform: skewY(-10deg);
-    z-index: -1;
+    letter-spacing: 0.2px;
+    font-size: 15px;
   }
 
   ${({ isHome }) =>
-    !isHome &&
+    isHome &&
     css`
-      &::after {
+      &::before {
         content: '';
         position: absolute;
         background-color: ${({ theme }) => theme.secondary};
@@ -48,7 +35,24 @@ const AppWrapper = styled.div`
         height: 100vh;
         width: 100%;
         top: -180px;
-        transform: skewY(10deg);
+        transform: skewY(-10deg);
+        z-index: -1;
+      }
+    `}
+
+  ${({ isHome }) =>
+    !isHome &&
+    css`
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: ${({ theme }) => theme.secondary};
+        transition: all 1000ms ease;
+
+        height: 30vh;
+        width: 100%;
+        top: -180px;
+        transform: skewY(2deg);
         z-index: -1;
       }
     `}

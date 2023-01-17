@@ -19,7 +19,7 @@
   color: rgb(172, 173, 174);
 }
 
-::-moz-selection {
+/* ::-moz-selection {
   color: white;
   background: #fb6169;
 }
@@ -27,7 +27,7 @@
 ::selection {
   color: white;
   background: #fb6169;
-}
+} */
 
 /* body {
   background-color: #e1e1e2;

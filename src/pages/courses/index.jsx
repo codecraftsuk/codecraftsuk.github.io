@@ -18,6 +18,7 @@ const Courses = () => {
         <ion-icon onClick={() => navigate(-1)} name="chevron-back-outline" />
         <h1>Courses</h1>
       </div>
+
       <div className="course-cards">
         {coursesData.map((course) => (
           <CourseCard {...course} />
