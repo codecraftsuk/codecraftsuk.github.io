@@ -324,9 +324,10 @@ export const StyledHomeHead = styled.div`
   .link {
     cursor: pointer;
     font-weight: 500;
+    color: #5851d0;
 
     &:hover {
-      opacity: 0.8;
+      color: black;
     }
   }
 

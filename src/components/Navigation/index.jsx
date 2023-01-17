@@ -22,11 +22,8 @@ const Navigation = ({ isDarkTheme }) => {
         </StyledLinkItem>
       </span>
       <span className="btns">
-        <RoundedButton onClick={() => navigate('/courses')} bgColor="#494766">
-          Courses
-        </RoundedButton>
         <RoundedButton onClick={() => navigate('/pricing')} bgColor="#5851d0">
-          Buy
+          Enroll
         </RoundedButton>
         <RoundedButton onClick={toggleTheme} textColor={isDarkTheme ? '#fff' : '#000'} circle>
           {isDarkTheme ? <ion-icon name="sunny-outline" /> : <ion-icon name="moon-outline" />}
