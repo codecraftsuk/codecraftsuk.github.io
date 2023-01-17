@@ -26,19 +26,6 @@ export const StyledNavWrapper = styled.div`
     margin-right: 10px;
   }
 
-  button:first-child {
-    ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
-      display: none;
-    }
-  }
-
-  button:nth-child(2) {
-    ${({ theme: { breakPoints } }) => breakPoints.down('xs')} {
-      /* display: none; */
-      padding: 3px 10px;
-    }
-  }
-
   .text {
     display: flex;
     align-items: center;
@@ -53,7 +40,7 @@ export const StyledNavWrapper = styled.div`
     height: 60px;
   }
 
-  button:nth-child(3) {
+  button:nth-child(2) {
     height: 37px;
     width: 37px;
     background-color: transparent;

@@ -43,6 +43,6 @@ export const StyledWrapper = styled.div`
   }
 
   p {
-    font-size: 16px;
+    font-size: 14.4px !important;
   }
 `;

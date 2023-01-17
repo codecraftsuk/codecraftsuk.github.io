@@ -49,7 +49,7 @@ const CourseDetails = () => {
       <StyledBuyWrapper>
         <img src={course?.image} alt="" />
         <h2>Web Development</h2>
-        <RoundedButton bgColor="#FB6169">Buy Now</RoundedButton>
+        <RoundedButton bgColor="#5851D0">Buy Now</RoundedButton>
         <div className="course-info">
           <IconText name="save-outline">Last Updated 09/01/2022</IconText>
           <IconText name="language-outline">English</IconText>

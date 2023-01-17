@@ -2,13 +2,12 @@
 import styled from 'styled-components';
 
 export const StyledCourseDetailsWrapper = styled.div`
-  width: min(100%, 1500px);
+  width: min(95%, 1000px);
   margin: 0 auto;
   display: flex;
   margin-top: 40px;
   position: relative;
   justify-content: space-between;
-  padding: 0 20px;
   gap: 20px;
 
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
@@ -30,6 +29,7 @@ export const StyledCourseDetails = styled.div`
     cursor: pointer;
     position: absolute;
     top: -10px;
+    margin-left: -15px;
   }
 
   .course-section-1 {
@@ -55,7 +55,7 @@ export const StyledCourseDetails = styled.div`
   .course-section-2 {
     flex: 2 0 300px;
     height: fit-content;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 
     .learning-text {
       display: flex;

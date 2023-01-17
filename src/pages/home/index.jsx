@@ -45,7 +45,6 @@ const animationDataWelcomeOp = {
 function Home() {
   const navigate = useNavigate();
   const theme = useTheme();
-  const whyUsRef = useRef();
 
   return (
     <StyleHome>
@@ -58,9 +57,9 @@ function Home() {
             <RoundedButton onClick={() => navigate('/about')} bgColor="#5851d0">
               Read More
             </RoundedButton>
-            <RoundedButton onClick={() => navigate('/courses')} bgColor="#494766">
+            <span onClick={() => navigate('/courses')} className="link">
               Courses
-            </RoundedButton>
+            </span>
           </div>
         </div>
         <span>
@@ -106,7 +105,14 @@ function Home() {
       </FadeInWhenVisible> */}
 
       <FadeInWhenVisible>
-        <StyledFullWidth shouldBend bgColor="#FB6169">
+        <StyledFullWidth shouldBend bgColor="#5851D0">
+          <div className="track-record">
+            <h1>Track Record</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero assumenda odio magnam soluta voluptas
+              nisi reiciendis iste eum doloribus minus?
+            </p>
+          </div>
           <StyledFlexWrap className="green-content">
             {statsData.map((iconData) => (
               <IconInfo {...iconData} />
@@ -116,12 +122,12 @@ function Home() {
       </FadeInWhenVisible>
 
       <FadeInWhenVisible>
-        <StyledTitleWrapper>
-          <h1 className="company-title">Our Purpose.</h1>
-        </StyledTitleWrapper>
-        <StyledContentWrapper>
+        <StyledContentWrapper pt={30}>
           <StyledDeliveryInfo>
             <span>
+              <StyledTitleWrapper>
+                <h1 className="company-title">Our Purpose.</h1>
+              </StyledTitleWrapper>
               <p>
                 CodeCrafts is committed to helping companies build the strong, talented teams they need to succeed in
                 the tech industry. Our Web Development and DevOps bootcamp offers a unique solution for finding and
@@ -140,7 +146,7 @@ function Home() {
       </FadeInWhenVisible>
 
       <StyledFullWidth bgColor={theme?.secondary}>
-        <StyledContentWrapper ref={whyUsRef}>
+        <StyledContentWrapper>
           <FadeInWhenVisible>
             <h1>Why Codecrafts?</h1>
             <StyledFlexWrap>
@@ -161,7 +167,7 @@ function Home() {
           <StyledFullWidth>
             <StyledMakeTogether>
               <h2>Let&apos;s Make Something Great Together.</h2>
-              <RoundedButton onClick={() => navigate('/courses')} bgColor="#FB6169" textColor="black">
+              <RoundedButton onClick={() => navigate('/courses')} bgColor="#5851D0" textColor="black">
                 Start a Course
               </RoundedButton>
             </StyledMakeTogether>

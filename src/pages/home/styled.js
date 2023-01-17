@@ -7,7 +7,7 @@ export const StyledContentWrapper = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: ${({ pt }) => pt || '100'}px;
   padding-bottom: 100px;
 
   .why-us-btn {
@@ -43,15 +43,12 @@ export const StyledContentWrapper = styled.div`
 
 export const StyledTitleWrapper = styled.div`
   .company-title {
-    width: min(100%, 900px);
     text-align: left;
     padding-top: 70px;
     margin: 0 auto;
-  }
 
-  ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
-    .company-title {
-      text-align: left;
+    ${({ theme: { breakPoints } }) => breakPoints.up('md')} {
+      /* margin-bottom: -80px; */
     }
   }
 `;
@@ -67,7 +64,7 @@ export const StyledInfoWrapper = styled.div`
     /* padding: 70px 20px 0 20px; */
     padding-top: 70px;
     margin-bottom: 40px;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .carbon-img {
@@ -131,16 +128,27 @@ export const StyleHome = styled.div`
     padding: 80px 0;
     width: min(100%, 1000px);
   }
+
+  .track-record {
+    width: min(95%, 1000px);
+    margin: 0 auto;
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: -50px;
+    }
+  }
 `;
 
 export const StyledDeliveryInfo = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  /* align-items: center; */
   justify-content: space-between;
-  padding-bottom: 10px;
-  /* padding: 0 60px 10px 60px; */
+  padding-top: -100px;
 
   text-align: center;
   width: 100%;
@@ -148,16 +156,19 @@ export const StyledDeliveryInfo = styled.div`
 
   & > * {
     flex: 1 0 min(100%, 300px);
-    /* padding: 13px; */
 
     & > * {
       margin-bottom: 34px;
     }
 
     p {
-      text-align: justify;
-      // padding: 13px;
+      text-align: left;
+      font-size: 15px;
     }
+  }
+
+  span {
+    flex: 2 0 min(100%, 400px);
   }
 `;
 
@@ -265,23 +276,18 @@ export const StyledHomeHead = styled.div`
   min-height: 75vh;
   display: flex;
   align-items: center;
-  /* padding: 0px 200px; */
-  /* flex-wrap: wrap; */
   justify-content: space-between;
-  /* padding: 70px; */
   width: min(95%, 1000px);
-
   margin: 0 auto;
 
-  /* animation: ${comeIn} 1000ms ease-in-out; */
-
   button {
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: 10px;
   }
 
   svg {
     max-width: 400px;
+    flex: 1 0;
   }
 
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
@@ -295,32 +301,41 @@ export const StyledHomeHead = styled.div`
 
   img {
     max-width: min(100%, 500px);
-    /* margin-right: 140px; */
   }
 
   .hero-text {
-    max-width: min(100%, 450px);
+    /* max-width: min(100%, 450px); */
+    flex: 2 0 450px;
 
     & > * {
       margin-bottom: 20px;
-      flex: 1 0;
+      /* flex: 1 0; */
     }
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 88px;
+
+    ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+      font-size: 4rem;
+    }
   }
 
-  /* & > * {
-    flex: 1 0;
-  } */
+  .link {
+    cursor: pointer;
+    font-weight: 500;
+    color: #5851d0;
+
+    &:hover {
+      color: black;
+      transition: 800ms;
+    }
+  }
 
   p {
-    font-size: 18px;
+    font-size: .9rem;
     line-height: 1.6rem;
-    letter-spacing: .1px;
     font-weight: 300;
-    color: #425466;
   }
 `;
 

@@ -20,22 +20,18 @@ export const StyledFlexWrap = styled.div`
 export const StyledFullWidth = styled.div`
   background-color: ${({ bgColor }) => bgColor || 'transparent'};
   width: 100%;
-  position: relative;
 
   ${({ shouldBend }) =>
     shouldBend &&
     css`
-      &::before {
-        content: '';
-        position: absolute;
-        background-color: ${({ bgColor }) => bgColor || 'transparent'};
-        transition: all 1000ms ease;
+      clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+      padding-bottom: 11rem;
+      /* background-color: #0a2540; */
+      color: #fff;
+      padding-top: 13rem;
 
-        height: 300px;
-        width: 100%;
-        bottom: 0px;
-        transform: skewY(-9deg);
-        z-index: -1;
-      }
+      ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+        clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 10%);
+    
     `}
 `;
