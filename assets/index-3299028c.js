@@ -353,7 +353,7 @@ Error generating stack: `+rt.message+`
 
   background-color: ${({bgColor:a})=>a||"transparent"};
   color: ${({textColor:a})=>a||"white"};
-  border: 1.5px solid ${({bgColor:a})=>a||""};
+  border: none;
 
   ${({isCircle:a})=>a&&Ce`
       font-size: 18px;
@@ -1208,11 +1208,12 @@ object-assign
 
     &:hover {
       color: black;
+      transition: 800ms;
     }
   }
 
   p {
-    font-size: 18px;
+    font-size: .9rem;
     line-height: 1.6rem;
     font-weight: 300;
   }
