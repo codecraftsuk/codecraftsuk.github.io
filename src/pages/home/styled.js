@@ -328,11 +328,12 @@ export const StyledHomeHead = styled.div`
 
     &:hover {
       color: black;
+      transition: 800ms;
     }
   }
 
   p {
-    font-size: 18px;
+    font-size: .9rem;
     line-height: 1.6rem;
     font-weight: 300;
   }

@@ -10,7 +10,7 @@ export const StyledButton = styled.button`
 
   background-color: ${({ bgColor }) => bgColor || 'transparent'};
   color: ${({ textColor }) => textColor || 'white'};
-  border: 1.5px solid ${({ bgColor }) => bgColor || ''};
+  border: none;
 
   ${({ isCircle }) =>
     isCircle &&
