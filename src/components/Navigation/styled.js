@@ -14,7 +14,6 @@ export const StyledNavWrapper = styled.div`
 
   img {
     height: 50px;
-    margin-left: 20px;
 
     ${({ theme: { breakPoints } }) => breakPoints.down('xs')} {
       width: 40px !important;
@@ -38,6 +37,7 @@ export const StyledNavWrapper = styled.div`
     top: 0;
     width: 60px;
     height: 60px;
+    transform: rotate(160deg);
   }
 
   button:nth-child(2) {
