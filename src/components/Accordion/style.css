@@ -19,6 +19,7 @@ ion-icon[name='chevron-up-outline'] {
   font-size: 25px !important;
   cursor: pointer;
   flex: 0 0 50px;
+  transition: all 500ms;
 }
 
 .accordion-text {
@@ -29,16 +30,18 @@ ion-icon[name='chevron-up-outline'] {
   border-radius: 16px;
 
   transition: all 500ms;
+  margin-right: 50px;
 }
 
 .accordion-wrapper {
   margin: 10px 0;
   border: 1px solid transparent;
   transition: border 0.2s;
-  border-radius: 6px;
   cursor: pointer;
+  border-bottom: 1px solid gray;
+  transition: all 150ms;
 }
 
 .accordion-wrapper:hover {
-  border: 1px solid gray;
+  padding-left: 10px;
 }

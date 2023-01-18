@@ -31,10 +31,24 @@ section {
 }
 
 .faq-wrapper {
-  width: min(100%, 1300px);
+  width: min(95%, 950px);
   margin: 0 auto;
-  padding: 10px 10px 50px 10px;
+  padding: 80px;
   color: #000;
+  translate: 0 -200px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 1px rgb(177, 177, 177);
+  position: relative;
+}
+
+.faq-wrapper::before {
+  content: 'FAQ`s';
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  font-weight: 600;
+  font-size: 30px;
+  transform: translateX(-50%);
 }
 
 .curved-top {
@@ -44,18 +58,22 @@ section {
   height: 140px;
   margin-bottom: -8px;
   scale: 1.1;
+  margin-top: 250px;
 }
 
 .main-title {
   text-align: center;
   margin-top: 60px;
-  margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 900px) {
   .curved-top {
-    background-color: red;
     height: 50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .faq-wrapper {
+    padding: 70px 20px;
   }
 }
 

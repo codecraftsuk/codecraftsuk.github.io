@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import './style.css';
 
 const Accordion = ({ title, text }) => {
@@ -8,10 +9,10 @@ const Accordion = ({ title, text }) => {
 
   return (
     <div onClick={handleIconClick} className="accordion-wrapper">
-      <button type="button" className="accordion">
-        <h3>{title}</h3>
-        {!isOpen ? <ion-icon name="chevron-down-outline" /> : <ion-icon name="chevron-up-outline" />}
-      </button>
+      <span type="button" className="accordion">
+        <h3 style={{ color: isOpen ? '#FF5F2F' : 'inherit' }}>{title}</h3>
+        <ion-icon style={{ rotate: isOpen ? '180deg' : '0deg' }} name="chevron-down-outline" />
+      </span>
       <p className="accordion-text" style={{ ...(isOpen && { maxHeight: '150px', padding: '20px 10px' }) }}>
         {text}
       </p>

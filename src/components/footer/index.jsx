@@ -11,7 +11,9 @@ import {
 const Footer = () => (
   <StyledFooter>
     <div className="full-width">
-      <h1><StyledLink to="/">codecrafts</StyledLink></h1>
+      <h1>
+        <StyledLink onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>codecrafts</StyledLink>
+      </h1>
     </div>
     <StyledFooterWrapper>
       <StyledLinkWrapper>
