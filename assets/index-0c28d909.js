@@ -92,16 +92,17 @@ Error generating stack: `+rt.message+`
   }
 
   h1 {
-    border-top: 2px dotted lightgrey;
+    border-top: 2px dotted #ccc;
+    padding-top: 10px;
     font-size: 32px;
-    cursor: pointer;
-    padding: 10px 0 0 0;
-    margin-bottom: 10px;
+    margin: 10px 0 10px 0;
 
-    color: ${({theme:a})=>a.primaryText};
-    &:hover {
-      opacity: 0.7;
+    a {
+      text-decoration: none;
+      color: #0a2540;
+      font-weight: 800;
     }
+
   }
 `,StyledFooterWrapper=styled.div`
   display: flex;
@@ -117,7 +118,8 @@ Error generating stack: `+rt.message+`
 `,StyledLinkWrapper=styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  margin-top: 20px;
+  font-weight: 400;
 
   & > * {
     color: ${({theme:a})=>a.primaryText};
@@ -126,12 +128,12 @@ Error generating stack: `+rt.message+`
 
   h3 {
     margin-bottom: 6px;
+    font-weight: 700;
   }
 `,StyledLink=styled(Link)`
-  padding: 6px 0;
+  margin: 6px 0;
   text-decoration: none;
-  opacity: 1;
-  font-weight: 300;
+  font-weight: 400;
   width: fit-content;
 
   &:hover {
@@ -141,16 +143,17 @@ Error generating stack: `+rt.message+`
   background-color: ${({theme:a})=>a.secondary};
   text-align: left;
   color: ${({theme:a})=>a.primaryText};
-  font-size: 14px;
+  padding-bottom: 100px;
 
-  padding-bottom: 70px;
+  h3 {
+    font-size: 14px;
+  }
 `,StyledSocials=styled.div`
   background-color: ${({theme:a})=>a.secondary};
   padding: 5px 0px;
   color: ${({theme:a})=>a.primaryText};
   width: min(95%, 1000px);
   margin: 0 auto;
-  padding-bottom: 20px;
   margin-top: 30px;
   font-size: 14px;
 
@@ -161,6 +164,7 @@ Error generating stack: `+rt.message+`
   h3 {
     margin-bottom: 10px;
     font-size: 14px !important;
+    font-weight: 700;
   }
 
   ion-icon {
@@ -179,7 +183,7 @@ Error generating stack: `+rt.message+`
       transition: 500ms;
     }
   }
-`,Footer=()=>jsxs(StyledFooter,{children:[jsx("div",{className:"full-width",children:jsx("h1",{children:"codecrafts"})}),jsxs(StyledFooterWrapper,{children:[jsxs(StyledLinkWrapper,{children:[jsx("h3",{children:"Products"}),jsx(StyledLink,{to:"/",children:"Home"}),jsx(StyledLink,{to:"/courses",children:"Courses"}),jsx(StyledLink,{to:"/about",children:"About"}),jsx(StyledLink,{to:"/pricing",children:"Pricing"}),jsx(StyledLink,{to:"/contact",children:"Contact"})]}),jsxs(StyledLinkWrapper,{children:[jsx("h3",{children:"Jobs Sites"}),jsx(StyledLink,{children:"LinkedIn"}),jsx(StyledLink,{children:"TotalJobs"}),jsx(StyledLink,{children:"reed"}),jsx(StyledLink,{children:"indeed"}),jsx(StyledLink,{children:"Job seekers allowance"})]}),jsxs(StyledLinkWrapper,{children:[jsx("h3",{children:"idk yet"}),jsx(StyledLink,{children:"Home"}),jsx(StyledLink,{children:"Courses"}),jsx(StyledLink,{children:"About"}),jsx(StyledLink,{children:"Pricing"}),jsx(StyledLink,{children:"Pricing"})]})]}),jsxs(StyledSocials,{children:[jsx("h3",{children:"Follow us on socials"}),jsxs("span",{children:[jsx("a",{href:"https://twitter.com/codecrafts_",children:jsx("ion-icon",{name:"logo-twitter"})}),jsx("a",{href:"https://discord.gg/Ks7UxrqBSF",children:jsx("ion-icon",{name:"logo-discord"})}),jsx("a",{href:"https://instagram.com/codecrafts_",children:jsx("ion-icon",{name:"logo-instagram"})})]})]}),jsx(StyledCopyRight,{children:jsxs("h3",{className:"full-width",children:["CodeCraft ©",new Date().getFullYear(),". All Rights Reserved."]})})]});var propTypesExports={},propTypes={get exports(){return propTypesExports},set exports(a){propTypesExports=a}},ReactPropTypesSecret$1="SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED",ReactPropTypesSecret_1=ReactPropTypesSecret$1,ReactPropTypesSecret=ReactPropTypesSecret_1;function emptyFunction(){}function emptyFunctionWithReset(){}emptyFunctionWithReset.resetWarningCache=emptyFunction;var factoryWithThrowingShims=function(){function a(et,tt,rt,it,nt,at){if(at!==ReactPropTypesSecret){var st=new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");throw st.name="Invariant Violation",st}}a.isRequired=a;function s(){return a}var o={array:a,bigint:a,bool:a,func:a,number:a,object:a,string:a,symbol:a,any:a,arrayOf:s,element:a,elementType:a,instanceOf:s,node:a,objectOf:s,oneOf:s,oneOfType:s,shape:s,exact:s,checkPropTypes:emptyFunctionWithReset,resetWarningCache:emptyFunction};return o.PropTypes=o,o};propTypes.exports=factoryWithThrowingShims();const StyledNavWrapper=styled.div`
+`,Footer=()=>jsxs(StyledFooter,{children:[jsx("div",{className:"full-width",children:jsx("h1",{children:jsx(StyledLink,{to:"/",children:"codecrafts"})})}),jsxs(StyledFooterWrapper,{children:[jsxs(StyledLinkWrapper,{children:[jsx("h3",{children:"Products"}),jsx(StyledLink,{to:"/",children:"Home"}),jsx(StyledLink,{to:"/courses",children:"Courses"}),jsx(StyledLink,{to:"/about",children:"About"}),jsx(StyledLink,{to:"/pricing",children:"Pricing"}),jsx(StyledLink,{to:"/contact",children:"Contact"})]}),jsxs(StyledLinkWrapper,{children:[jsx("h3",{children:"Jobs Sites"}),jsx(StyledLink,{children:"LinkedIn"}),jsx(StyledLink,{children:"TotalJobs"}),jsx(StyledLink,{children:"reed"}),jsx(StyledLink,{children:"indeed"}),jsx(StyledLink,{children:"Job seekers allowance"})]}),jsxs(StyledLinkWrapper,{children:[jsx("h3",{children:"Support"}),jsx(StyledLink,{children:"Contact"}),jsx(StyledLink,{children:"FAQ"}),jsx(StyledLink,{children:"Terms of Service"}),jsx(StyledLink,{children:"Policies"}),jsx(StyledLink,{children:"Example"})]})]}),jsxs(StyledSocials,{children:[jsx("h3",{children:"Follow us on socials"}),jsxs("span",{children:[jsx("a",{href:"https://twitter.com/codecrafts_",children:jsx("ion-icon",{name:"logo-twitter"})}),jsx("a",{href:"https://discord.gg/Ks7UxrqBSF",children:jsx("ion-icon",{name:"logo-discord"})}),jsx("a",{href:"https://instagram.com/codecrafts_",children:jsx("ion-icon",{name:"logo-instagram"})})]})]}),jsx(StyledCopyRight,{children:jsxs("h3",{className:"full-width",children:["codecrafts ©",new Date().getFullYear(),". All Rights Reserved."]})})]});var propTypesExports={},propTypes={get exports(){return propTypesExports},set exports(a){propTypesExports=a}},ReactPropTypesSecret$1="SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED",ReactPropTypesSecret_1=ReactPropTypesSecret$1,ReactPropTypesSecret=ReactPropTypesSecret_1;function emptyFunction(){}function emptyFunctionWithReset(){}emptyFunctionWithReset.resetWarningCache=emptyFunction;var factoryWithThrowingShims=function(){function a(et,tt,rt,it,nt,at){if(at!==ReactPropTypesSecret){var st=new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");throw st.name="Invariant Violation",st}}a.isRequired=a;function s(){return a}var o={array:a,bigint:a,bool:a,func:a,number:a,object:a,string:a,symbol:a,any:a,arrayOf:s,element:a,elementType:a,instanceOf:s,node:a,objectOf:s,oneOf:s,oneOfType:s,shape:s,exact:s,checkPropTypes:emptyFunctionWithReset,resetWarningCache:emptyFunction};return o.PropTypes=o,o};propTypes.exports=factoryWithThrowingShims();const StyledNavWrapper=styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
