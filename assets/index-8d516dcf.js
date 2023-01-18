@@ -189,7 +189,7 @@ Error generating stack: `+rt.message+`
   align-items: center;
   /* background-color: ${({theme:a})=>a.primary}; */
   color: ${({theme:a})=>a.primaryPrimary};
-  padding: 20px 0 0 0;
+  padding: 10px 0 0 0;
   width: min(95%, 1000px);
   margin: 0 auto;
   justify-content: space-between;
@@ -542,7 +542,7 @@ object-assign
 `,maleAvatar="/assets/male-avatar-3446bb19.svg",TeamMember=()=>jsxs(StyledCardWrapper$1,{children:[jsx("img",{src:maleAvatar,alt:""}),jsx("h3",{children:"Full name"}),jsx("p",{className:"job-title",children:"Job Title"}),jsx("p",{children:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam aperiam esse possimus minima, molestias iste nesciunt nam necessitatibus officia?"})]}),StyledFlexWrap=styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   justify-content: space-between;
   background-color: ${({bgColor:a})=>a||"transparent"};
   width: 100%;
@@ -559,14 +559,14 @@ object-assign
   width: 100%;
 
   ${({shouldBend:a})=>a&&Ce`
-      clip-path: polygon(100% 0, 100% 70%, 0 100%, 0 20%);
-      padding-bottom: 11rem;
+      clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+      padding-bottom: 7rem;
       /* background-color: #0a2540; */
       color: #fff;
       padding-top: 13rem;
 
       ${({theme:{breakPoints:s}})=>s.down("md")} {
-        clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 10%);
+        clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
     
     `}
 `,defaultOptions$1={loop:!0,autoplay:!0,animationData:animationData$1,rendererSettings:{preserveAspectRatio:"xMinYMi slice"}},About=()=>{const a=useNavigate(),s=Ze();return jsxs(Fragment,{children:[jsxs(StyledAboutWrapper,{children:[jsxs("div",{className:"back",children:[jsx("ion-icon",{onClick:()=>a("/"),name:"chevron-back-outline"}),jsx("h1",{children:"About Us"})]}),jsxs(StyledAboutContent,{children:[jsx("p",{children:"Welcome to our web development and devops bootcamp, where we turn code newbies into skilled professionals in just a few short weeks. Our program is designed to take you from zero to hero, with a focus on hands-on experience and real-world projects. So why wait? Join our bootcamp and become a hero in web development and devops today!"}),jsx(_default,{options:defaultOptions$1,height:300})]})]}),jsx(StyledFullWidth,{bgColor:s==null?void 0:s.secondary,children:jsxs(StyledAboutWrapper,{children:[jsx("h2",{children:"Building the Future of Tech!"}),jsx("p",{className:"building-tech-text",children:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolore possimus necessitatibus et exercitationem, blanditiis ab, saepe ullam aut corrupti ex non soluta iusto architecto, excepturi vel expedita molestiae maiores optio placeat quasi! Adipisci quo inventore obcaecati quaerat beatae molestiae officia nisi soluta sequi eaque!"}),jsx("p",{className:"building-tech-text",children:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolore possimus necessitatibus et exercitationem, blanditiis ab, saepe ullam aut corrupti ex non soluta iusto architecto, excepturi vel expedita molestiae maiores optio placeat quasi! Adipisci quo inventore obcaecati quaerat beatae molestiae officia nisi soluta sequi eaque!"})]})}),jsxs(StyledAboutWrapper,{children:[jsx("h2",{children:"Meet our team!"}),jsxs("div",{className:"meet-team",children:[jsx(TeamMember,{}),jsx(TeamMember,{}),jsx(TeamMember,{})]})]})]})},StyledContactWrapper=styled.div`
@@ -1027,9 +1027,8 @@ object-assign
 
   h1 {
     /* padding: 70px 20px 0 20px; */
-    padding-top: 70px;
     margin-bottom: 30px;
-    font-size: 32px;
+    font-size: 2.3rem;
     /* text-align: center; */
   }
 
@@ -1044,8 +1043,7 @@ object-assign
   }
 
   p.creative {
-    text-align: justify;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
   }
 
   ${({theme:{breakPoints:a}})=>a.down("md")} {
@@ -1078,13 +1076,8 @@ object-assign
     width: min(95%, 1000px);
     margin: 0 auto;
 
-    h1 {
-      margin-bottom: 30px;
-      font-size: 32px;
-    }
-
     p {
-      margin-bottom: -50px;
+      color: white;
     }
   }
 `,StyledDeliveryInfo=styled.div`
@@ -1211,16 +1204,16 @@ object-assign
     transform: translateY(0px);
   }
 `;const StyledHomeHead=styled.div`
-  min-height: 75vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: min(95%, 1000px);
   margin: 0 auto;
+  margin-bottom: 10vh;
 
   button {
     margin-right: 20px;
-    margin-bottom: 10px;
   }
 
   svg {
@@ -1243,15 +1236,19 @@ object-assign
 
   .hero-text {
     /* max-width: min(100%, 450px); */
-    flex: 2 0 450px;
+    flex: 1.5 1;
 
     & > * {
       margin-bottom: 20px;
       /* flex: 1 0; */
     }
-  }
 
-  h1 {
+    p {
+      margin-bottom: 18px;
+      font-weight: 100px;
+    }
+
+    h1 {
     font-size: 92px;
 
     ${({theme:{breakPoints:a}})=>a.down("md")} {
@@ -1437,9 +1434,17 @@ $bm_rt = loopOut();`},sk:{a:0,k:0,ix:4},sa:{a:0,k:0,ix:5},nm:"Transform"}],nm:"b
   z-index: 100;
 
   p {
-    line-height: 1.7em;
+    line-height: 1.6rem;
     letter-spacing: 0.2px;
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    color: #425466;
+  }
+
+  h1 {
+    margin: 30px 0;
+    font-size: 36px;
   }
 
   ${({isHome:a})=>a&&Ce`
