@@ -10,7 +10,9 @@ import {
 
 const Footer = () => (
   <StyledFooter>
-    <h1>codecrafts</h1>
+    <div className="full-width">
+      <h1>codecrafts</h1>
+    </div>
     <StyledFooterWrapper>
       <StyledLinkWrapper>
         <h3>Products</h3>
@@ -56,8 +58,10 @@ const Footer = () => (
       </span>
     </StyledSocials>
     <StyledCopyRight>
-      CodeCraft &copy;
-      {new Date().getFullYear()}. All Rights Reserved.
+      <h3 className="full-width">
+        CodeCraft &copy;
+        {new Date().getFullYear()}. All Rights Reserved.
+      </h3>
     </StyledCopyRight>
   </StyledFooter>
 );

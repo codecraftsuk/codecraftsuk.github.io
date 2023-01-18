@@ -5,11 +5,11 @@ export const StyledText = styled.div`
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid ${({ theme }) => theme.tertiary}; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-  letter-spacing: 0.15em; /* Adjust as needed */
+  letter-spacing: -0.1px; /* Adjust as needed */
   animation: typing 3s steps(155, end) 3s infinite, erase 3s steps(155, end) 3s infinite, blink 0.3s step-end infinite;
   animation-direction: alternate;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 20.8px;
+  font-weight: bold;
   /* padding-left: 10px; */
   text-decoration: none;
   color: ${({ theme }) => theme.primaryPrimary} !important;

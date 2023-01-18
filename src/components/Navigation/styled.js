@@ -7,7 +7,7 @@ export const StyledNavWrapper = styled.div`
   align-items: center;
   /* background-color: ${({ theme }) => theme.primary}; */
   color: ${({ theme }) => theme.primaryPrimary};
-  padding: 40px 0 0 0;
+  padding: 20px 0 0 0;
   width: min(95%, 1000px);
   margin: 0 auto;
   justify-content: space-between;
@@ -18,6 +18,21 @@ export const StyledNavWrapper = styled.div`
     ${({ theme: { breakPoints } }) => breakPoints.down('xs')} {
       width: 40px !important;
       height: 40px !important;
+    }
+  }
+
+  .nav-link {
+    display: flex;
+    gap: 30px;
+
+    ${({ theme: { breakPoints } }) => breakPoints.down('ml')} {
+      gap: 30px;
+    }
+    ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+      gap: 15px;
+    }
+    ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
+      display: none;
     }
   }
 
@@ -32,12 +47,10 @@ export const StyledNavWrapper = styled.div`
   }
 
   .logo {
-    position: react-transition;
-    right: 0;
-    top: 0;
     width: 60px;
     height: 60px;
-    transform: rotate(160deg);
+    margin-right: 10px;
+    transform: rotate(160deg) translateY(-6px);
   }
 
   button:nth-child(2) {
@@ -73,6 +86,12 @@ export const StyledLinkItem = styled(Link)`
   text-decoration: none;
   border-bottom: 2px solid ${({ active, theme }) => (active ? theme.tertiary : 'transparent')};
   /* color: white; */
-  font-size: 14px;
+  font-size: 1rem;
   color: ${({ theme }) => theme.primaryText};
+
+  font-weight: 500;
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;

@@ -16,14 +16,21 @@ const Navigation = ({ isDarkTheme }) => {
   return (
     <StyledNavWrapper>
       <span className="text">
-        <Link to="/"><img className="logo" src={Logo} alt="" /></Link>
+        <Link to="/">
+          <img className="logo" src={Logo} alt="" />
+        </Link>
         <StyledLinkItem to="/">
           <TypingAnimation />
         </StyledLinkItem>
       </span>
+      <span className="nav-link">
+        <StyledLinkItem to="/about">About</StyledLinkItem>
+        <StyledLinkItem to="/courses">Courses</StyledLinkItem>
+        <StyledLinkItem to="/contact">Contact</StyledLinkItem>
+      </span>
       <span className="btns">
         <RoundedButton onClick={() => navigate('/pricing')} bgColor="#5851d0">
-          Enroll
+          Apply
         </RoundedButton>
         <RoundedButton onClick={toggleTheme} textColor={isDarkTheme ? '#fff' : '#000'} circle>
           {isDarkTheme ? <ion-icon name="sunny-outline" /> : <ion-icon name="moon-outline" />}

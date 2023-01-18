@@ -1,7 +1,8 @@
 /* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
-import React, { useRef } from 'react';
+import React from 'react';
 import Lottie from 'react-lottie';
+import { useTheme } from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { StyledFlexWrap, StyledFullWidth } from '../../common/styles';
 import IconInfo from '../../components/IconInfo';
@@ -13,16 +14,13 @@ import {
   StyledInfoWrapper,
   StyleHome,
   StyledDeliveryInfo,
-  StyledMakeTogether,
   StyledHomeHead,
   StyledTestTestimonialsWrapper,
   StyledTitleWrapper,
 } from './styled';
 import animationData from '../../assets/lottie/charts.json';
 import animationDataWelcome from '../../assets/lottie/laptop.json';
-import laptop from '../../assets/images/background/laptop-screen.png';
 import FadeInWhenVisible from '../../components/FadeInWhenVisible';
-import { useTheme } from 'styled-components';
 
 const defaultOptions = {
   loop: true,
@@ -69,7 +67,7 @@ function Home() {
 
       <StyledContentWrapper>
         <StyledInfoWrapper>
-          <h1>Creative Services</h1>
+          <h1>Services</h1>
           <p className="creative">
             At CodeCrafts, we believe that anyone can learn to code and build a successful career in the tech industry.
             That's why we offer a comprehensive Web Development and DevOps bootcamp, designed to turn code newbies into
@@ -83,7 +81,7 @@ function Home() {
         </StyledInfoWrapper>
 
         <FadeInWhenVisible>
-          <StyledFlexWrap>
+          <StyledFlexWrap px="16">
             {infoIconData.map((iconData) => (
               <IconInfo {...iconData} />
             ))}
@@ -126,7 +124,7 @@ function Home() {
           <StyledDeliveryInfo>
             <span>
               <StyledTitleWrapper>
-                <h1 className="company-title">Our Purpose.</h1>
+                <h1 className="company-title">Our Purpose</h1>
               </StyledTitleWrapper>
               <p>
                 CodeCrafts is committed to helping companies build the strong, talented teams they need to succeed in
@@ -148,8 +146,8 @@ function Home() {
       <StyledFullWidth bgColor={theme?.secondary}>
         <StyledContentWrapper>
           <FadeInWhenVisible>
-            <h1>Why Codecrafts?</h1>
-            <StyledFlexWrap>
+            <h1 className="why-us-title">Why Codecrafts?</h1>
+            <StyledFlexWrap py="0">
               {whyCodeCraftInfo.map((iconData) => (
                 <IconInfo alignLeft {...iconData} />
               ))}
@@ -162,15 +160,6 @@ function Home() {
         <StyledTestTestimonialsWrapper>
           <StyledFullWidth bgColor="red">
             <Testimonials />
-          </StyledFullWidth>
-
-          <StyledFullWidth>
-            <StyledMakeTogether>
-              <h2>Let&apos;s Make Something Great Together.</h2>
-              <RoundedButton onClick={() => navigate('/courses')} bgColor="#5851D0" textColor="black">
-                Start a Course
-              </RoundedButton>
-            </StyledMakeTogether>
           </StyledFullWidth>
         </StyledTestTestimonialsWrapper>
       </FadeInWhenVisible>

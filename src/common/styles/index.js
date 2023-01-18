@@ -8,7 +8,7 @@ export const StyledFlexWrap = styled.div`
   background-color: ${({ bgColor }) => bgColor || 'transparent'};
   width: 100%;
   margin: 0 auto;
-  padding: 50px 0px;
+  padding: ${({ py }) => py || 50}px ${({ px }) => px || 0}px;
   /* text-align: justify; */
 
   /* @media only screen and (max-width: 932px) {
@@ -24,7 +24,7 @@ export const StyledFullWidth = styled.div`
   ${({ shouldBend }) =>
     shouldBend &&
     css`
-      clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+      clip-path: polygon(100% 0, 100% 70%, 0 100%, 0 20%);
       padding-bottom: 11rem;
       /* background-color: #0a2540; */
       color: #fff;

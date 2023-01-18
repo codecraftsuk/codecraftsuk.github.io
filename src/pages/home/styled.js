@@ -1,6 +1,5 @@
 /* eslint-disable import/prefer-default-export */
 import styled, { keyframes } from 'styled-components';
-import carbon from '../../assets/images/portfolio/carbon3.gif';
 
 export const StyledContentWrapper = styled.div`
   width: min(95%, 1000px);
@@ -39,6 +38,11 @@ export const StyledContentWrapper = styled.div`
     text-align: center;
     padding: 5px 20px 50px 20px;
   }
+
+  .why-us-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
 `;
 
 export const StyledTitleWrapper = styled.div`
@@ -63,7 +67,8 @@ export const StyledInfoWrapper = styled.div`
   h1 {
     /* padding: 70px 20px 0 20px; */
     padding-top: 70px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    font-size: 32px;
     /* text-align: center; */
   }
 
@@ -76,28 +81,9 @@ export const StyledInfoWrapper = styled.div`
   img {
     transform: scale(1.7);
   }
-  .laptop-bg {
-    background-size: contain;
-    background-clip: border-box;
-    position: relative;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-
-  .laptop-bg > .laptop-content-bg {
-    ${'' /* background-image: url(${carbon}); */}
-    background-color:blue;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: -5%;
-    top: -6%;
-    bottom: 2.5%;
-    right: -3.5%;
-  }
 
   p.creative {
     text-align: justify;
-    font-size: 15px;
     margin-bottom: 10px;
   }
 
@@ -134,7 +120,8 @@ export const StyleHome = styled.div`
     margin: 0 auto;
 
     h1 {
-      margin-bottom: 10px;
+      margin-bottom: 30px;
+      font-size: 32px;
     }
 
     p {
@@ -158,17 +145,19 @@ export const StyledDeliveryInfo = styled.div`
     flex: 1 0 min(100%, 300px);
 
     & > * {
-      margin-bottom: 34px;
+      margin-bottom: 30px;
     }
 
     p {
       text-align: left;
-      font-size: 15px;
     }
   }
 
   span {
     flex: 2 0 min(100%, 400px);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
   }
 `;
 
@@ -314,7 +303,7 @@ export const StyledHomeHead = styled.div`
   }
 
   h1 {
-    font-size: 88px;
+    font-size: 92px;
 
     ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
       font-size: 4rem;
@@ -333,7 +322,6 @@ export const StyledHomeHead = styled.div`
   }
 
   p {
-    font-size: .9rem;
     line-height: 1.6rem;
     font-weight: 300;
   }

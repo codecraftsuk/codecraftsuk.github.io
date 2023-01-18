@@ -4,13 +4,16 @@ import styled from 'styled-components';
 
 export const StyledFooter = styled.div`
   background-color: ${({ theme }) => theme.secondary};
-  padding-top: 70px;
+  padding-top: 100px;
 
-  h1 {
+  .full-width {
     width: min(95%, 1000px);
     margin: 0 auto;
+  }
+
+  h1 {
     border-top: 2px dotted lightgrey;
-    font-size: 2.1rem;
+    font-size: 32px;
     cursor: pointer;
     padding: 10px 0 0 0;
     margin-bottom: 10px;
@@ -57,14 +60,15 @@ export const StyledLink = styled(Link)`
   font-weight: 300;
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 `;
 
 export const StyledCopyRight = styled.div`
   background-color: ${({ theme }) => theme.secondary};
-  text-align: center;
+  text-align: left;
   color: ${({ theme }) => theme.primaryText};
+  font-size: 14px;
 
   padding-bottom: 70px;
 `;
@@ -77,14 +81,15 @@ export const StyledSocials = styled.div`
   margin: 0 auto;
   padding-bottom: 20px;
   margin-top: 30px;
+  font-size: 14px;
 
   p {
     margin-bottom: 20px;
-    font-size: 14px;
   }
 
   h3 {
     margin-bottom: 10px;
+    font-size: 14px !important;
   }
 
   ion-icon {

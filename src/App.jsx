@@ -12,7 +12,7 @@ const AppWrapper = styled.div`
   /* background-color: ${({ theme, isHome }) => (isHome ? theme.primary : theme.secondary)}; */
   background-color: ${({ theme }) => theme.primary};
   color: ${({ theme }) => theme.primaryText};
-  transition: all 1000ms ease;
+  transition: all 800ms ease;
   min-height: 100vh;
   position: relative;
   z-index: 100;
@@ -20,7 +20,7 @@ const AppWrapper = styled.div`
   p {
     line-height: 1.7em;
     letter-spacing: 0.2px;
-    font-size: 15px;
+    font-size: 17px;
   }
 
   ${({ isHome }) =>
@@ -30,7 +30,7 @@ const AppWrapper = styled.div`
         content: '';
         position: absolute;
         background-color: ${({ theme }) => theme.secondary};
-        transition: all 1000ms ease;
+        transition: all 800ms ease;
 
         height: 100vh;
         width: 100%;
@@ -47,7 +47,7 @@ const AppWrapper = styled.div`
         content: '';
         position: absolute;
         background-color: ${({ theme }) => theme.secondary};
-        transition: all 1000ms ease;
+        transition: all 800ms ease;
 
         height: 30vh;
         width: 100%;
