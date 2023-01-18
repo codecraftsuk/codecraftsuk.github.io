@@ -12,16 +12,17 @@ export const StyledFooter = styled.div`
   }
 
   h1 {
-    border-top: 2px dotted lightgrey;
+    border-top: 2px dotted #ccc;
+    padding-top: 10px;
     font-size: 32px;
-    cursor: pointer;
-    padding: 10px 0 0 0;
-    margin-bottom: 10px;
+    margin: 10px 0 10px 0;
 
-    color: ${({ theme }) => theme.primaryText};
-    &:hover {
-      opacity: 0.7;
+    a {
+      text-decoration: none;
+      color: #0a2540;
+      font-weight: 800;
     }
+
   }
 `;
 
@@ -41,7 +42,8 @@ export const StyledFooterWrapper = styled.div`
 export const StyledLinkWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  margin-top: 20px;
+  font-weight: 400;
 
   & > * {
     color: ${({ theme }) => theme.primaryText};
@@ -50,14 +52,14 @@ export const StyledLinkWrapper = styled.div`
 
   h3 {
     margin-bottom: 6px;
+    font-weight: 700;
   }
 `;
 
 export const StyledLink = styled(Link)`
-  padding: 6px 0;
+  margin: 6px 0;
   text-decoration: none;
-  opacity: 1;
-  font-weight: 300;
+  font-weight: 400;
   width: fit-content;
 
   &:hover {
@@ -69,9 +71,11 @@ export const StyledCopyRight = styled.div`
   background-color: ${({ theme }) => theme.secondary};
   text-align: left;
   color: ${({ theme }) => theme.primaryText};
-  font-size: 14px;
+  padding-bottom: 100px;
 
-  padding-bottom: 70px;
+  h3 {
+    font-size: 14px;
+  }
 `;
 
 export const StyledSocials = styled.div`
@@ -80,7 +84,6 @@ export const StyledSocials = styled.div`
   color: ${({ theme }) => theme.primaryText};
   width: min(95%, 1000px);
   margin: 0 auto;
-  padding-bottom: 20px;
   margin-top: 30px;
   font-size: 14px;
 
@@ -91,6 +94,7 @@ export const StyledSocials = styled.div`
   h3 {
     margin-bottom: 10px;
     font-size: 14px !important;
+    font-weight: 700;
   }
 
   ion-icon {

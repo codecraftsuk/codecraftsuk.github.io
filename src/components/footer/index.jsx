@@ -11,7 +11,7 @@ import {
 const Footer = () => (
   <StyledFooter>
     <div className="full-width">
-      <h1>codecrafts</h1>
+      <h1><StyledLink to="/">codecrafts</StyledLink></h1>
     </div>
     <StyledFooterWrapper>
       <StyledLinkWrapper>
@@ -33,12 +33,12 @@ const Footer = () => (
       </StyledLinkWrapper>
 
       <StyledLinkWrapper>
-        <h3>idk yet</h3>
-        <StyledLink>Home</StyledLink>
-        <StyledLink>Courses</StyledLink>
-        <StyledLink>About</StyledLink>
-        <StyledLink>Pricing</StyledLink>
-        <StyledLink>Pricing</StyledLink>
+        <h3>Support</h3>
+        <StyledLink>Contact</StyledLink>
+        <StyledLink>FAQ</StyledLink>
+        <StyledLink>Terms of Service</StyledLink>
+        <StyledLink>Policies</StyledLink>
+        <StyledLink>Example</StyledLink>
       </StyledLinkWrapper>
     </StyledFooterWrapper>
     <StyledSocials>
@@ -59,7 +59,7 @@ const Footer = () => (
     </StyledSocials>
     <StyledCopyRight>
       <h3 className="full-width">
-        CodeCraft &copy;
+        codecrafts &copy;
         {new Date().getFullYear()}. All Rights Reserved.
       </h3>
     </StyledCopyRight>
