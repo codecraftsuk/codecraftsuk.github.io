@@ -24,7 +24,6 @@ export const StyledPricingWrapper = styled.div`
     ion-icon {
       cursor: pointer;
       margin-right: 30px;
-      color: red;
       margin-left: -15px;
     }
   }

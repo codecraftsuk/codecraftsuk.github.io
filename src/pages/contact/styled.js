@@ -25,7 +25,6 @@ export const StyledContactWrapper = styled.div`
     ion-icon {
       cursor: pointer;
       margin-right: 30px;
-      color: red;
       font-size: 2.8rem;
       margin-left: -15px;
     }

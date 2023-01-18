@@ -28,9 +28,9 @@ export const StyledContentWrapper = styled.div`
     }
   }
 
-  ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+  /* ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
     padding-bottom: 0;
-  }
+  } */
 
   b.company-subtitle {
     width: min(100%, 900px);

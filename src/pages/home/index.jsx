@@ -147,7 +147,7 @@ function Home() {
         <StyledContentWrapper>
           <FadeInWhenVisible>
             <h1 className="why-us-title">Why Codecrafts?</h1>
-            <StyledFlexWrap py="0">
+            <StyledFlexWrap px="10" py="0">
               {whyCodeCraftInfo.map((iconData) => (
                 <IconInfo alignLeft {...iconData} />
               ))}

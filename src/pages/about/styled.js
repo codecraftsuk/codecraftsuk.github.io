@@ -5,7 +5,7 @@ export const StyledAboutWrapper = styled.div`
   margin: 0 auto;
   margin-top: 50px;
   text-align: center;
-  padding-bottom: 100px;
+  padding: 50px 0;
 
   svg {
     max-height: 300px;
@@ -17,7 +17,6 @@ export const StyledAboutWrapper = styled.div`
   }
 
   p {
-    font-size: 22px;
     text-align: left;
 
     ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
@@ -36,7 +35,6 @@ export const StyledAboutWrapper = styled.div`
     ion-icon {
       cursor: pointer;
       margin-right: 30px;
-      color: red;
       margin-left: -15px;
     }
   }
@@ -47,7 +45,6 @@ export const StyledAboutWrapper = styled.div`
   }
 
   .building-tech-text {
-    text-align: justify;
     margin-top: 30px;
   }
 
@@ -79,10 +76,6 @@ export const StyledAboutContent = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
-
-  p {
-    text-align: justify;
-  }
 
   & > * {
     /* padding: 0 20px; */

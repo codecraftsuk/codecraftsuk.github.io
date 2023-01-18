@@ -58,6 +58,7 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   opacity: 1;
   font-weight: 300;
+  width: fit-content;
 
   &:hover {
     opacity: 0.7;
