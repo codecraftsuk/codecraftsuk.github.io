@@ -22,7 +22,6 @@ export const StyledFooter = styled.div`
       color: #0a2540;
       font-weight: 800;
     }
-
   }
 `;
 
@@ -61,6 +60,7 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   font-weight: 400;
   width: fit-content;
+  color: ${({ theme }) => theme.primaryText} !important;
 
   &:hover {
     opacity: 0.7;
