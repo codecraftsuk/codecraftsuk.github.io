@@ -27,7 +27,7 @@ const AppWrapper = styled.div`
   }
 
   h1 {
-    margin: 30px 0;
+    margin: 0 0 30px 0;
     font-size: 36px;
   }
 

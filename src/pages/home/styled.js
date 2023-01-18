@@ -6,8 +6,8 @@ export const StyledContentWrapper = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-top: ${({ pt }) => pt || '100'}px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   .why-us-btn {
     margin: 0 auto !important;
@@ -48,7 +48,7 @@ export const StyledContentWrapper = styled.div`
 export const StyledTitleWrapper = styled.div`
   .company-title {
     text-align: left;
-    padding-top: 70px;
+    padding-top: 40px;
     margin: 0 auto;
 
     ${({ theme: { breakPoints } }) => breakPoints.up('md')} {
@@ -64,13 +64,6 @@ export const StyledInfoWrapper = styled.div`
   /* max-width: ; */
   margin: 0 auto;
 
-  h1 {
-    /* padding: 70px 20px 0 20px; */
-    margin-bottom: 30px;
-    font-size: 2.3rem;
-    /* text-align: center; */
-  }
-
   .carbon-img {
     margin: 0;
     max-width: 100%;
@@ -79,10 +72,6 @@ export const StyledInfoWrapper = styled.div`
 
   img {
     transform: scale(1.7);
-  }
-
-  p.creative {
-    margin-bottom: 18px;
   }
 
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
@@ -255,7 +244,7 @@ const comeIn = keyframes`
 `;
 
 export const StyledHomeHead = styled.div`
-  min-height: 70vh;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
