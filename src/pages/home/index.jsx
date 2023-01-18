@@ -59,7 +59,7 @@ function Home() {
               Courses
             </span>
           </div>
-        </div>
+        </div>  
         <span>
           <Lottie options={animationDataWelcomeOp} height={550} />
         </span>

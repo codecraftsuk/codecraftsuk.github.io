@@ -66,9 +66,8 @@ export const StyledInfoWrapper = styled.div`
 
   h1 {
     /* padding: 70px 20px 0 20px; */
-    padding-top: 70px;
     margin-bottom: 30px;
-    font-size: 32px;
+    font-size: 2.3rem;
     /* text-align: center; */
   }
 
@@ -83,8 +82,7 @@ export const StyledInfoWrapper = styled.div`
   }
 
   p.creative {
-    text-align: justify;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
   }
 
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
@@ -119,13 +117,8 @@ export const StyleHome = styled.div`
     width: min(95%, 1000px);
     margin: 0 auto;
 
-    h1 {
-      margin-bottom: 30px;
-      font-size: 32px;
-    }
-
     p {
-      margin-bottom: -50px;
+      color: white;
     }
   }
 `;
@@ -262,16 +255,16 @@ const comeIn = keyframes`
 `;
 
 export const StyledHomeHead = styled.div`
-  min-height: 75vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: min(95%, 1000px);
   margin: 0 auto;
+  margin-bottom: 10vh;
 
   button {
     margin-right: 20px;
-    margin-bottom: 10px;
   }
 
   svg {
@@ -294,15 +287,19 @@ export const StyledHomeHead = styled.div`
 
   .hero-text {
     /* max-width: min(100%, 450px); */
-    flex: 2 0 450px;
+    flex: 1.5 1;
 
     & > * {
       margin-bottom: 20px;
       /* flex: 1 0; */
     }
-  }
 
-  h1 {
+    p {
+      margin-bottom: 18px;
+      font-weight: 100px;
+    }
+
+    h1 {
     font-size: 92px;
 
     ${({ theme: { breakPoints } }) => breakPoints.down('md')} {

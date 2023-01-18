@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 export const StyledFlexWrap = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   justify-content: space-between;
   background-color: ${({ bgColor }) => bgColor || 'transparent'};
   width: 100%;
@@ -24,14 +24,14 @@ export const StyledFullWidth = styled.div`
   ${({ shouldBend }) =>
     shouldBend &&
     css`
-      clip-path: polygon(100% 0, 100% 70%, 0 100%, 0 20%);
-      padding-bottom: 11rem;
+      clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+      padding-bottom: 7rem;
       /* background-color: #0a2540; */
       color: #fff;
       padding-top: 13rem;
 
       ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
-        clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 10%);
+        clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
     
     `}
 `;

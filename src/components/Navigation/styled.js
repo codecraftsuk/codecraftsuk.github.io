@@ -7,7 +7,7 @@ export const StyledNavWrapper = styled.div`
   align-items: center;
   /* background-color: ${({ theme }) => theme.primary}; */
   color: ${({ theme }) => theme.primaryPrimary};
-  padding: 20px 0 0 0;
+  padding: 10px 0 0 0;
   width: min(95%, 1000px);
   margin: 0 auto;
   justify-content: space-between;
