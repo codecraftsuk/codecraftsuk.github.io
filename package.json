@@ -12,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@stripe/stripe-js": "^1.46.0",
     "create-global-context": "^0.4.1",
     "framer-motion": "^8.4.0",
     "laravel": "^0.0.1",

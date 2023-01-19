@@ -71,9 +71,6 @@ function App() {
   const { pathname } = useLocation();
 
   console.log(import.meta.env.VITE_PUB_KEY);
-  console.log(process.env.VITE_PUB_KEY);
-  console.log(process.env.PUB_KEY);
-  console.log(import.meta.env.PUB_KEY);
   return (
     <ThemeProvider theme={theme ? darkTheme : lightTheme}>
       <div className="app">

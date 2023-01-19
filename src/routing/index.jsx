@@ -8,6 +8,8 @@ import Courses from '../pages/courses';
 import Home from '../pages/home';
 import Jobs from '../pages/jobs';
 import NotFound from '../pages/notFound';
+import PaymentCancel from '../pages/payment/paymentCancel';
+import PaymentSuccess from '../pages/payment/paymentSuccess';
 import Pricing from '../pages/pricing';
 
 const Router = () => {
@@ -21,7 +23,11 @@ const Router = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="/pricing" element={<Pricing />} />
 
-      <Route path="*" element={<NotFound />} />
+      {/* payment routes */}
+      <Route path="/payment/on/success" element={<PaymentSuccess />} />
+      <Route path="/payment/on/cancel" element={<PaymentCancel />} />
+
+      <Route path="/*" element={<NotFound />} />
     </Routes>
   );
 };
