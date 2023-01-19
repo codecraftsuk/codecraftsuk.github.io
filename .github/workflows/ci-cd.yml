@@ -18,6 +18,9 @@ jobs:
         run: npm install -force
       - name: Build project
         run: npm run build
+        env:
+          VITE_PUB_KEY: ${{ secrets.VITE_PUB_KEY }}
+          PUB_KEY: ${{ secrets.PUB_KEY }}
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
