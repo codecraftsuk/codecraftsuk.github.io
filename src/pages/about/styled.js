@@ -13,7 +13,7 @@ export const StyledAboutWrapper = styled.div`
   }
 
   h1 {
-    font-size: 2.7rem;
+    margin-bottom: -1px;
   }
 
   p {

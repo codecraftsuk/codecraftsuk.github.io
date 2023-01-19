@@ -10,7 +10,8 @@ export const StyledPricingWrapper = styled.div`
   margin-top: 30px;
 
   h1 {
-    font-size: 3rem;
+  margin-bottom: -1px;
+}
   }
 
   .back {

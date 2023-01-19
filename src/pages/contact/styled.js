@@ -6,10 +6,6 @@ export const StyledContactWrapper = styled.div`
   margin: 0 auto;
   margin-top: 40px;
 
-  h1 {
-    font-size: 3rem;
-  }
-
   .back {
     text-align: left;
     /* margin-left: 20px; */

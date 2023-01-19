@@ -6,7 +6,7 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .course-cards > * {
@@ -38,7 +38,7 @@ section {
   translate: 0 -200px;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  )position: relative;
+  position: relative;
 }
 
 .faq-wrapper::before {
@@ -89,7 +89,9 @@ section {
 .courses-wrapper .back {
   margin-bottom: 20px;
 }
-
+.courses-wrapper .back h1 {
+  margin-bottom: -1px;
+}
 .courses-wrapper .back ion-icon {
   cursor: pointer;
   margin-right: 30px;
