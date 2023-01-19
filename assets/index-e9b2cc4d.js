@@ -438,7 +438,7 @@ object-assign
   }
 
   h1 {
-    font-size: 2.7rem;
+    margin-bottom: -1px;
   }
 
   p {
@@ -559,24 +559,20 @@ object-assign
   width: 100%;
 
   ${({shouldBend:a})=>a&&Ce`
-      clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+      clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 20%);
       padding-bottom: 7rem;
       /* background-color: #0a2540; */
       color: #fff;
       padding-top: 13rem;
 
       ${({theme:{breakPoints:s}})=>s.down("md")} {
-        clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+        clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 10%);
     
     `}
 `,defaultOptions$1={loop:!0,autoplay:!0,animationData:animationData$1,rendererSettings:{preserveAspectRatio:"xMinYMi slice"}},About=()=>{const a=useNavigate(),s=Ze();return jsxs(Fragment,{children:[jsxs(StyledAboutWrapper,{children:[jsxs("div",{className:"back",children:[jsx("ion-icon",{onClick:()=>a("/"),name:"chevron-back-outline"}),jsx("h1",{children:"About Us"})]}),jsxs(StyledAboutContent,{children:[jsx("p",{children:"Welcome to our web development and devops bootcamp, where we turn code newbies into skilled professionals in just a few short weeks. Our program is designed to take you from zero to hero, with a focus on hands-on experience and real-world projects. So why wait? Join our bootcamp and become a hero in web development and devops today!"}),jsx(_default,{options:defaultOptions$1,height:300})]})]}),jsx(StyledFullWidth,{bgColor:s==null?void 0:s.secondary,children:jsxs(StyledAboutWrapper,{children:[jsx("h2",{children:"Building the Future of Tech!"}),jsx("p",{className:"building-tech-text",children:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolore possimus necessitatibus et exercitationem, blanditiis ab, saepe ullam aut corrupti ex non soluta iusto architecto, excepturi vel expedita molestiae maiores optio placeat quasi! Adipisci quo inventore obcaecati quaerat beatae molestiae officia nisi soluta sequi eaque!"}),jsx("p",{className:"building-tech-text",children:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolore possimus necessitatibus et exercitationem, blanditiis ab, saepe ullam aut corrupti ex non soluta iusto architecto, excepturi vel expedita molestiae maiores optio placeat quasi! Adipisci quo inventore obcaecati quaerat beatae molestiae officia nisi soluta sequi eaque!"})]})}),jsxs(StyledAboutWrapper,{children:[jsx("h2",{children:"Meet our team!"}),jsxs("div",{className:"meet-team",children:[jsx(TeamMember,{}),jsx(TeamMember,{}),jsx(TeamMember,{})]})]})]})},StyledContactWrapper=styled.div`
   width: min(95%, 1000px);
   margin: 0 auto;
   margin-top: 40px;
-
-  h1 {
-    font-size: 3rem;
-  }
 
   .back {
     text-align: left;
@@ -1372,7 +1368,8 @@ $bm_rt = loopOut();`},sk:{a:0,k:0,ix:4},sa:{a:0,k:0,ix:5},nm:"Transform"}],nm:"b
   margin-top: 30px;
 
   h1 {
-    font-size: 3rem;
+  margin-bottom: -1px;
+}
   }
 
   .back {
