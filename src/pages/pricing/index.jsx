@@ -14,8 +14,6 @@ const Pricing = () => {
     return stripePromise;
   };
 
-  console.log(stripePromise);
-
   const checkOutOptions = {
     lineItems: [
       {
@@ -30,15 +28,16 @@ const Pricing = () => {
 
   const redirectToCheckout = async () => {
     const stripe = await getStripe();
-    const { error } = await stripe.redirectToCheckout(checkOutOptions);
-    console.log('stripe error', error);
+    // const { error } = await stripe.redirectToCheckout(checkOutOptions);
+    // console.log('stripe error', error);
+    await stripe.redirectToCheckout(checkOutOptions);
   };
 
   return (
     <StyledPricingWrapper>
       <div className="back">
         <ion-icon onClick={() => navigate('/')} name="chevron-back-outline" />
-        <h1>Pricing</h1>
+        <h2>Pricing</h2>
       </div>
 
       <p className="text-content">

@@ -86,6 +86,11 @@ section {
   display: flex;
   align-items: center;
 }
+
+.back h2 {
+  font-size: 2rem;
+}
+
 .courses-wrapper .back {
   margin-bottom: 20px;
 }
