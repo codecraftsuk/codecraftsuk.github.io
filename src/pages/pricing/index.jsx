@@ -49,9 +49,9 @@ const Pricing = () => {
       </p>
 
       <div className="price-cards">
-        <PriceCard btnProps={{ textColor: '#5851D0', onClick: redirectToCheckout }} title="Basic" price="49" />
+        <PriceCard btnProps={{ textColor: '#d07151', onClick: redirectToCheckout }} title="Basic" price="49" />
         <PriceCard btnProps={{ bgColor: '#5851D0' }} showStar title="Pro" price="149" description="Most Popular" />
-        <PriceCard btnProps={{ textColor: '#5851D0' }} title="Enterprise" price="299" />
+        <PriceCard btnProps={{ textColor: '#d07151' }} title="Enterprise" price="299" />
       </div>
     </StyledPricingWrapper>
   );

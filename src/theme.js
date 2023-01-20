@@ -21,6 +21,7 @@ export const lightTheme = {
   quinary: '#e5c3c4',
   ...commonColors,
   breakPoints,
+  paragraphPrimary: '#425466',
 };
 
 export const darkTheme = {
@@ -34,4 +35,5 @@ export const darkTheme = {
   quinary: '#4C4B63',
   ...commonColors,
   breakPoints,
+  paragraphPrimary: '#fff',
 };

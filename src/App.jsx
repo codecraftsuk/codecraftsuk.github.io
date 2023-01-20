@@ -23,7 +23,7 @@ const AppWrapper = styled.div`
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 18px;
-    color: #425466;
+    color: ${({ theme }) => theme.paragraphPrimary};
   }
 
   h1 {
