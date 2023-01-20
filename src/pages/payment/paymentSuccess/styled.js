@@ -72,7 +72,7 @@ export const StyledSuccessContent = styled.div`
     text-align: center;
     line-height: 50px;
     margin: 0 auto 10px auto;
-    background: #fff;
+    background: darkgray;
     color: #000;
     transition: all ease-in-out 0.3s;
     cursor: pointer;
