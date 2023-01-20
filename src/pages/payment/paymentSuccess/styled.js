@@ -4,6 +4,10 @@ export const StyledSuccessWrapper = styled.div`
   width: min(95%, 1000px);
   margin: 50px auto;
   /* border: 1px solid; */
+
+  button {
+    margin-right: 10px;
+  }
 `;
 
 export const StyledSuccessContent = styled.div`
@@ -31,6 +35,12 @@ export const StyledSuccessContent = styled.div`
     p {
       margin-top: 30px !important;
     }
+
+    h2 {
+      transform: skewY(-8deg);
+      padding: 10px 0;
+      border: 1px solid ${({ isSuccess }) => (isSuccess ? '#4caf50' : 'red')};
+    }
   }
 
   img {
@@ -38,7 +48,6 @@ export const StyledSuccessContent = styled.div`
   }
 
   .container {
-    /* width: 1200px; */
     margin: auto;
     position: relative;
     bottom: 10px;
@@ -59,20 +68,20 @@ export const StyledSuccessContent = styled.div`
   }
 
   ul:nth-child(1) {
-    color: #4caf50;
+    color: ${({ isSuccess }) => (isSuccess ? '#4caf50' : 'red')};
   }
 
   .timeline li:before {
     content: '';
     width: 30px;
     height: 30px;
-    border: 3px solid #4caf50;
+    border: 3px solid ${({ isSuccess }) => (isSuccess ? '#4caf50' : 'red')};
     border-radius: 50%;
     display: flex;
     text-align: center;
     line-height: 50px;
     margin: 0 auto 10px auto;
-    background: darkgray;
+    background: ${({ theme }) => theme.primary};
     color: #000;
     transition: all ease-in-out 0.3s;
     cursor: pointer;
@@ -100,11 +109,11 @@ export const StyledSuccessContent = styled.div`
     color: #555555;
   }
   .timeline li.active-tl:before {
-    background: #4caf50;
+    background: ${({ isSuccess }) => (isSuccess ? '#4caf50' : 'red')};
     color: #f1f1f1;
   }
 
   .timeline li.active-tl + li:after {
-    background: #4caf50;
+    background: ${({ isSuccess }) => (isSuccess ? '#4caf50' : 'red')};
   }
 `;

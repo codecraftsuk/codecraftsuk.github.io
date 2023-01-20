@@ -28,7 +28,7 @@ const PaymentSuccess = () => {
   return (
     <StyledSuccessWrapper>
       {!isLottieFinished && <Lottie options={defaultOptions} height={600} eventListeners={events} />}
-      <StyledSuccessContent isFinished={isLottieFinished}>
+      <StyledSuccessContent isSuccess isFinished={isLottieFinished}>
         <div>
           <h2>Payment Successful</h2>
           <div class="container">
