@@ -59,9 +59,13 @@ const AppWrapper = styled.div`
 
         height: 30vh;
         width: 100%;
-        top: -180px;
-        transform: skewY(2deg);
+        top: -175px;
+        transform: skewY(3deg);
         z-index: -1;
+
+        ${({ theme }) => theme.breakPoints.down('sm')} {
+          top: -185px;
+        }
       }
     `}
 `;
