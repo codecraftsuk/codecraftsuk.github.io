@@ -74,7 +74,6 @@ function App() {
   const [theme] = useStore((state) => state.isDarkTheme);
   const { pathname } = useLocation();
 
-  console.log(import.meta.env.VITE_PUB_KEY);
   return (
     <ThemeProvider theme={theme ? darkTheme : lightTheme}>
       <div className="app">

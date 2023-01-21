@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import RoundedButton from '../../../components/RoundedButton';
 import { StyledSuccessContent, StyledSuccessWrapper } from '../paymentSuccess/styled';
-import cancelSvg from '../../../assets/images/cancel.svg';
+import cancelSvg from '../../../assets/images/woman-wave.svg';
 
 const PaymentCancel = () => {
   const navigate = useNavigate();
@@ -19,7 +19,10 @@ const PaymentCancel = () => {
               <li>Email</li>
             </ul>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, laboriosam.</p>
+          <p>
+            If you are having issues with making a payment, then please contact us on{' '}
+            <strong>codecrafts@gmail.com</strong>
+          </p>
           <span>
             <RoundedButton bgColor="#5851D0" onClick={() => navigate('/')}>
               Home
@@ -29,7 +32,7 @@ const PaymentCancel = () => {
             </RoundedButton>
           </span>
         </div>
-        <img src={cancelSvg} alt="" />
+        <img src={cancelSvg} alt="man-waving" className="cancel-img" />
       </StyledSuccessContent>
     </StyledSuccessWrapper>
   );

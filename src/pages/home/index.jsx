@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Lottie from 'react-lottie';
 import { useTheme } from 'styled-components';
 import { useNavigate } from 'react-router-dom';
@@ -21,6 +21,7 @@ import {
 import animationData from '../../assets/lottie/charts.json';
 import animationDataWelcome from '../../assets/lottie/laptop.json';
 import FadeInWhenVisible from '../../components/FadeInWhenVisible';
+import { useInView } from 'react-intersection-observer';
 
 const defaultOptions = {
   loop: true,
@@ -43,6 +44,16 @@ const animationDataWelcomeOp = {
 function Home() {
   const navigate = useNavigate();
   const theme = useTheme();
+  const { ref, inView, entry } = useInView({
+    threshold: 0,
+  });
+  const [shouldTextCount, setShouldTextCount] = useState(false);
+
+  useEffect(() => {
+    if (inView === true) setShouldTextCount(inView);
+  }, [inView]);
+
+  console.log(inView);
 
   return (
     <StyleHome>
@@ -50,7 +61,6 @@ function Home() {
         <div className="hero-text">
           <h1>{sliderContent[0]?.title}</h1>
           <p>{sliderContent[0]?.text}</p>
-
           <div>
             <RoundedButton onClick={() => navigate('/about')} bgColor="#5851d0">
               Read More
@@ -59,7 +69,7 @@ function Home() {
               Courses
             </span>
           </div>
-        </div>  
+        </div>
         <span>
           <Lottie options={animationDataWelcomeOp} height={550} />
         </span>
@@ -111,9 +121,10 @@ function Home() {
               nisi reiciendis iste eum doloribus minus?
             </p>
           </div>
+          <div ref={ref} />
           <StyledFlexWrap className="green-content">
             {statsData.map((iconData) => (
-              <IconInfo {...iconData} />
+              <IconInfo {...iconData} inView={shouldTextCount} />
             ))}
           </StyledFlexWrap>
         </StyledFullWidth>

@@ -35,16 +35,17 @@ export const StyledSuccessContent = styled.div`
     p {
       margin-top: 30px !important;
     }
-
-    h2 {
-      transform: skewY(-8deg);
-      padding: 10px 0;
-      border: 1px solid ${({ isSuccess }) => (isSuccess ? '#4caf50' : 'red')};
-    }
   }
 
   img {
     width: min(100%, 300px);
+
+    &.cancel-img {
+      /* border: 1px solid; */
+      ${({ theme }) => theme.breakPoints.up('ml')} {
+        width: 400px;
+      }
+    }
   }
 
   .container {
