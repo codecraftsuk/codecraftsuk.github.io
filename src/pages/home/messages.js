@@ -49,6 +49,7 @@ export const statsData = [
     countAnimate: {
       countTo: 100,
       after: '%',
+      speed: 25,
     },
   },
 ];
