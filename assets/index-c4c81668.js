@@ -1506,7 +1506,7 @@ $bm_rt = $bm_mul(time, 300);`},p:{a:1,k:[{i:{x:.833,y:.607},o:{x:.167,y:.167},t:
   &:not(:hover) {
     transition: transform 500ms;
   }
-`,StyledBulletPoint=styled.div`
+`,StyledBulletPoint=styled.h4`
   margin: 10px 0;
 
   &:after {
