@@ -50,7 +50,7 @@ export const StyledPriceCard = styled.div`
   }
 `;
 
-export const StyledBulletPoint = styled.div`
+export const StyledBulletPoint = styled.h4`
   margin: 10px 0;
 
   &:after {
