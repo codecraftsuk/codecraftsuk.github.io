@@ -1,9 +1,8 @@
-/* eslint-disable arrow-body-style */
 import React from 'react';
 import RoundedButton from '../RoundedButton';
-import { StyledPriceCard } from './styled';
+import { StyledBulletPoint, StyledPriceCard } from './styled';
 
-const PriceCard = ({ title, description, price, showStar, btnProps = {} }) => {
+const PriceCard = ({ title, description, price, showStar, btnProps = {}, btnText = 'Buy', bulletPoints }) => {
   return (
     <StyledPriceCard>
       <div className="head">
@@ -11,12 +10,12 @@ const PriceCard = ({ title, description, price, showStar, btnProps = {} }) => {
         <p>{description}</p>
       </div>
       <h2>£{price}</h2>
-      <h4>10 users included</h4>
-      <h4>10 users included</h4>
-      <h4>10 users included</h4>
-      <h4>10 users included</h4>
 
-      <RoundedButton {...btnProps}>Buy</RoundedButton>
+      {bulletPoints.map((point) => (
+        <StyledBulletPoint isIncluded={point.isIncluded}>{point.text}</StyledBulletPoint>
+      ))}
+
+      <RoundedButton {...btnProps}>{btnText}</RoundedButton>
       {showStar && <ion-icon name="star-outline" />}
     </StyledPriceCard>
   );

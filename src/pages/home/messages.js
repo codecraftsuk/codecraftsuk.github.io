@@ -29,16 +29,28 @@ export const statsData = [
     icon: 'people-outline',
     bigTitle: '25',
     title: 'Satisfied Clients',
+    countAnimate: {
+      countTo: 25,
+    },
   },
   {
     icon: 'card-outline',
-    bigTitle: '£39',
+    bigTitle: '£49',
     title: 'Average Price',
+    countAnimate: {
+      countTo: 49,
+      before: '£',
+    },
   },
   {
     icon: 'chatbox-ellipses-outline',
     bigTitle: '100%',
     title: 'Response Rate',
+    countAnimate: {
+      countTo: 100,
+      after: '%',
+      speed: 25,
+    },
   },
 ];
 

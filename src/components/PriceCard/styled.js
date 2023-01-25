@@ -32,10 +32,6 @@ export const StyledPriceCard = styled.div`
     margin: 10px 0;
   }
 
-  h4 {
-    margin: 10px 0;
-  }
-
   ion-icon {
     position: absolute;
     top: 15px;
@@ -51,5 +47,16 @@ export const StyledPriceCard = styled.div`
 
   &:not(:hover) {
     transition: transform 500ms;
+  }
+`;
+
+export const StyledBulletPoint = styled.h4`
+  margin: 10px 0;
+
+  &:after {
+    content: '${({ isIncluded }) => (isIncluded ? '✓' : '✖')}';
+    color: ${({ isIncluded }) => (isIncluded ? 'green' : 'red')};
+
+    margin-left: 10px;
   }
 `;

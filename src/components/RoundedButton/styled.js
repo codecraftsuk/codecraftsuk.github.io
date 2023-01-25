@@ -28,4 +28,8 @@ export const StyledButton = styled.button`
   ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
     padding: ${({ isCircle }) => (!isCircle ? '7px 25px' : '5px 10px')};
   }
+
+  ${({ theme: { breakPoints } }) => breakPoints.up('ml')} {
+    font-size: 1rem;
+  }
 `;

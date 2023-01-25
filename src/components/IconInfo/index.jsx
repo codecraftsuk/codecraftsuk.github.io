@@ -1,17 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledWrapper } from './styled';
+import CountUp from '../CountUp';
 
-const IconInfo = ({ icon, title, text, bigTitle, alignLeft }) => (
-  <StyledWrapper alignLeft={alignLeft} bigTitle={!!bigTitle}>
-    <ion-icon name={icon} />
-    {bigTitle && <h1>{bigTitle}</h1>}
-    <h3>{title}</h3>
-    <p>{text}</p>
-  </StyledWrapper>
-);
+const IconInfo = ({ icon, title, text, bigTitle, alignLeft, countAnimate, inView }) => {
+  return (
+    <StyledWrapper alignLeft={alignLeft} bigTitle={!!bigTitle}>
+      <ion-icon name={icon} />
+      {countAnimate && inView ? <CountUp {...countAnimate} /> : bigTitle && <h1>{bigTitle}</h1>}
+      <h3>{title}</h3>
+      <p>{text}</p>
+    </StyledWrapper>
+  );
+};
 
-export default IconInfo;
+export default React.memo(IconInfo);
 
 IconInfo.propTypes = {
   icon: PropTypes.string,
@@ -19,6 +22,7 @@ IconInfo.propTypes = {
   text: PropTypes.string,
   bigTitle: PropTypes.string,
   alignLeft: PropTypes.bool,
+  countAnimate: PropTypes.shape({}),
 };
 
 IconInfo.defaultProps = {
@@ -27,4 +31,5 @@ IconInfo.defaultProps = {
   text: '',
   bigTitle: '',
   alignLeft: false,
+  countAnimate: null,
 };

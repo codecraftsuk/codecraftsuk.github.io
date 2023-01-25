@@ -11,10 +11,6 @@ export const StyledContactWrapper = styled.div`
     /* margin-left: 20px; */
     font-size: 2rem;
 
-    h1 {
-      margin-bottom: -2px;
-    }
-
     display: flex;
     align-items: center;
 
@@ -33,7 +29,7 @@ export const StyledContactWrapper = styled.div`
   }
 
   h1,
-  h2 {
+  h3 {
     margin-bottom: 20px;
   }
 

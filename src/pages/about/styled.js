@@ -12,8 +12,8 @@ export const StyledAboutWrapper = styled.div`
     margin-bottom: 30px;
   }
 
-  h1 {
-    margin-bottom: -1px;
+  h2 {
+    font-size: 2rem;
   }
 
   p {

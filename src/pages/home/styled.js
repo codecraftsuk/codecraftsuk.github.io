@@ -305,6 +305,8 @@ export const StyledHomeHead = styled.div`
       color: black;
       transition: 800ms;
     }
+
+    ${({ theme }) => theme.mode === 'dark' && 'color: white;'}
   }
 
   p {

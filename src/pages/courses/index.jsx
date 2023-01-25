@@ -16,7 +16,7 @@ const Courses = () => {
       {/* <h1 className="main-title">Courses</h1> */}
       <div className="back">
         <ion-icon onClick={() => navigate(-1)} name="chevron-back-outline" />
-        <h1>Courses</h1>
+        <h2>Courses</h2>
       </div>
 
       <div className="course-cards">

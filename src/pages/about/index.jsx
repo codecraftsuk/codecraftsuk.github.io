@@ -24,7 +24,7 @@ const About = () => {
       <StyledAboutWrapper>
         <div className="back">
           <ion-icon onClick={() => navigate('/')} name="chevron-back-outline" />
-          <h1>About Us</h1>
+          <h2>About Us</h2>
         </div>
 
         <StyledAboutContent>
