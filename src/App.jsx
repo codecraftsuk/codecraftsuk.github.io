@@ -67,8 +67,8 @@ const AppWrapper = styled.div`
           top: -185px;
         }
       }
-      zoom: 90%;
     `}
+    zoom: 90%;
 `;
 
 function App() {
