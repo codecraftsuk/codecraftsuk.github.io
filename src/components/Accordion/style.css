@@ -26,7 +26,6 @@ ion-icon[name='chevron-up-outline'] {
   /* background-color: white; */
   max-height: 0px;
   overflow: hidden;
-  padding: 0px 10px;
   border-radius: 16px;
 
   transition: all 500ms;
@@ -43,5 +42,5 @@ ion-icon[name='chevron-up-outline'] {
 }
 
 .accordion-wrapper:hover {
-  padding-left: 10px;
+  padding-left: 5px;
 }

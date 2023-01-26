@@ -3,16 +3,13 @@ import { StyledCardWrapper } from './styled';
 
 import maleAvatar from '../../assets/images/male-avatar.svg';
 
-const TeamMember = () => (
+const TeamMember = ({ name, job, description }) => (
   <StyledCardWrapper>
     <img src={maleAvatar} alt="" />
 
-    <h3>Full name</h3>
-    <p className="job-title">Job Title</p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam aperiam esse possimus minima, molestias
-      iste nesciunt nam necessitatibus officia?
-    </p>
+    <h3>{name}</h3>
+    <p className="job-title">{job}</p>
+    <p>{description}</p>
   </StyledCardWrapper>
 );
 

@@ -118,4 +118,8 @@ export const StyledBuyWrapper = styled.div`
     align-items: left;
     padding: 10px;
   }
+
+  .pricing {
+    display: flex;
+  }
 `;

@@ -9,21 +9,78 @@ export const coursesData = [
     isComingSoon: false,
     name: 'Web Development',
     description: 'Learn how to build modern web applications.',
+    price: '49',
     image: courseOne,
+    longDescription: [
+      'This bootcamp course is designed to provide students with the knowledge and skills needed to become a professional web developer. The course covers a wide range of topics such as HTML/CSS, JavaScript, React, Python, and Django. Students will work on real-world projects and exercises to gain hands-on experience.',
+      'By the end of the course, students will be able to build complete web applications and have a strong understanding of the web development process. Suitable for beginners and experienced developers looking to expand their skills.',
+    ],
     weeks: [
-      'Week 0: Introduction',
-      'Week 1: Git',
-      'Week 2: HTML/CSS',
-      'Week 3: JavaScript',
-      'Week 4: Milestone 1 - HTML/CSS/JS Project',
-      'Week 5: React',
-      'Week 6: Milestone 2 - React Project',
-      'Week 7: Python',
-      'Week 8: Django',
-      'Week 9: Databases',
-      'Week 10: Front End/Back End Integration',
-      'Week 11: CI/CD with GitHub Actions',
-      'Week 12: Final Project'
+      {
+        title: 'Week 0: Introduction',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero ?',
+      },
+      {
+        title: 'Week 1: Git',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 2: HTML/CSS',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 3: JavaScript',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 4: Milestone 1 - HTML/CSS/JS Project',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 5: React',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 6: Milestone 2 - React Project',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 7: Python',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 8: Django',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 9: Databases',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 10: Front End/Back End Integration',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 11: CI/CD with GitHub Actions',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 12: Final Project',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
     ],
   },
   {
@@ -32,19 +89,72 @@ export const coursesData = [
     isComingSoon: true,
     description: 'Become proficient in DevOps practices and tools.',
     image: courseTwo,
+    price: '49',
+    longDescription: [
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet urna non lorem congue, nec laoreet lacus volutpat. Vestibulum ligula dui, vehicula at diam eget, molestie bibendum odio. Sed a scelerisque arcu. In nulla velit, volutpat blandit maximus a, convallis at magna. Fusce fermentum interdum velit, ',
+      'Sed non fermentum lectus. Quisque dignissim hendrerit nisi, ac consequat nunc bibendum et. Sed porta augue ut venenatis condimentum. Nullam imperdiet turpis vel turpis efficitur dictum.',
+    ],
     weeks: [
-      'Week 1: Introduction to DevOps',
-      'Week 2: Continuous Integration and Delivery',
-      'Week 3: Configuration Management with Ansible',
-      'Week 4: Containerization with Docker',
-      'Week 5: Monitoring and Logging',
-      'Week 6: Cloud Infrastructure and Provisioning',
-      'Week 7: Microservices and Service Mesh',
-      'Week 8: Advanced Container Orchestration with Kubernetes',
-      'Week 9: Serverless Computing',
-      'Week 10: Advanced Monitoring and Alerting',
-      'Week 11: Disaster Recovery and High Availability',
-      'Week 12: Final Project',
+      {
+        title: 'Week 1: Introduction to DevOps',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 2: Continuous Integration and Delivery',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 3: Configuration Management with Ansible',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 4: Containerization with Docker',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 5: Monitoring and Logging',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 6: Cloud Infrastructure and Provisioning',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 7: Microservices and Service Mesh',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 8: Advanced Container Orchestration with Kubernetes',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 9: Serverless Computing',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 10: Advanced Monitoring and Alerting',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 11: Disaster Recovery and High Availability',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 12: Final Project',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
     ],
   },
   {
@@ -53,19 +163,72 @@ export const coursesData = [
     isComingSoon: true,
     description: 'Master the skills needed to succeed as a freelance developer.',
     image: courseThree,
+    price: '49',
+    longDescription: [
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet urna non lorem congue, nec laoreet lacus volutpat. Vestibulum ligula dui, vehicula at diam eget, molestie bibendum odio. Sed a scelerisque arcu. In nulla velit, volutpat blandit maximus a, convallis at magna. Fusce fermentum interdum velit, ',
+      'Sed non fermentum lectus. Quisque dignissim hendrerit nisi, ac consequat nunc bibendum et. Sed porta augue ut venenatis condimentum. Nullam imperdiet turpis vel turpis efficitur dictum.',
+    ],
     weeks: [
-      'Week 1: Introduction to Freelancing',
-      'Week 2: Marketing and Networking',
-      'Week 3: Setting up a Business Entity and Taxes',
-      'Week 4: Time Management and Productivity',
-      'Week 5: Communication and Collaboration',
-      'Week 6: Project Management and Agile Methodologies',
-      'Week 7: Contract Negotiation and Pricing',
-      'Week 8: Delivering Quality Work on Time',
-      'Week 9: Client Relationship Management',
-      'Week 10: Scaling and Growing Your Freelance Business',
-      'Week 11: Staying Up-to-date and Continuing Education',
-      'Week 12: Final Project',
+      {
+        title: 'Week 1: Introduction to Freelancing',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 2: Marketing and Networking',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 3: Setting up a Business Entity and Taxes',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 4: Time Management and Productivity',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 5: Communication and Collaboration',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 6: Project Management and Agile Methodologies',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 7: Contract Negotiation and Pricing',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 8: Delivering Quality Work on Time',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 9: Client Relationship Management',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 10: Scaling and Growing Your Freelance Business',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 11: Staying Up-to-date and Continuing Education',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
+      {
+        title: 'Week 12: Final Project',
+        description:
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+      },
     ],
   },
 ];
