@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { StyledContactWrapper } from './styled';
+import RoundedButton from '../../components/RoundedButton';
+import { StyledContactCard, StyledContactWrapper } from './styled';
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -12,29 +13,43 @@ const Contact = () => {
         <h2>Contact Us</h2>
       </div>
       <div class="container">
-        <p>
-          At codecrafts, we value your feedback and are always happy to hear from our customers. If you have any
-          questions, comments, or concerns, please don't hesitate to reach out to us.
-        </p>
+        <p>At codecrafts, we value your feedback and are always happy to hear from our customers.</p>
 
         <h2>Get in Touch</h2>
-        <p>
-          - Email us at <a href="mailto:codecrafts@gmail.com">codecrafts@gmail.com</a>
-        </p>
+        <div className="cards-wrapper">
+          <StyledContactCard className="contact-card" bgColor="#5851D0">
+            <p>If you have any questions, comments, or concerns, please don't hesitate to reach out to us.</p>
+            <RoundedButton
+              onClick={() => (window.location.href = 'mailto:codecraftsenquiry@gmail.com')}
+              bgColor="#5851D0"
+            >
+              Contact us
+            </RoundedButton>
 
-        <h2>Social Media</h2>
-        <p>
-          - Follow us on <a href="https://twitter.com/codecrafts_">Twitter</a>
-        </p>
-        <p>
-          - Follow us on <a href="https://instagram.com/codecrafts_">Instagram</a>
-        </p>
-        <p>
-          - Connect with us on <a href="https://linkedin.com/codecraftuk">LinkedIn</a>
-        </p>
-        <p>
-          - Join our community on <a href="https://discord.gg/Ks7UxrqBSF">Discord</a>
-        </p>
+            <span className="info">
+              <p>
+                If the above button is not working then please write to us using the email
+                <a href="mailto:codecraftsenquiry@gmail.com"> codecraftsenquiry@gmail.com</a>
+              </p>
+            </span>
+          </StyledContactCard>
+
+          <StyledContactCard className="contact-card">
+            <p>Get in touch with us through our social media channels.</p>
+            <p>
+              - Follow us on <a href="https://twitter.com/codecrafts_">Twitter</a>
+            </p>
+            <p>
+              - Follow us on <a href="https://instagram.com/codecrafts_">Instagram</a>
+            </p>
+            <p>
+              - Connect with us on <a href="https://linkedin.com/codecraftuk">LinkedIn</a>
+            </p>
+            <p>
+              - Join our community on <a href="https://discord.gg/Ks7UxrqBSF">Discord</a>
+            </p>
+          </StyledContactCard>
+        </div>
 
         <h2>CodeCrafts Privacy Policy</h2>
         <p>

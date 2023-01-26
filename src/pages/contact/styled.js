@@ -51,4 +51,45 @@ export const StyledContactWrapper = styled.div`
   a:hover {
     text-decoration: underline;
   }
+
+  .cards-wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+
+  @mixin random-bgr() {
+    background: rgb(random(255), random(255), random(255));
+  }
+`;
+
+export const StyledContactCard = styled.div`
+  width: 400px;
+  border-radius: 8px;
+  padding: 60px 30px;
+  position: relative;
+  overflow: hidden;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 15px;
+    background-color: ${({ bgColor }) => bgColor || 'purple'};
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .info > * {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
 `;
