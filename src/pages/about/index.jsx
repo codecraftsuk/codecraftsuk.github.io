@@ -29,10 +29,7 @@ const About = () => {
 
         <StyledAboutContent>
           <p>
-            Welcome to our web development and devops bootcamp, where we turn code newbies into skilled professionals in
-            just a few short weeks. Our program is designed to take you from zero to hero, with a focus on hands-on
-            experience and real-world projects. So why wait? Join our bootcamp and become a hero in web development and
-            devops today!
+            Welcome to our web development and devops bootcamp, where we turn code newbies into skilled professionals in just a few short weeks. Our program is designed to take you from zero to hero, with a focus on hands-on experience and real-world projects. We understand that learning to code can be daunting, which is why we focus on hands-on experience and real-world projects to make the learning process as smooth and effective as possible.
           </p>
           <Lottie options={defaultOptions} height={300} />
         </StyledAboutContent>
@@ -41,16 +38,13 @@ const About = () => {
         <StyledAboutWrapper>
           <h2>Building the Future of Tech!</h2>
           <p className="building-tech-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolore possimus necessitatibus et
-            exercitationem, blanditiis ab, saepe ullam aut corrupti ex non soluta iusto architecto, excepturi vel
-            expedita molestiae maiores optio placeat quasi! Adipisci quo inventore obcaecati quaerat beatae molestiae
-            officia nisi soluta sequi eaque!
+            At our bootcamp, we are dedicated to "Building the Future of Tech." We believe that technology is the key to shaping the future and that the ability to create and develop cutting-edge software and systems is an essential skill for anyone looking to make a positive impact on the world. Our program is tailored to provide students with the knowledge and skills needed to succeed in today's tech-driven economy.
           </p>
           <p className="building-tech-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolore possimus necessitatibus et
-            exercitationem, blanditiis ab, saepe ullam aut corrupti ex non soluta iusto architecto, excepturi vel
-            expedita molestiae maiores optio placeat quasi! Adipisci quo inventore obcaecati quaerat beatae molestiae
-            officia nisi soluta sequi eaque!
+            Our team of expert instructors is passionate about technology and are dedicated to helping our students reach their full potential. They are committed to providing a flexible and supportive learning environment, and offer a variety of resources and support to ensure that each student has the best chance of success.
+          </p>
+          <p>
+            So if you're looking to build the future of tech, look no further. Join our bootcamp today and become a hero in web development and devops! 
           </p>
         </StyledAboutWrapper>
       </StyledFullWidth>

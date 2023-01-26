@@ -51,7 +51,20 @@ export const StyledNavWrapper = styled.div`
     height: 60px;
     margin-right: 10px;
     transform: rotate(160deg) translateY(-6px);
+    animation: bounce 1s linear infinite;
+    ${'' /* animation: spin 1s linear infinite; */}
   }
+
+  @keyframes bounce {
+      0% {transform: rotate(150deg) translateY(-6px);}
+      50% {transform: rotate(170deg) translateY(-6px);}
+      100% {transform: rotate(150deg) translateY(-6px);}
+  }
+
+  ${'' /* @keyframes spin {
+      0% {transform: rotate(160deg) translateY(-6px);}
+      100% {transform: rotate(520deg) translateY(-6px);}
+  } */}
 
   button:nth-child(2) {
     height: 37px;

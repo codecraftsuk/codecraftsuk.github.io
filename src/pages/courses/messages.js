@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
-import courseOne from '../../assets/images/courses/webdev.jpeg';
-import courseTwo from '../../assets/images/courses/devops.jpg';
-import courseThree from '../../assets/images/courses/freelance.jpg';
+import courseOne from '../../assets/images/courses/webdev-min.jpeg';
+import courseTwo from '../../assets/images/courses/devops-min.jpg';
+import courseThree from '../../assets/images/courses/freelance-min.jpg';
 
 export const coursesData = [
   {
@@ -11,35 +11,25 @@ export const coursesData = [
     description: 'Learn how to build modern web applications.',
     image: courseOne,
     weeks: [
-      'Week 1: Introduction to HTML and CSS',
-      'Week 2: JavaScript Basics',
-      'Week 3: React Fundamentals',
-      'Week 4: Data Persistence and APIs',
-      'Week 5: Advanced React Techniques',
-      'Week 6: Web Security and Deployment',
-      'Week 7: Advanced HTML and CSS',
-      'Week 8: Server-side Development with Node.js',
-      'Week 9: Data Visualization with D3.js',
-      'Week 10: Mobile Development with React Native',
-      'Week 11: Testing and Debugging',
-      'Week 12: Final Project',
-    ],
-    learn: [
-      'Build dynamic web applications using the latest in technology',
-      'Practice your knowledge with projects, exercises, and quizzes',
-      'Understand the internet',
-      'lorem  lorem lorem lorem lorem loremloremlorem loremlorem',
-      'lorem  lorem lorem lorem lorem loremloremlorem loremlorem',
-      'lorem  lorem lorem lorem lorem loremloremlorem loremlorem',
-      'lorem  lorem lorem lorem lorem loremloremlorem loremlorem',
-      'lorem  lorem lorem lorem lorem loremloremlorem loremlorem',
+      'Week 0: Introduction',
+      'Week 1: Git',
+      'Week 2: HTML/CSS',
+      'Week 3: JavaScript',
+      'Week 4: Milestone 1 - HTML/CSS/JS Project',
+      'Week 5: React',
+      'Week 6: Milestone 2 - React Project',
+      'Week 7: Python',
+      'Week 8: Django',
+      'Week 9: Databases',
+      'Week 10: Front End/Back End Integration',
+      'Week 11: CI/CD with GitHub Actions',
+      'Week 12: Final Project'
     ],
   },
   {
     id: 763892,
     name: 'DevOps',
     isComingSoon: true,
-
     description: 'Become proficient in DevOps practices and tools.',
     image: courseTwo,
     weeks: [
@@ -61,7 +51,6 @@ export const coursesData = [
     id: 7893873,
     name: 'Freelance',
     isComingSoon: true,
-
     description: 'Master the skills needed to succeed as a freelance developer.',
     image: courseThree,
     weeks: [

@@ -28,8 +28,7 @@ export const StyledContactWrapper = styled.div`
     text-align: left;
   }
 
-  h1,
-  h3 {
+  h1, h2, h3 {
     margin-bottom: 20px;
   }
 
@@ -39,7 +38,7 @@ export const StyledContactWrapper = styled.div`
   }
 
   a {
-    color: #fa6068;
+    color: #645dd3;
     text-decoration: none;
   }
 
