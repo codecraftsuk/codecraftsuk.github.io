@@ -45,4 +45,12 @@ export const StyledWrapper = styled.div`
   p {
     font-size: 14.4px !important;
   }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  ul {
+    margin-left: 20px;
+  }
 `;

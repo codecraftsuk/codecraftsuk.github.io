@@ -23,7 +23,7 @@ export const StyledWrapper = styled.div`
   span {
     font-family: 'Passion One', cursive;
     font-size: 4rem;
-    color: ${({ theme }) => theme.primaryText};
+    color: ${({ theme }) => theme.secondaryText};
   }
 
   .slide {
@@ -54,5 +54,9 @@ export const StyledContent = styled.div`
     font-weight: normal;
     width: min(95%, 800px);
     margin: 0 auto;
+  }
+
+  p {
+    color: orange !important;
   }
 `;
