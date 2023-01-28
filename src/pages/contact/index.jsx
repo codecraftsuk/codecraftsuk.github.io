@@ -13,12 +13,9 @@ const Contact = () => {
         <h2>Contact Us</h2>
       </div>
       <div class="container">
-        <p>At codecrafts, we value your feedback and are always happy to hear from our customers.</p>
-
-        <h2>Get in Touch</h2>
         <div className="cards-wrapper">
           <StyledContactCard className="contact-card" bgColor="#5851D0">
-            <p>If you have any questions, comments, or concerns, please don't hesitate to reach out to us.</p>
+            <p>At CodeCrafts, we value your feedback. Reach out to us with any questions, comments or concerns. We're here to make your experience better.</p>
             <RoundedButton
               onClick={() => (window.location.href = 'mailto:codecraftsenquiry@gmail.com')}
               bgColor="#5851D0"
