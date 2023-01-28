@@ -45,6 +45,14 @@ const AppWrapper = styled.div`
         top: -180px;
         transform: skewY(-10deg);
         z-index: -1;
+
+        ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+          height: 120vh;
+        }
+
+        ${({ theme }) => theme.breakPoints.down('sm')} {
+          height: 125vh;
+        }
       }
     `}
 

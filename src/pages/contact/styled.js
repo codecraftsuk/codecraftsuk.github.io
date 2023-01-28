@@ -56,7 +56,7 @@ export const StyledContactWrapper = styled.div`
     display: flex;
     gap: 30px;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     flex-wrap: wrap;
   }
 

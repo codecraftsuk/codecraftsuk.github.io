@@ -289,10 +289,11 @@ export const StyledHomeHead = styled.div`
     }
 
     h1 {
-    font-size: 92px;
+      font-size: 92px;
 
-    ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
-      font-size: 4rem;
+      ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+        font-size: 4rem;
+      }
     }
   }
 

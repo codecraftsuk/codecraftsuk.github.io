@@ -40,7 +40,7 @@ export const StyledCardWrapper = styled.div`
     font-weight: 500;
     font-size: 1.5rem;
     transform: rotate(45deg);
-    translate: 115px -70px;
+    translate: 100px -65px;
     outline: 3px solid #4b3600;
     border: 3px solid #ffb952;
     margin: 0;

@@ -53,8 +53,6 @@ function Home() {
     if (inView === true) setShouldTextCount(inView);
   }, [inView]);
 
-  console.log(inView);
-
   return (
     <StyleHome>
       <StyledHomeHead>
@@ -71,7 +69,7 @@ function Home() {
           </div>
         </div>
         <span>
-          <Lottie options={animationDataWelcomeOp} height={550} />
+          <Lottie options={animationDataWelcomeOp} height={500} />
         </span>
       </StyledHomeHead>
 

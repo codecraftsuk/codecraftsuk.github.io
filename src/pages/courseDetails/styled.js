@@ -25,7 +25,6 @@ export const StyledCourseDetails = styled.div`
 
   & > ion-icon {
     font-size: 2.2rem;
-    color: red;
     cursor: pointer;
     position: absolute;
     top: -10px;

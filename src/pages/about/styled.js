@@ -4,7 +4,6 @@ export const StyledAboutWrapper = styled.div`
   width: min(95%, 1000px);
   margin: 0 auto;
   margin-top: 50px;
-  text-align: center;
   padding: 50px 0;
 
   svg {
