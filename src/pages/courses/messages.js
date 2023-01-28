@@ -23,84 +23,84 @@ export const coursesData = [
           '* Learn about the course overview, objectives, and expectations'
           '* Introduction to the tools and resources used throughout the course',
       },
-      {
-        title: 'Week 1: Git',
-        description:
-          '* Learn about version control and the basics of Git'
-          '* Learn how to create and manage repositories'
-          '* Learn how to make commits and work with branches',
-      },
-      {
-        title: 'Week 2: HTML/CSS',
-        description:
-          '* Learn about the basics of HTML and CSS'
-          '* Learn how to create and structure web pages'
-          '* Learn how to use CSS to style web pages',
-      },
-      {
-        title: 'Week 3: JavaScript',
-        description:
-          '* Introduction to the basics of JavaScript'
-          '* Learn about variables, data types, control flow, and functions',
-      },
-      {
-        title: 'Week 4: Milestone 1 - HTML/CSS/JS Project',
-        description:
-          '* Work on a project using HTML, CSS and JavaScript'
-          '* Learn how to build a complete web application using these technologies',
-      },
-      {
-        title: 'Week 5: React',
-        description:
-          '* Learn about React, a popular JavaScript library for building user interfaces'
-          '* Learn how to create and manage components'
-          '* Learn how to use React to build web applications',
-      },
-      {
-        title: 'Week 6: Milestone 2 - React Project',
-        description:
-          '* Work on a project using React'
-          '* Learn how to build a complete web application using React',
-      },
-      {
-        title: 'Week 7: Python',
-        description:
-          '* Introduction to the basics of Python'
-          '* Learn about variables, data types, control flow, and functions',
-      },
-      {
-        title: 'Week 8: Django',
-        description:
-          '* Learn about Django, a popular Python web framework'
-          '* Learn how to create and manage models'
-          '* Learn how to use Django to build web applications',
-      },
-      {
-        title: 'Week 9: Databases',
-        description:
-          '* Learn about different types of databases and how to interact with them using Python'
-          '* Learn about SQL and how to write SQL queries',
-      },
-      {
-        title: 'Week 10: Front End/Back End Integration',
-        description:
-          '* Learn about the different ways to integrate a front-end and back-end in a web application'
-          '* Learn about RESTful API design and how to create a RESTful API using Django',
-      },
-      {
-        title: 'Week 11: CI/CD with GitHub Actions',
-        description:
-          '* Learn about continuous integration and continuous deployment'
-          '* Learn how to use GitHub Actions to automate the CI/CD pipeline',
-      },
-      {
-        title: 'Week 12: Final Project',
-        description:
-          '* Work on a final project using all the technologies and concepts learned throughout the course'
-          '* Learn how to incorporate all aspects of web development, including front-end, back-end, and    database management'
-          '* Learn how to deploy the final project to a live server for public access',
+      // {
+      //   title: 'Week 1: Git',
+      //   description:
+      //     '* Learn about version control and the basics of Git'
+      //     '* Learn how to create and manage repositories'
+      //     '* Learn how to make commits and work with branches',
+      // },
+      // {
+      //   title: 'Week 2: HTML/CSS',
+      //   description:
+      //     '* Learn about the basics of HTML and CSS'
+      //     '* Learn how to create and structure web pages'
+      //     '* Learn how to use CSS to style web pages',
+      // },
+      // {
+      //   title: 'Week 3: JavaScript',
+      //   description:
+      //     '* Introduction to the basics of JavaScript'
+      //     '* Learn about variables, data types, control flow, and functions',
+      // },
+      // {
+      //   title: 'Week 4: Milestone 1 - HTML/CSS/JS Project',
+      //   description:
+      //     '* Work on a project using HTML, CSS and JavaScript'
+      //     '* Learn how to build a complete web application using these technologies',
+      // },
+      // {
+      //   title: 'Week 5: React',
+      //   description:
+      //     '* Learn about React, a popular JavaScript library for building user interfaces'
+      //     '* Learn how to create and manage components'
+      //     '* Learn how to use React to build web applications',
+      // },
+      // {
+      //   title: 'Week 6: Milestone 2 - React Project',
+      //   description:
+      //     '* Work on a project using React'
+      //     '* Learn how to build a complete web application using React',
+      // },
+      // {
+      //   title: 'Week 7: Python',
+      //   description:
+      //     '* Introduction to the basics of Python'
+      //     '* Learn about variables, data types, control flow, and functions',
+      // },
+      // {
+      //   title: 'Week 8: Django',
+      //   description:
+      //     '* Learn about Django, a popular Python web framework'
+      //     '* Learn how to create and manage models'
+      //     '* Learn how to use Django to build web applications',
+      // },
+      // {
+      //   title: 'Week 9: Databases',
+      //   description:
+      //     '* Learn about different types of databases and how to interact with them using Python'
+      //     '* Learn about SQL and how to write SQL queries',
+      // },
+      // {
+      //   title: 'Week 10: Front End/Back End Integration',
+      //   description:
+      //     '* Learn about the different ways to integrate a front-end and back-end in a web application'
+      //     '* Learn about RESTful API design and how to create a RESTful API using Django',
+      // },
+      // {
+      //   title: 'Week 11: CI/CD with GitHub Actions',
+      //   description:
+      //     '* Learn about continuous integration and continuous deployment'
+      //     '* Learn how to use GitHub Actions to automate the CI/CD pipeline',
+      // },
+      // {
+      //   title: 'Week 12: Final Project',
+      //   description:
+      //     '* Work on a final project using all the technologies and concepts learned throughout the course'
+      //     '* Learn how to incorporate all aspects of web development, including front-end, back-end, and    database management'
+      //     '* Learn how to deploy the final project to a live server for public access',
 
-      },
+      // },
     ],
   },
   {
