@@ -3,10 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import { useTheme } from 'styled-components';
 import CourseCard from '../../components/CourseCard';
 import './styles.css';
-
+import { StyledContentWrapper } from '../home/styled';
+import { learningOnCodectaftsInfo } from '../courseDetails/messages';
 import { coursesData, faqData } from './messages';
 import { StyledFullWidth } from '../../common/styles';
 import Accordion from '../../components/Accordion';
+import IconInfo from '../../components/IconInfo';
 
 const Courses = () => {
   const navigate = useNavigate();
@@ -24,6 +26,15 @@ const Courses = () => {
           <CourseCard {...course} />
         ))}
       </div>
+
+      <StyledContentWrapper>
+        <h2 style={{ marginBottom: '40px' }}>Learning on codecrafts</h2>
+        <StyledFlexWrap px="10" py="0">
+          {learningOnCodectaftsInfo.map((iconData) => (
+            <IconInfo alignLeft {...iconData} />
+          ))}
+        </StyledFlexWrap>
+      </StyledContentWrapper>
 
       {/* <h1 className="main-title">FAQ's</h1> */}
 
