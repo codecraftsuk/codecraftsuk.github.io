@@ -20,8 +20,7 @@ export const coursesData = [
       {
         title: 'Week 0: Introduction',
         description:
-          '* Learn about the course overview, objectives, and expectations'
-          '* Introduction to the tools and resources used throughout the course',
+          '* Learn about the course overview, objectives, and expectations * Introduction to the tools and resources used throughout the course',
       },
       // {
       //   title: 'Week 1: Git',
