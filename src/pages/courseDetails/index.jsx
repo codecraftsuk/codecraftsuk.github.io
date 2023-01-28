@@ -13,7 +13,6 @@ import {
   StyledCourseDetails,
   StyledCourseDetailsWrapper,
   StyledLabel,
-  StyledLearnText,
 } from './styled';
 
 const CourseDetails = () => {
@@ -35,9 +34,7 @@ const CourseDetails = () => {
             <div className="weeks">
               <StyledLabel>Course Context</StyledLabel>
               {course?.weeks?.map((week) => (
-                <>
-                  <Accordion title={week.title} text={week.description} />
-                </>
+                <Accordion title={week.title} text={week.description} />
               ))}
             </div>
           </div>
