@@ -25,8 +25,7 @@ const Contact = () => {
 
             <span className="info">
               <p>
-                If the above button is not working then please write to us using the email
-                <a href="mailto:codecraftsenquiry@gmail.com"> codecraftsenquiry@gmail.com</a>
+              If the button isn't working, please email<a href="mailto:codecraftsenquiry@gmail.com"> codecraftsenquiry@gmail.com</a>
               </p>
             </span>
           </StyledContactCard>
