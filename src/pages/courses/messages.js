@@ -121,69 +121,106 @@ export const coursesData = [
     image: courseTwo,
     price: '49',
     longDescription: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet urna non lorem congue, nec laoreet lacus volutpat. Vestibulum ligula dui, vehicula at diam eget, molestie bibendum odio. Sed a scelerisque arcu. In nulla velit, volutpat blandit maximus a, convallis at magna. Fusce fermentum interdum velit, ',
-      'Sed non fermentum lectus. Quisque dignissim hendrerit nisi, ac consequat nunc bibendum et. Sed porta augue ut venenatis condimentum. Nullam imperdiet turpis vel turpis efficitur dictum.',
+      'This DevOps bootcamp course offers comprehensive training in the latest practices and technologies in DevOps. The course covers key topics such as continuous integration and delivery, configuration management with Ansible, containerization with Docker, monitoring and logging, cloud infrastructure, and more. Through hands-on projects and exercises, students will gain practical experience in implementing DevOps solutions.',
+
+      'By the end of the course, students will have a strong understanding of the DevOps methodology and its various components, and will be able to implement DevOps in real-world scenarios. Suitable for both beginners and experienced professionals, this bootcamp is an excellent opportunity for software developers, IT professionals, or anyone interested in learning about DevOps to expand their skills and become a DevOps engineer.',
+
     ],
     weeks: [
       {
         title: 'Week 1: Introduction to DevOps',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        bullets: [
+          'Learn about DevOps, its history and evolution',
+          'Understand the key principles and goals of DevOps',
+          'Introduction to DevOps methodologies, practices and tools',
+        ],
       },
       {
-        title: 'Week 2: Continuous Integration and Delivery',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        title: 'Week 2: Continuous Integration',
+        bullets: [
+          'Understand the concept of Continuous Integration',
+          'Introduction to popular CI/CD tools like Jenkins and Travis CI',
+          'Learn how to automate build and test processes',
+        ],
       },
       {
         title: 'Week 3: Configuration Management with Ansible',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        bullets: [
+          'Understand the need for Configuration Management',
+          'Learn about Ansible, an open-source IT automation tool',
+          'Learn how to automate infrastructure provisioning, configuration and management with Ansible',
+        ],
       },
       {
         title: 'Week 4: Containerization with Docker',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        bullets: [
+          'Introduction to containers and containerization',
+          'Learn about Docker and its components',
+          'Learn how to build and manage containers with Docker',
+        ],
       },
       {
         title: 'Week 5: Monitoring and Logging',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        bullets: [
+          'Understand the importance of Monitoring and Logging',
+          'Learn about popular Monitoring and Logging tools like Nagios, Grafana and ELK Stack',
+          'Learn how to implement effective Monitoring and Logging practices in DevOps',
+        ],
       },
       {
-        title: 'Week 6: Cloud Infrastructure and Provisioning',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        title: 'Week 6: Cloud Infrastructure',
+        bullets: [
+          'Understand the different types of Cloud computing',
+          'Introduction to popular Cloud platforms like AWS, Google Cloud and Azure',
+          'Learn how to implement and manage cloud infrastructure',
+        ],
       },
       {
-        title: 'Week 7: Microservices and Service Mesh',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        title: 'Week 7: Deployment Automation',
+        bullets: [
+          'Learn about different deployment strategies and tools',
+          'Learn how to automate deployment of applications to different environments',
+        ],
       },
       {
-        title: 'Week 8: Advanced Container Orchestration with Kubernetes',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        title: 'Week 8: Security in DevOps',
+        bullets: [
+          'Understand the importance of security in DevOps',
+          'Learn about security risks and best practices in DevOps',
+          'Learn how to implement security in the DevOps pipeline',
+        ],
       },
       {
         title: 'Week 9: Serverless Computing',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        bullets: [
+          'Understand the concept of Serverless Computing and its benefits',
+          'Learn about popular Serverless platforms like AWS Lambda, Google Cloud Functions and Azure Functions',
+          'Learn how to develop and deploy Serverless applications',
+        ],
       },
       {
         title: 'Week 10: Advanced Monitoring and Alerting',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        bullets: [
+          'Learn about advanced techniques for monitoring and alerting in DevOps',
+          'Understand the importance of proactive monitoring and real-time alerting',
+          'Learn how to implement advanced monitoring and alerting solutions in DevOps',
+        ],
       },
       {
         title: 'Week 11: Disaster Recovery and High Availability',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        bullets: [
+          'Learn about disaster recovery and high availability strategies in DevOps',
+          'Understand the importance of having a robust disaster recovery plan',
+          'Learn how to implement disaster recovery and high availability solutions in DevOps',
+        ],
       },
       {
         title: 'Week 12: Final Project',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        bullets: [
+          'Apply the concepts learned in the previous weeks to a real-world project',
+          'Work on a team to design and implement a DevOps solution',
+          'Present the final project to the class and receive feedback from the instructor and peers.',
+        ],
       },
     ],
   },
@@ -195,69 +232,106 @@ export const coursesData = [
     image: courseThree,
     price: '49',
     longDescription: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet urna non lorem congue, nec laoreet lacus volutpat. Vestibulum ligula dui, vehicula at diam eget, molestie bibendum odio. Sed a scelerisque arcu. In nulla velit, volutpat blandit maximus a, convallis at magna. Fusce fermentum interdum velit, ',
-      'Sed non fermentum lectus. Quisque dignissim hendrerit nisi, ac consequat nunc bibendum et. Sed porta augue ut venenatis condimentum. Nullam imperdiet turpis vel turpis efficitur dictum.',
+      'This bootcamp course is designed to provide students with the knowledge and skills to become a successful freelance professional. The course covers a wide range of topics such as marketing and networking, setting up a business entity, time management and productivity, communication and collaboration, project management, contract negotiation, delivering quality work on time, client relationship management, scaling and growing your business, staying up-to-date with continuing education, and a final project.',
+      'By the end of the course, students will have a strong understanding of the freelancing process and will be equipped with the skills to succeed in the industry. Suitable for both beginners and experienced professionals looking to expand their skills and grow their freelance business.',
     ],
     weeks: [
       {
         title: 'Week 1: Introduction to Freelancing',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        bullets: [
+          'Overview of the freelancing industry and its history',
+          'Understanding the difference between freelancing and traditional employment',
+          'Learn about the various freelance career options and opportunities',
+        ],
       },
       {
         title: 'Week 2: Marketing and Networking',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        bullets: [
+          'Develop a strong personal brand and online presence',
+          'Learn effective marketing strategies to reach potential clients',
+          'Understand the importance of networking and how to make connections',
+        ],
       },
       {
-        title: 'Week 3: Setting up a Business Entity and Taxes',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        title: 'Week 3: Setting up a Business Entity',
+        bullets: [
+          'Understand the legal and financial aspects of setting up a freelance business',
+          'Learn about the different business structures and the pros and cons of each',
+          'Get guidance on registering your business and obtaining necessary licenses and insurance',
+        ],
       },
       {
         title: 'Week 4: Time Management and Productivity',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        bullets: [
+          'Understand the importance of effective time management in freelancing',
+          'Learn techniques for prioritizing tasks and managing your workload',
+          'Discover ways to increase productivity and avoid burnout',
+        ],
       },
       {
         title: 'Week 5: Communication and Collaboration',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        bullets: [
+          'Learn about effective communication strategies for freelancers',
+          'Understand the importance of building good working relationships with clients and collaborators',
+          'Discover ways to communicate clearly, avoid misunderstandings and resolve conflicts',
+        ],
       },
       {
-        title: 'Week 6: Project Management and Agile Methodologies',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        title: 'Week 6: Project Management',
+        bullets: [
+          'Understand the project management process and its importance in freelancing',
+          'Learn about tools and techniques for planning, executing and delivering projects on time and within budget',
+          'Discover ways to manage scope creep and ensure client satisfaction',
+        ],
       },
       {
-        title: 'Week 7: Contract Negotiation and Pricing',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        title: 'Week 7: Contract Negotiation',
+        bullets: [
+          'Learn about the importance of contracts in freelancing',
+          'Understand the basics of contract negotiation and how to negotiate better terms',
+          'Discover ways to protect yourself legally and financially in your freelance work',
+        ],
       },
       {
         title: 'Week 8: Delivering Quality Work on Time',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        bullets: [
+          'Understand the importance of delivering high-quality work and meeting deadlines',
+          'Learn about techniques for ensuring quality and avoiding mistakes',
+          'Discover ways to manage expectations, set realistic deadlines and communicate progress with clients',
+        ],
       },
       {
         title: 'Week 9: Client Relationship Management',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        bullets: [
+          'Learn about building and maintaining strong relationships with clients',
+          'Understand the importance of understanding client needs and managing expectations',
+          'Discover ways to ensure client satisfaction, handle complaints and retain clients',
+        ],
       },
       {
-        title: 'Week 10: Scaling and Growing Your Freelance Business',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        title: 'Week 10: Scaling and Growing Your Business',
+        bullets: [
+          'Understand the importance of growing and scaling your freelance business',
+          'Learn about strategies for attracting new clients and expanding your services',
+          'Discover ways to manage growth and maintain the balance between work and personal life',
+        ],
       },
       {
-        title: 'Week 11: Staying Up-to-date and Continuing Education',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        title: 'Week 11: Staying Up-to-date with Continuing Education',
+        bullets: [
+          'Understand the importance of continuing education in freelancing',
+          'Learn about ways to keep your skills up-to-date and stay informed about industry trends',
+          'Discover resources for learning and professional development',
+        ],
       },
       {
         title: 'Week 12: Final Project',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus adipisci, distinctio ullam porro aut ab. Architecto autem vero facilis?',
+        bullets: [
+          'Apply the concepts learned in the previous weeks to a real-world project',
+          'Develop a complete project plan and execute it from start to finish',
+          'Demonstrate your skills and knowledge in freelancing by presenting the final project',
+          'Reflect on your experience and evaluate your progress over the course of the program',
+        ],
       },
     ],
   },
