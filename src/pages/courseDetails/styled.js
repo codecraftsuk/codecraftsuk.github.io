@@ -80,16 +80,6 @@ export const StyledLabel = styled.p`
   border-bottom: 1px solid gray;
 `;
 
-export const StyledLearnText = styled.p`
-  font-weight: 500;
-  margin: 10px 10px;
-
-  &:before {
-    content: '✓';
-    margin-right: 10px;
-  }
-`;
-
 export const StyledBuyWrapper = styled.div`
   margin-top: 40px;
   top: 20px;

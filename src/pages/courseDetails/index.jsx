@@ -8,12 +8,7 @@ import RoundedButton from '../../components/RoundedButton';
 import { coursesData } from '../courses/messages';
 import { StyledContentWrapper } from '../home/styled';
 import { learningOnCodectaftsInfo } from './messages';
-import {
-  StyledBuyWrapper,
-  StyledCourseDetails,
-  StyledCourseDetailsWrapper,
-  StyledLabel,
-} from './styled';
+import { StyledBuyWrapper, StyledCourseDetails, StyledCourseDetailsWrapper, StyledLabel } from './styled';
 
 const CourseDetails = () => {
   const params = useParams();
@@ -34,7 +29,7 @@ const CourseDetails = () => {
             <div className="weeks">
               <StyledLabel>Course Context</StyledLabel>
               {course?.weeks?.map((week) => (
-                <Accordion title={week.title} text={week.description} />
+                <Accordion title={week.title} text={week.description} bullets={week?.bullets} />
               ))}
             </div>
           </div>

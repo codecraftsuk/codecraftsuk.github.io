@@ -28,7 +28,7 @@ ion-icon[name='chevron-up-outline'] {
   overflow: hidden;
   border-radius: 16px;
 
-  transition: all 500ms;
+  transition: all 400ms;
   margin-right: 50px;
 }
 

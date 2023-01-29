@@ -35,3 +35,13 @@ export const StyledFullWidth = styled.div`
     
     `}
 `;
+
+export const StyledTickText = styled.p`
+  font-weight: 500;
+  margin: 10px 10px;
+
+  &:before {
+    content: '✓';
+    margin-right: 10px;
+  }
+`;
