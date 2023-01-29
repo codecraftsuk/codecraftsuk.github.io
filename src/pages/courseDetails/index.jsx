@@ -52,7 +52,7 @@ const CourseDetails = () => {
         </StyledBuyWrapper>
       </StyledCourseDetailsWrapper>
       <StyledContentWrapper>
-        <h2 style={{ marginBottom: '40px' }}>Learning on codecrafts</h2>
+        <h2 style={{ marginBottom: '40px' }}>Learning on CodeCrafts</h2>
         <StyledFlexWrap px="10" py="0">
           {learningOnCodectaftsInfo.map((iconData) => (
             <IconInfo alignLeft {...iconData} />
