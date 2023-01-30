@@ -16,10 +16,11 @@ export const StyledModalWrapper = styled.div`
     isOpen &&
     css`
       bottom: 0;
+      top: 0;
     `}
 
   div {
-    width: 70%;
+    width: min(70%, 700px);
     background-color: white;
     position: absolute;
     top: 50%;

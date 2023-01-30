@@ -16,7 +16,16 @@ const PriceCard = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleModal = () => setIsOpen((prev) => !prev);
+  const toggleModal = () => {
+    setIsOpen((prev) => {
+      if (prev === true) {
+        document.body.style.overflow = 'unset';
+        return false;
+      }
+      document.body.style.overflow = 'hidden';
+      return true;
+    });
+  };
   return (
     <>
       <StyledPriceCard>
@@ -47,6 +56,21 @@ const PriceCard = ({
               <li>{b}</li>
             ))}
           </ul>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, provident nam laborum hic voluptatem sint
+          cumque? Sequi, a commodi. Impedit ut quo voluptate ratione nemo cumque sequi vero temporibus non, eum, ab
+          dolor ipsam quod rem officiis exercitationem, a asperiores debitis quis deserunt mollitia voluptatem. Eum
+          inventore aut enim. Assumenda non doloremque repudiandae, autem quidem ipsam magnam laborum eos facere iure
+          cumque culpa. Sapiente minima vel perspiciatis ipsum dicta amet quibusdam impedit aliquid, voluptatibus
+          corrupti possimus veritatis praesentium. Ut fugit corporis commodi quia animi cumque vero vitae consequuntur,
+          doloremque ab, reprehenderit perferendis reiciendis a recusandae, laborum eius at repellendus cum ratione.
+          Libero quis aperiam facere. Autem atque minima tempore enim dolore a beatae, mollitia molestiae hic
+          dignissimos iste blanditiis ipsam corrupti aperiam fuga odit error eveniet sequi ratione laboriosam veritatis!
+          Distinctio quidem maxime enim dolores numquam exercitationem inventore, assumenda harum hic officia ipsa
+          voluptates aperiam aliquid, illum animi quam corporis earum repellat, aliquam accusantium sapiente nulla id
+          delectus. Labore nulla distinctio neque deleniti asperiores ducimus, repellat odio quia? Dolore facere officia
+          maxime officiis cumque, accusantium omnis repellendus natus, esse nostrum quod odit corrupti voluptatum
+          obcaecati consequatur quidem incidunt aperiam amet cum eius deleniti voluptas? Recusandae totam ipsam facere
+          perferendis est?
         </span>
       </Modal>
     </>
