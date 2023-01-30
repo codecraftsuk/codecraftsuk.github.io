@@ -21,7 +21,7 @@ const PaymentCancel = () => {
           </div>
           <p>
             If you are having issues with making a payment, then please contact us on{' '}
-            <strong>codecrafts@gmail.com</strong>
+            <strong>codecraftsenquiry@gmail.com</strong>
           </p>
           <span>
             <RoundedButton bgColor="#5851D0" onClick={() => navigate('/')}>
