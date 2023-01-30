@@ -1,44 +1,37 @@
 /* eslint-disable max-len */
 import React from 'react';
-import { loadStripe } from '@stripe/stripe-js';
 import { useNavigate } from 'react-router-dom';
 import PriceCard from '../../components/PriceCard';
 import { StyledPricingWrapper } from './styled';
-import {
-  basicPlanBullets,
-  basicPlanModalInfo,
-  enterprisePlanBullets,
-  proPlanBullets,
-  proPlanModalInfo,
-} from './messages';
+import { basicPlanBullets, basicPlanModalInfo, proPlanBullets, proPlanModalInfo } from './messages';
 
 const Pricing = () => {
   const navigate = useNavigate();
-  let stripePromise;
+  // let stripePromise;
 
-  const getStripe = async () => {
-    if (!stripePromise) stripePromise = loadStripe(import.meta.env.VITE_PUB_KEY);
-    return stripePromise;
-  };
+  // const getStripe = async () => {
+  //   if (!stripePromise) stripePromise = loadStripe(import.meta.env.VITE_PUB_KEY);
+  //   return stripePromise;
+  // };
 
-  const checkOutOptions = {
-    lineItems: [
-      {
-        price: 'price_1MRmk7D1tdAAl7pg7MwjN6fE',
-        quantity: 1,
-      },
-    ],
-    mode: 'payment',
-    successUrl: `${window.location.origin}/#/payment/on/success`,
-    cancelUrl: `${window.location.origin}/#/payment/on/cancel`,
-  };
+  // const checkOutOptions = {
+  //   lineItems: [
+  //     {
+  //       price: 'price_1MRmk7D1tdAAl7pg7MwjN6fE',
+  //       quantity: 1,
+  //     },
+  //   ],
+  //   mode: 'payment',
+  //   successUrl: `${window.location.origin}/#/payment/on/success`,
+  //   cancelUrl: `${window.location.origin}/#/payment/on/cancel`,
+  // };
 
-  const redirectToCheckout = async () => {
-    const stripe = await getStripe();
-    // const { error } = await stripe.redirectToCheckout(checkOutOptions);
-    // console.log('stripe error', error);
-    await stripe.redirectToCheckout(checkOutOptions);
-  };
+  // const redirectToCheckout = async () => {
+  //   const stripe = await getStripe();
+  //   // const { error } = await stripe.redirectToCheckout(checkOutOptions);
+  //   // console.log('stripe error', error);
+  //   await stripe.redirectToCheckout(checkOutOptions);
+  // };
 
   return (
     <StyledPricingWrapper>
@@ -67,7 +60,7 @@ const Pricing = () => {
           bulletPoints={basicPlanBullets}
         />
         <PriceCard
-          btnProps={{ bgColor: '#5851D0', onClick: redirectToCheckout, disabled: true }}
+          btnProps={{ bgColor: '#5851D0', disabled: true }}
           title="Pro"
           price="149"
           description="Not Available"
