@@ -11,7 +11,6 @@ export const StyledPriceCard = styled.div`
   position: relative;
   /* background-color: ${({ theme }) => theme.quinary}; */
   border: 1px solid lightgray;
-
   border-radius: 7px;
   margin: 20px 10px;
   width: min(100%, 900px);
@@ -32,7 +31,7 @@ export const StyledPriceCard = styled.div`
     margin: 10px 0;
   }
 
-  ion-icon {
+  & > ion-icon {
     position: absolute;
     top: 15px;
     right: 20px;
@@ -47,6 +46,10 @@ export const StyledPriceCard = styled.div`
 
   &:not(:hover) {
     transition: transform 500ms;
+  }
+
+  button {
+    margin-left: 10px;
   }
 `;
 

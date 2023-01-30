@@ -32,4 +32,10 @@ export const StyledButton = styled.button`
   ${({ theme: { breakPoints } }) => breakPoints.up('ml')} {
     font-size: 1rem;
   }
+
+  &:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+  }
 `;

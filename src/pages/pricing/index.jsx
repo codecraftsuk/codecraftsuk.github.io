@@ -4,7 +4,13 @@ import { loadStripe } from '@stripe/stripe-js';
 import { useNavigate } from 'react-router-dom';
 import PriceCard from '../../components/PriceCard';
 import { StyledPricingWrapper } from './styled';
-import { basicPlanBullets, enterprisePlanBullets, proPlanBullets } from './messages';
+import {
+  basicPlanBullets,
+  basicPlanModalInfo,
+  enterprisePlanBullets,
+  proPlanBullets,
+  proPlanModalInfo,
+} from './messages';
 
 const Pricing = () => {
   const navigate = useNavigate();
@@ -52,25 +58,28 @@ const Pricing = () => {
       <div className="price-cards">
         <PriceCard
           btnText="Courses"
+          showStar
           btnProps={{ textColor: '#d07151', onClick: () => navigate('/courses') }}
           title="Basic"
           price="49"
+          description="Most Popular"
+          modalInfo={basicPlanModalInfo}
           bulletPoints={basicPlanBullets}
         />
         <PriceCard
-          btnProps={{ bgColor: '#5851D0', onClick: redirectToCheckout }}
-          showStar
+          btnProps={{ bgColor: '#5851D0', onClick: redirectToCheckout, disabled: true }}
           title="Pro"
           price="149"
-          description="Most Popular"
+          description="Not Available"
           bulletPoints={proPlanBullets}
+          modalInfo={proPlanModalInfo}
         />
-        <PriceCard
+        {/* <PriceCard
           bulletPoints={enterprisePlanBullets}
           btnProps={{ textColor: '#d07151' }}
           title="Enterprise"
           price="299"
-        />
+        /> */}
       </div>
     </StyledPricingWrapper>
   );

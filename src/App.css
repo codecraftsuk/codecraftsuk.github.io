@@ -37,3 +37,19 @@ hr {
   width: 70%;
   margin: 0 auto;
 }
+
+.modal-heading {
+  margin-bottom: 20px;
+}
+
+.pricing-modal ul {
+  margin: 20px 20px;
+}
+
+.pricing-modal ul li {
+  margin-bottom: 10px;
+}
+
+.pricing-modal h4 {
+  margin-top: 20px;
+}

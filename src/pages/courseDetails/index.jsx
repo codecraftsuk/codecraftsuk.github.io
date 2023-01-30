@@ -1,3 +1,4 @@
+import { loadStripe } from '@stripe/stripe-js';
 import React, { useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { StyledFlexWrap } from '../../common/styles';
@@ -14,6 +15,32 @@ const CourseDetails = () => {
   const params = useParams();
   const navigate = useNavigate();
   const course = useMemo(() => coursesData.find((c) => c.id === +params.courseId), [params]);
+
+  let stripePromise;
+
+  const getStripe = async () => {
+    if (!stripePromise) stripePromise = loadStripe(import.meta.env.VITE_PUB_KEY);
+    return stripePromise;
+  };
+
+  const checkOutOptions = {
+    lineItems: [
+      {
+        price: import.meta.env[course?.priceStr],
+        quantity: 1,
+      },
+    ],
+    mode: 'payment',
+    successUrl: `${window.location.origin}/#/payment/on/success`,
+    cancelUrl: `${window.location.origin}/#/payment/on/cancel`,
+  };
+
+  const redirectToCheckout = async () => {
+    const stripe = await getStripe();
+    // const { error } = await stripe.redirectToCheckout(checkOutOptions);
+    // console.log('stripe error', error);
+    await stripe.redirectToCheckout(checkOutOptions);
+  };
 
   return (
     <>
@@ -40,7 +67,9 @@ const CourseDetails = () => {
           <h2>{course?.name}</h2>
           <span className="pricing">
             <h2>£{course?.price}</h2>
-            <RoundedButton bgColor="#5851D0">Buy Now</RoundedButton>
+            <RoundedButton onClick={redirectToCheckout} disabled={course?.isComingSoon} bgColor="#5851D0">
+              {course?.isComingSoon ? 'Coming Soon' : 'Buy Now'}
+            </RoundedButton>
           </span>
           <div className="course-info">
             <IconText name="save-outline">Last Updated 09/01/2022</IconText>

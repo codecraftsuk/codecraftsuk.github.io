@@ -2,8 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledButton } from './styled';
 
-const RoundedButton = ({ children, bgColor, onClick, textColor, circle, className }) => (
-  <StyledButton className={className} onClick={onClick} bgColor={bgColor} textColor={textColor} isCircle={circle}>
+const RoundedButton = ({ children, bgColor, onClick, textColor, circle, className, disabled }) => (
+  <StyledButton
+    className={className}
+    onClick={onClick}
+    bgColor={bgColor}
+    textColor={textColor}
+    isCircle={circle}
+    disabled={disabled}
+  >
     {children}
   </StyledButton>
 );
@@ -17,6 +24,7 @@ RoundedButton.propTypes = {
   textColor: PropTypes.string,
   onClick: PropTypes.func.isRequired,
   circle: PropTypes.bool,
+  disabled: PropTypes.bool,
 };
 
 RoundedButton.defaultProps = {
@@ -24,4 +32,5 @@ RoundedButton.defaultProps = {
   className: '',
   textColor: 'white',
   circle: false,
+  disabled: false,
 };

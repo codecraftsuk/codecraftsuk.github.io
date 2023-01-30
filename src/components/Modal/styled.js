@@ -4,39 +4,52 @@ import styled, { css } from 'styled-components';
 export const StyledModalWrapper = styled.div`
   color: black;
   width: 90vh;
-  position: absolute;
-  height: 100vh;
+  position: fixed;
+  min-height: 100vh;
   width: 100vw;
-  top: -120%;
-  background-color: #2F2E41;
+  bottom: -120%;
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 100000;
-  transition: top 500ms;
+  transition: bottom 500ms;
 
   ${({ isOpen }) =>
     isOpen &&
     css`
-      top: 0;
+      bottom: 0;
     `}
 
   div {
-    width: 90%;
+    width: 70%;
     background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 60px 20px 20px 20px;
+    padding: 80px 20px 20px 20px;
     border-radius: 6px;
-    height: 50%;
+    height: 70%;
     overflow-y: scroll;
 
     ion-icon {
       position: fixed;
-      top: 20px;
-      right: 20px;
+      top: 30px;
+      right: 30px;
       font-size: 2rem;
       color: red;
       cursor: pointer;
+    }
+
+    ${({ theme }) => theme.breakPoints.down('md')} {
+      height: 100vh;
+      width: 100%;
+      padding-top: 140px;
+
+      ion-icon {
+        position: fixed;
+        top: 80px;
+        right: 40px;
+        font-size: 3rem;
+      }
     }
   }
 `;

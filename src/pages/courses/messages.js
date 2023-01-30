@@ -12,6 +12,7 @@ export const coursesData = [
     description: 'Learn how to build modern web applications.',
     price: '49',
     image: courseOne,
+    priceStr: 'VITE_WEB_DEV_PRICE',
     longDescription: [
       'This bootcamp course is designed to provide students with the knowledge and skills needed to become a professional web developer. The course covers a wide range of topics such as HTML/CSS, JavaScript, React, Python, and Django. Students will work on real-world projects and exercises to gain hands-on experience.',
       'By the end of the course, students will be able to build complete web applications and have a strong understanding of the web development process. Suitable for beginners and experienced developers looking to expand their skills.',
@@ -124,7 +125,6 @@ export const coursesData = [
       'This DevOps bootcamp course offers comprehensive training in the latest practices and technologies in DevOps. The course covers key topics such as continuous integration and delivery, configuration management with Ansible, containerization with Docker, monitoring and logging, cloud infrastructure, and more. Through hands-on projects and exercises, students will gain practical experience in implementing DevOps solutions.',
 
       'By the end of the course, students will have a strong understanding of the DevOps methodology and its various components, and will be able to implement DevOps in real-world scenarios. Suitable for both beginners and experienced professionals, this bootcamp is an excellent opportunity for software developers, IT professionals, or anyone interested in learning about DevOps to expand their skills and become a DevOps engineer.',
-
     ],
     weeks: [
       {
