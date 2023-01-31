@@ -16,8 +16,7 @@ export const StyledPriceCard = styled.div`
   width: min(100%, 900px);
 
   .head {
-    color: black;
-    background-color: white;
+    background-color: ${({ theme }) => theme.secondary};
     font-size: 1.7rem;
     padding: 20px 0;
 

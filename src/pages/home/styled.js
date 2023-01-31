@@ -2,7 +2,7 @@
 import styled, { keyframes } from 'styled-components';
 
 export const StyledContentWrapper = styled.div`
-  width: min(95%, 1000px);
+  width: min(90%, 1000px);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -103,7 +103,7 @@ export const StyleHome = styled.div`
   }
 
   .track-record {
-    width: min(95%, 1000px);
+    width: min(90%, 1000px);
     margin: 0 auto;
 
     p {
@@ -248,7 +248,7 @@ export const StyledHomeHead = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: min(95%, 1000px);
+  width: min(90%, 1000px);
   margin: 0 auto;
   margin-bottom: 10vh;
 

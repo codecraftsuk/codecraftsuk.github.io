@@ -13,6 +13,7 @@ const PriceCard = ({
   btnText = 'Buy',
   bulletPoints,
   modalInfo,
+  monthlyPrice,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -33,7 +34,9 @@ const PriceCard = ({
           <h3>{title}</h3>
           <p>{description}</p>
         </div>
-        <h2>£{price}</h2>
+        <h2>
+          £{price} <span className="monthly">{monthlyPrice}</span>
+        </h2>
 
         {bulletPoints.map((point) => (
           <StyledBulletPoint isIncluded={point.isIncluded}>{point.text}</StyledBulletPoint>

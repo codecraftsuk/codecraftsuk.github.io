@@ -2,13 +2,13 @@
 import styled, { css } from 'styled-components';
 
 export const StyledModalWrapper = styled.div`
-  color: black;
+  color: ${({ theme }) => theme.primaryText};
   width: 90vh;
   position: fixed;
   min-height: 100vh;
   width: 100vw;
   bottom: -120%;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 100000;
   transition: bottom 500ms;
 
@@ -21,15 +21,15 @@ export const StyledModalWrapper = styled.div`
 
   div {
     width: min(70%, 700px);
-    background-color: white;
+    background-color: ${({ theme }) => theme.primary};
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 80px 20px 20px 20px;
     border-radius: 6px;
-    height: 70%;
-    overflow-y: scroll;
+    /* height: 70%; */
+    overflow-y: auto;
 
     ion-icon {
       position: fixed;

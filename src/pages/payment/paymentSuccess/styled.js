@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 export const StyledSuccessWrapper = styled.div`
-  width: min(95%, 1000px);
+  width: min(90%, 1000px);
   margin: 50px auto;
   /* border: 1px solid; */
 

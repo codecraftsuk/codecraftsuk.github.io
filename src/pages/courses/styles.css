@@ -78,7 +78,7 @@ section {
 }
 
 .courses-wrapper .back {
-  width: min(95%, 1000px);
+  width: min(90%, 1000px);
   margin: 0 auto;
   text-align: left;
   font-size: 22px;

@@ -8,7 +8,7 @@ export const StyledNavWrapper = styled.div`
   /* background-color: ${({ theme }) => theme.primary}; */
   color: ${({ theme }) => theme.primaryPrimary};
   padding: 10px 0 0 0;
-  width: min(95%, 1000px);
+  width: min(90%, 1000px);
   margin: 0 auto;
   justify-content: space-between;
 
@@ -56,15 +56,23 @@ export const StyledNavWrapper = styled.div`
   }
 
   @keyframes bounce {
-      0% {transform: rotate(150deg) translateY(-6px);}
-      50% {transform: rotate(170deg) translateY(-6px);}
-      100% {transform: rotate(150deg) translateY(-6px);}
+    0% {
+      transform: rotate(150deg) translateY(-6px);
+    }
+    50% {
+      transform: rotate(170deg) translateY(-6px);
+    }
+    100% {
+      transform: rotate(150deg) translateY(-6px);
+    }
   }
 
-  ${'' /* @keyframes spin {
+  ${
+    '' /* @keyframes spin {
       0% {transform: rotate(160deg) translateY(-6px);}
       100% {transform: rotate(520deg) translateY(-6px);}
-  } */}
+  } */
+  }
 
   button:nth-child(2) {
     height: 37px;

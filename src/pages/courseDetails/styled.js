@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 export const StyledCourseDetailsWrapper = styled.div`
-  width: min(95%, 1000px);
+  width: min(90%, 1000px);
   margin: 0 auto;
   display: flex;
   margin-top: 40px;

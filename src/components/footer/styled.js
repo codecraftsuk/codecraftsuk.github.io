@@ -7,7 +7,7 @@ export const StyledFooter = styled.div`
   padding-top: 100px;
 
   .full-width {
-    width: min(95%, 1000px);
+    width: min(90%, 1000px);
     margin: 0 auto;
   }
 
@@ -28,7 +28,7 @@ export const StyledFooter = styled.div`
 export const StyledFooterWrapper = styled.div`
   display: flex;
   /* padding: 70px 200px 40px 200px; */
-  width: min(95%, 1000px);
+  width: min(90%, 1000px);
   margin: 0 auto;
 
   flex-wrap: wrap;
@@ -82,7 +82,7 @@ export const StyledSocials = styled.div`
   background-color: ${({ theme }) => theme.secondary};
   padding: 5px 0px;
   color: ${({ theme }) => theme.primaryText};
-  width: min(95%, 1000px);
+  width: min(90%, 1000px);
   margin: 0 auto;
   margin-top: 30px;
   font-size: 14px;

@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 export const StyledPricingWrapper = styled.div`
-  width: min(95%, 1000px);
+  width: min(90%, 1000px);
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -42,7 +42,7 @@ export const StyledPricingWrapper = styled.div`
   .price-cards {
     display: flex;
     /* flex-wrap: wrap; */
-    width: min(95%, 1000px);
+    width: min(90%, 1000px);
 
     margin: 0 auto;
     align-items: flex-end;
