@@ -33,7 +33,6 @@ const CourseDetails = () => {
     mode: 'payment',
     successUrl: `${window.location.origin}/#/payment/on/success`,
     cancelUrl: `${window.location.origin}/#/payment/on/cancel`,
-    paymentMethodTypes: ['card', 'klarna', 'afterpay_clearpay'],
   };
 
   const redirectToCheckout = async () => {
