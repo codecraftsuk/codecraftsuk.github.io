@@ -50,6 +50,11 @@ export const StyledPriceCard = styled.div`
   button {
     margin-left: 10px;
   }
+
+  .monthly {
+    text-decoration: underline;
+    color: green;
+  }
 `;
 
 export const StyledBulletPoint = styled.h4`

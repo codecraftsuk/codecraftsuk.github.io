@@ -10,7 +10,8 @@ export const coursesData = [
     isComingSoon: false,
     name: 'Web Development',
     description: 'Learn how to build modern web applications.',
-    price: '49',
+    price: '139',
+    monthlyPrice: '49',
     image: courseOne,
     priceStr: 'VITE_WEB_DEV_PRICE',
     longDescription: [

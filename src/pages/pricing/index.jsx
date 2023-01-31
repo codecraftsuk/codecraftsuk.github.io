@@ -54,8 +54,8 @@ const Pricing = () => {
           showStar
           btnProps={{ textColor: '#d07151', onClick: () => navigate('/courses') }}
           title="Basic"
-          price="49/m"
-          monthlyPrice="139"
+          price="139"
+          monthlyPrice="or £49/m"
           description="Most Popular"
           modalInfo={basicPlanModalInfo}
           bulletPoints={basicPlanBullets}
