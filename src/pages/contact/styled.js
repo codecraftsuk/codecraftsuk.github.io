@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const StyledContactWrapper = styled.div`
   width: min(90%, 1000px);
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 100px;
 
   .back {
     text-align: left;

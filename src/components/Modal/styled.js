@@ -29,10 +29,10 @@ export const StyledModalWrapper = styled.div`
     padding: 80px 20px 20px 20px;
     border-radius: 6px;
     /* height: 70%; */
-    overflow-y: auto;
+    overflow: auto;
 
     ion-icon {
-      position: fixed;
+      position: absolute;
       top: 30px;
       right: 30px;
       font-size: 2rem;
@@ -41,7 +41,7 @@ export const StyledModalWrapper = styled.div`
     }
 
     ${({ theme }) => theme.breakPoints.down('md')} {
-      height: 100vh;
+      max-height: 70vh;
       width: 100%;
       padding-top: 140px;
 

@@ -21,15 +21,20 @@ const PriceCard = ({
     setIsOpen((prev) => {
       if (prev === true) {
         document.body.style.overflow = 'unset';
+        document.documentElement.style.overflow = 'unset';
+
         return false;
       }
       document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
       return true;
     });
   };
+  const closeOnEscapeKey = (e) => (e.key === 'Escape' && isOpen ? toggleModal() : null);
+
   return (
     <>
-      <StyledPriceCard>
+      <StyledPriceCard onKeyDown={closeOnEscapeKey} tabIndex="0">
         <div className="head">
           <h3>{title}</h3>
           <p>{description}</p>

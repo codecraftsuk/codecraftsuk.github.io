@@ -8,13 +8,15 @@ function Portal({ children, wrapperId = 'modal-root' }) {
 }
 
 function Modal({ children, isOpen, handleClose }) {
-  useEffect(() => {
-    const closeOnEscapeKey = (e) => (e.key === 'Escape' ? handleClose() : null);
-    document.body.addEventListener('keydown', closeOnEscapeKey);
-    return () => {
-      document.body.removeEventListener('keydown', closeOnEscapeKey);
-    };
-  }, [handleClose]);
+  // const closeOnEscapeKey = (e) => (e.key === 'Escape' ? handleClose() : null);
+
+  // useEffect(() => {
+  //   const closeOnEscapeKey = (e) => (e.key === 'Escape' ? handleClose() : null);
+  //   document.body.addEventListener('keydown', closeOnEscapeKey);
+  //   return () => {
+  //     document.body.removeEventListener('keydown', closeOnEscapeKey);
+  //   };
+  // }, []);
 
   return (
     <Portal>

@@ -7,7 +7,7 @@ export const StyledPricingWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 100px;
 
   h1 {
     margin-bottom: -1px;
