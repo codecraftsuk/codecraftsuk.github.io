@@ -605,7 +605,7 @@ object-assign
 `,teamMembers=[{name:"full ame",job:"job title",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam aperiam esse possimus minima, molestias iste nesciunt nam necessitatibus officia?"},{name:"full ame",job:"job title",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam aperiam esse possimus minima, molestias iste nesciunt nam necessitatibus officia?"},{name:"full ame",job:"job title",description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam aperiam esse possimus minima, molestias iste nesciunt nam necessitatibus officia?"}],defaultOptions$2={loop:!0,autoplay:!0,animationData:animationData$2,rendererSettings:{preserveAspectRatio:"xMinYMi slice"}},About=()=>{const o=useNavigate(),s=Ze();return jsxs(Fragment,{children:[jsxs(StyledAboutWrapper,{children:[jsxs("div",{className:"back",children:[jsx("ion-icon",{onClick:()=>o("/"),name:"chevron-back-outline"}),jsx("h2",{children:"About Us"})]}),jsxs(StyledAboutContent,{children:[jsx("p",{children:"Welcome to our web development and devops bootcamp, where we turn code newbies into skilled professionals in just a few short weeks. Our program is designed to take you from zero to hero, with a focus on hands-on experience and real-world projects. We understand that learning to code can be daunting, which is why we focus on hands-on experience and real-world projects to make the learning process as smooth and effective as possible."}),jsx(_default,{options:defaultOptions$2,height:300})]})]}),jsx(StyledFullWidth,{bgColor:s==null?void 0:s.secondary,children:jsxs(StyledAboutWrapper,{children:[jsx("h2",{children:"Building the Future of Tech!"}),jsx("p",{className:"building-tech-text",children:`At our bootcamp, we are dedicated to "Building the Future of Tech." We believe that technology is the key to shaping the future and that the ability to create and develop cutting-edge software and systems is an essential skill for anyone looking to make a positive impact on the world. Our program is tailored to provide students with the knowledge and skills needed to succeed in today's tech-driven economy.`}),jsx("p",{className:"building-tech-text",children:"Our team of expert instructors is passionate about technology and are dedicated to helping our students reach their full potential. They are committed to providing a flexible and supportive learning environment, and offer a variety of resources and support to ensure that each student has the best chance of success."}),jsx("p",{children:"So if you're looking to build the future of tech, look no further. Join our bootcamp today and become a hero in web development and devops!"})]})}),jsxs(StyledAboutWrapper,{children:[jsx("h2",{children:"Meet our team!"}),jsx("div",{className:"meet-team",children:teamMembers.map(a=>jsx(TeamMember,{...a}))})]})]})},StyledContactWrapper=styled.div`
   width: min(90%, 1000px);
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 100px;
 
   .back {
     text-align: left;
@@ -1629,10 +1629,10 @@ $bm_rt = $bm_mul(time, 300);`},p:{a:1,k:[{i:{x:.833,y:.607},o:{x:.167,y:.167},t:
     padding: 80px 20px 20px 20px;
     border-radius: 6px;
     /* height: 70%; */
-    overflow-y: auto;
+    overflow: auto;
 
     ion-icon {
-      position: fixed;
+      position: absolute;
       top: 30px;
       right: 30px;
       font-size: 2rem;
@@ -1641,7 +1641,7 @@ $bm_rt = $bm_mul(time, 300);`},p:{a:1,k:[{i:{x:.833,y:.607},o:{x:.167,y:.167},t:
     }
 
     ${({theme:o})=>o.breakPoints.down("md")} {
-      height: 100vh;
+      max-height: 70vh;
       width: 100%;
       padding-top: 140px;
 
@@ -1653,13 +1653,13 @@ $bm_rt = $bm_mul(time, 300);`},p:{a:1,k:[{i:{x:.833,y:.607},o:{x:.167,y:.167},t:
       }
     }
   }
-`;function Portal({children:o,wrapperId:s="modal-root"}){return reactDomExports.createPortal(o,document.getElementById(s))}function Modal({children:o,isOpen:s,handleClose:a}){return reactExports.useEffect(()=>{const t0=e0=>e0.key==="Escape"?a():null;return document.body.addEventListener("keydown",t0),()=>{document.body.removeEventListener("keydown",t0)}},[a]),jsx(Portal,{children:jsx(StyledModalWrapper,{isOpen:s,children:jsxs("div",{children:[jsx("ion-icon",{onClick:a,name:"close-circle-outline"}),o]})})})}Modal.propTypes={children:propTypesExports.oneOfType([propTypesExports.arrayOf(propTypesExports.node),propTypesExports.node]).isRequired,isOpen:propTypesExports.bool.isRequired,handleClose:propTypesExports.func.isRequired};const PriceCard=({title:o,description:s,price:a,showStar:t0,btnProps:e0={},btnText:i0="Buy",bulletPoints:r0,modalInfo:o0,monthlyPrice:s0})=>{const[n0,a0]=reactExports.useState(!1),p0=()=>{a0(l0=>l0===!0?(document.body.style.overflow="unset",!1):(document.body.style.overflow="hidden",!0))};return jsxs(Fragment,{children:[jsxs(StyledPriceCard,{children:[jsxs("div",{className:"head",children:[jsx("h3",{children:o}),jsx("p",{children:s})]}),jsxs("h2",{children:["£",a," ",jsx("span",{className:"monthly",children:s0})]}),r0.map(l0=>jsx(StyledBulletPoint,{isIncluded:l0.isIncluded,children:l0.text})),jsx(RoundedButton,{...e0,children:i0}),jsx(RoundedButton,{onClick:p0,bgColor:"#5851D0",children:"Read more"}),t0&&jsx("ion-icon",{name:"star-outline"})]}),jsx(Modal,{isOpen:n0,handleClose:p0,children:jsxs("span",{className:"pricing-modal",children:[jsx("h1",{className:"modal-heading",children:o}),jsx("p",{children:o0==null?void 0:o0.description}),jsx("h4",{children:"Benefits"}),jsx("ul",{children:o0==null?void 0:o0.bullets.map(l0=>jsx("li",{children:l0}))})]})})]})};PriceCard.propTypes={title:propTypesExports.string,description:propTypesExports.string,price:propTypesExports.string,showStar:propTypesExports.bool,btnProps:propTypesExports.shape({}),modalInfo:propTypesExports.shape({description:propTypesExports.string,bullets:propTypesExports.arrayOf(propTypesExports.string)}),btnText:propTypesExports.string,bulletPoints:propTypesExports.arrayOf(propTypesExports.string)};PriceCard.defaultProps={title:"",description:"",price:"",showStar:!1,btnProps:null,btnText:"Buy",bulletPoints:null,modalInfo:{description:"",bullets:[]}};const StyledPricingWrapper=styled.div`
+`;function Portal({children:o,wrapperId:s="modal-root"}){return reactDomExports.createPortal(o,document.getElementById(s))}function Modal({children:o,isOpen:s,handleClose:a}){return jsx(Portal,{children:jsx(StyledModalWrapper,{isOpen:s,children:jsxs("div",{children:[jsx("ion-icon",{onClick:a,name:"close-circle-outline"}),o]})})})}Modal.propTypes={children:propTypesExports.oneOfType([propTypesExports.arrayOf(propTypesExports.node),propTypesExports.node]).isRequired,isOpen:propTypesExports.bool.isRequired,handleClose:propTypesExports.func.isRequired};const PriceCard=({title:o,description:s,price:a,showStar:t0,btnProps:e0={},btnText:i0="Buy",bulletPoints:r0,modalInfo:o0,monthlyPrice:s0})=>{const[n0,a0]=reactExports.useState(!1),p0=()=>{a0(f0=>f0===!0?(document.body.style.overflow="unset",document.documentElement.style.overflow="unset",!1):(document.body.style.overflow="hidden",document.documentElement.style.overflow="hidden",!0))};return jsxs(Fragment,{children:[jsxs(StyledPriceCard,{onKeyDown:f0=>f0.key==="Escape"&&n0?p0():null,tabIndex:"0",children:[jsxs("div",{className:"head",children:[jsx("h3",{children:o}),jsx("p",{children:s})]}),jsxs("h2",{children:["£",a," ",jsx("span",{className:"monthly",children:s0})]}),r0.map(f0=>jsx(StyledBulletPoint,{isIncluded:f0.isIncluded,children:f0.text})),jsx(RoundedButton,{...e0,children:i0}),jsx(RoundedButton,{onClick:p0,bgColor:"#5851D0",children:"Read more"}),t0&&jsx("ion-icon",{name:"star-outline"})]}),jsx(Modal,{isOpen:n0,handleClose:p0,children:jsxs("span",{className:"pricing-modal",children:[jsx("h1",{className:"modal-heading",children:o}),jsx("p",{children:o0==null?void 0:o0.description}),jsx("h4",{children:"Benefits"}),jsx("ul",{children:o0==null?void 0:o0.bullets.map(f0=>jsx("li",{children:f0}))})]})})]})};PriceCard.propTypes={title:propTypesExports.string,description:propTypesExports.string,price:propTypesExports.string,showStar:propTypesExports.bool,btnProps:propTypesExports.shape({}),modalInfo:propTypesExports.shape({description:propTypesExports.string,bullets:propTypesExports.arrayOf(propTypesExports.string)}),btnText:propTypesExports.string,bulletPoints:propTypesExports.arrayOf(propTypesExports.string)};PriceCard.defaultProps={title:"",description:"",price:"",showStar:!1,btnProps:null,btnText:"Buy",bulletPoints:null,modalInfo:{description:"",bullets:[]}};const StyledPricingWrapper=styled.div`
   width: min(90%, 1000px);
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 100px;
 
   h1 {
     margin-bottom: -1px;
