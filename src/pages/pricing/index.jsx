@@ -2,8 +2,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import PriceCard from '../../components/PriceCard';
-import { StyledPricingWrapper } from './styled';
+import { StyledPriceCard, StyledPricingWrapper } from './styled';
 import { basicPlanBullets, basicPlanModalInfo, proPlanBullets, proPlanModalInfo } from './messages';
+
+import classRoomSvg from '../../assets/images/classroom.svg';
 
 const Pricing = () => {
   const navigate = useNavigate();
@@ -49,7 +51,36 @@ const Pricing = () => {
       </p>
 
       <div className="price-cards">
-        <PriceCard
+        <StyledPriceCard>
+          <h3>BASIC</h3>
+          <h5 className="price">139</h5>
+          <p>Most Popular</p>
+
+          <img src={classRoomSvg} alt="" />
+          <span>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+          </span>
+          <button>Courses</button>
+        </StyledPriceCard>
+
+        <StyledPriceCard>
+          <h3>PRO</h3>
+          <h5 className="price">199</h5>
+          <p>Coming Soon!</p>
+
+          <span>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+          </span>
+          <button className="dark">Buy Now</button>
+        </StyledPriceCard>
+        {/* <PriceCard
           btnText="Courses"
           showStar
           btnProps={{ textColor: '#d07151', onClick: () => navigate('/courses') }}
@@ -67,7 +98,7 @@ const Pricing = () => {
           description="Not Available"
           bulletPoints={proPlanBullets}
           modalInfo={proPlanModalInfo}
-        />
+        /> */}
         {/* <PriceCard
           bulletPoints={enterprisePlanBullets}
           btnProps={{ textColor: '#d07151' }}
