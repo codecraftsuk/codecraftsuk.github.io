@@ -11,7 +11,7 @@ export const coursesData = [
     name: 'Web Development',
     description: 'Learn how to build modern web applications.',
     price: '139',
-    monthlyPrice: '49',
+    monthlyPrice: '46',
     image: courseOne,
     priceStr: 'VITE_WEB_DEV_PRICE',
     checkoutUrl: 'https://buy.stripe.com/8wM5nXfzseHG3SweUU',

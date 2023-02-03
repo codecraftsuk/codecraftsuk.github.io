@@ -54,6 +54,9 @@ const Pricing = () => {
         <StyledPriceCard>
           <h3>BASIC</h3>
           <h5 className="price">139</h5>
+
+          <p>or £46/m for 3 months</p>
+
           <p>Most Popular</p>
 
           <img src={classRoomSvg} alt="" />

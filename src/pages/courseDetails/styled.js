@@ -96,7 +96,8 @@ export const StyledBuyWrapper = styled.div`
   }
 
   h2,
-  button {
+  button,
+  h3 {
     margin: 10px;
   }
 

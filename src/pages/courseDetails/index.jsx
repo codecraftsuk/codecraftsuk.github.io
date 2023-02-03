@@ -65,16 +65,17 @@ const CourseDetails = () => {
         <StyledBuyWrapper>
           <img src={course?.image} alt="" />
           <h2>{course?.name}</h2>
-          <span className="pricing">
+          <span>
             <h2>£{course?.price}</h2>
-            <RoundedButton
-              onClick={() => (window.location.href = course.checkoutUrl)}
-              disabled={course?.isComingSoon}
-              bgColor="#5851D0"
-            >
-              {course?.isComingSoon ? 'Coming Soon' : 'Buy Now'}
-            </RoundedButton>
+            {course?.monthlyPrice && <h3>or £{course?.monthlyPrice}/m for 3 months</h3>}
           </span>
+          <RoundedButton
+            onClick={() => (window.location.href = course.checkoutUrl)}
+            disabled={course?.isComingSoon}
+            bgColor="#5851D0"
+          >
+            {course?.isComingSoon ? 'Coming Soon' : 'Buy Now'}
+          </RoundedButton>
           <div className="course-info">
             <IconText name="save-outline">Last Updated 09/01/2022</IconText>
             <IconText name="language-outline">English</IconText>
