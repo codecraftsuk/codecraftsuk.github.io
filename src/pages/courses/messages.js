@@ -14,6 +14,7 @@ export const coursesData = [
     monthlyPrice: '49',
     image: courseOne,
     priceStr: 'VITE_WEB_DEV_PRICE',
+    checkoutUrl: 'https://buy.stripe.com/8wM5nXfzseHG3SweUU',
     longDescription: [
       'This bootcamp course is designed to provide students with the knowledge and skills needed to become a professional web developer. The course covers a wide range of topics such as HTML/CSS, JavaScript, React, Python, and Django. Students will work on real-world projects and exercises to gain hands-on experience.',
       'By the end of the course, students will be able to build complete web applications and have a strong understanding of the web development process. Suitable for beginners and experienced developers looking to expand their skills.',

@@ -63,7 +63,9 @@ const Pricing = () => {
             <h4>Lorem ipsum dolor sit amet.</h4>
             <h4>Lorem ipsum dolor sit amet.</h4>
           </span>
-          <button>Courses</button>
+          <button type="button" onClick={() => navigate('/courses')}>
+            Courses
+          </button>
         </StyledPriceCard>
 
         <StyledPriceCard>
