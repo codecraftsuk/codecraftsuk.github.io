@@ -46,7 +46,7 @@ export const StyledPricingWrapper = styled.div`
     width: min(90%, 1000px);
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 70px 0;
 
     margin: 0 auto;
     /* align-items: flex-end; */
