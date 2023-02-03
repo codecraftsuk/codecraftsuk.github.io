@@ -110,7 +110,8 @@ export const StyledPriceCard = styled.div`
     border: 1px solid ${({ theme }) => theme.primaryText};
 
     &.dark {
-      background-color: ${({ theme }) => theme.tertiary};
+      background: rgb(146, 68, 190);
+      background: linear-gradient(90deg, rgba(146, 68, 190, 1) 0%, rgba(88, 81, 208, 1) 100%);
       color: white;
       border: none;
     }

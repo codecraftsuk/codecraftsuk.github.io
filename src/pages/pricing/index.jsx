@@ -56,6 +56,7 @@ const Pricing = () => {
           <h5 className="price">139</h5>
 
           <p>or £46/m for 3 months</p>
+          <p>or pay in 30 days</p>
 
           <p>Most Popular</p>
 
