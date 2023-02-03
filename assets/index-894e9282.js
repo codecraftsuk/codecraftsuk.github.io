@@ -1701,7 +1701,7 @@ $bm_rt = $bm_mul(time, 300);`},p:{a:1,k:[{i:{x:.833,y:.607},o:{x:.167,y:.167},t:
     width: min(90%, 1000px);
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 70px 0;
 
     margin: 0 auto;
     /* align-items: flex-end; */
