@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import { HashRouter, useLocation } from 'react-router-dom';
+import ReactGA from 'react-ga4';
 import App from './App';
 import { Provider } from './store';
 
@@ -17,6 +18,9 @@ export default function ScrollToTop() {
 
   return null;
 }
+
+const TRACKING_ID = 'G-Y259WSV5WW';
+ReactGA.initialize(TRACKING_ID);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

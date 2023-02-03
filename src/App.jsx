@@ -2,15 +2,11 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import styled, { css, ThemeProvider, useTheme } from 'styled-components';
 import './App.css';
-import ReactGA from 'react-ga4';
 import Footer from './components/footer';
 import Navigation from './components/Navigation';
 import Router from './routing';
 import { useStore } from './store';
 import { darkTheme, lightTheme } from './theme';
-
-const TRACKING_ID = 'G-Y259WSV5WW';
-ReactGA.initialize(TRACKING_ID);
 
 const AppWrapper = styled.div`
   /* background-color: ${({ theme, isHome }) => (isHome ? theme.primary : theme.secondary)}; */
