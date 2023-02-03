@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import styled, { css, ThemeProvider, useTheme } from 'styled-components';
 import './App.css';
-import ReactGA from 'react-ga';
+import ReactGA4 from 'react-ga4';
 import Footer from './components/footer';
 import Navigation from './components/Navigation';
 import Router from './routing';
