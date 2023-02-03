@@ -46,6 +46,7 @@ export const StyledPricingWrapper = styled.div`
     width: min(90%, 1000px);
     justify-content: center;
     align-items: center;
+    padding: 50px 0;
 
     margin: 0 auto;
     /* align-items: flex-end; */
@@ -64,7 +65,7 @@ export const StyledPricingWrapper = styled.div`
 
 export const StyledPriceCard = styled.div`
   /* border: 1px solid; */
-  width: 400px;
+  width: 500px;
   border-radius: 7px;
   padding: 40px 0;
   text-align: center;
@@ -94,11 +95,6 @@ export const StyledPriceCard = styled.div`
     }
   }
 
-  h4 {
-    margin-bottom: 7px;
-    font-weight: 500;
-  }
-
   button {
     width: 85%;
     padding: 15px 0 !important;
@@ -124,5 +120,16 @@ export const StyledPriceCard = styled.div`
 
   img {
     width: 65%;
+  }
+
+  span > * {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  span p {
+    margin-bottom: 7px !important;
+    font-weight: 500;
+    text-align: left;
   }
 `;

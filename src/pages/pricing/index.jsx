@@ -6,6 +6,7 @@ import { StyledPriceCard, StyledPricingWrapper } from './styled';
 import { basicPlanBullets, basicPlanModalInfo, proPlanBullets, proPlanModalInfo } from './messages';
 
 import classRoomSvg from '../../assets/images/classroom.svg';
+import { StyledTickText } from '../../common/styles';
 
 const Pricing = () => {
   const navigate = useNavigate();
@@ -56,16 +57,12 @@ const Pricing = () => {
           <h5 className="price">139</h5>
 
           <p>or £46/m for 3 months</p>
-          <p>or pay in 30 days</p>
 
           <p>Most Popular</p>
 
-          <img src={classRoomSvg} alt="" />
           <span>
-            <h4>Lorem ipsum dolor sit amet.</h4>
-            <h4>Lorem ipsum dolor sit amet.</h4>
-            <h4>Lorem ipsum dolor sit amet.</h4>
-            <h4>Lorem ipsum dolor sit amet.</h4>
+            <StyledTickText>Access to core course content</StyledTickText>
+            <StyledTickText>Limited support and resources.</StyledTickText>
           </span>
           <button type="button" onClick={() => navigate('/courses')}>
             Courses
@@ -76,15 +73,22 @@ const Pricing = () => {
           <h3>PRO</h3>
           <h5 className="price">199</h5>
           <p>Coming Soon!</p>
+          <img src={classRoomSvg} alt="" />
 
           <span>
-            <h4>Lorem ipsum dolor sit amet.</h4>
-            <h4>Lorem ipsum dolor sit amet.</h4>
-            <h4>Lorem ipsum dolor sit amet.</h4>
-            <h4>Lorem ipsum dolor sit amet.</h4>
-            <h4>Lorem ipsum dolor sit amet.</h4>
+            <StyledTickText>Access to core course content</StyledTickText>
+            <StyledTickText>Additional support and resources</StyledTickText>
+            <StyledTickText>Final project review/help</StyledTickText>
+            <StyledTickText>Certification on completion</StyledTickText>
+            <StyledTickText>3 private CV review sessions</StyledTickText>
           </span>
-          <button className="dark">Buy Now</button>
+          <button
+            onClick={() => (window.location.href = 'https://buy.stripe.com/28o6s1drk2YYcp2bIJ')}
+            type="button"
+            className="dark"
+          >
+            Buy Now
+          </button>
         </StyledPriceCard>
         {/* <PriceCard
           btnText="Courses"
