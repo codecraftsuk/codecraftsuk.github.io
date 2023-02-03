@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeCrafts</title>
+</head>
+<body>
+    <h1>Welcome to CodeCrafts!</h1>
+</body>
+</html>
+
+<div class="codeblock">
+    <div class="language">
+        <h4>fruits.js</h4>
+    </div>
+
+    <div class="code">
+        <div class="left-side">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+        </div>
+        <div class="right-side">
+            <p><span class="let">let</span> randomNumber = <span class="math">Math</span>.floor(<span class="math">Math</span>.random() * 100) + 1;</p>
+            <p>console.log(<span class="string">"Random number: "</span> + randomNumber);</p>
+            <p>-</p>
+            <p><span class="let">let</span> array = [1, 2, 3, 4, 5];</p>
+            <p><span class="let">let</span> randomIndex = <span class="math">Math</span>.floor(<span class="math">Math</span>.random() * array.length);</p>
+            <p>console.log(<span class="string">"Random element from array: "</span> + array[randomIndex]);</p>
+            <p>-</p>
+            <p><span class="let">let</span> fruits = [<span class="string">'apple'</span>, <span class="string">'banana'</span>, <span class="string">'cherry'</span>, <span class="string">'date'</span>, <span class="string">'elderberry'</span>];</p>
+            <p><span class="let">let</span> randomFruit = fruits[<span class="math">Math</span>.floor(<span class="math">Math</span>.random() * fruits.length)];</p>
+            <p>console.log("Random fruit: " + randomFruit);</p>
+        </div>
+        
+    </div>
+    
+</div>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Operator+Mono&display=swap');
+
+    body {
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    .codeblock {
+        padding: 1rem;
+        background-color: #0f395e;
+        border-radius: 8px;
+        border-color: #315879;
+        display: inline-block;
+        
+    }
+    .language h4 {
+        margin: 0;
+        text-align: center;
+        border-radius: 20px;
+        padding: .5rem 1.2rem;
+        color: #8c9eb1;
+        font-size: 15px;
+    }
+    .code {
+        margin-left: 3px;
+        padding: 1rem 2rem 1rem 1rem;
+        color: aliceblue;
+        font-size: 14px;
+        color: #8c9eb1;
+        display: grid;
+        grid-template-columns: 6% 94%;
+        white-space: nowrap;
+        align-items: center;
+        font-family: 'Operator Mono', monospace;
+    }
+    .right-side {
+        color: white;
+    }
+    .let {
+        color: #8095ff;
+    }
+    .math {
+        color: #00d4ff;
+    }
+    .string {
+        color: #ffa956;
+    }
+</style>
