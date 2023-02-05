@@ -61,8 +61,9 @@ const Pricing = () => {
           <p>Most Popular</p>
 
           <span>
-            <StyledTickText>Access to core course content</StyledTickText>
-            <StyledTickText>Limited support and resources.</StyledTickText>
+            <StyledTickText>30 hours on-demand video</StyledTickText>
+            <StyledTickText>Basic support and resources</StyledTickText>
+            <StyledTickText>1 year access</StyledTickText>
           </span>
           <button type="button" onClick={() => navigate('/courses')}>
             Courses
@@ -76,11 +77,13 @@ const Pricing = () => {
           <img src={classRoomSvg} alt="" />
 
           <span>
-            <StyledTickText>Access to core course content</StyledTickText>
+            <StyledTickText>30 hours on-demand video</StyledTickText>
             <StyledTickText>Additional support and resources</StyledTickText>
-            <StyledTickText>Final project review/help</StyledTickText>
-            <StyledTickText>Certification on completion</StyledTickText>
+            <StyledTickText>Full lifetime access</StyledTickText>
+            <StyledTickText>Final project assessment</StyledTickText>
+            <StyledTickText>Certification of completion</StyledTickText>
             <StyledTickText>3 private CV review sessions</StyledTickText>
+            
           </span>
           <button
             onClick={() => (window.location.href = 'https://buy.stripe.com/28o6s1drk2YYcp2bIJ')}
