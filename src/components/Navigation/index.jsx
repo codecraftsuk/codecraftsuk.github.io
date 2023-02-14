@@ -16,9 +16,9 @@ const Navigation = ({ isDarkTheme }) => {
   return (
     <StyledNavWrapper>
       <span className="text">
-        {/* <Link to="/">
+        <Link to="/">
           <img className="logo" src={Logo} alt="" />
-        </Link> */}
+        </Link>
         <StyledLogo to="/">CodeCrafts.</StyledLogo>
 
       </span>
