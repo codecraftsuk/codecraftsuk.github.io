@@ -248,7 +248,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     height: 60px;
     margin-right: 10px;
     transform: rotate(160deg) translateY(-6px);
-    animation: bounce 1s linear infinite;
+    ${""}
     ${""}
   }
 
