@@ -26,20 +26,17 @@ const Footer = () => (
 
       <StyledLinkWrapper>
         <h3>Jobs Sites</h3>
-        <StyledLink>LinkedIn</StyledLink>
-        <StyledLink>TotalJobs</StyledLink>
-        <StyledLink>reed</StyledLink>
-        <StyledLink>indeed</StyledLink>
-        <StyledLink>Job seekers allowance</StyledLink>
+        <StyledLink><a onClick={() => (window.location.href = 'https://linkedin.com/jobs')}>LinkedIn</a></StyledLink>
+        <StyledLink><a onClick={() => (window.location.href = "https://www.totaljobs.com/")}>TotalJobs</a></StyledLink>
+        <StyledLink><a onClick={() => (window.location.href = "https://www.milkround.com/")}>Milkround</a></StyledLink>
+        <StyledLink><a onClick={() => (window.location.href = "https://www.indeed.co.uk/")}>Indeed</a></StyledLink>
+        <StyledLink><a onClick={() => (window.location.href = "https://relocate.me/")}>Relocate</a></StyledLink>
       </StyledLinkWrapper>
+
 
       <StyledLinkWrapper>
         <h3>Support</h3>
-        <StyledLink>Contact</StyledLink>
-        <StyledLink>FAQ</StyledLink>
-        <StyledLink>Terms of Service</StyledLink>
-        <StyledLink>Policies</StyledLink>
-        <StyledLink>Example</StyledLink>
+        <StyledLink to="/contact">Terms of Service</StyledLink>
       </StyledLinkWrapper>
     </StyledFooterWrapper>
     <StyledSocials>

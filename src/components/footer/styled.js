@@ -54,6 +54,10 @@ export const StyledLinkWrapper = styled.div`
     margin-bottom: 6px;
     font-weight: 700;
   }
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const StyledLink = styled(Link)`
