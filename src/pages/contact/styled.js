@@ -69,6 +69,9 @@ export const StyledContactWrapper = styled.div`
     background-color: ${({ theme }) => theme.secondary};
     padding: 5rem;
     border-radius: 7px;
+    ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
+      padding: 5rem 15px;
+    }
   }
 `;
 

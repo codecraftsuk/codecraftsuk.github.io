@@ -56,7 +56,8 @@ const AppWrapper = styled.div`
         }
 
         ${({ theme }) => theme.breakPoints.down('sm')} {
-          height: 135vh;
+          /* height: 140vh; */
+          top: -230px;
         }
 
         ${({ theme: { breakPoints } }) => breakPoints.up('md')} {

@@ -328,3 +328,5 @@ export const StyledTestTestimonialsWrapper = styled.div`
 
   flex-wrap: wrap;
 `;
+
+export const StyledLanguagesWrapper = styled.div``;

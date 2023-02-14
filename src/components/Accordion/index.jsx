@@ -20,7 +20,7 @@ const Accordion = ({ title, text, bullets }) => {
         style={{
           ...(isOpen && {
             maxHeight: `${bullets?.length ? `${bullets.length * 100}px` : '200px'}`,
-            padding: '10px 10px',
+            padding: '0px 10px 10px 10px',
           }),
         }}
       >

@@ -6,12 +6,16 @@
   text-align: left;
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 0;
   align-items: center;
   color: inherit;
 
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   cursor: pointer;
+}
+
+.accordion h3 {
+  margin: 0px !important;
 }
 
 ion-icon[name='chevron-down-outline'],
@@ -33,7 +37,7 @@ ion-icon[name='chevron-up-outline'] {
 }
 
 .accordion-wrapper {
-  margin: 10px 0;
+  margin: 15px 0;
   border: 1px solid transparent;
   transition: border 0.2s;
   cursor: pointer;

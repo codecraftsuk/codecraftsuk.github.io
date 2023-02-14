@@ -17,6 +17,7 @@ import {
   StyledHomeHead,
   StyledTestTestimonialsWrapper,
   StyledTitleWrapper,
+  StyledLanguagesWrapper,
 } from './styled';
 import animationData from '../../assets/lottie/charts.json';
 import animationDataWelcome from '../../assets/lottie/laptop.json';
@@ -171,6 +172,12 @@ function Home() {
             <Testimonials />
           </StyledFullWidth>
         </StyledTestTestimonialsWrapper>
+      </FadeInWhenVisible>
+
+      <FadeInWhenVisible>
+        <StyledContentWrapper pt={30}>
+          <StyledLanguagesWrapper>hi</StyledLanguagesWrapper>
+        </StyledContentWrapper>
       </FadeInWhenVisible>
     </StyleHome>
   );
