@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { StyledLinkItem, StyledNavWrapper, StyledLogo, StyledDot} from './styled';
 // import TypingAnimation from '../TypingAnimation';
 import RoundedButton from '../RoundedButton';
-import Logo from '../../assets/images/logo/logo-light.png';
+import Logo from '../../assets/images/logo/logo-old.png';
 import { useSet } from '../../store';
 
 const Navigation = ({ isDarkTheme }) => {

@@ -27,7 +27,7 @@ const Footer = () => (
       <StyledLinkWrapper>
         <h3>Jobs Sites</h3>
         <StyledLink><a onClick={() => (window.location.href = 'https://linkedin.com/jobs')}>LinkedIn</a></StyledLink>
-        <StyledLink><a onClick={() => (window.location.href = "https://www.totaljobs.com/")}>TotalJobs</a></StyledLink>
+        <StyledLink><a onClick={() => (window.location.href = "https://startup.jobs/")}>Startup Jobs</a></StyledLink>
         <StyledLink><a onClick={() => (window.location.href = "https://www.milkround.com/")}>Milkround</a></StyledLink>
         <StyledLink><a onClick={() => (window.location.href = "https://www.indeed.co.uk/")}>Indeed</a></StyledLink>
         <StyledLink><a onClick={() => (window.location.href = "https://relocate.me/")}>Relocate</a></StyledLink>
