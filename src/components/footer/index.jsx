@@ -47,20 +47,23 @@ const Footer = () => (
       {/* <p>Stay up-to-date with our latest news and updates by following us on social media.</p> */}
 
       <span>
-        <a href="https://twitter.com/codecrafts_">
+        <a href="https://twitter.com/codecraftsuk">
           <ion-icon name="logo-twitter" />
         </a>
         <a href="https://discord.gg/Ks7UxrqBSF">
           <ion-icon name="logo-discord" />
         </a>
-        <a href="https://instagram.com/codecrafts_">
+        <a href="https://instagram.com/codecraftsuk">
           <ion-icon name="logo-instagram" />
+        </a>
+        <a href="https://linkedin.com/company/codecraftsuk">
+          <ion-icon name="logo-linkedin" />
         </a>
       </span>
     </StyledSocials>
     <StyledCopyRight>
       <h3 className="full-width">
-        codecrafts &copy;
+        CodeCrafts &copy;
         {new Date().getFullYear()}. All Rights Reserved.
       </h3>
     </StyledCopyRight>
