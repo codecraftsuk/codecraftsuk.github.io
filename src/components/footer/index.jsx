@@ -12,7 +12,7 @@ import {
 const Footer = () => (
   <StyledFooter>
     <div className="full-width">
-      <StyledLogo2 to="/">CodeCrafts</StyledLogo2>
+      <StyledLogo2 to="/">CodeCrafts.</StyledLogo2>
     </div>
     <StyledFooterWrapper>
       <StyledLinkWrapper>
@@ -63,7 +63,7 @@ const Footer = () => (
     </StyledSocials>
     <StyledCopyRight>
       <h3 className="full-width">
-        CodeCrafts &copy;
+        CodeCrafts. &copy;
         {new Date().getFullYear()}. All Rights Reserved.
       </h3>
     </StyledCopyRight>

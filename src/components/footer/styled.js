@@ -123,7 +123,7 @@ export const StyledLogo2 = styled(Link)`
   font-family: Kanit;
   ${'' /* color: ${({ theme }) => theme.lightText}; */}
   color: #000;
-  font-weight: 500;
+  font-weight: 700;
 
   &:hover {
     opacity: 0.7;

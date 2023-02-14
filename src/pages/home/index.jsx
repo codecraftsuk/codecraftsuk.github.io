@@ -163,7 +163,7 @@ function Home() {
             <br></br>
             <br></br>
             <br></br>
-            <h1 className="why-us-title">Why Codecrafts?</h1>
+            <h1 className="why-us-title">Why CodeCrafts?</h1>
             <StyledFlexWrap px="10" py="0">
               {whyCodeCraftInfo.map((iconData) => (
                 <IconInfo alignLeft {...iconData} />

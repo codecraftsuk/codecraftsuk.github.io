@@ -138,7 +138,7 @@ export const StyledDot = styled(Link)`
   text-decoration: none;
   border-bottom: 2px solid ${({ active, theme }) => (active ? theme.tertiary : 'transparent')};
   font-size: 2rem;
-  font-family: Righteous;
+  font-family: Kanit;
   ${'' /* color: ${({ theme }) => theme.lightText}; */}
   color: #fff;
   font-weight: 500;
