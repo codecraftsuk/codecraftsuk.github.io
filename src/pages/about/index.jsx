@@ -57,6 +57,9 @@ const About = () => {
             So if you're looking to build the future of tech, look no further. Join our bootcamp today and become a hero
             in web development and devops!
           </p>
+          <br></br>
+          <br></br>
+          <br></br>
         </StyledAboutWrapper>
       </StyledFullWidth>
 

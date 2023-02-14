@@ -76,6 +76,9 @@ function Home() {
 
       <StyledContentWrapper>
         <StyledInfoWrapper>
+          <br></br>
+          <br></br>
+          <br></br>
           <h1>Services</h1>
           <p className="creative">
             At CodeCrafts, we believe that anyone can learn to code and build a successful career in the tech industry.
@@ -151,17 +154,24 @@ function Home() {
             <Lottie options={defaultOptions} height={450} />
           </StyledDeliveryInfo>
         </StyledContentWrapper>
+        <br></br>
       </FadeInWhenVisible>
 
       <StyledFullWidth bgColor={theme?.secondary}>
         <StyledContentWrapper>
           <FadeInWhenVisible>
+            <br></br>
+            <br></br>
+            <br></br>
             <h1 className="why-us-title">Why Codecrafts?</h1>
             <StyledFlexWrap px="10" py="0">
               {whyCodeCraftInfo.map((iconData) => (
                 <IconInfo alignLeft {...iconData} />
               ))}
             </StyledFlexWrap>
+            <br></br>
+            <br></br>
+            <br></br>
           </FadeInWhenVisible>
         </StyledContentWrapper>
       </StyledFullWidth>
