@@ -104,9 +104,11 @@ const AppWrapper = styled.div`
         ${({ theme }) => theme.breakPoints.down('sm')} {
           top: -205px;
         }
+
+        background-size: 200% 200%;
+        animation: gradient-bg 7s linear infinite;
       }
-    `}
-    zoom: 90%;
+    `} zoom: 90%;
 `;
 
 function App() {
