@@ -28,6 +28,11 @@ export const StyledCardWrapper = styled.div`
     font-size: 14px;
   }
 
+  .team {
+    width: 100px;
+    height: 250px;
+  }
+
   &:hover {
     background-color: ${({ theme }) => theme.secondary};
   }

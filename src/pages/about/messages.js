@@ -1,20 +1,27 @@
+import abdul from '../../assets/images/team/abdul.png';
+import kush from '../../assets/images/team/kush.png';
+import zai from '../../assets/images/team/zai.png';
+
 export const teamMembers = [
   {
-    name: 'full ame',
-    job: 'job title',
+    image: abdul,
+    name: 'Abdul',
+    job: 'DevOps Engineer',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam aperiam esse possimus minima, molestias iste nesciunt nam necessitatibus officia?',
+      "Abdul has 3+ years of experience as a DevOps engineer. He's skilled in Python, Kubernetes, and Azure, and is passionate about teaching others.",
   },
   {
-    name: 'full ame',
-    job: 'job title',
+    image: kush,
+    name: 'Kush',
+    job: 'Software Developer & DevOps Engineer',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam aperiam esse possimus minima, molestias iste nesciunt nam necessitatibus officia?',
+      "With 3+ years of experience, Kush is a skilled programmer and web designer who focuses on user experience. He enjoys helping students develop their skills in building beautiful and functional websites.",
   },
   {
-    name: 'full ame',
-    job: 'job title',
+    image: zai,
+    name: 'Zai',
+    job: 'Full-Stack Web Developer',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quibusdam aperiam esse possimus minima, molestias iste nesciunt nam necessitatibus officia?',
+      "Zai has 3+ years of experience in front-end and back-end development. He's creative and driven, and brings a holistic approach to teaching web development to help students achieve their goals.",
   },
 ];
