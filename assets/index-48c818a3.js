@@ -426,7 +426,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     color: #666666;
     cursor: not-allowed;
   }
-`,RoundedButton=({children:o,bgColor:s,onClick:a,textColor:t0,circle:e0,className:i0,disabled:r0})=>jsx(StyledButton,{className:i0,onClick:a,bgColor:s,textColor:t0,isCircle:e0,disabled:r0,children:o});RoundedButton.propTypes={children:propTypesExports.oneOfType([propTypesExports.arrayOf(propTypesExports.node),propTypesExports.node]).isRequired,bgColor:propTypesExports.string,className:propTypesExports.string,textColor:propTypesExports.string,onClick:propTypesExports.func.isRequired,circle:propTypesExports.bool,disabled:propTypesExports.bool};RoundedButton.defaultProps={bgColor:"",className:"",textColor:"white",circle:!1,disabled:!1};const Logo="/assets/logo-b2b2a57d.png";var jsxRuntime={exports:{}},reactJsxRuntime_production_min={};/*
+`,RoundedButton=({children:o,bgColor:s,onClick:a,textColor:t0,circle:e0,className:i0,disabled:r0})=>jsx(StyledButton,{className:i0,onClick:a,bgColor:s,textColor:t0,isCircle:e0,disabled:r0,children:o});RoundedButton.propTypes={children:propTypesExports.oneOfType([propTypesExports.arrayOf(propTypesExports.node),propTypesExports.node]).isRequired,bgColor:propTypesExports.string,className:propTypesExports.string,textColor:propTypesExports.string,onClick:propTypesExports.func.isRequired,circle:propTypesExports.bool,disabled:propTypesExports.bool};RoundedButton.defaultProps={bgColor:"",className:"",textColor:"white",circle:!1,disabled:!1};const Logo="/assets/logo-01e5228b.png";var jsxRuntime={exports:{}},reactJsxRuntime_production_min={};/*
 object-assign
 (c) Sindre Sorhus
 @license MIT
