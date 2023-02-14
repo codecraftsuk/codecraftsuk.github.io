@@ -108,9 +108,9 @@ export const StyledLinkItem = styled(Link)`
   list-style: none;
   text-decoration: none;
   border-bottom: 2px solid ${({ active, theme }) => (active ? theme.tertiary : 'transparent')};
-  /* color: white; */
+  color: white;
   font-size: 1rem;
-  color: ${({ theme }) => theme.lightText};
+  ${'' /* color: ${({ theme }) => theme.lightText}; */}
   font-weight: 500;
 
   &:hover {
@@ -126,6 +126,21 @@ export const StyledLogo = styled(Link)`
   font-family: Kanit;
   ${'' /* color: ${({ theme }) => theme.lightText}; */}
   color: #fff;
+  font-weight: 700;
+
+  &:hover {
+    opacity: 0.7;
+  }
+`;
+
+export const StyledDot = styled(Link)`
+  list-style: none;
+  text-decoration: none;
+  border-bottom: 2px solid ${({ active, theme }) => (active ? theme.tertiary : 'transparent')};
+  font-size: 2rem;
+  font-family: Righteous;
+  ${'' /* color: ${({ theme }) => theme.lightText}; */}
+  color: #fff;
   font-weight: 500;
 
   &:hover {
@@ -135,6 +150,6 @@ export const StyledLogo = styled(Link)`
 
 WebFont.load({
   google: {
-    families: ['Kanit', 'sans-serif'],
+    families: ['Kanit, Righteous', 'sans-serif'],
   },
 });
