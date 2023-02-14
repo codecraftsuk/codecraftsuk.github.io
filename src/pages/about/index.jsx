@@ -70,6 +70,8 @@ const About = () => {
             <TeamMember {...mem} />
           ))}
         </div>
+        <br></br>
+        <br></br>
       </StyledAboutWrapper>
     </>
   );
