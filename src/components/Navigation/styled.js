@@ -84,7 +84,7 @@ export const StyledNavWrapper = styled.div`
 
   ion-icon {
     font-size: 28px;
-    color: ${({ theme }) => theme.primaryText};
+    color: ${({ theme }) => theme.lightText};
     &:hover {
       color: red;
     }
@@ -108,7 +108,7 @@ export const StyledLinkItem = styled(Link)`
   border-bottom: 2px solid ${({ active, theme }) => (active ? theme.tertiary : 'transparent')};
   /* color: white; */
   font-size: 1rem;
-  color: ${({ theme }) => theme.primaryText};
+  color: ${({ theme }) => theme.lightText};
 
   font-weight: 500;
 

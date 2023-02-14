@@ -105,6 +105,10 @@ export const StyledPriceCard = styled.div`
     color: inherit;
     border: 1px solid ${({ theme }) => theme.primaryText};
 
+    outline: 2px solid black;
+    outline-offset: 0px;
+    transition: 300ms;
+
     &.dark {
       background: rgb(146, 68, 190);
       background: linear-gradient(90deg, rgba(146, 68, 190, 1) 0%, rgba(88, 81, 208, 1) 100%);
@@ -115,6 +119,11 @@ export const StyledPriceCard = styled.div`
     &:disabled {
       opacity: 0.5;
       cursor: not-allowed;
+    }
+
+    &:hover {
+      outline-offset: 5px;
+      opacity: 0.85;
     }
   }
 

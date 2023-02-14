@@ -28,8 +28,9 @@ export const StyledContactWrapper = styled.div`
 
   .container {
     /* width: 80%; */
-    margin: 40px auto;
+    margin-top: 40px;
     text-align: left;
+    padding-bottom: 50px;
   }
 
   h1,
@@ -62,6 +63,12 @@ export const StyledContactWrapper = styled.div`
 
   @mixin random-bgr() {
     background: rgb(random(255), random(255), random(255));
+  }
+
+  .terms-conditions {
+    background-color: ${({ theme }) => theme.secondary};
+    padding: 5rem;
+    border-radius: 7px;
   }
 `;
 

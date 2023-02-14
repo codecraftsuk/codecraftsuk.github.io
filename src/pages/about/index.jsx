@@ -39,8 +39,8 @@ const About = () => {
           <Lottie options={defaultOptions} height={300} />
         </StyledAboutContent>
       </StyledAboutWrapper>
-      <StyledFullWidth bgColor={theme?.secondary}>
-        <StyledAboutWrapper>
+      <StyledFullWidth shouldBend bgColor={theme?.secondary}>
+        <StyledAboutWrapper mt="0" py="10">
           <h2>Building the Future of Tech!</h2>
           <p className="building-tech-text">
             At our bootcamp, we are dedicated to "Building the Future of Tech." We believe that technology is the key to

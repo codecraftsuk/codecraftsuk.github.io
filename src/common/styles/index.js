@@ -27,7 +27,7 @@ export const StyledFullWidth = styled.div`
       clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 20%);
       padding-bottom: 7rem;
       /* background-color: #0a2540; */
-      color: #fff;
+      color: inherit;
       padding-top: 13rem;
 
       ${({ theme: { breakPoints } }) => breakPoints.down('md')} {

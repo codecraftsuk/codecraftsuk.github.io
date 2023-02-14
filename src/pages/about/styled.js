@@ -3,8 +3,8 @@ import styled from 'styled-components';
 export const StyledAboutWrapper = styled.div`
   width: min(90%, 1000px);
   margin: 0 auto;
-  margin-top: 50px;
-  padding: 50px 0;
+  margin-top: ${({ mt }) => mt || 50}px;
+  padding: ${({ py }) => py || 50}px 0;
 
   svg {
     max-height: 300px;

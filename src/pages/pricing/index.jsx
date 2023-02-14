@@ -6,6 +6,7 @@ import { StyledPriceCard, StyledPricingWrapper } from './styled';
 import { basicPlanBullets, basicPlanModalInfo, proPlanBullets, proPlanModalInfo } from './messages';
 
 import classRoomSvg from '../../assets/images/classroom.svg';
+import progressSvg from '../../assets/images/progress.svg';
 import { StyledTickText } from '../../common/styles';
 
 const Pricing = () => {
@@ -59,6 +60,7 @@ const Pricing = () => {
           <p>or £46/m for 3 months</p>
 
           <p>Most Popular</p>
+          <img src={progressSvg} alt="" />
 
           <span>
             <StyledTickText>30 hours on-demand video</StyledTickText>
@@ -83,7 +85,6 @@ const Pricing = () => {
             <StyledTickText>Final project assessment</StyledTickText>
             <StyledTickText>Certification of completion</StyledTickText>
             <StyledTickText>3 private CV review sessions</StyledTickText>
-            
           </span>
           <button
             onClick={() => (window.location.href = 'https://buy.stripe.com/28o6s1drk2YYcp2bIJ')}

@@ -8,7 +8,9 @@ const breakPoints = {
   up: (size) => `@media only screen and (min-width: ${breakPoints[size]})`,
 };
 
-const commonColors = {};
+const commonColors = {
+  lightText: '#e0dede',
+};
 
 export const lightTheme = {
   mode: 'light',

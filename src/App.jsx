@@ -37,21 +37,45 @@ const AppWrapper = styled.div`
       &::before {
         content: '';
         position: absolute;
-        background-color: ${({ theme }) => theme.secondary};
+        /* background-color: ${({ theme }) => theme.secondary}; */
         transition: all 800ms ease;
+        background: ${({ theme }) => (theme.mode === 'light' ? 'rgb(146, 68, 190)' : 'background: rgb(97,80,106)')};
+        background: ${({ theme }) =>
+          theme.mode === 'light'
+            ? 'linear-gradient(0deg, rgba(157,91,194,1) 0%, rgba(71,131,198,1) 64%, rgba(82,76,195,1) 100%)'
+            : 'linear-gradient(90deg, #423947 0%, #353f49 70%, #403e5b 100%)'};
 
-        height: 100vh;
+        height: 1100px;
         width: 100%;
-        top: -180px;
+        top: -280px;
         transform: skewY(-10deg);
         z-index: -1;
 
         ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
-          height: 120vh;
+          height: 130vh;
         }
 
         ${({ theme }) => theme.breakPoints.down('sm')} {
-          height: 125vh;
+          height: 135vh;
+        }
+
+        ${({ theme: { breakPoints } }) => breakPoints.up('md')} {
+          top: -350px;
+        }
+
+        background-size: 200% 200%;
+        animation: gradient-bg 7s linear infinite;
+      }
+
+      @keyframes gradient-bg {
+        0% {
+          background-position: 50% 0%;
+        }
+        50% {
+          background-position: 50% 100%;
+        }
+        100% {
+          background-position: 50% 0%;
         }
       }
     `}
@@ -62,17 +86,22 @@ const AppWrapper = styled.div`
       &::before {
         content: '';
         position: absolute;
-        background-color: ${({ theme }) => theme.secondary};
         transition: all 800ms ease;
 
-        height: 30vh;
+        background: ${({ theme }) => (theme.mode === 'light' ? 'rgb(146, 68, 190)' : 'background: rgb(97,80,106)')};
+        background: ${({ theme }) =>
+          theme.mode === 'light'
+            ? 'linear-gradient(0deg, rgba(157,91,194,1) 0%, rgba(71,131,198,1) 64%, rgba(82,76,195,1) 100%)'
+            : 'linear-gradient(90deg, #423947 0%, #353f49 70%, #403e5b 100%)'};
+
+        height: 290px;
         width: 100%;
         top: -175px;
         transform: skewY(3deg);
         z-index: -1;
 
         ${({ theme }) => theme.breakPoints.down('sm')} {
-          top: -185px;
+          top: -205px;
         }
       }
     `}

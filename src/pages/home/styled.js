@@ -105,6 +105,7 @@ export const StyleHome = styled.div`
   .track-record {
     width: min(90%, 1000px);
     margin: 0 auto;
+    color: white;
 
     p {
       color: white;
@@ -251,6 +252,7 @@ export const StyledHomeHead = styled.div`
   width: min(90%, 1000px);
   margin: 0 auto;
   margin-bottom: 10vh;
+  color: ${({ theme }) => theme.lightText};
 
   button {
     margin-right: 20px;
@@ -286,6 +288,7 @@ export const StyledHomeHead = styled.div`
     p {
       margin-bottom: 18px;
       font-weight: 100px;
+      color: ${({ theme }) => theme.lightText};
     }
 
     h1 {
@@ -300,7 +303,7 @@ export const StyledHomeHead = styled.div`
   .link {
     cursor: pointer;
     font-weight: 500;
-    color: #5851d0;
+    color: ${({ theme }) => theme.lightText};
 
     &:hover {
       color: black;

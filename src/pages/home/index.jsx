@@ -60,7 +60,7 @@ function Home() {
           <h1>{sliderContent[0]?.title}</h1>
           <p>{sliderContent[0]?.text}</p>
           <div>
-            <RoundedButton onClick={() => navigate('/about')} bgColor="#5851d0">
+            <RoundedButton onClick={() => navigate('/about')} bgColor="#303a6e">
               Read More
             </RoundedButton>
             <span onClick={() => navigate('/courses')} className="link">
