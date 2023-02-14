@@ -185,6 +185,9 @@ function Home() {
       </FadeInWhenVisible>
 
       <FadeInWhenVisible>
+        <br></br>
+        <br></br>
+        <br></br>
         <StyledContentWrapper pt={30}>
           <StyledLanguagesWrapper>
             <ion-icon name="logo-javascript"></ion-icon>
@@ -199,6 +202,9 @@ function Home() {
             <ion-icon name="logo-electron"></ion-icon>
           </StyledLanguagesWrapper>
         </StyledContentWrapper>
+        <br></br>
+        <br></br>
+        <br></br>
       </FadeInWhenVisible>
     </StyleHome>
   );
