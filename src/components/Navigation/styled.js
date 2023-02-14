@@ -52,7 +52,7 @@ export const StyledNavWrapper = styled.div`
     height: 60px;
     margin-right: 10px;
     transform: rotate(160deg) translateY(-6px);
-    animation: bounce 1s linear infinite;
+    ${'' /* animation: bounce 1s linear infinite; */}
     ${'' /* animation: spin 1s linear infinite; */}
   }
 
