@@ -176,7 +176,18 @@ function Home() {
 
       <FadeInWhenVisible>
         <StyledContentWrapper pt={30}>
-          <StyledLanguagesWrapper>hi</StyledLanguagesWrapper>
+          <StyledLanguagesWrapper>
+            <ion-icon name="logo-javascript"></ion-icon>
+            <ion-icon name="logo-css3"></ion-icon>
+            <ion-icon name="logo-html5"></ion-icon>
+            <ion-icon name="logo-python"></ion-icon>
+            <ion-icon name="logo-nodejs"></ion-icon>
+            <ion-icon name="cloud-upload-outline"></ion-icon>
+            <ion-icon name="logo-react"></ion-icon>
+            <ion-icon name="logo-github"></ion-icon>
+            <ion-icon name="logo-docker"></ion-icon>
+            <ion-icon name="logo-electron"></ion-icon>
+          </StyledLanguagesWrapper>
         </StyledContentWrapper>
       </FadeInWhenVisible>
     </StyleHome>

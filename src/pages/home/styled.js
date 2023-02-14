@@ -329,4 +329,10 @@ export const StyledTestTestimonialsWrapper = styled.div`
   flex-wrap: wrap;
 `;
 
-export const StyledLanguagesWrapper = styled.div``;
+export const StyledLanguagesWrapper = styled.div`
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+`;
