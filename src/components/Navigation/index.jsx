@@ -2,10 +2,10 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { StyledLinkItem, StyledNavWrapper } from './styled';
-import TypingAnimation from '../TypingAnimation';
+import { StyledLinkItem, StyledNavWrapper, StyledLogo } from './styled';
+// import TypingAnimation from '../TypingAnimation';
 import RoundedButton from '../RoundedButton';
-import Logo from '../../assets/images/logo/logo.png';
+import Logo from '../../assets/images/logo/logo-light.png';
 import { useSet } from '../../store';
 
 const Navigation = ({ isDarkTheme }) => {
@@ -19,9 +19,7 @@ const Navigation = ({ isDarkTheme }) => {
         <Link to="/">
           <img className="logo" src={Logo} alt="" />
         </Link>
-        <StyledLinkItem to="/">
-          <TypingAnimation />
-        </StyledLinkItem>
+        <StyledLogo to="/">CodeCrafts</StyledLogo>
       </span>
       <span className="nav-link">
         <StyledLinkItem to="/about">About</StyledLinkItem>
@@ -29,7 +27,7 @@ const Navigation = ({ isDarkTheme }) => {
         <StyledLinkItem to="/contact">Contact</StyledLinkItem>
       </span>
       <span className="btns">
-        <RoundedButton onClick={() => navigate('/pricing')} bgColor="#5851d0">
+        <RoundedButton onClick={() => navigate('/pricing')} bgColor="#ffffff" textColor="#000">
           Pricing
         </RoundedButton>
         <RoundedButton onClick={toggleTheme} textColor={isDarkTheme ? '#fff' : '#000'} circle>

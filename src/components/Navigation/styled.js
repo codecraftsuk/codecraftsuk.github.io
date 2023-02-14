@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import WebFont from 'webfontloader';
 
 export const StyledNavWrapper = styled.div`
   display: flex;
@@ -102,6 +103,7 @@ export const StyledNavWrapper = styled.div`
   }
   */
 `;
+
 export const StyledLinkItem = styled(Link)`
   list-style: none;
   text-decoration: none;
@@ -109,10 +111,30 @@ export const StyledLinkItem = styled(Link)`
   /* color: white; */
   font-size: 1rem;
   color: ${({ theme }) => theme.lightText};
-
   font-weight: 500;
 
   &:hover {
     opacity: 0.7;
   }
 `;
+
+export const StyledLogo = styled(Link)`
+  list-style: none;
+  text-decoration: none;
+  border-bottom: 2px solid ${({ active, theme }) => (active ? theme.tertiary : 'transparent')};
+  font-size: 1.5rem;
+  font-family: Kanit;
+  ${'' /* color: ${({ theme }) => theme.lightText}; */}
+  color: #fff;
+  font-weight: 500;
+
+  &:hover {
+    opacity: 0.7;
+  }
+`;
+
+WebFont.load({
+  google: {
+    families: ['Kanit', 'sans-serif'],
+  },
+});

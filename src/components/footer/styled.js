@@ -1,6 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import WebFont from 'webfontloader';
 
 export const StyledFooter = styled.div`
   background-color: ${({ theme }) => theme.secondary};
@@ -114,3 +115,23 @@ export const StyledSocials = styled.div`
     }
   }
 `;
+export const StyledLogo2 = styled(Link)`
+  list-style: none;
+  text-decoration: none;
+  border-bottom: 2px solid ${({ active, theme }) => (active ? theme.tertiary : 'transparent')};
+  font-size: 1.5rem;
+  font-family: Kanit;
+  ${'' /* color: ${({ theme }) => theme.lightText}; */}
+  color: #000;
+  font-weight: 500;
+
+  &:hover {
+    opacity: 0.7;
+  }
+`;
+
+WebFont.load({
+  google: {
+    families: ['Kanit', 'sans-serif'],
+  },
+});
