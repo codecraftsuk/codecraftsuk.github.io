@@ -19,6 +19,8 @@ const Testimonials = () => {
 
   return (
     <StyledWrapper>
+        <br></br>
+        <br></br>
       <h1>Testimonials</h1>
       <span>&#8221;</span>
       <div className="slide" style={{ transform: `translate(-${slideIndex}00%)` }}>
@@ -46,6 +48,8 @@ const Testimonials = () => {
         <StyledDot onClick={() => setSlideIndex(1)} active={slideIndex === 1} />
         <StyledDot onClick={() => setSlideIndex(2)} active={slideIndex === 2} />
       </StyledDotWrapper>
+      <br></br>
+      <br></br>
     </StyledWrapper>
   );
 };
