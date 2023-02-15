@@ -35,10 +35,10 @@ export const statsData = [
   },
   {
     icon: 'card-outline',
-    bigTitle: '£49',
+    bigTitle: '£139',
     title: 'Average Price',
     countAnimate: {
-      countTo: 49,
+      countTo: 139,
       before: '£',
     },
   },
@@ -49,7 +49,6 @@ export const statsData = [
     countAnimate: {
       countTo: 100,
       after: '%',
-      speed: 25,
     },
   },
 ];

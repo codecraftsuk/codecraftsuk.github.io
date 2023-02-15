@@ -1,9 +1,9 @@
 /* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Lottie from 'react-lottie';
 import { useTheme } from 'styled-components';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { StyledFlexWrap, StyledFullWidth } from '../../common/styles';
 import IconInfo from '../../components/IconInfo';
 import RoundedButton from '../../components/RoundedButton';
@@ -23,6 +23,7 @@ import animationData from '../../assets/lottie/charts.json';
 import animationDataWelcome from '../../assets/lottie/laptop.json';
 import FadeInWhenVisible from '../../components/FadeInWhenVisible';
 import { useInView } from 'react-intersection-observer';
+import useWindowDimensions from '../../hooks/useWindowDimenions';
 
 const defaultOptions = {
   loop: true,
@@ -42,17 +43,30 @@ const animationDataWelcomeOp = {
   },
 };
 
-function Home() {
+function Home({ setHeroHeight }) {
   const navigate = useNavigate();
   const theme = useTheme();
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     threshold: 0,
   });
   const [shouldTextCount, setShouldTextCount] = useState(false);
+  const boxRef = useRef();
 
+  // This function calculate X and Y
+  const getPosition = () => {
+    const x = boxRef.current.offsetTop;
+    setHeroHeight(x);
+  };
   useEffect(() => {
     if (inView === true) setShouldTextCount(inView);
   }, [inView]);
+
+  useEffect(() => {
+    getPosition();
+
+    window.addEventListener('resize', getPosition);
+    () => window.removeEventListener('resize', getPosition);
+  }, []);
 
   return (
     <StyleHome>
@@ -70,11 +84,13 @@ function Home() {
           </div>
         </div>
         <span>
-          <Lottie options={animationDataWelcomeOp} height={500} />
+          <Lottie options={animationDataWelcomeOp} height={400} />
         </span>
       </StyledHomeHead>
 
       <StyledContentWrapper>
+        <div ref={boxRef} />
+
         <StyledInfoWrapper>
           <br></br>
           <br></br>

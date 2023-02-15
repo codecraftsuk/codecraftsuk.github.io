@@ -12,10 +12,10 @@ import PaymentCancel from '../pages/payment/paymentCancel';
 import PaymentSuccess from '../pages/payment/paymentSuccess';
 import Pricing from '../pages/pricing';
 
-const Router = () => {
+const Router = ({ setHeroHeight }) => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/" element={<Home setHeroHeight={setHeroHeight} />} />
       <Route path="/about" element={<About />} />
       <Route path="/courses" element={<Courses />} />
       <Route path="courses/:courseId" element={<CourseDetails />} />

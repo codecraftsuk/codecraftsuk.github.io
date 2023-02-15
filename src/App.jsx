@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import styled, { css, ThemeProvider, useTheme } from 'styled-components';
 import './App.css';
@@ -37,7 +37,6 @@ const AppWrapper = styled.div`
       &::before {
         content: '';
         position: absolute;
-        /* background-color: ${({ theme }) => theme.secondary}; */
         transition: all 800ms ease;
         background: ${({ theme }) => (theme.mode === 'light' ? 'rgb(146, 68, 190)' : 'background: rgb(97,80,106)')};
         background: ${({ theme }) =>
@@ -45,24 +44,21 @@ const AppWrapper = styled.div`
             ? 'linear-gradient(0deg, rgba(157,91,194,1) 0%, rgba(71,131,198,1) 64%, rgba(82,76,195,1) 100%)'
             : 'linear-gradient(90deg, #423947 0%, #353f49 70%, #403e5b 100%)'};
 
-        height: 1100px;
+        height: ${({ height }) => height}px;
         width: 100%;
-        top: -280px;
-        transform: skewY(-10deg);
+        top: 0px;
         z-index: -1;
+        border: 2px solid red;
+
+        clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
 
         ${({ theme: { breakPoints } }) => breakPoints.down('md')} {
-          height: 130vh;
+          clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
         }
 
-        ${({ theme }) => theme.breakPoints.down('sm')} {
-          /* height: 140vh; */
-          top: -230px;
-        }
-
-        ${({ theme: { breakPoints } }) => breakPoints.up('md')} {
-          top: -350px;
-        }
+        /* ${({ theme: { breakPoints } }) => breakPoints.down('sm')} {
+          clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
+        } */
 
         background-size: 200% 200%;
         animation: gradient-bg 7s linear infinite;
@@ -95,32 +91,32 @@ const AppWrapper = styled.div`
             ? 'linear-gradient(0deg, rgba(157,91,194,1) 0%, rgba(71,131,198,1) 64%, rgba(82,76,195,1) 100%)'
             : 'linear-gradient(90deg, #423947 0%, #353f49 70%, #403e5b 100%)'};
 
-        height: 290px;
+        height: 800px;
         width: 100%;
-        top: -175px;
-        transform: skewY(3deg);
+        top: 0px;
+        /* transform: skewY(3deg); */
         z-index: -1;
 
-        ${({ theme }) => theme.breakPoints.down('sm')} {
-          top: -205px;
-        }
+        clip-path: polygon(0 0, 100% 0%, 100% 15%, 0 10%);
 
         background-size: 200% 200%;
         animation: gradient-bg 7s linear infinite;
       }
-    `} zoom: 90%;
+    `}
+  zoom: 90%;
 `;
 
 function App() {
   const [theme] = useStore((state) => state.isDarkTheme);
   const { pathname } = useLocation();
+  const [heroHeight, setHeroHeight] = useState(0);
 
   return (
     <ThemeProvider theme={theme ? darkTheme : lightTheme}>
       <div className="app">
-        <AppWrapper isHome={pathname === '/'}>
+        <AppWrapper isHome={pathname === '/'} height={heroHeight}>
           <Navigation isDarkTheme={theme} />
-          <Router />
+          <Router setHeroHeight={setHeroHeight} />
         </AppWrapper>
         <Footer />
       </div>
