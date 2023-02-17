@@ -18,8 +18,9 @@ const Accordion = ({ title, text, bullets }) => {
       <div
         className="accordion-text"
         style={{
+          maxHeight: 0,
           ...(isOpen && {
-            maxHeight: `${bullets?.length ? `${bullets.length * 100}px` : '200px'}`,
+            maxHeight: `${bullets?.length ? `${bullets.length * 100}px` : '1000px'}`,
             padding: '0px 10px 10px 10px',
           }),
         }}

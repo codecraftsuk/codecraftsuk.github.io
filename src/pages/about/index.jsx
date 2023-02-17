@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from 'styled-components';
 import Lottie from 'react-lottie';
+import { Helmet } from 'react-helmet-async';
 import { StyledAboutContent, StyledAboutWrapper } from './styled';
 import animationData from '../../assets/lottie/welcome.json';
 import TeamMember from '../../components/TeamMember';
@@ -22,6 +23,14 @@ const About = () => {
   const theme = useTheme();
   return (
     <>
+      <Helmet>
+        <title>About</title>
+        <meta
+          name="description"
+          content="Welcome to our web development and devops bootcamp, where we turn code newbies into skilled professionals in just a few short weeks."
+        />
+        <link rel="canonical" href="/#/about" />
+      </Helmet>
       <StyledAboutWrapper>
         <div className="back">
           <ion-icon onClick={() => navigate('/')} name="chevron-back-outline" />

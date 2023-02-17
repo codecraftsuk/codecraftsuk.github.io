@@ -48,7 +48,6 @@ const AppWrapper = styled.div`
         width: 100%;
         top: 0px;
         z-index: -1;
-        border: 2px solid red;
 
         clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
 

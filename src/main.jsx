@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
+import { HelmetProvider } from 'react-helmet-async';
 import { HashRouter, useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga4';
 import App from './App';
@@ -27,7 +28,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <HashRouter>
       <Provider>
         <ScrollToTop />
-        <App />
+        <HelmetProvider>
+          <App />
+        </HelmetProvider>
       </Provider>
     </HashRouter>
   </React.StrictMode>,
