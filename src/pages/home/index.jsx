@@ -135,8 +135,7 @@ function Home({ setHeroHeight }) {
           <div className="track-record">
             <h1>Track Record</h1>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero assumenda odio magnam soluta voluptas
-              nisi reiciendis iste eum doloribus minus?
+            Looking for a top-notch web development bootcamp? Our program boasts a high success rate and satisfied clients, giving you the skills and knowledge you need to excel in your career. Join us and make impressive progress towards your goals!
             </p>
           </div>
           <div ref={ref} />
