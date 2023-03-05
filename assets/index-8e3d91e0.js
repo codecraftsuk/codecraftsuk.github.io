@@ -1028,7 +1028,7 @@ object-assign
   width: min(90%, 1000px);
   margin: 0 auto;
   display: flex;
-  margin-top: 40px;
+  margin-top: 110px;
   position: relative;
   justify-content: space-between;
   gap: 20px;
@@ -1050,6 +1050,7 @@ object-assign
     position: absolute;
     top: -10px;
     margin-left: -15px;
+    font-size: 2.8rem;
   }
 
   .course-section-1 {
