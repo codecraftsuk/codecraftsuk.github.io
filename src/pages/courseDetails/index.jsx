@@ -46,7 +46,11 @@ const CourseDetails = () => {
     <>
       <StyledCourseDetailsWrapper>
         <StyledCourseDetails>
-          <ion-icon className="back" name="chevron-back-outline" onClick={() => navigate(-1)} />
+          {/* <ion-icon className="back" name="chevron-back-outline" onClick={() => navigate(-1)} /> */}
+          <div className="back">
+            <ion-icon onClick={() => navigate(-1)} name="chevron-back-outline" />
+            <h2>{course.name}</h2>
+          </div>
           <div className="course-section-2">
             <StyledLabel>Description</StyledLabel>
             {course.longDescription.map((desc) => (

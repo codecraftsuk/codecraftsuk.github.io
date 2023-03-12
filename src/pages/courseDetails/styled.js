@@ -5,7 +5,7 @@ export const StyledCourseDetailsWrapper = styled.div`
   width: min(90%, 1000px);
   margin: 0 auto;
   display: flex;
-  margin-top: 110px;
+  margin-top: 100px;
   position: relative;
   justify-content: space-between;
   gap: 20px;
@@ -17,19 +17,31 @@ export const StyledCourseDetailsWrapper = styled.div`
 
 export const StyledCourseDetails = styled.div`
   width: min(100%, 1300px);
-  margin-top: 40px;
+  /* margin-top: 40px; */
   hr {
     width: 100%;
     margin-top: 10px;
   }
 
-  & > ion-icon {
-    font-size: 2.2rem;
-    cursor: pointer;
-    position: absolute;
-    top: -10px;
-    margin-left: -15px;
-    font-size: 2.8rem;
+  .back {
+    text-align: left;
+    /* margin-left: 20px; */
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+
+    ion-icon {
+      cursor: pointer;
+      margin-right: 30px;
+      font-size: 2.8rem;
+      margin-left: -15px;
+    }
+
+    h2 {
+      margin-bottom: 0px;
+    }
   }
 
   .course-section-1 {

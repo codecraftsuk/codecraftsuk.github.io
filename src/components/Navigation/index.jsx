@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { StyledLinkItem, StyledNavWrapper, StyledLogo, StyledDot} from './styled';
+import { StyledLinkItem, StyledNavWrapper, StyledLogo, StyledDot } from './styled';
 // import TypingAnimation from '../TypingAnimation';
 import RoundedButton from '../RoundedButton';
 import Logo from '../../assets/images/logo/logo-old.png';
@@ -16,11 +16,10 @@ const Navigation = ({ isDarkTheme }) => {
   return (
     <StyledNavWrapper>
       <span className="text">
-        <Link to="/">
+        {/* <Link to="/">
           <img className="logo" src={Logo} alt="" />
-        </Link>
+        </Link> */}
         <StyledLogo to="/">CodeCrafts.</StyledLogo>
-
       </span>
       <span className="nav-link">
         <StyledLinkItem to="/about">About</StyledLinkItem>
