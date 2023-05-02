@@ -2,15 +2,16 @@
 import styled from 'styled-components';
 
 export const StyledDiscordInviteWrapper = styled.div`
-  background-color: ${({ theme }) => theme.primary};
+  background-color: ${({ theme }) => theme.secondary};
   position: fixed;
   right: 20px;
   bottom: 20px;
   /* text-align: center; */
   padding: 10px 20px;
   border-radius: 7px;
-  opacity: 0.9;
+  /* opacity: 0.9; */
   z-index: 100;
+  cursor: pointer;
 
   display: flex;
   justify-content: center;
@@ -25,20 +26,13 @@ export const StyledDiscordInviteWrapper = styled.div`
     opacity: 0.6;
   }
 
-  .btn-group {
+  div {
+    text-align: right;
     ion-icon {
-      font-size: 1.7rem;
-      background-color: ${({ theme }) => theme.tertiary};
-      color: white;
-      padding: 9px;
+      /* position: absolute; */
+      color: red;
+      font-size: 2rem;
       cursor: pointer;
-      opacity: 1;
-    }
-
-    ion-icon:nth-child(3) {
-      border-left: 1px solid white;
-      background-color: ${({ theme }) => theme.quaternary};
-      color: ${({ theme }) => theme.primaryText};
     }
   }
 

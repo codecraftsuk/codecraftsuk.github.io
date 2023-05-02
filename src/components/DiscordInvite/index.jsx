@@ -13,15 +13,19 @@ const DiscordInvite = () => {
     setIsBannerVisible(false);
   };
 
+  const closeModal = (e) => {
+    e.stopPropagation();
+    setIsBannerVisible(false);
+  };
+
   return isBannerVisible === 'true' ? (
-    <StyledDiscordInviteWrapper>
+    <StyledDiscordInviteWrapper onClick={handleDiscordLink}>
       <ion-icon name="logo-discord" />
 
-      <span className="btn-group">
+      <div>
+        <ion-icon onClick={closeModal} name="close-outline" />
         <h3>Join our Discord Community!</h3>
-        <ion-icon onClick={handleDiscordLink} name="arrow-redo-outline" />
-        <ion-icon onClick={() => setIsBannerVisible(false)} name="close-outline" />
-      </span>
+      </div>
     </StyledDiscordInviteWrapper>
   ) : null;
 };
