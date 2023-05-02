@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import styled, { css, ThemeProvider, useTheme } from 'styled-components';
 import './App.css';
+import DiscordInvite from './components/DiscordInvite';
 import Footer from './components/footer';
 import Navigation from './components/Navigation';
 import Router from './routing';
@@ -116,6 +117,7 @@ function App() {
         <AppWrapper isHome={pathname === '/'} height={heroHeight}>
           <Navigation isDarkTheme={theme} />
           <Router setHeroHeight={setHeroHeight} />
+          <DiscordInvite />
         </AppWrapper>
         <Footer />
       </div>
