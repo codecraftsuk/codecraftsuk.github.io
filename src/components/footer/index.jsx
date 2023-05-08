@@ -47,7 +47,7 @@ const Footer = () => (
         <a href="https://twitter.com/codecraftsuk">
           <ion-icon name="logo-twitter" />
         </a>
-        <a href="https://discord.gg/Ks7UxrqBSF">
+        <a href="http://server.codecrafts.co.uk">
           <ion-icon name="logo-discord" />
         </a>
         <a href="https://instagram.com/codecraftsuk">

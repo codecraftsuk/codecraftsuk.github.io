@@ -50,7 +50,7 @@ const Contact = () => {
             <StyledContactCard className="contact-card">
               <p>Get in touch with us through our social media channels.</p>
               <p>
-                - Follow us on <a href="https://twitter.com/codecrafts_">Twitter</a>
+                - Follow us on <a href="https://twitter.com/codecraftsuk">Twitter</a>
               </p>
               <p>
                 - Follow us on <a href="https://instagram.com/codecraftsuk">Instagram</a>
@@ -59,7 +59,7 @@ const Contact = () => {
                 - Connect with us on <a href="https://linkedin.com/codecraftuk">LinkedIn</a>
               </p>
               <p>
-                - Join our community on <a href="https://discord.gg/Ks7UxrqBSF">Discord</a>
+                - Join our community on <a href="http://server.codecrafts.co.uk">Discord</a>
               </p>
             </StyledContactCard>
           </div>
