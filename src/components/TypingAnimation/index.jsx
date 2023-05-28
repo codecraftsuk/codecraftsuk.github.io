@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyledText } from './styled';
 
-const TypingAnimation = () => <StyledText>codecrafts_</StyledText>;
+const TypingAnimation = () => <StyledText>codecraftsuk</StyledText>;
 
 export default TypingAnimation;
